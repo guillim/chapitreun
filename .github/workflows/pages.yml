@@ -1,0 +1,33 @@
+# Publie le dossier landing-page/ à la racine du site GitHub Pages.
+# Passer Settings > Pages > Source sur « GitHub Actions » pour l'activer.
+name: Déployer la landing page
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# une seule publication à la fois, sans annuler celle déjà en cours
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: landing-page          # le contenu du dossier devient la racine du site
+      - id: deployment
+        uses: actions/deploy-pages@v4
