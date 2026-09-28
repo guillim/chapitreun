@@ -9,7 +9,7 @@
   /* ── À brancher avant la mise en ligne ─────────────────── */
   const CONFIG = {
     ENDPOINT: 'https://formspree.io/f/xaenawvb', // POST JSON de l'inscription
-    STRIPE_CHECKOUT_URL: '',      // lien Stripe Checkout des 30 €
+    STRIPE_CHECKOUT_URL: 'https://buy.stripe.com/test_bJebJ2a8E5xh2a39Rt77O02', // lien Stripe Checkout des 30 € (mode test)
     HEADLINE_B: 'Le livre de sa première année<br><em>en 5 minutes.</em>'
   };
 

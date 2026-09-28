@@ -77,12 +77,15 @@ Tout est regroupé dans `CONFIG`, en haut de `script.js` :
 | Constante | Rôle | État |
 | --- | --- | --- |
 | `ENDPOINT` | POST JSON de l'inscription | **branché sur Formspree** |
-| `STRIPE_CHECKOUT_URL` | Lien Stripe Checkout des 30 € | **vide** |
+| `STRIPE_CHECKOUT_URL` | Lien Stripe Checkout des 30 € | **branché, mode test** |
 | `HEADLINE_B` | Titre de la variante B | prêt |
 
 `ENDPOINT` pointe vers un formulaire Formspree : chaque inscription part en POST
-JSON et déclenche un e-mail de notification. Tant que `STRIPE_CHECKOUT_URL` est
-vide, la précommande s'arrête à l'écran de confirmation sans passer par Stripe.
+JSON et déclenche un e-mail de notification. `STRIPE_CHECKOUT_URL` pointe vers
+un lien de paiement Stripe **en mode test** (`buy.stripe.com/test_...`) : aucun
+argent réel ne circule tant qu'il n'est pas remplacé par l'équivalent en mode
+live. À basculer en mode live une fois les pages légales publiées (obligatoire
+avant d'encaisser réellement).
 
 Restent à faire : les photos définitives (voir
 [`assets/photos/CREDITS.md`](assets/photos/CREDITS.md)), le visuel `og`, le vrai
