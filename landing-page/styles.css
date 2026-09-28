@@ -652,6 +652,25 @@ img,svg{ max-width:100%; }
   border-bottom:1px solid var(--line); padding:11px 0 3px; }
 .foot__links a:hover{ color:var(--accent-d); border-color:var(--accent); }
 
+/* ── Pages légales ───────────────────────────────────────── */
+.legal{ padding:150px 0 90px; }
+.legal__head{ margin-bottom:44px; }
+.legal__updated{ font-size:.82rem; color:var(--ink-3); margin:10px 0 0; }
+.legal__body{ display:grid; gap:34px; max-width:68ch; }
+.legal__body h2{ font-family:var(--serif); font-weight:400; font-size:1.3rem;
+  letter-spacing:-.015em; color:var(--ink); margin:0 0 10px; }
+.legal__body h3{ font-family:var(--sans); font-weight:600; font-size:.95rem;
+  color:var(--ink); margin:18px 0 6px; }
+.legal__body p{ margin:0 0 12px; color:var(--ink-2); }
+.legal__body p:last-child{ margin-bottom:0; }
+.legal__body ul{ margin:0 0 12px; padding-left:20px; color:var(--ink-2); display:grid; gap:6px; }
+.legal__body a{ color:var(--accent-d); }
+.legal__body strong{ color:var(--ink); font-weight:500; }
+.legal__body table{ border-collapse:collapse; width:100%; font-size:.92rem; margin:0 0 12px; }
+.legal__body td{ padding:6px 14px 6px 0; color:var(--ink-2); vertical-align:top; }
+.legal__body td:first-child{ color:var(--ink); font-weight:500; white-space:nowrap; }
+.legal__back{ display:inline-block; margin-top:8px; }
+
 /* ── Barre collante ──────────────────────────────────────── */
 .sticky{
   position:fixed; z-index:30; left:12px; right:12px;

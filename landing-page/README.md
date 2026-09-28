@@ -4,8 +4,7 @@ Page unique, mobile d'abord, en français. Trois fichiers plus un dossier de
 photos, aucune dépendance, aucun build : `index.html`, `styles.css`,
 `script.js`, `assets/photos/`.
 
-Nom provisoire retenu sur la page : **Chapitre un** (le brief le note `[Nom]`,
-à trancher avant la mise en ligne — un `grep -r "Chapitre un"` suffit).
+Nom retenu et tranché : **Chapitre un** (le brief le notait `[Nom]`).
 
 ## Lancer en local
 
@@ -76,22 +75,49 @@ Tout est regroupé dans `CONFIG`, en haut de `script.js` :
 
 | Constante | Rôle | État |
 | --- | --- | --- |
-| `ENDPOINT` | POST JSON de l'inscription | **vide** |
-| `STRIPE_CHECKOUT_URL` | Lien Stripe Checkout des 30 € | **vide** |
+| `ENDPOINT` | POST JSON de l'inscription | **branché sur Formspree** |
+| `STRIPE_CHECKOUT_URL` | Lien Stripe Checkout des 30 € | **branché, mode test** |
 | `HEADLINE_B` | Titre de la variante B | prêt |
+| `FOUNDER_START_DATE` / `FOUNDER_START_COUNT` | Compteur fondateur | **simulé** |
 
-Tant que `ENDPOINT` est vide, le formulaire tourne en démonstration : rien n'est
-envoyé, rien n'est encaissé, et l'écran de confirmation le dit au visiteur.
+`ENDPOINT` pointe vers un formulaire Formspree : chaque inscription part en POST
+JSON et déclenche un e-mail de notification. `STRIPE_CHECKOUT_URL` pointe vers
+un lien de paiement Stripe **en mode test** (`buy.stripe.com/test_...`) : aucun
+argent réel ne circule tant qu'il n'est pas remplacé par l'équivalent en mode
+live. À basculer en mode live une fois les pages légales publiées (obligatoire
+avant d'encaisser réellement).
 
-Restent à faire : les photos définitives (voir
-[`assets/photos/CREDITS.md`](assets/photos/CREDITS.md)), le visuel `og`, le vrai
-compteur du tarif fondateur (`data-claimed="0"` sur `[data-founder]`), et les
-trois pages légales, aujourd'hui des liens `#`.
+Le compteur fondateur (`[data-founder]`) est simulé : il part de
+`FOUNDER_START_COUNT` places prises le `FOUNDER_START_DATE` et augmente d'une
+place par jour, calculé côté client à chaque chargement de page. Ce n'est pas
+le vrai nombre de précommandes — à remplacer par un compteur réel (Stripe ou
+base d'inscrits) dès qu'il existe.
+
+`assets/photos/og.jpg` (1200 × 630) est un recadrage de `hero.jpg` généré pour
+le partage social — à remplacer par un visuel dédié si besoin, mais fonctionnel
+tel quel (`og:image`, `og:image:width/height`, `twitter:card` renseignés).
+
+Reste à faire : les photos définitives (voir
+[`assets/photos/CREDITS.md`](assets/photos/CREDITS.md)) et le vrai compteur du
+tarif fondateur, une fois une source de données réelle disponible.
+
+Les trois pages légales existent désormais : `mentions-legales.html`,
+`cgv-prevente.html`, `confidentialite.html`, liées depuis le pied de page.
+Éditeur : ANCHOR (SASU), RCS Nanterre 852 423 318. Avant de basculer Stripe en
+mode live, compléter l'article 7 des CGV avec les coordonnées d'un médiateur de
+la consommation (obligatoire pour un vendeur B2C en France).
 
 ## Mesure
 
+`analytics.js` charge Google Analytics 4 sur les quatre pages du site — un seul
+identifiant à renseigner (`GA_MEASUREMENT_ID`, actuellement `G-XXXXXXXXXX`) une
+fois la propriété créée dans Google Analytics. **Aucun bandeau de consentement
+n'est posé avant le dépôt des cookies GA** : choix assumé du projet, à
+reconsidérer si une mise en conformité RGPD/CNIL devient nécessaire.
+
 `script.js` pousse chaque événement dans `window.dataLayer` **et** émet un
-`CustomEvent('track')` : à relier à GTM, Plausible ou Matomo en une ligne.
+`CustomEvent('track')` ; `analytics.js` relaie chacun de ces événements (sauf
+`page_view`, déjà compté par GA4) vers `gtag('event', …)`.
 
 | Événement | Quand |
 | --- | --- |
