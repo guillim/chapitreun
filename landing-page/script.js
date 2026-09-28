@@ -8,7 +8,7 @@
 
   /* ── À brancher avant la mise en ligne ─────────────────── */
   const CONFIG = {
-    ENDPOINT: '',                 // POST JSON de l'inscription
+    ENDPOINT: 'https://formspree.io/f/xaenawvb', // POST JSON de l'inscription
     STRIPE_CHECKOUT_URL: '',      // lien Stripe Checkout des 30 €
     HEADLINE_B: 'Le livre de sa première année<br><em>en 5 minutes.</em>'
   };
@@ -385,7 +385,8 @@
       if (CONFIG.ENDPOINT) {
         try {
           await fetch(CONFIG.ENDPOINT, { method: 'POST',
-            headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(data) });
         } catch (_) { track('form_network_error', { intent }); }
       }
       if (intent === 'preorder' && CONFIG.STRIPE_CHECKOUT_URL) {
