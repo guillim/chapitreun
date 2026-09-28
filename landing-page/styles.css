@@ -32,6 +32,9 @@
 }
 
 *,*::before,*::after{ box-sizing:border-box; }
+/* certains éléments fixent leur propre `display` (grid, flex…), ce qui
+   annule sinon l'effet de l'attribut natif `hidden` */
+[hidden]{ display:none !important; }
 
 html{
   -webkit-text-size-adjust:100%;
