@@ -109,8 +109,15 @@ la consommation (obligatoire pour un vendeur B2C en France).
 
 ## Mesure
 
+`analytics.js` charge Google Analytics 4 sur les quatre pages du site — un seul
+identifiant à renseigner (`GA_MEASUREMENT_ID`, actuellement `G-XXXXXXXXXX`) une
+fois la propriété créée dans Google Analytics. **Aucun bandeau de consentement
+n'est posé avant le dépôt des cookies GA** : choix assumé du projet, à
+reconsidérer si une mise en conformité RGPD/CNIL devient nécessaire.
+
 `script.js` pousse chaque événement dans `window.dataLayer` **et** émet un
-`CustomEvent('track')` : à relier à GTM, Plausible ou Matomo en une ligne.
+`CustomEvent('track')` ; `analytics.js` relaie chacun de ces événements (sauf
+`page_view`, déjà compté par GA4) vers `gtag('event', …)`.
 
 | Événement | Quand |
 | --- | --- |
