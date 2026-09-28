@@ -94,9 +94,13 @@ place par jour, calculé côté client à chaque chargement de page. Ce n'est pa
 le vrai nombre de précommandes — à remplacer par un compteur réel (Stripe ou
 base d'inscrits) dès qu'il existe.
 
-Restent à faire : les photos définitives (voir
-[`assets/photos/CREDITS.md`](assets/photos/CREDITS.md)), le visuel `og`, et le
-vrai compteur du tarif fondateur (`data-claimed="0"` sur `[data-founder]`).
+`assets/photos/og.jpg` (1200 × 630) est un recadrage de `hero.jpg` généré pour
+le partage social — à remplacer par un visuel dédié si besoin, mais fonctionnel
+tel quel (`og:image`, `og:image:width/height`, `twitter:card` renseignés).
+
+Reste à faire : les photos définitives (voir
+[`assets/photos/CREDITS.md`](assets/photos/CREDITS.md)) et le vrai compteur du
+tarif fondateur, une fois une source de données réelle disponible.
 
 Les trois pages légales existent désormais : `mentions-legales.html`,
 `cgv-prevente.html`, `confidentialite.html`, liées depuis le pied de page.
