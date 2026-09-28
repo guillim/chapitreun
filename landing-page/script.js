@@ -10,7 +10,9 @@
   const CONFIG = {
     ENDPOINT: 'https://formspree.io/f/xaenawvb', // POST JSON de l'inscription
     STRIPE_CHECKOUT_URL: 'https://buy.stripe.com/test_bJebJ2a8E5xh2a39Rt77O02', // lien Stripe Checkout des 30 € (mode test)
-    HEADLINE_B: 'Le livre de sa première année<br><em>en 5 minutes.</em>'
+    HEADLINE_B: 'Le livre de sa première année<br><em>en 5 minutes.</em>',
+    FOUNDER_START_DATE:  '2026-09-28', // jour de référence du compteur fondateur
+    FOUNDER_START_COUNT: 121           // nombre affiché ce jour-là, +1 par jour ensuite
   };
 
   window.__cuReady = true;        // vu par le filet de sécurité du <head>
@@ -304,9 +306,12 @@
   (function founder() {
     const box = $('[data-founder]');
     if (!box) return;
-    // TODO : brancher sur le vrai compteur (Stripe / base d'inscrits)
-    const total   = parseInt(box.dataset.total, 10)   || 500;
-    const claimed = parseInt(box.dataset.claimed, 10) || 0;
+    // Compteur simulé : +1 par jour depuis FOUNDER_START_DATE, à remplacer
+    // par le vrai total (Stripe / base d'inscrits) dès qu'il existe.
+    const total = parseInt(box.dataset.total, 10) || 500;
+    const start = Date.UTC(...CONFIG.FOUNDER_START_DATE.split('-').map((n, i) => i === 1 ? n - 1 : +n));
+    const days  = Math.floor((Date.now() - start) / 86400000);
+    const claimed = Math.min(total, Math.max(0, CONFIG.FOUNDER_START_COUNT + days));
     $('[data-left]', box).textContent = Math.max(0, total - claimed).toLocaleString('fr-FR');
     const bar = $('.founder__bar i', box);
     const fill = () => { bar.style.width = claimed ? Math.max(2, (claimed / total) * 100) + '%' : '0'; };

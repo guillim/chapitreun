@@ -79,6 +79,7 @@ Tout est regroupé dans `CONFIG`, en haut de `script.js` :
 | `ENDPOINT` | POST JSON de l'inscription | **branché sur Formspree** |
 | `STRIPE_CHECKOUT_URL` | Lien Stripe Checkout des 30 € | **branché, mode test** |
 | `HEADLINE_B` | Titre de la variante B | prêt |
+| `FOUNDER_START_DATE` / `FOUNDER_START_COUNT` | Compteur fondateur | **simulé** |
 
 `ENDPOINT` pointe vers un formulaire Formspree : chaque inscription part en POST
 JSON et déclenche un e-mail de notification. `STRIPE_CHECKOUT_URL` pointe vers
@@ -86,6 +87,12 @@ un lien de paiement Stripe **en mode test** (`buy.stripe.com/test_...`) : aucun
 argent réel ne circule tant qu'il n'est pas remplacé par l'équivalent en mode
 live. À basculer en mode live une fois les pages légales publiées (obligatoire
 avant d'encaisser réellement).
+
+Le compteur fondateur (`[data-founder]`) est simulé : il part de
+`FOUNDER_START_COUNT` places prises le `FOUNDER_START_DATE` et augmente d'une
+place par jour, calculé côté client à chaque chargement de page. Ce n'est pas
+le vrai nombre de précommandes — à remplacer par un compteur réel (Stripe ou
+base d'inscrits) dès qu'il existe.
 
 Restent à faire : les photos définitives (voir
 [`assets/photos/CREDITS.md`](assets/photos/CREDITS.md)), le visuel `og`, et le
