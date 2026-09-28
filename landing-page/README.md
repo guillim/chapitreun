@@ -4,8 +4,7 @@ Page unique, mobile d'abord, en français. Trois fichiers plus un dossier de
 photos, aucune dépendance, aucun build : `index.html`, `styles.css`,
 `script.js`, `assets/photos/`.
 
-Nom provisoire retenu sur la page : **Chapitre un** (le brief le note `[Nom]`,
-à trancher avant la mise en ligne — un `grep -r "Chapitre un"` suffit).
+Nom retenu et tranché : **Chapitre un** (le brief le notait `[Nom]`).
 
 ## Lancer en local
 
