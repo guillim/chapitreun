@@ -88,9 +88,14 @@ live. À basculer en mode live une fois les pages légales publiées (obligatoir
 avant d'encaisser réellement).
 
 Restent à faire : les photos définitives (voir
-[`assets/photos/CREDITS.md`](assets/photos/CREDITS.md)), le visuel `og`, le vrai
-compteur du tarif fondateur (`data-claimed="0"` sur `[data-founder]`), et les
-trois pages légales, aujourd'hui des liens `#`.
+[`assets/photos/CREDITS.md`](assets/photos/CREDITS.md)), le visuel `og`, et le
+vrai compteur du tarif fondateur (`data-claimed="0"` sur `[data-founder]`).
+
+Les trois pages légales existent désormais : `mentions-legales.html`,
+`cgv-prevente.html`, `confidentialite.html`, liées depuis le pied de page.
+Éditeur : ANCHOR (SASU), RCS Nanterre 852 423 318. Avant de basculer Stripe en
+mode live, compléter l'article 7 des CGV avec les coordonnées d'un médiateur de
+la consommation (obligatoire pour un vendeur B2C en France).
 
 ## Mesure
 
