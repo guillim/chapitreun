@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Inter:wght@300..600&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/photos/hero.jpg">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 <script>
 document.documentElement.classList.add('js');
 setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.remove('js'); }, 3500);
@@ -64,6 +64,9 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
           <a class="btn btn--primary" href="#reserver" data-track="cta_hero">Réserver mon livre</a>
           <a class="btn btn--clear" href="#le-livre" data-track="cta_hero_book">Voir le livre</a>
         </div>
+        <p class="hero__micro" data-reveal style="--d:.24s">
+          <strong>49 €</strong> tout compris · remboursable à tout moment · sans abonnement
+        </p>
       </div>
 
       <!-- le livre posé dans la scène, comme preuve du résultat -->
@@ -98,6 +101,7 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
       <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9.5V13l2.5 1.5"/><path d="M9 2.5h6"/></svg> Prêt 3 semaines avant ses 1 an</p>
       <p><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="9.5" rx="2.2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg> Analyse sur votre iPhone</p>
       <p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h13v10H3z"/><path d="M16 10h3.2l1.8 2.5V17h-5"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17.5" cy="17.5" r="1.8"/></svg> Livraison offerte</p>
+      <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8 12h8"/></svg> Sans abonnement</p>
     </div>
   </div>
 
@@ -577,14 +581,17 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
         <div class="plan plan--main" data-reveal>
           <p class="plan__tag">Tarif fondateur · 500 premiers</p>
           <p class="plan__n"><s>69 €</s><strong>49 €</strong></p>
-          <p class="plan__l">Le livre des 1 an</p>
+          <p class="plan__l">Le livre des 1 an — tout ce que vous obtenez</p>
           <ul class="plan__ul">
-            <li>60 à 80 pages, 21 × 21 cm</li>
-            <li>Couverture rigide, papier mat 200 g</li>
-            <li>Livraison offerte</li>
-            <li>Payé en une fois, rien à régler à l'expédition</li>
+            <li>L'app iPhone qui retrouve et choisit ses photos</li>
+            <li>Douze chapitres écrits, un par mois</li>
+            <li>Livre 21 × 21 cm, 60 à 80 pages, couverture rigide, papier mat 200 g</li>
+            <li>Prêt trois semaines avant ses 1 an, livraison offerte</li>
+            <li>Payé une fois, sans abonnement, rien à régler à l'expédition</li>
+            <li>Remboursable sans condition jusqu'à l'expédition</li>
           </ul>
           <a class="btn btn--primary btn--big" href="#reserver" data-track="cta_price">Réserver mon livre</a>
+          <p class="plan__note">69 € : prix public prévu à la sortie de l'app. Le tarif fondateur vous reste acquis.</p>
         </div>
 
         <div class="plan" data-reveal style="--d:.1s">
@@ -624,6 +631,11 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
           <p class="cmp__b" data-label="Chapitre un">Personne. L'app les trouve toutes.</p>
         </div>
         <div class="cmp__row">
+          <p class="cmp__crit">Qui écrit les textes</p>
+          <p class="cmp__a" data-label="Les autres apps">Vous, ou des légendes automatiques</p>
+          <p class="cmp__b" data-label="Chapitre un">Douze chapitres déjà écrits</p>
+        </div>
+        <div class="cmp__row">
           <p class="cmp__crit">Temps passé</p>
           <p class="cmp__a" data-label="Les autres apps">Une soirée, parfois plus</p>
           <p class="cmp__b" data-label="Chapitre un">5 minutes de relecture</p>
@@ -632,6 +644,16 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
           <p class="cmp__crit">Quand le livre arrive</p>
           <p class="cmp__a" data-label="Les autres apps">Quand vous y pensez</p>
           <p class="cmp__b" data-label="Chapitre un">3 semaines avant ses 1 an</p>
+        </div>
+        <div class="cmp__row">
+          <p class="cmp__crit">Où vont vos photos</p>
+          <p class="cmp__a" data-label="Les autres apps">Sur leurs serveurs, toutes</p>
+          <p class="cmp__b" data-label="Chapitre un">Sur votre iPhone. Seules les 200 du livre partent.</p>
+        </div>
+        <div class="cmp__row">
+          <p class="cmp__crit">Abonnement</p>
+          <p class="cmp__a" data-label="Les autres apps">Souvent mensuel</p>
+          <p class="cmp__b" data-label="Chapitre un">Aucun. Un livre, un prix.</p>
         </div>
         <div class="cmp__row">
           <p class="cmp__crit">Ce que vous payez</p>
@@ -646,7 +668,66 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
     </div>
   </section>
 
-  <!-- ══════════ 9. Inscription ══════════ -->
+  <!-- ══════════ 9. Où en est le projet ══════════
+       Placée avant le formulaire : on dit ce qui existe et ce qui
+       n'existe pas encore *avant* de demander 49 €.              -->
+  <section class="sec sec--state" id="projet">
+    <div class="wrap">
+      <div class="state">
+        <figure class="state__img" data-reveal>
+          <img src="assets/photos/life-parents.jpg" alt="Deux parents et leur bébé." loading="lazy" decoding="async">
+        </figure>
+        <div class="state__txt" data-reveal style="--d:.08s">
+          <p class="eyebrow">Où en est le projet</p>
+          <h2 class="h2">On préfère vous le dire franchement.</h2>
+          <p class="prose">
+            L'app n'existe pas encore. Cette page sert à savoir si des parents veulent un livre
+            fait sans eux — et s'ils sont prêts à le payer. C'est tout.
+          </p>
+
+          <ol class="road">
+            <li class="road__step is-now">
+              <p class="road__when">Automne 2026 <span class="road__now">Vous êtes ici</span></p>
+              <h3 class="road__t">Réservations fondateurs</h3>
+              <p class="road__p">500 places au tarif fondateur. Remboursables à tout moment, sans question.</p>
+            </li>
+            <li class="road__step">
+              <p class="road__when">Hiver 2026 – 2027</p>
+              <h3 class="road__t">Développement</h3>
+              <p class="road__p">Reconnaissance du visage sur l'iPhone, mise en page automatique, textes des douze chapitres.</p>
+            </li>
+            <li class="road__step">
+              <p class="road__when">Printemps 2027 <span class="road__est">objectif</span></p>
+              <h3 class="road__t">L'app sort sur iPhone</h3>
+              <p class="road__p">Les fondateurs sont prévenus en premier et fabriquent les premiers livres.</p>
+            </li>
+            <li class="road__step">
+              <p class="road__when">Ensuite</p>
+              <h3 class="road__t">Chaque livre, trois semaines avant chaque anniversaire</h3>
+              <p class="road__p">Si nous n'y arrivons pas : remboursement intégral, et on vous le dit.</p>
+            </li>
+          </ol>
+
+          <p class="prose">
+            Aucun avis client sur cette page : nous n'avons pas encore livré un seul livre.
+            Le jour où ce sera le cas, ce sont les vôtres qui seront ici.
+          </p>
+
+          <div class="sign">
+            <p class="sign__q">
+              Une question, un doute ? Écrivez-moi directement, je réponds moi-même.
+            </p>
+            <p class="sign__who">
+              <span class="sign__name">Guillaume Lancrenon</span>
+              <span class="sign__role">fondateur · <a href="mailto:bonjour@chapitreun.com">bonjour@chapitreun.com</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ 10. Inscription ══════════ -->
   <section class="sec sec--signup" id="reserver">
     <div class="wrap wrap--narrow">
       <div class="signup" data-reveal>
@@ -676,7 +757,7 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
             <select id="month" name="month" required>
               <option value="" selected disabled>Choisir un mois</option>
             </select>
-            <p class="f__hint">Pour savoir quand son livre doit être prêt.</p>
+            <p class="f__hint" data-when>Pour savoir quand son livre doit être prêt.</p>
             <p class="f__err" data-err="month">Choisissez le mois de naissance.</p>
           </div>
 
@@ -712,34 +793,6 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
     </div>
   </section>
 
-  <!-- ══════════ 10. Où en est le projet ══════════ -->
-  <section class="sec sec--state" id="projet">
-    <div class="wrap">
-      <div class="state">
-        <figure class="state__img" data-reveal>
-          <img src="assets/photos/life-parents.jpg" alt="Deux parents et leur bébé." loading="lazy" decoding="async">
-        </figure>
-        <div class="state__txt" data-reveal style="--d:.08s">
-          <p class="eyebrow">Où en est le projet</p>
-          <h2 class="h2">On préfère vous le dire franchement.</h2>
-          <p class="prose">
-            L'app n'existe pas encore. Cette page sert à savoir si des parents veulent un livre
-            fait sans eux — et s'ils sont prêts à le payer. C'est tout.
-          </p>
-          <ul class="state__ul">
-            <li><strong>Ce qui est décidé :</strong> le format, le papier, les douze chapitres, le prix.</li>
-            <li><strong>Ce qui est en cours :</strong> la reconnaissance du visage sur l'iPhone et la mise en page automatique.</li>
-            <li><strong>Ce qui dépend de vous :</strong> si assez de parents réservent, on construit. Sinon, on vous rembourse et on vous le dit.</li>
-          </ul>
-          <p class="prose">
-            Aucun avis client sur cette page : nous n'avons pas encore livré un seul livre.
-            Le jour où ce sera le cas, ce sont les vôtres qui seront ici.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ══════════ 11. Questions ══════════ -->
   <section class="sec sec--faq">
     <div class="wrap wrap--narrow">
@@ -748,6 +801,14 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
         <details>
           <summary>Est-ce que vous voyez mes photos ?</summary>
           <p>Non. La reconnaissance du visage de votre bébé tourne sur votre iPhone, dans l'app. Seules les photos retenues pour le livre sont envoyées, et seulement après votre validation, pour être imprimées.</p>
+        </details>
+        <details>
+          <summary>Et si je ne fais rien du tout ?</summary>
+          <p>Le livre se fait quand même. Le prénom, la date de naissance et une photo de son visage suffisent : trois semaines avant ses 1 an, une notification vous prévient qu'il est prêt. Il ne vous reste qu'à dire oui.</p>
+        </details>
+        <details>
+          <summary>C'est un abonnement ?</summary>
+          <p>Non. Un livre, un prix, payé une fois. Rien ne se renouvelle, rien n'est prélevé plus tard. Si vous voulez un deuxième exemplaire pour les grands-parents, vous le commandez quand vous voulez.</p>
         </details>
         <details>
           <summary>Et si le livre ne me plaît pas ?</summary>
@@ -768,6 +829,10 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
         <details>
           <summary>Quand arrive le livre ?</summary>
           <p>Notre objectif : l'app disponible au printemps 2027, et chaque livre prêt trois semaines avant l'anniversaire de l'enfant. Délai indicatif — si nous glissons, vous êtes remboursé.</p>
+        </details>
+        <details>
+          <summary>Et s'il arrive abîmé ?</summary>
+          <p>On le réimprime et on vous le renvoie, sans discussion. Un livre qui doit rester sur une étagère trente ans ne part pas avec un coin plié.</p>
         </details>
       </div>
     </div>
@@ -815,6 +880,6 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
   <a class="btn btn--primary" href="#reserver" data-track="cta_sticky">Réserver</a>
 </div>
 
-<script src="script.js?v=2"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>

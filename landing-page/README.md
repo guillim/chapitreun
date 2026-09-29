@@ -30,17 +30,42 @@ quatre blocs repris de la structure des pages concurrentes.
 | # | Section | Ancre | Rôle |
 | --- | --- | --- | --- |
 | 1 | Accueil | `#top` | Photo plein écran, promesse, deux boutons |
-| — | Bandeau de garanties | — | Quatre réassurances sur fond sombre |
+| — | Bandeau de garanties | — | Cinq réassurances sur fond sombre |
 | 2 | Le problème | `#le-probleme` | 4 000 / 0 / 3 mois, pellicule, bascule éditoriale |
 | 3 | Comment ça marche | `#comment` | Trois étapes + iPhone animé |
 | 4 | À quoi ressemble le livre | `#le-livre` | Carrousel de cinq doubles pages |
 | 5 | Ce qui change | `#ce-qui-change` | Les cinq arguments, chacun avec sa démo |
 | 6 | Les finitions | `#finitions` | L'objet : couverture, papier, format |
-| 7 | Le prix | `#prix` | Deux offres, tout compris |
-| 8 | Comparaison | `#comparaison` | Quatre lignes, sans nommer personne |
-| 9 | Réservation | `#reserver` | Formulaire |
-| 10 | Où en est le projet | `#projet` | Transparence, à la place des faux avis |
-| 11 | Questions | — | Six questions, dont les deux freins du brief |
+| 7 | Le prix | `#prix` | Deux offres, tout compris, « tout ce que vous obtenez » |
+| 8 | Comparaison | `#comparaison` | Sept lignes, sans nommer personne |
+| 9 | Où en est le projet | `#projet` | Feuille de route datée + mot signé, **avant** le formulaire |
+| 10 | Réservation | `#reserver` | Formulaire ; le mois choisi affiche la date du livre |
+| 11 | Questions | — | Neuf questions, dont les deux freins du brief |
+
+## Ce qui vient de l'étude des concurrents (septembre 2026)
+
+Trois relevés : les acteurs français (Cheerz, Photoweb, Rosemood, Fizzer,
+Lalalab, Popsa, CEWE), les apps « automatiques » (Chatbooks, Once Upon, Journi,
+Popsa, FamilyAlbum, Tinybeans, Mixtiles, PastBook) et les marques premium
+(Artifact Uprising, MILK, Blurb, Saal, Social Print Studio). Ce que la page en
+retient :
+
+- **Prix + garantie collés au bouton du héros** (« 49 € tout compris ·
+  remboursable · sans abonnement ») — la question « combien ? » est réglée avant
+  de défiler. Personne ne le fait en France.
+- **« Sans abonnement » dit explicitement** : Chatbooks, Tinybeans, FamilyAlbum
+  facturent au mois et leurs avis s'en plaignent. Un livre, un prix.
+- **Trois promesses que personne ne fait** poussées dans le tableau : les textes
+  sont écrits, les photos restent sur l'iPhone, pas d'abonnement. Toutes les
+  apps « IA » demandent encore de choisir les photos soi-même.
+- **Feuille de route datée et mot signé avant le formulaire** : les études sur
+  le financement participatif montrent qu'annoncer les risques augmente la
+  confiance plus qu'elle ne la coûte, à condition d'être précis.
+- **Date de livraison, pas délai** : le formulaire calcule, à partir du mois de
+  naissance, quand le livre sera prêt — ou dit franchement que ses 1 an
+  arriveront avant l'app (`APP_READY` dans `script.js`).
+- **Ce qu'on ne copie pas** : compteurs d'avis, « 4 millions de livres »,
+  promos à durée limitée, prix barré sans prix futur réel.
 
 ## Ce qui vient de l'analyse de la page concurrente
 
