@@ -3,17 +3,10 @@
 Ce qui reste entre vos mains, maintenant que l'inscription, le paiement test,
 les pages légales, le visuel social et le nom sont branchés.
 
-## Bloquant avant d'encaisser réellement (Stripe en mode live)
+## Prochaine étape : encaisser réellement (Stripe en mode live)
 
-- [ ] **Médiateur de la consommation.** S'inscrire auprès d'un médiateur agréé
-      (recommandé : [CM2C](https://www.cm2c.net/inscription-professionnel.php),
-      48 € pour 3 ans sous 10 salariés, puis 36 € par médiation traitée ; Médicys
-      n'est plus agréé depuis 2021) — obligatoire pour tout vendeur B2C en France dès que
-      de l'argent réel est encaissé. Compléter l'Article 7 de
-      `cgv-prevente.html` avec son nom, son adresse et son site.
-- [ ] **Basculer Stripe en mode live.** Une fois le point ci-dessus
-      traité, créer le lien de paiement équivalent en mode live dans Stripe et
-      remplacer `STRIPE_CHECKOUT_URL` dans `script.js` (actuellement un lien
+- [ ] **Basculer Stripe en mode live.** Créer le lien de paiement équivalent en mode
+      live dans Stripe et remplacer `STRIPE_CHECKOUT_URL` dans `script.js` (actuellement un lien
       `buy.stripe.com/test_...`).
 - [ ] **Redirection Stripe sur le lien live.** Déjà faite sur le lien test ;
       la reproduire sur le lien live (*After payment* →
@@ -44,6 +37,12 @@ les pages légales, le visuel social et le nom sont branchés.
 - [ ] **Suivre les inscriptions Formspree.** Le plan gratuit est limité à 50
       soumissions/mois — surveiller le volume et passer à un plan payant si
       besoin.
+- [ ] **Médiateur de la consommation.** Choix assumé : démarrage sans médiateur,
+      alors que c'est obligatoire pour la vente B2C (art. L.612-1 du Code de la
+      consommation, amende jusqu'à 15 000 € pour une société). Solution la moins
+      chère : [CM2C](https://www.cm2c.net/inscription-professionnel.php), 48 € pour
+      3 ans sous 10 salariés, puis 36 € par médiation traitée. Une fois inscrit,
+      ajouter ses coordonnées à l'Article 7 de `cgv-prevente.html`.
 - [ ] **Bandeau de consentement cookies.** Choix assumé : Google Analytics est
       installé sans bandeau de consentement, ce qui n'est pas conforme aux
       règles de la CNIL. À reconsidérer si vous changez d'avis sur ce risque.
