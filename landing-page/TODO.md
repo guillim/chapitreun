@@ -13,10 +13,9 @@ les pages légales, le visuel social et le nom sont branchés.
       traité, créer le lien de paiement équivalent en mode live dans Stripe et
       remplacer `STRIPE_CHECKOUT_URL` dans `script.js` (actuellement un lien
       `buy.stripe.com/test_...`).
-- [ ] **Redirection Stripe après paiement.** Dans Stripe → Payment Links →
-      votre lien → *After payment* → « Rediriger vers votre site » :
-      `https://chapitreun.com/merci.html`. Cette page confirme la réservation et
-      envoie la conversion `purchase` (30 €) dans GA4. À refaire sur le lien live.
+- [ ] **Redirection Stripe sur le lien live.** Déjà faite sur le lien test ;
+      la reproduire sur le lien live (*After payment* →
+      `https://chapitreun.com/merci.html`).
 
 ## À vérifier, sans urgence technique
 
@@ -60,4 +59,4 @@ les pages légales, le visuel social et le nom sont branchés.
 - [x] Google Analytics 4 installé et actif (`G-ZWDVH9Q1F3`)
 - [x] Politique de confidentialité à jour (cookies GA4, Google comme destinataire)
 - [x] `robots.txt` + `sitemap.xml` pour l'indexation
-- [x] Page `merci.html` de retour après paiement (conversion GA4)
+- [x] Page `merci.html` de retour après paiement (conversion GA4), redirection Stripe test configurée
