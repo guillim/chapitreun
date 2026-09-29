@@ -64,7 +64,7 @@ registre — **aucun texte ni aucune image n'en a été repris**.
 
 Relevé sur leur page produit en septembre 2026 : **à partir de 38 €** pour un
 livre à couverture rigide de 20 pages, format 8″ × 6″, papier mat 200 g, hors
-livraison. Notre page affiche 34 € (tarif fondateur) pour 60 à 80 pages en
+livraison. Notre page affiche 49 € (tarif fondateur, payé en une fois, au lieu de 69 €) pour 60 à 80 pages en
 21 × 21 cm, livraison offerte, et le rappelle en note sous les offres et dans le
 tableau de comparaison. **À revérifier avant la mise en ligne** : c'est une
 affirmation comparative, elle doit rester exacte et vérifiable.
@@ -76,7 +76,7 @@ Tout est regroupé dans `CONFIG`, en haut de `script.js` :
 | Constante | Rôle | État |
 | --- | --- | --- |
 | `ENDPOINT` | POST JSON de l'inscription | **branché sur Formspree** |
-| `STRIPE_CHECKOUT_URL` | Lien Stripe Checkout des 30 € | **branché, mode test** |
+| `STRIPE_CHECKOUT_URL` | Lien Stripe Checkout des 49 € (prix total) | **branché, mode test** |
 | `HEADLINE_B` | Titre de la variante B | prêt |
 | `FOUNDER_START_DATE` / `FOUNDER_START_COUNT` | Compteur fondateur | **simulé** |
 
