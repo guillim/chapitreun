@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="analytics.js?v=2"></script>
+<title>Merci — Chapitre un</title>
+<meta name="description" content="Votre réservation Chapitre un est confirmée.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FBF6EE">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Inter:wght@300..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="mark" href="index.html" aria-label="Chapitre un, accueil">
+      <svg class="mark__glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.2c2.9-1.1 5.3-1.1 7.7.4v13c-2.4-1.5-4.8-1.5-7.7-.4V5.2Z"/><path d="M20 5.2c-2.9-1.1-5.3-1.1-7.7.4v13c2.4-1.5 4.8-1.5 7.7-.4V5.2Z"/></svg>
+      <span>Chapitre&nbsp;un</span>
+    </a>
+    <a class="nav__cta" href="index.html#reserver">Réserver mon livre</a>
+  </div>
+</header>
+
+<main>
+  <section class="legal">
+    <div class="wrap wrap--narrow">
+      <header class="legal__head">
+        <p class="eyebrow">Réservation confirmée</p>
+        <h1 class="h2">Merci, votre livre est réservé.</h1>
+      </header>
+
+      <div class="legal__body">
+        <p>
+          Votre acompte de <strong>30 €</strong> est bien enregistré et le tarif
+          fondateur vous est acquis. Un reçu Stripe vient de partir sur votre boîte
+          e-mail.
+        </p>
+        <p>
+          Nous vous écrirons à chaque étape importante du projet, puis environ trois
+          semaines avant l'anniversaire de votre bébé pour préparer son livre.
+        </p>
+        <p>
+          Vous changez d'avis ? Le remboursement est sans condition jusqu'à
+          l'expédition : un simple e-mail à
+          <a href="mailto:bonjour@chapitreun.com">bonjour@chapitreun.com</a> suffit
+          (voir les <a href="cgv-prevente.html">CGV de prévente</a>).
+        </p>
+      </div>
+
+      <a class="legal__back" href="index.html">← Retour à l'accueil</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap wrap--narrow foot__in">
+    <p class="mark mark--foot">
+      <svg class="mark__glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.2c2.9-1.1 5.3-1.1 7.7.4v13c-2.4-1.5-4.8-1.5-7.7-.4V5.2Z"/><path d="M20 5.2c-2.9-1.1-5.3-1.1-7.7.4v13c2.4-1.5 4.8-1.5 7.7-.4V5.2Z"/></svg>
+      <span>Chapitre&nbsp;un</span>
+    </p>
+    <nav class="foot__links">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="cgv-prevente.html">CGV de prévente</a>
+      <a href="confidentialite.html">Confidentialité &amp; RGPD</a>
+      <a href="mailto:bonjour@chapitreun.com">Nous écrire</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // conversion mesurée dans GA4 (retour de Stripe après paiement réussi)
+  gtag('event', 'purchase', { value: 30, currency: 'EUR', items: [{ item_name: 'Réservation livre fondateur' }] });
+</script>
+</body>
+</html>

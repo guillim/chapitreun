@@ -19,6 +19,11 @@ les pages légales, le visuel social et le nom sont branchés.
       remplacer `STRIPE_CHECKOUT_URL` dans `script.js` (actuellement un lien
       `buy.stripe.com/test_...`).
 
+- [ ] **Redirection Stripe après paiement.** Dans Stripe → Payment Links →
+      votre lien → *After payment* → « Rediriger vers votre site » :
+      `https://chapitreun.com/merci.html`. Cette page confirme la réservation et
+      envoie la conversion `purchase` (30 €) dans GA4. À refaire sur le lien live.
+
 ## À vérifier, sans urgence technique
 
 - [ ] **Adresse e-mail `bonjour@chapitreun.com`.** Confirmer qu'elle reçoit
@@ -59,3 +64,6 @@ les pages légales, le visuel social et le nom sont branchés.
 - [x] Nom du projet tranché : Chapitre un
 - [x] `noindex` retiré — le site est indexable
 - [x] Google Analytics 4 installé (identifiant à renseigner, voir plus haut)
+- [x] Politique de confidentialité à jour (cookies GA4, Google comme destinataire)
+- [x] `robots.txt` + `sitemap.xml` pour l'indexation
+- [x] Page `merci.html` de retour après paiement (conversion GA4)

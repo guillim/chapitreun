@@ -10,6 +10,9 @@
 
   const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // à remplacer par l'identifiant réel
 
+  window.gtag = () => {}; // no-op tant que l'identifiant n'est pas renseigné
+  if (GA_MEASUREMENT_ID === 'G-XXXXXXXXXX') return;
+
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   window.gtag = gtag;
