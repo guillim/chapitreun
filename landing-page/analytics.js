@@ -8,7 +8,7 @@
 (() => {
   'use strict';
 
-  const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // à remplacer par l'identifiant réel
+  const GA_MEASUREMENT_ID = 'G-ZWDVH9Q1F3';
 
   window.gtag = () => {}; // no-op tant que l'identifiant n'est pas renseigné
   if (GA_MEASUREMENT_ID === 'G-XXXXXXXXXX') return;

@@ -5,20 +5,14 @@ les pages légales, le visuel social et le nom sont branchés.
 
 ## Bloquant avant d'encaisser réellement (Stripe en mode live)
 
-- [ ] **Google Analytics 4 — identifiant manquant.** Créer une propriété sur
-      [analytics.google.com](https://analytics.google.com) pour `chapitreun.com`,
-      ajouter un flux de données Web, copier l'ID de mesure (`G-XXXXXXXXXX`) et
-      le coller dans `GA_MEASUREMENT_ID` en haut de `analytics.js`. Tant que ce
-      n'est pas fait, le script se charge mais n'envoie aucune donnée.
 - [ ] **Médiateur de la consommation.** S'inscrire auprès d'un médiateur agréé
       (ex. CM2C, Médicys) — obligatoire pour tout vendeur B2C en France dès que
       de l'argent réel est encaissé. Compléter l'Article 7 de
       `cgv-prevente.html` avec son nom, son adresse et son site.
-- [ ] **Basculer Stripe en mode live.** Une fois les deux points ci-dessus
-      traités, créer le lien de paiement équivalent en mode live dans Stripe et
+- [ ] **Basculer Stripe en mode live.** Une fois le point ci-dessus
+      traité, créer le lien de paiement équivalent en mode live dans Stripe et
       remplacer `STRIPE_CHECKOUT_URL` dans `script.js` (actuellement un lien
       `buy.stripe.com/test_...`).
-
 - [ ] **Redirection Stripe après paiement.** Dans Stripe → Payment Links →
       votre lien → *After payment* → « Rediriger vers votre site » :
       `https://chapitreun.com/merci.html`. Cette page confirme la réservation et
@@ -63,7 +57,7 @@ les pages légales, le visuel social et le nom sont branchés.
 - [x] `og.jpg` au bon format pour le partage social
 - [x] Nom du projet tranché : Chapitre un
 - [x] `noindex` retiré — le site est indexable
-- [x] Google Analytics 4 installé (identifiant à renseigner, voir plus haut)
+- [x] Google Analytics 4 installé et actif (`G-ZWDVH9Q1F3`)
 - [x] Politique de confidentialité à jour (cookies GA4, Google comme destinataire)
 - [x] `robots.txt` + `sitemap.xml` pour l'indexation
 - [x] Page `merci.html` de retour après paiement (conversion GA4)
