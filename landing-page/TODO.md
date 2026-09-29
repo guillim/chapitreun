@@ -5,8 +5,8 @@ les pages légales, le visuel social et le nom sont branchés.
 
 ## Prochaine étape : encaisser réellement (Stripe en mode live)
 
-- [ ] **Basculer Stripe en mode live.** Créer le lien de paiement équivalent en mode
-      live dans Stripe et remplacer `STRIPE_CHECKOUT_URL` dans `script.js` (actuellement un lien
+- [ ] **Basculer Stripe en mode live.** Créer le lien de paiement en mode live
+      à **49 €** (prix total du livre, plus d'acompte) et remplacer `STRIPE_CHECKOUT_URL` dans `script.js` (actuellement un lien
       `buy.stripe.com/test_...`).
 - [ ] **Redirection Stripe sur le lien live.** Déjà faite sur le lien test ;
       la reproduire sur le lien live (*After payment* →
@@ -19,6 +19,11 @@ les pages légales, le visuel social et le nom sont branchés.
       Workspace) — sinon les clics sur « Nous écrire » partent dans le vide.
 - [ ] **Hébergeur dans les mentions légales.** `mentions-legales.html` indique
       GitHub, Inc. comme hébergeur (standard pour GitHub Pages) — à confirmer.
+- [ ] **Prix barré 69 €.** Il doit correspondre au prix réellement pratiqué
+      après le lancement — sinon c'est un prix de référence trompeur au sens du
+      Code de la consommation.
+- [ ] **Lien Stripe test.** Il encaisse encore 30 € : sans importance pour
+      tester, mais à recréer à 49 € si vous voulez un test fidèle.
 - [ ] **Comparaison de prix.** La page affiche « à partir de 38 € les 20 pages »
       pour la concurrence, relevé en septembre 2026. À revérifier avant mise en
       ligne définitive : c'est une affirmation comparative, elle doit rester
