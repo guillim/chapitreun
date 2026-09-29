@@ -6,7 +6,9 @@ les pages légales, le visuel social et le nom sont branchés.
 ## Bloquant avant d'encaisser réellement (Stripe en mode live)
 
 - [ ] **Médiateur de la consommation.** S'inscrire auprès d'un médiateur agréé
-      (ex. CM2C, Médicys) — obligatoire pour tout vendeur B2C en France dès que
+      (recommandé : [CM2C](https://www.cm2c.net/inscription-professionnel.php),
+      48 € pour 3 ans sous 10 salariés, puis 36 € par médiation traitée ; Médicys
+      n'est plus agréé depuis 2021) — obligatoire pour tout vendeur B2C en France dès que
       de l'argent réel est encaissé. Compléter l'Article 7 de
       `cgv-prevente.html` avec son nom, son adresse et son site.
 - [ ] **Basculer Stripe en mode live.** Une fois le point ci-dessus
