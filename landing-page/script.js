@@ -12,7 +12,8 @@
     STRIPE_CHECKOUT_URL: 'https://buy.stripe.com/test_bJebJ2a8E5xh2a39Rt77O02', // lien Stripe Checkout des 49 € (mode test)
     HEADLINE_B: 'Le livre de sa première année<br><em>en 5 minutes.</em>',
     FOUNDER_START_DATE:  '2026-09-28', // jour de référence du compteur fondateur
-    FOUNDER_START_COUNT: 121           // nombre affiché ce jour-là, +1 par jour ensuite
+    FOUNDER_START_COUNT: 121,          // nombre affiché ce jour-là, +1 par jour ensuite
+    APP_READY: '2027-05'               // premier mois où un livre peut être prêt (app « printemps 2027 »)
   };
 
   window.__cuReady = true;        // vu par le filet de sécurité du <head>
@@ -337,6 +338,24 @@
       o.textContent = d.toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' });
       month.append(o);
     }
+
+    /* — la date qui compte : dès que le mois est choisi, on dit quand le
+         livre sera prêt, ou franchement que ses 1 an arriveront avant l'app — */
+    const when = $('[data-when]');
+    const whenDefault = when ? when.textContent : '';
+    const fmt = (y, m) => new Date(y, m, 1).toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' });
+    month.addEventListener('change', () => {
+      if (!when) return;
+      if (!month.value) { when.textContent = whenDefault; return; }
+      const [y, m] = month.value.split('-').map(Number);          // mois de naissance
+      const bday = { y: y + 1, m: m - 1 };                         // ses 1 an (mois 0-11)
+      const ready = new Date(bday.y, bday.m - 1, 1);               // ~3 semaines avant : fin du mois précédent
+      const [ay, am] = CONFIG.APP_READY.split('-').map(Number);
+      const tooEarly = ready < new Date(ay, am - 1, 1);
+      when.textContent = tooEarly
+        ? `Ses 1 an : ${fmt(bday.y, bday.m)}, avant la sortie de l'app. Son livre se fera dès qu'elle est prête, avec les photos déjà prises.`
+        : `Ses 1 an : ${fmt(bday.y, bday.m)}. Son livre sera prêt fin ${fmt(ready.getFullYear(), ready.getMonth())}.`;
+    });
 
     const setErr = (n, on) => { const el = $(`[data-err="${n}"]`); if (el) el.classList.toggle('is-on', on); };
     const mark = (el, bad) => el.classList.toggle('is-invalid', bad);

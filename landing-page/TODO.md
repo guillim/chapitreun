@@ -28,6 +28,13 @@ les pages légales, le visuel social et le nom sont branchés.
       pour la concurrence, relevé en septembre 2026. À revérifier avant mise en
       ligne définitive : c'est une affirmation comparative, elle doit rester
       exacte.
+- [ ] **Deux promesses ajoutées à tenir.** La FAQ dit désormais qu'un livre
+      abîmé est réimprimé et renvoyé, et la feuille de route que les fondateurs
+      sont prévenus en premier à la sortie de l'app. Les retirer si vous ne
+      voulez pas vous y engager.
+- [ ] **Photo du fondateur.** Le mot signé (section « Où en est le projet »)
+      convertirait mieux avec un vrai visage : une photo de vous, même prise au
+      téléphone, à côté de la signature.
 - [ ] **Photos définitives.** Les photos actuelles sont des visuels de
       démonstration sous licence libre (voir `assets/photos/CREDITS.md`) — à
       remplacer par de vraies photos du livre / du produit quand disponibles.
@@ -66,3 +73,4 @@ les pages légales, le visuel social et le nom sont branchés.
 - [x] Politique de confidentialité à jour (cookies GA4, Google comme destinataire)
 - [x] `robots.txt` + `sitemap.xml` pour l'indexation
 - [x] Page `merci.html` de retour après paiement (conversion GA4), redirection Stripe test configurée
+- [x] Page revue face aux concurrents : prix sous le héros, sans abonnement, tableau à 7 lignes, feuille de route + mot signé avant le formulaire, date du livre calculée, 3 questions ajoutées
