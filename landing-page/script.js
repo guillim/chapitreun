@@ -272,6 +272,23 @@
     });
   }
 
+  /* ── Halo chaud qui suit la souris sur le formulaire ───── */
+  if (matchMedia('(pointer:fine)').matches && !reduce) {
+    const sec = $('.sec--signup');
+    if (sec) {
+      let raf = null, x = 0, y = 0;
+      sec.addEventListener('pointermove', e => {
+        const r = sec.getBoundingClientRect();
+        x = e.clientX - r.left; y = e.clientY - r.top;
+        if (!raf) raf = requestAnimationFrame(() => {
+          sec.style.setProperty('--mx', x + 'px');
+          sec.style.setProperty('--my', y + 'px');
+          raf = null;
+        });
+      });
+    }
+  }
+
   /* ── Nav et barre collante ─────────────────────────────── */
   (function chrome() {
     const nav    = $('.nav');
