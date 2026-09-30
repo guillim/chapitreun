@@ -22,8 +22,10 @@ les pages légales, le visuel social et le nom sont branchés.
 - [ ] **Prix barré 69 €.** Il doit correspondre au prix réellement pratiqué
       après le lancement — sinon c'est un prix de référence trompeur au sens du
       Code de la consommation.
-- [ ] **Lien Stripe test.** Il encaisse encore 30 € : sans importance pour
-      tester, mais à recréer à 49 € si vous voulez un test fidèle.
+- [ ] **Nouveau lien Stripe test** (`test_aFadRadkQ9Nx6qj0gT77O04`, branché le
+      30 septembre 2026). Vérifier qu'il affiche bien 49 € et que sa
+      redirection *After payment* pointe vers `https://chapitreun.com/merci.html`
+      — la redirection se règle lien par lien, elle ne suit pas l'ancien lien.
 - [ ] **Comparaison de prix.** La page affiche « à partir de 38 € les 20 pages »
       pour la concurrence, relevé en septembre 2026. À revérifier avant mise en
       ligne définitive : c'est une affirmation comparative, elle doit rester
