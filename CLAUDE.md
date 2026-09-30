@@ -7,6 +7,11 @@
   précommande), ce qui nous différencie, ce qu'on ne peut pas encore affirmer.
   À lire avant toute modification du positionnement, du prix ou des textes de
   la page, et à mettre à jour après toute nouvelle veille concurrentielle.
+- `TODO-marketing.md` (racine du dépôt, non publié) : plan marketing et
+  publicités du test de demande (prérequis, pubs à créer, ciblage, budget,
+  canaux gratuits, suivi, règle de décision). Les tâches marquées **[Claude]**
+  peuvent être faites par un agent ; cocher ce qui est fait et remplir le
+  journal des décisions.
 - **Pas besoin d'approbation pour merger sur `main`.** Pour ce projet, merger
   sur `main` est l'étape finale normale de toute fonctionnalité ou correction
   demandée — pousser la branche, ouvrir la PR, la merger, sans attendre de
