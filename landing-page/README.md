@@ -132,6 +132,25 @@ Les trois pages légales existent désormais : `mentions-legales.html`,
 mode live, compléter l'article 7 des CGV avec les coordonnées d'un médiateur de
 la consommation (obligatoire pour un vendeur B2C en France).
 
+## Animations
+
+Toutes en CSS (sauf le halo du formulaire), sans bibliothèque, et **coupées
+pour les visiteurs qui ont demandé moins d'animations** (`prefers-reduced-motion`).
+
+- **Au chargement** : la photo du héros se pose lentement (léger zoom arrière),
+  le texte sort d'un flou, et la chute en italique du titre arrive en second.
+- **Liées au défilement** (`animation-timeline`, Chrome / Edge / Safari récents ;
+  ailleurs la page reste simplement immobile) : fil de lecture sous la nav,
+  parallaxe de la photo du héros, photos de la pellicule qui tombent en place,
+  double page du centre mise au point dans la galerie, maquettes qui montent,
+  fil de la feuille de route qui se colore.
+- **En continu, discrètes** : bandeau des douze chapitres (pause au survol),
+  lueur qui fait le tour de l'offre fondateur, point « Vous êtes ici » qui pulse.
+- **Au survol** : reflet sur les boutons principaux, halo chaud qui suit la
+  souris sur le formulaire.
+- **Cascades** : lignes du tableau comparatif, du prix, de la feuille de route et
+  de la FAQ qui arrivent l'une après l'autre.
+
 ## Mesure
 
 `analytics.js` charge Google Analytics 4 sur les quatre pages du site — identifiant

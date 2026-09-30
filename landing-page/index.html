@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Inter:wght@300..600&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/photos/hero.jpg">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=4">
 <script>
 document.documentElement.classList.add('js');
 setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.remove('js'); }, 3500);
@@ -369,6 +369,14 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
         Textes d'exemple. Ceux de votre livre sont écrits à partir des mois de votre bébé.
       </p>
     </div>
+
+    <!-- les douze chapitres défilent en continu (décoratif, contenu doublé pour la boucle) -->
+    <div class="marq" aria-hidden="true">
+      <div class="marq__track">
+        <span><b>1</b>Les premiers jours</span><span><b>2</b>Le premier sourire</span><span><b>3</b>Les mains découvertes</span><span><b>4</b>Le premier éclat de rire</span><span><b>5</b>Sur le ventre, enfin</span><span><b>6</b>Six mois</span><span><b>7</b>La première purée</span><span><b>8</b>À quatre pattes</span><span><b>9</b>Dehors, enfin</span><span><b>10</b>Debout, en se tenant</span><span><b>11</b>Les premiers pas</span><span><b>12</b>Un an</span>
+        <span><b>1</b>Les premiers jours</span><span><b>2</b>Le premier sourire</span><span><b>3</b>Les mains découvertes</span><span><b>4</b>Le premier éclat de rire</span><span><b>5</b>Sur le ventre, enfin</span><span><b>6</b>Six mois</span><span><b>7</b>La première purée</span><span><b>8</b>À quatre pattes</span><span><b>9</b>Dehors, enfin</span><span><b>10</b>Debout, en se tenant</span><span><b>11</b>Les premiers pas</span><span><b>12</b>Un an</span>
+      </div>
+    </div>
   </section>
 
   <!-- ══════════ 5. Ce qui change ══════════ -->
@@ -685,7 +693,7 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
             fait sans eux — et s'ils sont prêts à le payer. C'est tout.
           </p>
 
-          <ol class="road">
+          <ol class="road" data-reveal>
             <li class="road__step is-now">
               <p class="road__when">Automne 2026 <span class="road__now">Vous êtes ici</span></p>
               <h3 class="road__t">Réservations fondateurs</h3>
@@ -880,6 +888,6 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
   <a class="btn btn--primary" href="#reserver" data-track="cta_sticky">Réserver</a>
 </div>
 
-<script src="script.js?v=3"></script>
+<script src="script.js?v=4"></script>
 </body>
 </html>
