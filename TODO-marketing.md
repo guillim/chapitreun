@@ -15,6 +15,17 @@ Fichier interne, non publié sur chapitreun.com.
 
 ## 0. Avant de dépenser le premier euro
 
+Guide pas à pas avec toutes les valeurs à copier-coller (page Facebook,
+Instagram, portefeuille et compte pub, pixel, Stripe live, GA4, connecteurs) :
+https://claude.ai/artifact/1STVTdFqyyzqPpNnaPKoyi. Images de profil et de
+couverture : `landing-page/assets/social/`.
+
+Connecteur **Meta Ads** (officiel, `https://mcp.facebook.com/ads`) branché le
+1er octobre 2026 : un agent peut créer campagnes, ensembles et pubs (créés en
+pause), téléverser les visuels, lire les statistiques. Il ne peut ni créer de
+compte pub ou de pixel, ni gérer la page ou publier sur Instagram (pour ça :
+connecteur Metricool).
+
 - [ ] **[vous] Lien Stripe live à 49 €** (avec la redirection vers
       `merci.html`), puis **[Claude]** le brancher dans `script.js`. Sans lui,
       les pubs mesurent de l'intérêt, pas un achat.
