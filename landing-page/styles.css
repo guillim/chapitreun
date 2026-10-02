@@ -292,12 +292,6 @@ img,svg{ max-width:100%; }
 
 .turn{ margin-top:52px; }
 .turn .h2{ max-width:17ch; }
-.pull{ margin:38px auto 0; max-width:34ch; padding-top:30px; text-align:center; position:relative; }
-.pull::before{ content:""; position:absolute; top:0; left:50%; transform:translateX(-50%);
-  width:44px; height:1px; background:var(--accent); }
-.pull__q{ font-family:var(--serif); font-style:italic; font-size:1.22rem; line-height:1.45;
-  letter-spacing:-.015em; color:var(--ink); margin:0; font-variation-settings:"SOFT" 70; }
-.pull__p{ margin:14px 0 0; font-size:.94rem; color:var(--ink-2); }
 
 /* ── 3. Comment ça marche ────────────────────────────────── */
 .how{ display:grid; gap:40px; }
