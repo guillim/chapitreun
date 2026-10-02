@@ -13,31 +13,18 @@ Fichier interne, non publié sur chapitreun.com.
 
 ---
 
-## Où on en est (2 octobre 2026, 19 h)
+## Où on en est (2 octobre 2026, 23 h 30)
 
 > ### 👉 À vous de faire maintenant, dans cet ordre
 >
-> 1. **Cliquer « Vérifier » sur le domaine** (30 s). La balise
->    `facebook-domain-verification` est en ligne sur chapitreun.com :
->    [Paramètres du portefeuille](https://business.facebook.com/latest/settings/)
->    → Sécurité de la marque → Domaines → chapitreun.com → Vérifier.
-> 2. **Relier Instagram au compte pub** (1 min) : Paramètres du
->    portefeuille → Comptes → Comptes Instagram → @chapitre.un.an →
->    Connecter des éléments → compte pub « Chapitre un ». Le 2 octobre au
->    soir, le compte pub ne voyait encore aucun compte Instagram.
-> 3. **Tester le lien Stripe live** (5 min) : faire une vraie précommande de
+> 1. **Tester le lien Stripe live** (5 min) : faire une vraie précommande de
 >    49 € depuis chapitreun.com, vérifier l'arrivée sur `merci.html`, puis se
 >    rembourser dans Stripe. Ça valide d'un coup le montant, la redirection
 >    *After payment* du lien live et l'événement `Purchase` chez Meta et GA4.
-> 4. **Valider la règle de décision** ci-dessous (répondre « ok » ou la
->    modifier).
-> 5. **Choisir pour les photos des pubs** : banque d'images avec autorisation
+> 2. **Choisir pour les photos des pubs** : banque d'images avec autorisation
 >    de modèle, ou photos de bébés de proches avec accord écrit. En attendant,
 >    les visuels que je produis n'auront pas de visage de bébé.
-> 6. **Confirmer que `bonjour@chapitreun.com` reçoit bien les e-mails.**
->    Instagram, le portefeuille Meta et Stripe y envoient leurs codes de
->    confirmation.
-> 7. Facultatif : connecter **Metricool** pour que je publie aussi sur la page
+> 3. Facultatif : connecter **Metricool** pour que je publie aussi sur la page
 >    et Instagram.
 
 ### ✅ En place et vérifié
@@ -60,23 +47,20 @@ Fichier interne, non publié sur chapitreun.com.
   https://claude.ai/artifact/1STVTdFqyyzqPpNnaPKoyi
 - **Connecteur Meta Ads** branché dans Claude.
 - **Événements clés GA4** : `purchase`, `preorder_start`, `waitlist_signup`.
-- **Le pixel arrive chez Meta** : 55 `PageView` reçus le 2 octobre (lu via
-  le connecteur).
-- **Balise de vérification du domaine** en ligne dans `index.html`
-  (reste à cliquer « Vérifier », point 1).
+- **Domaine chapitreun.com vérifié** dans Meta (2 octobre).
+- **Instagram @chapitre.un.an** (`17841426362913894`) relié au compte pub.
+- **`bonjour@chapitreun.com`** reçoit bien les e-mails.
+- **Règle de décision** adoptée (section 0 et journal).
+- **Le nouveau pixel reçoit les visites** : premiers `PageView` le 2 octobre
+  vers 22 h (lu via le connecteur).
 - **Lien Stripe live** `https://buy.stripe.com/eVqfZi5So9Nx8yrd3F77O03`
-  branché dans `script.js` le 2 octobre (reste à le tester, point 3).
+  branché dans `script.js` le 2 octobre (reste à le tester, point 1).
 
-### ❔ Fait selon vous, mais je ne peux pas le vérifier
+### ⏳ Ce que Claude fera dès que l'achat test sera fait
 
-- **Compte Instagram @chapitre.un.an** : présent dans le portefeuille, mais
-  pas encore relié au compte pub (étape 2 ci-dessus).
-
-### ⏳ Ce que Claude fera dès que les étapes 2 et 3 seront faites
-
-Poser la balise du domaine, brancher le lien Stripe live, produire les visuels
-A à E et la vidéo démo, écrire les textes, puis créer la campagne **en pause**
-dans Meta pour relecture.
+Vérifier l'achat chez Meta, produire les visuels A à E et la vidéo démo,
+écrire les textes, puis créer la campagne **en pause** dans Meta pour
+relecture.
 
 ---
 
@@ -96,14 +80,23 @@ connecteur Metricool).
 - [x] **Lien Stripe live à 49 €** branché dans `script.js` le 2 octobre 2026.
 - [ ] **[vous] Tester le lien live** : vraie précommande puis remboursement
       (montant, redirection vers `merci.html`, `Purchase` chez Meta et GA4).
-- [ ] **[ensemble] Fixer la règle de décision avant de lancer**, par écrit ici :
-  - Critère principal : part des visiteurs qui paient 49 €.
-  - Proposition : sur ≥ 500 visites venues des pubs,
-    **≥ 2 % de paiements → on construit** ; **0,5 à 2 % → on retravaille le
-    message et on relance un tour** ; **< 0,5 % → on arrête ou on change
-    d'offre**.
-  - Critère secondaire : inscriptions « Juste être prévenu » (intérêt sans
-    paiement).
+- [x] **Règle de décision fixée le 2 octobre 2026** (avant toute dépense).
+      On décide après **500 visites venues des pubs ou 14 jours**, au premier
+      des deux termes :
+
+      | Résultat | Décision |
+      |---|---|
+      | ≥ 2 % des visiteurs paient 49 €, ou coût par achat ≤ 25 € | On construit l'app |
+      | 0,5 à 2 %, ou 25 à 60 € par achat | On retravaille le message ou le prix, un tour de plus |
+      | < 0,5 % et moins de 5 % d'inscrits à la liste d'attente | On arrête ou on change d'offre |
+
+      Repères : précommande payante d'un produit qui n'existe pas encore,
+      trafic froid → 0,5–2 % habituel, ≥ 3 % excellent ; liste d'attente
+      gratuite → 5–15 %. Coût par achat = prix du clic ÷ taux de conversion.
+      Marge estimée ≈ 25 € par livre (49 € moins impression et port, à
+      confirmer avec un devis d'imprimeur). Visites comptées avec les « clics
+      sur le lien » de Meta (GA4 ne voit pas ceux qui repartent en moins de
+      8 s sans interaction).
 - [x] **Événements clés GA4** créés le 2 octobre 2026 : `purchase`,
       `preorder_start`, `waitlist_signup` (« Create with code », sans valeur
       par défaut).
@@ -114,7 +107,7 @@ connecteur Metricool).
       sur `merci.html` (49 EUR). Pas de bandeau de consentement, même choix que
       pour GA4 ; la page Confidentialité le mentionne.
 - [x] **Balise de vérification du domaine** posée dans `index.html`.
-- [ ] **[vous] Cliquer « Vérifier »** (Sécurité de la marque → Domaines).
+- [x] **Domaine vérifié** dans Meta (2 octobre 2026).
 - [ ] **[ensemble] Convention d'UTM** pour chaque lien de pub, déjà lue par
       la page (`source`, `campaign`) :
       `?utm_source=meta&utm_medium=paid&utm_campaign=test1&utm_content=<nom-de-la-pub>`.
@@ -126,9 +119,8 @@ connecteur Metricool).
       Getty), ou photos de bébés de proches avec accord écrit des parents.
       S'applique aux pubs **et** à la page vers laquelle elles pointent.
 - [x] **Page Facebook « Chapitre un »** créée (vérifié le 2 octobre 2026).
-- [ ] **[vous] Compte publicitaire Meta « Chapitre un »** au nom d'ANCHOR, avec
-      moyen de paiement, et **compte Instagram** relié : créés selon vous le
-      2 octobre, pas encore visibles par le connecteur (voir « Où on en est »).
+- [x] **Compte publicitaire Meta « Chapitre un »** (`1428097829271108`), moyen de
+      paiement ajouté, Instagram @chapitre.un.an relié (2 octobre 2026).
 
 ## 1. Les publicités à créer (Meta : Instagram + Facebook)
 
@@ -222,3 +214,8 @@ Tester **4 à 6 pubs** au premier tour, une idée par pub :
 ## Journal des décisions
 
 _(à remplir : date, chiffres, décision)_
+
+- **2 octobre 2026** — règle de décision adoptée (voir section 0) : ≥ 2 % ou
+  ≤ 25 €/achat → on construit ; 0,5–2 % ou 25–60 € → un tour de plus ;
+  < 0,5 % et < 5 % de liste d'attente → on arrête. Décision après 500 visites
+  ou 14 jours.
