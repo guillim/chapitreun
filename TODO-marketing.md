@@ -33,17 +33,15 @@ Fichier interne, non publié sur chapitreun.com.
 >    49 € depuis chapitreun.com, vérifier l'arrivée sur `merci.html`, puis se
 >    rembourser dans Stripe. Ça valide d'un coup le montant, la redirection
 >    *After payment* du lien live et l'événement `Purchase` chez Meta et GA4.
-> 4. **Créer les trois événements clés dans GA4** : `purchase`,
->    `preorder_start`, `waitlist_signup` (2 min, étape 6 du guide).
-> 5. **Valider la règle de décision** ci-dessous (répondre « ok » ou la
+> 4. **Valider la règle de décision** ci-dessous (répondre « ok » ou la
 >    modifier).
-> 6. **Choisir pour les photos des pubs** : banque d'images avec autorisation
+> 5. **Choisir pour les photos des pubs** : banque d'images avec autorisation
 >    de modèle, ou photos de bébés de proches avec accord écrit. En attendant,
 >    les visuels que je produis n'auront pas de visage de bébé.
-> 7. **Confirmer que `bonjour@chapitreun.com` reçoit bien les e-mails.**
+> 6. **Confirmer que `bonjour@chapitreun.com` reçoit bien les e-mails.**
 >    Instagram, le portefeuille Meta et Stripe y envoient leurs codes de
 >    confirmation.
-> 8. Facultatif : connecter **Metricool** pour que je publie aussi sur la page
+> 7. Facultatif : connecter **Metricool** pour que je publie aussi sur la page
 >    et Instagram.
 
 ### ✅ En place et vérifié
@@ -61,6 +59,7 @@ Fichier interne, non publié sur chapitreun.com.
 - **Guide pas à pas** avec toutes les valeurs à copier-coller :
   https://claude.ai/artifact/1STVTdFqyyzqPpNnaPKoyi
 - **Connecteur Meta Ads** branché dans Claude.
+- **Événements clés GA4** : `purchase`, `preorder_start`, `waitlist_signup`.
 - **Le pixel arrive chez Meta** : 55 `PageView` reçus le 2 octobre (lu via
   le connecteur).
 - **Balise de vérification du domaine** en ligne dans `index.html`
@@ -106,10 +105,9 @@ connecteur Metricool).
     d'offre**.
   - Critère secondaire : inscriptions « Juste être prévenu » (intérêt sans
     paiement).
-- [ ] **[vous] Créer les événements clés dans GA4** (Administration →
-      Affichage des données → Événements clés → Nouvel événement clé) :
-      `purchase`, `preorder_start`, `waitlist_signup`. Ils arrivent déjà dans
-      GA4.
+- [x] **Événements clés GA4** créés le 2 octobre 2026 : `purchase`,
+      `preorder_start`, `waitlist_signup` (« Create with code », sans valeur
+      par défaut).
 - [x] **Pixel Meta** `1107649151757818` (jeu de données « Chapitre un · site »)
       installé le 2 octobre 2026 dans `analytics.js` : `PageView` partout,
       `Lead` à l'inscription, `InitiateCheckout` à la précommande, `Purchase`
