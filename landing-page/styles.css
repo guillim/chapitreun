@@ -4,6 +4,16 @@
    Titres : Fraunces. Texte : Inter.
    ========================================================= */
 
+/* Polices servies par le site (plus de requête bloquante vers Google Fonts).
+   Fichiers Google d'origine, seulement réduits aux caractères latins utilisés :
+   mêmes axes, mêmes métriques, rendu identique. */
+@font-face{ font-family:"Fraunces"; font-style:normal; font-weight:300 700; font-display:swap;
+  src:url("assets/fonts/fraunces.woff2") format("woff2"); }
+@font-face{ font-family:"Fraunces"; font-style:italic; font-weight:300 700; font-display:swap;
+  src:url("assets/fonts/fraunces-italic.woff2") format("woff2"); }
+@font-face{ font-family:"Inter"; font-style:normal; font-weight:300 600; font-display:swap;
+  src:url("assets/fonts/inter.woff2") format("woff2"); }
+
 :root{
   --paper:   #FBF6EE;
   --paper-2: #F3E9DA;
@@ -183,6 +193,7 @@ img,svg{ max-width:100%; }
   color:#FFF8EE;
 }
 .hero__bg{ position:absolute; inset:0; z-index:-2; }
+.hero__bg picture{ display:contents; }
 .hero__bg img{ width:100%; height:100%; object-fit:cover; object-position:64% 40%; display:block;
   animation:settle 14s var(--ease) both; }
 /* la photo se pose lentement, comme une mise au point */
@@ -350,7 +361,7 @@ img,svg{ max-width:100%; }
 .scr--lock{ padding:64px 14px 18px; text-align:center; color:#FFF;
   background:linear-gradient(165deg,#6E5546,#B08B70 40%,#E4CDB7 100%);
   background-image:linear-gradient(180deg, rgba(58,40,28,.5), rgba(58,40,28,.1) 38%, rgba(58,40,28,.5)),
-                   url("assets/photos/det-6.jpg");
+                   url("assets/photos/det-6.webp");
   background-size:cover; background-position:center; }
 .lock__time{ font-family:var(--serif); font-size:3.3rem; line-height:1; margin:0; font-weight:300;
   letter-spacing:-.03em; text-shadow:0 2px 14px rgba(0,0,0,.25); }

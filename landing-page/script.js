@@ -423,13 +423,15 @@
       track(intent === 'preorder' ? 'preorder_start' : 'waitlist_signup',
             { birth_month: data.birth_month });
 
-      if (CONFIG.ENDPOINT) {
-        try {
-          await fetch(CONFIG.ENDPOINT, { method: 'POST',
+      const sent = CONFIG.ENDPOINT
+        ? fetch(CONFIG.ENDPOINT, { method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-            body: JSON.stringify(data) });
-        } catch (_) { track('form_network_error', { intent }); }
-      }
+            body: JSON.stringify(data) }).catch(() => track('form_network_error', { intent }))
+        : null;
+      // GA4 et Meta sont chargés en différé (analytics.js) : leur laisser le temps
+      // d'envoyer l'événement avant de quitter la page pour Stripe
+      const flushed = intent === 'preorder' && window.__cuFlush ? window.__cuFlush() : null;
+      await Promise.all([sent, flushed]);
       if (intent === 'preorder' && CONFIG.STRIPE_CHECKOUT_URL) {
         const u = new URL(CONFIG.STRIPE_CHECKOUT_URL);
         u.searchParams.set('prefilled_email', data.email);

@@ -212,8 +212,26 @@ aucun souvenir de sa première année, le parent en est le seul dépositaire.
 
 ## Accessibilité et performance
 
-- Aucun script tiers. ~1,4 Mo au total, dont 1,2 Mo de photos ; le document seul
-  fait 90 ko. La photo d'accueil est préchargée, les autres en `loading="lazy"`.
+- PageSpeed mobile (Lighthouse) : 59–61 → 90 en octobre 2026, ordinateur
+  96 → 100, rendu identique (captures comparées pixel à pixel avant/après).
+  Ce qui a été fait :
+  - **Polices servies par le site** (`assets/fonts/`) : les fichiers Google
+    d'origine, réduits aux caractères latins, mêmes axes et métriques. Plus de
+    feuille Google Fonts bloquante ; Fraunces et Inter sont préchargées.
+  - **Photos en WebP** (−55 % de poids), avec des variantes `-400` en `srcset`
+    pour les vignettes. Les `.jpg` restent comme sources (et `og.jpg` pour les
+    aperçus de liens). Sur téléphone en portrait, l'accueil charge
+    `hero-portrait.webp`, le recadrage exact de la zone visible
+    (`object-position` 64 %) : mêmes pixels, 3× plus léger.
+  - **GA4 et pixel Meta différés** (`analytics.js`) : `gtag()` et `fbq()`
+    mettent en file d'attente dès le départ ; les ~300 Ko de bibliothèques se
+    chargent à la première interaction ou 3,5 s après le chargement, tout de
+    suite sur `merci.html`. Avant la redirection vers Stripe, `script.js`
+    attend `__cuFlush()` (300 ms à 1,2 s) pour que `InitiateCheckout` parte.
+  - `analytics.js` et `script.js` en `defer`.
+  - Essayé puis retiré : `content-visibility` sur les sections (aucun gain
+    mesuré, et il modifie la fusion des marges).
+- La photo d'accueil est préchargée, les autres en `loading="lazy"`.
 - `prefers-reduced-motion` coupe toutes les animations ; la démo iPhone se fige
   sur la notification, le titre doré ne scintille plus.
 - Sans JavaScript, tout le contenu reste visible, le formulaire s'affiche et la

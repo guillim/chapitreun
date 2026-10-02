@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="analytics.js?v=4"></script>
+<script src="analytics.js?v=5" defer></script>
 <title>Chapitre un — Le livre de sa première année se fait tout seul</title>
 <meta name="description" content="Prénom, date de naissance, une photo. On retrouve toutes les photos de votre bébé dans votre iPhone et on fabrique le livre de ses 1 an. Prêt 3 semaines avant l'anniversaire.">
 <meta name="theme-color" content="#FBF6EE">
@@ -18,11 +18,11 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Inter:wght@300..600&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/photos/hero.jpg">
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/photos/hero-portrait.webp" type="image/webp" fetchpriority="high" media="(max-aspect-ratio: 7/10)">
+<link rel="preload" as="image" href="assets/photos/hero.webp" type="image/webp" fetchpriority="high" media="(min-aspect-ratio: 701/1000)">
+<link rel="stylesheet" href="styles.css?v=5">
 <script>
 document.documentElement.classList.add('js');
 setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.remove('js'); }, 3500);
@@ -47,7 +47,11 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
   <!-- ══════════ 1. Accueil ══════════ -->
   <section class="hero">
     <div class="hero__bg">
-      <img src="assets/photos/hero.jpg" alt="Un bébé d'environ dix mois regarde l'objectif, sa mère l'embrasse sur la joue." fetchpriority="high" decoding="async">
+      <picture>
+        <!-- téléphones en portrait : le recadrage exact de la zone visible (object-position 64 %), même netteté, 3× plus léger -->
+        <source media="(max-aspect-ratio: 7/10)" srcset="assets/photos/hero-portrait.webp" type="image/webp" width="950" height="1266">
+        <img src="assets/photos/hero.webp" width="1900" height="1266" alt="Un bébé d'environ dix mois regarde l'objectif, sa mère l'embrasse sur la joue." fetchpriority="high">
+      </picture>
     </div>
 
     <div class="wrap hero__in">
@@ -74,17 +78,17 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
         <div class="scene scene--float">
           <div class="book">
             <div class="book__page book__page--l">
-              <div class="ph ph--tall"><img src="assets/photos/det-6.jpg" alt="" loading="eager" decoding="async"></div>
+              <div class="ph ph--tall"><img src="assets/photos/det-6.webp" srcset="assets/photos/det-6-400.webp 400w, assets/photos/det-6.webp 750w" sizes="(min-width: 900px) 243px, 243px" alt="" loading="lazy" decoding="async"></div>
               <div class="book__row">
-                <div class="ph"><img src="assets/photos/det-2.jpg" alt="" loading="eager" decoding="async"></div>
-                <div class="ph"><img src="assets/photos/det-1.jpg" alt="" loading="eager" decoding="async"></div>
+                <div class="ph"><img src="assets/photos/det-2.webp" srcset="assets/photos/det-2-400.webp 400w, assets/photos/det-2.webp 500w" sizes="(min-width: 900px) 69px, 69px" alt="" loading="lazy" decoding="async"></div>
+                <div class="ph"><img src="assets/photos/det-1.webp" srcset="assets/photos/det-1-400.webp 400w, assets/photos/det-1.webp 750w" sizes="(min-width: 900px) 78px, 78px" alt="" loading="lazy" decoding="async"></div>
               </div>
             </div>
             <div class="book__spine" aria-hidden="true"></div>
             <div class="book__page book__page--r">
               <p class="chap">Chapitre&nbsp;6</p>
               <p class="chap__title">Six mois</p>
-              <div class="ph ph--wide"><img src="assets/photos/mois-06.jpg" alt="" loading="eager" decoding="async"></div>
+              <div class="ph ph--wide"><img src="assets/photos/mois-06.webp" srcset="assets/photos/mois-06-400.webp 400w, assets/photos/mois-06.webp 950w" sizes="(min-width: 900px) 145px, 145px" alt="" loading="lazy" decoding="async"></div>
               <p class="chap__text">Elle tient assise, presque. Le matin, elle attend que la maison se réveille en parlant toute seule.</p>
               <p class="chap__folio">· 34 ·</p>
             </div>
@@ -124,16 +128,16 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
       </div>
 
       <div class="roll" aria-hidden="true" data-reveal style="--d:.36s">
-        <span class="ph"><img src="assets/photos/face-2.jpg" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/det-3.jpg" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/mois-01.jpg" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/face-4.jpg" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/det-5.jpg" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/mois-09.jpg" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/face-1.jpg" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/det-4.jpg" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/face-3.jpg" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/mois-03.jpg" alt="" loading="lazy" decoding="async"></span>
+        <span class="ph"><img src="assets/photos/face-2.webp" alt="" loading="lazy" decoding="async"></span>
+        <span class="ph"><img src="assets/photos/det-3.webp" srcset="assets/photos/det-3-400.webp 400w, assets/photos/det-3.webp 750w" sizes="(min-width: 900px) 207px, 24vw" alt="" loading="lazy" decoding="async"></span>
+        <span class="ph"><img src="assets/photos/mois-01.webp" srcset="assets/photos/mois-01-400.webp 400w, assets/photos/mois-01.webp 633w" sizes="(min-width: 900px) 184px, 21vw" alt="" loading="lazy" decoding="async"></span>
+        <span class="ph"><img src="assets/photos/face-4.webp" alt="" loading="lazy" decoding="async"></span>
+        <span class="ph"><img src="assets/photos/det-5.webp" srcset="assets/photos/det-5-400.webp 400w, assets/photos/det-5.webp 750w" sizes="(min-width: 900px) 207px, 24vw" alt="" loading="lazy" decoding="async"></span>
+        <span class="ph"><img src="assets/photos/mois-09.webp" srcset="assets/photos/mois-09-400.webp 400w, assets/photos/mois-09.webp 685w" sizes="(min-width: 900px) 184px, 21vw" alt="" loading="lazy" decoding="async"></span>
+        <span class="ph"><img src="assets/photos/face-1.webp" alt="" loading="lazy" decoding="async"></span>
+        <span class="ph"><img src="assets/photos/det-4.webp" srcset="assets/photos/det-4-400.webp 400w, assets/photos/det-4.webp 750w" sizes="(min-width: 900px) 370px, 42vw" alt="" loading="lazy" decoding="async"></span>
+        <span class="ph"><img src="assets/photos/face-3.webp" alt="" loading="lazy" decoding="async"></span>
+        <span class="ph"><img src="assets/photos/mois-03.webp" srcset="assets/photos/mois-03-400.webp 400w, assets/photos/mois-03.webp 950w" sizes="(min-width: 900px) 207px, 24vw" alt="" loading="lazy" decoding="async"></span>
         <span class="ph"></span><span class="ph"></span>
       </div>
 
@@ -191,12 +195,12 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
                   <p class="scr__nav">Son visage</p>
                   <p class="scr__sub">Choisissez une photo où on la voit bien.</p>
                   <div class="faces">
-                    <span class="ph"><img src="assets/photos/face-2.jpg" alt="" loading="lazy"></span>
-                    <span class="ph"><img src="assets/photos/face-5.jpg" alt="" loading="lazy"></span>
-                    <span class="ph"><img src="assets/photos/face-3.jpg" alt="" loading="lazy"></span>
-                    <span class="ph"><img src="assets/photos/face-6.jpg" alt="" loading="lazy"></span>
-                    <span class="ph" data-pick><img src="assets/photos/face-1.jpg" alt="" loading="lazy"><i class="tick" aria-hidden="true"></i></span>
-                    <span class="ph"><img src="assets/photos/face-4.jpg" alt="" loading="lazy"></span>
+                    <span class="ph"><img src="assets/photos/face-2.webp" alt="" loading="lazy"></span>
+                    <span class="ph"><img src="assets/photos/face-5.webp" alt="" loading="lazy"></span>
+                    <span class="ph"><img src="assets/photos/face-3.webp" alt="" loading="lazy"></span>
+                    <span class="ph"><img src="assets/photos/face-6.webp" alt="" loading="lazy"></span>
+                    <span class="ph" data-pick><img src="assets/photos/face-1.webp" alt="" loading="lazy"><i class="tick" aria-hidden="true"></i></span>
+                    <span class="ph"><img src="assets/photos/face-4.webp" alt="" loading="lazy"></span>
                   </div>
                   <p class="scr__note">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v6c0 4.2 2.9 7.6 7 9 4.1-1.4 7-4.8 7-9V6l-7-3Z"/></svg>
@@ -272,7 +276,7 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
             </div>
             <div class="book__spine" aria-hidden="true"></div>
             <div class="book__page book__page--r">
-              <div class="ph ph--full"><img src="assets/photos/mois-01.jpg" alt="Un nouveau-né endormi dans son berceau." loading="lazy" decoding="async"></div>
+              <div class="ph ph--full"><img src="assets/photos/mois-01.webp" srcset="assets/photos/mois-01-400.webp 400w, assets/photos/mois-01.webp 633w" sizes="(min-width: 900px) 399px, 54vw" alt="Un nouveau-né endormi dans son berceau." loading="lazy" decoding="async"></div>
             </div>
           </div>
           <p class="spread__cap">Mois 1 — une pleine page, sans rien autour</p>
@@ -281,13 +285,13 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
         <article class="spread">
           <div class="spread__book">
             <div class="book__page book__page--l">
-              <div class="ph ph--tall"><img src="assets/photos/det-3.jpg" alt="" loading="lazy" decoding="async"></div>
+              <div class="ph ph--tall"><img src="assets/photos/det-3.webp" srcset="assets/photos/det-3-400.webp 400w, assets/photos/det-3.webp 750w" sizes="(min-width: 900px) 611px, 83vw" alt="" loading="lazy" decoding="async"></div>
             </div>
             <div class="book__spine" aria-hidden="true"></div>
             <div class="book__page book__page--r">
               <p class="chap">Chapitre&nbsp;3</p>
               <p class="chap__title">Les mains découvertes</p>
-              <div class="ph ph--wide"><img src="assets/photos/mois-03.jpg" alt="" loading="lazy" decoding="async"></div>
+              <div class="ph ph--wide"><img src="assets/photos/mois-03.webp" srcset="assets/photos/mois-03-400.webp 400w, assets/photos/mois-03.webp 950w" sizes="(min-width: 900px) 399px, 54vw" alt="" loading="lazy" decoding="async"></div>
               <p class="chap__text">Ce mois-ci, elle a trouvé ses mains. Elle les regarde longtemps, comme si quelqu'un les avait posées là pour elle.</p>
               <p class="chap__folio">· 18 ·</p>
             </div>
@@ -298,17 +302,17 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
         <article class="spread">
           <div class="spread__book">
             <div class="book__page book__page--l">
-              <div class="ph ph--tall"><img src="assets/photos/det-6.jpg" alt="" loading="lazy" decoding="async"></div>
+              <div class="ph ph--tall"><img src="assets/photos/det-6.webp" srcset="assets/photos/det-6-400.webp 400w, assets/photos/det-6.webp 750w" sizes="(min-width: 900px) 399px, 54vw" alt="" loading="lazy" decoding="async"></div>
               <div class="book__row">
-                <div class="ph"><img src="assets/photos/det-2.jpg" alt="" loading="lazy" decoding="async"></div>
-                <div class="ph"><img src="assets/photos/det-1.jpg" alt="" loading="lazy" decoding="async"></div>
+                <div class="ph"><img src="assets/photos/det-2.webp" srcset="assets/photos/det-2-400.webp 400w, assets/photos/det-2.webp 500w" sizes="(min-width: 900px) 196px, 26vw" alt="" loading="lazy" decoding="async"></div>
+                <div class="ph"><img src="assets/photos/det-1.webp" srcset="assets/photos/det-1-400.webp 400w, assets/photos/det-1.webp 750w" sizes="(min-width: 900px) 221px, 26vw" alt="" loading="lazy" decoding="async"></div>
               </div>
             </div>
             <div class="book__spine" aria-hidden="true"></div>
             <div class="book__page book__page--r">
               <p class="chap">Chapitre&nbsp;6</p>
               <p class="chap__title">Six mois</p>
-              <div class="ph ph--wide"><img src="assets/photos/mois-06.jpg" alt="" loading="lazy" decoding="async"></div>
+              <div class="ph ph--wide"><img src="assets/photos/mois-06.webp" srcset="assets/photos/mois-06-400.webp 400w, assets/photos/mois-06.webp 950w" sizes="(min-width: 900px) 399px, 54vw" alt="" loading="lazy" decoding="async"></div>
               <p class="chap__text">Elle tient assise, presque. Le matin, elle attend que la maison se réveille en parlant toute seule.</p>
               <p class="chap__folio">· 34 ·</p>
             </div>
@@ -319,13 +323,13 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
         <article class="spread">
           <div class="spread__book">
             <div class="book__page book__page--l">
-              <div class="ph ph--full"><img src="assets/photos/mois-09.jpg" alt="" loading="lazy" decoding="async"></div>
+              <div class="ph ph--full"><img src="assets/photos/mois-09.webp" srcset="assets/photos/mois-09-400.webp 400w, assets/photos/mois-09.webp 685w" sizes="(min-width: 900px) 399px, 54vw" alt="" loading="lazy" decoding="async"></div>
             </div>
             <div class="book__spine" aria-hidden="true"></div>
             <div class="book__page book__page--r">
               <p class="chap">Chapitre&nbsp;9</p>
               <p class="chap__title">Dehors, enfin</p>
-              <div class="ph ph--wide"><img src="assets/photos/face-5.jpg" alt="" loading="lazy" decoding="async"></div>
+              <div class="ph ph--wide"><img src="assets/photos/face-5.webp" alt="" loading="lazy" decoding="async"></div>
               <p class="chap__text">Le chapeau tient trois minutes. L'herbe se goûte. On rentre avec des genoux verts et une sieste en retard.</p>
               <p class="chap__folio">· 52 ·</p>
             </div>
@@ -336,7 +340,7 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
         <article class="spread">
           <div class="spread__book">
             <div class="book__page book__page--l">
-              <div class="ph ph--full"><img src="assets/photos/mois-12.jpg" alt="" loading="lazy" decoding="async"></div>
+              <div class="ph ph--full"><img src="assets/photos/mois-12.webp" srcset="assets/photos/mois-12-400.webp 400w, assets/photos/mois-12.webp 950w" sizes="(min-width: 900px) 399px, 54vw" alt="" loading="lazy" decoding="async"></div>
             </div>
             <div class="book__spine" aria-hidden="true"></div>
             <div class="book__page book__page--r book__page--last">
@@ -403,15 +407,15 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
           </div>
           <div class="feat__vis">
             <div class="mock mock--roll">
-              <span class="ph"><img src="assets/photos/face-2.jpg" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/det-3.jpg" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/mois-01.jpg" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/face-4.jpg" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/det-5.jpg" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/mois-09.jpg" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/face-1.jpg" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/det-4.jpg" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/face-3.jpg" alt="" loading="lazy"><i class="auto"></i></span>
+              <span class="ph"><img src="assets/photos/face-2.webp" alt="" loading="lazy"><i class="auto"></i></span>
+              <span class="ph"><img src="assets/photos/det-3.webp" srcset="assets/photos/det-3-400.webp 400w, assets/photos/det-3.webp 750w" sizes="(min-width: 900px) 252px, 38vw" alt="" loading="lazy"><i class="auto"></i></span>
+              <span class="ph"><img src="assets/photos/mois-01.webp" srcset="assets/photos/mois-01-400.webp 400w, assets/photos/mois-01.webp 633w" sizes="(min-width: 900px) 168px, 25vw" alt="" loading="lazy"><i class="auto"></i></span>
+              <span class="ph"><img src="assets/photos/face-4.webp" alt="" loading="lazy"><i class="auto"></i></span>
+              <span class="ph"><img src="assets/photos/det-5.webp" srcset="assets/photos/det-5-400.webp 400w, assets/photos/det-5.webp 750w" sizes="(min-width: 900px) 252px, 38vw" alt="" loading="lazy"><i class="auto"></i></span>
+              <span class="ph"><img src="assets/photos/mois-09.webp" srcset="assets/photos/mois-09-400.webp 400w, assets/photos/mois-09.webp 685w" sizes="(min-width: 900px) 168px, 25vw" alt="" loading="lazy"><i class="auto"></i></span>
+              <span class="ph"><img src="assets/photos/face-1.webp" alt="" loading="lazy"><i class="auto"></i></span>
+              <span class="ph"><img src="assets/photos/det-4.webp" srcset="assets/photos/det-4-400.webp 400w, assets/photos/det-4.webp 750w" sizes="(min-width: 900px) 254px, 38vw" alt="" loading="lazy"><i class="auto"></i></span>
+              <span class="ph"><img src="assets/photos/face-3.webp" alt="" loading="lazy"><i class="auto"></i></span>
             </div>
             <p class="mock__cap">214 photos retenues sur 4 000</p>
           </div>
@@ -455,12 +459,12 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
           <div class="feat__vis">
             <div class="mock mock--crop">
               <figure class="crop crop--bad">
-                <span class="crop__box"><img src="assets/photos/face-1.jpg" alt="Le haut du crâne sort du cadre." loading="lazy"></span>
+                <span class="crop__box"><img src="assets/photos/face-1.webp" alt="Le haut du crâne sort du cadre." loading="lazy"></span>
                 <figcaption>Ailleurs</figcaption>
               </figure>
               <figure class="crop crop--good">
                 <span class="crop__box">
-                  <img src="assets/photos/face-1.jpg" alt="Le visage entier, centré dans la page." loading="lazy">
+                  <img src="assets/photos/face-1.webp" alt="Le visage entier, centré dans la page." loading="lazy">
                   <span class="crop__frame" aria-hidden="true"></span>
                 </span>
                 <figcaption>Chez nous</figcaption>
@@ -683,7 +687,7 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
     <div class="wrap">
       <div class="state">
         <figure class="state__img" data-reveal>
-          <img src="assets/photos/life-parents.jpg" alt="Deux parents et leur bébé." loading="lazy" decoding="async">
+          <img src="assets/photos/life-parents.webp" srcset="assets/photos/life-parents-400.webp 400w, assets/photos/life-parents.webp 800w" sizes="(min-width: 900px) 508px, 89vw" alt="Deux parents et leur bébé." loading="lazy" decoding="async">
         </figure>
         <div class="state__txt" data-reveal style="--d:.08s">
           <p class="eyebrow">Où en est le projet</p>
@@ -888,6 +892,6 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
   <a class="btn btn--primary" href="#reserver" data-track="cta_sticky">Réserver</a>
 </div>
 
-<script src="script.js?v=5"></script>
+<script src="script.js?v=6" defer></script>
 </body>
 </html>
