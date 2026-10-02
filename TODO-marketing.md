@@ -40,12 +40,14 @@ connecteur Metricool).
 - [ ] **[vous] Marquer les événements clés dans GA4** (Admin → Événements →
       « Marquer comme événement clé ») : `purchase`, `preorder_start`,
       `waitlist_signup`. Ils arrivent déjà dans GA4.
-- [ ] **[vous] Créer le Pixel Meta** (Gestionnaire d'événements) et m'envoyer
-      son identifiant, puis **[Claude]** l'installer dans `analytics.js` avec
-      les mêmes événements (`Lead` pour l'inscription, `InitiateCheckout` pour
-      la précommande, `Purchase` sur `merci.html`). Sans pixel, Meta ne peut pas
-      optimiser sur les achats. Même choix que pour GA4 : pas de bandeau de
-      consentement (risque déjà noté dans `landing-page/TODO.md`).
+- [x] **Pixel Meta** `1107649151757818` (jeu de données « Chapitre un · site »)
+      installé le 2 octobre 2026 dans `analytics.js` : `PageView` partout,
+      `Lead` à l'inscription, `InitiateCheckout` à la précommande, `Purchase`
+      sur `merci.html` (49 EUR). Pas de bandeau de consentement, même choix que
+      pour GA4 ; la page Confidentialité le mentionne.
+- [ ] **[vous] Balise de vérification du domaine** (Sécurité de la marque →
+      Domaines → chapitreun.com → balise méta) à envoyer, puis **[Claude]** la
+      poser dans `index.html`, puis **[vous]** cliquer « Vérifier ».
 - [ ] **[ensemble] Convention d'UTM** pour chaque lien de pub, déjà lue par
       la page (`source`, `campaign`) :
       `?utm_source=meta&utm_medium=paid&utm_campaign=test1&utm_content=<nom-de-la-pub>`.
