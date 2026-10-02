@@ -3,15 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="analytics.js?v=4"></script>
+<script src="analytics.js?v=5" defer data-now></script>
 <title>Merci — Chapitre un</title>
 <meta name="description" content="Votre réservation Chapitre un est confirmée.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#FBF6EE">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Inter:wght@300..600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 
@@ -72,9 +71,12 @@
 </footer>
 
 <script>
-  // conversion mesurée dans GA4 et Meta (retour de Stripe après paiement réussi)
-  gtag('event', 'purchase', { value: 49, currency: 'EUR', items: [{ item_name: 'Réservation livre fondateur' }] });
-  fbq('track', 'Purchase', { value: 49, currency: 'EUR', content_name: 'Réservation livre fondateur' });
+  // conversion mesurée dans GA4 et Meta (retour de Stripe après paiement réussi) ;
+  // analytics.js est en defer, il a défini gtag() et fbq() avant DOMContentLoaded
+  addEventListener('DOMContentLoaded', () => {
+    gtag('event', 'purchase', { value: 49, currency: 'EUR', items: [{ item_name: 'Réservation livre fondateur' }] });
+    fbq('track', 'Purchase', { value: 49, currency: 'EUR', content_name: 'Réservation livre fondateur' });
+  });
 </script>
 </body>
 </html>
