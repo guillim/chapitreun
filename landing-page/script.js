@@ -9,7 +9,7 @@
   /* ── À brancher avant la mise en ligne ─────────────────── */
   const CONFIG = {
     ENDPOINT: 'https://formspree.io/f/xaenawvb', // POST JSON de l'inscription
-    STRIPE_CHECKOUT_URL: 'https://buy.stripe.com/test_aFadRadkQ9Nx6qj0gT77O04', // lien Stripe Checkout des 49 € (mode test)
+    STRIPE_CHECKOUT_URL: 'https://buy.stripe.com/eVqfZi5So9Nx8yrd3F77O03', // lien Stripe Checkout des 49 € (live, branché le 2 octobre 2026)
     HEADLINE_B: 'Le livre de sa première année<br><em>en 5 minutes.</em>',
     FOUNDER_START_DATE:  '2026-09-28', // jour de référence du compteur fondateur
     FOUNDER_START_COUNT: 121,          // nombre affiché ce jour-là, +1 par jour ensuite

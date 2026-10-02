@@ -3,14 +3,14 @@
 Ce qui reste entre vos mains, maintenant que l'inscription, le paiement test,
 les pages légales, le visuel social et le nom sont branchés.
 
-## Prochaine étape : encaisser réellement (Stripe en mode live)
+## Prochaine étape : vérifier l'encaissement réel
 
-- [ ] **Basculer Stripe en mode live.** Créer le lien de paiement en mode live
-      à **49 €** (prix total du livre, plus d'acompte) et remplacer `STRIPE_CHECKOUT_URL` dans `script.js` (actuellement un lien
-      `buy.stripe.com/test_...`).
-- [ ] **Redirection Stripe sur le lien live.** Déjà faite sur le lien test ;
-      la reproduire sur le lien live (*After payment* →
-      `https://chapitreun.com/merci.html`).
+- [x] **Stripe en mode live.** Lien live à 49 € branché dans `script.js` le
+      2 octobre 2026 (`buy.stripe.com/eVqfZi5So9Nx8yrd3F77O03`).
+- [ ] **Tester le lien live de bout en bout.** Une vraie précommande depuis
+      chapitreun.com, puis remboursement dans Stripe : vérifie le montant de
+      49 € et la redirection *After payment* vers
+      `https://chapitreun.com/merci.html` (elle se règle lien par lien).
 
 ## À vérifier, sans urgence technique
 
@@ -22,10 +22,6 @@ les pages légales, le visuel social et le nom sont branchés.
 - [ ] **Prix barré 69 €.** Il doit correspondre au prix réellement pratiqué
       après le lancement — sinon c'est un prix de référence trompeur au sens du
       Code de la consommation.
-- [ ] **Nouveau lien Stripe test** (`test_aFadRadkQ9Nx6qj0gT77O04`, branché le
-      30 septembre 2026). Vérifier qu'il affiche bien 49 € et que sa
-      redirection *After payment* pointe vers `https://chapitreun.com/merci.html`
-      — la redirection se règle lien par lien, elle ne suit pas l'ancien lien.
 - [ ] **Comparaison de prix.** La page affiche « à partir de 38 € les 20 pages »
       pour la concurrence, relevé en septembre 2026. À revérifier avant mise en
       ligne définitive : c'est une affirmation comparative, elle doit rester

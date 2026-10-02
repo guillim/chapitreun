@@ -13,39 +13,37 @@ Fichier interne, non publié sur chapitreun.com.
 
 ---
 
-## Où on en est (2 octobre 2026)
+## Où on en est (2 octobre 2026, 19 h)
 
 > ### 👉 À vous de faire maintenant, dans cet ordre
 >
-> 1. **Envoyer la balise de vérification du domaine** (1 min). C'est une seule
->    ligne `<meta name="facebook-domain-verification" content="…" />`, à
->    trouver dans [Paramètres du portefeuille](https://business.facebook.com/latest/settings/)
->    → Sécurité de la marque → Domaines → chapitreun.com → Balise méta. Le
->    code collé le 2 octobre était celui du pixel, pas cette balise.
-> 2. **Donner à Claude l'accès au compte pub « Chapitre un »** (2 min). Il
->    n'apparaît pas dans le connecteur Meta Ads, seulement « Guillaume L'encre
->    Non », « Blt Paul » et « Anchor - MPP ». Sur
->    [claude.ai/customize/connectors](https://claude.ai/customize/connectors) :
->    Meta Ads → Déconnecter → Connecter, en cochant le compte pub, la page,
->    le compte Instagram et le jeu de données Chapitre un. Si le compte pub
->    n'existe pas encore : étape 3 du guide.
-> 3. **Vérifier que Meta reçoit le pixel** (1 min). Le 2 octobre à 16 h, Meta
->    n'avait encore reçu aucun événement. Gestionnaire d'événements →
->    « Chapitre un · site » → Tester les événements → `chapitreun.com` →
->    Ouvrir le site web : un `PageView` doit apparaître.
-> 4. **Créer le lien Stripe live à 49 €** et me l'envoyer (5 min, étape 5 du
->    guide). C'est ce qui permet de mesurer de vrais achats.
-> 5. **Créer les trois événements clés dans GA4** : `purchase`,
+> 1. **Cliquer « Vérifier » sur le domaine** (30 s). La balise
+>    `facebook-domain-verification` est en ligne sur chapitreun.com :
+>    [Paramètres du portefeuille](https://business.facebook.com/latest/settings/)
+>    → Sécurité de la marque → Domaines → chapitreun.com → Vérifier.
+> 2. **Compte pub « Chapitre un » : toujours invisible pour Claude.** Le
+>    2 octobre à 19 h, le connecteur Meta Ads ne voit encore que « Guillaume
+>    L'encre Non », « Blt Paul » et « Anchor - MPP ». À vérifier : le compte
+>    existe bien dans le portefeuille Chapitre un, vous en avez le contrôle
+>    total, et il est coché quand vous reconnectez Meta Ads sur
+>    [claude.ai/customize/connectors](https://claude.ai/customize/connectors).
+>    Puis ouvrir une **nouvelle session** : la session en cours peut garder
+>    l'ancien accès.
+> 3. **Tester le lien Stripe live** (5 min) : faire une vraie précommande de
+>    49 € depuis chapitreun.com, vérifier l'arrivée sur `merci.html`, puis se
+>    rembourser dans Stripe. Ça valide d'un coup le montant, la redirection
+>    *After payment* du lien live et l'événement `Purchase` chez Meta et GA4.
+> 4. **Créer les trois événements clés dans GA4** : `purchase`,
 >    `preorder_start`, `waitlist_signup` (2 min, étape 6 du guide).
-> 6. **Valider la règle de décision** ci-dessous (répondre « ok » ou la
+> 5. **Valider la règle de décision** ci-dessous (répondre « ok » ou la
 >    modifier).
-> 7. **Choisir pour les photos des pubs** : banque d'images avec autorisation
+> 6. **Choisir pour les photos des pubs** : banque d'images avec autorisation
 >    de modèle, ou photos de bébés de proches avec accord écrit. En attendant,
 >    les visuels que je produis n'auront pas de visage de bébé.
-> 8. **Confirmer que `bonjour@chapitreun.com` reçoit bien les e-mails.**
+> 7. **Confirmer que `bonjour@chapitreun.com` reçoit bien les e-mails.**
 >    Instagram, le portefeuille Meta et Stripe y envoient leurs codes de
 >    confirmation.
-> 9. Facultatif : connecter **Metricool** pour que je publie aussi sur la page
+> 8. Facultatif : connecter **Metricool** pour que je publie aussi sur la page
 >    et Instagram.
 
 ### ✅ En place et vérifié
@@ -63,6 +61,12 @@ Fichier interne, non publié sur chapitreun.com.
 - **Guide pas à pas** avec toutes les valeurs à copier-coller :
   https://claude.ai/artifact/1STVTdFqyyzqPpNnaPKoyi
 - **Connecteur Meta Ads** branché dans Claude.
+- **Le pixel arrive chez Meta** : 55 `PageView` reçus le 2 octobre (lu via
+  le connecteur).
+- **Balise de vérification du domaine** en ligne dans `index.html`
+  (reste à cliquer « Vérifier », point 1).
+- **Lien Stripe live** `https://buy.stripe.com/eVqfZi5So9Nx8yrd3F77O03`
+  branché dans `script.js` le 2 octobre (reste à le tester, point 3).
 
 ### ❔ Fait selon vous, mais je ne peux pas le vérifier
 
@@ -91,9 +95,9 @@ pause), téléverser les visuels, lire les statistiques. Il ne peut ni créer de
 compte pub ou de pixel, ni gérer la page ou publier sur Instagram (pour ça :
 connecteur Metricool).
 
-- [ ] **[vous] Lien Stripe live à 49 €** (avec la redirection vers
-      `merci.html`), puis **[Claude]** le brancher dans `script.js`. Sans lui,
-      les pubs mesurent de l'intérêt, pas un achat.
+- [x] **Lien Stripe live à 49 €** branché dans `script.js` le 2 octobre 2026.
+- [ ] **[vous] Tester le lien live** : vraie précommande puis remboursement
+      (montant, redirection vers `merci.html`, `Purchase` chez Meta et GA4).
 - [ ] **[ensemble] Fixer la règle de décision avant de lancer**, par écrit ici :
   - Critère principal : part des visiteurs qui paient 49 €.
   - Proposition : sur ≥ 500 visites venues des pubs,
@@ -111,9 +115,8 @@ connecteur Metricool).
       `Lead` à l'inscription, `InitiateCheckout` à la précommande, `Purchase`
       sur `merci.html` (49 EUR). Pas de bandeau de consentement, même choix que
       pour GA4 ; la page Confidentialité le mentionne.
-- [ ] **[vous] Balise de vérification du domaine** (Sécurité de la marque →
-      Domaines → chapitreun.com → balise méta) à envoyer, puis **[Claude]** la
-      poser dans `index.html`, puis **[vous]** cliquer « Vérifier ».
+- [x] **Balise de vérification du domaine** posée dans `index.html`.
+- [ ] **[vous] Cliquer « Vérifier »** (Sécurité de la marque → Domaines).
 - [ ] **[ensemble] Convention d'UTM** pour chaque lien de pub, déjà lue par
       la page (`source`, `campaign`) :
       `?utm_source=meta&utm_medium=paid&utm_campaign=test1&utm_content=<nom-de-la-pub>`.
