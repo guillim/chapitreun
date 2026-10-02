@@ -13,6 +13,71 @@ Fichier interne, non publié sur chapitreun.com.
 
 ---
 
+## Où on en est (2 octobre 2026)
+
+> ### 👉 À vous de faire maintenant, dans cet ordre
+>
+> 1. **Envoyer la balise de vérification du domaine** (1 min). C'est une seule
+>    ligne `<meta name="facebook-domain-verification" content="…" />`, à
+>    trouver dans [Paramètres du portefeuille](https://business.facebook.com/latest/settings/)
+>    → Sécurité de la marque → Domaines → chapitreun.com → Balise méta. Le
+>    code collé le 2 octobre était celui du pixel, pas cette balise.
+> 2. **Donner à Claude l'accès au compte pub « Chapitre un »** (2 min). Il
+>    n'apparaît pas dans le connecteur Meta Ads, seulement « Guillaume L'encre
+>    Non », « Blt Paul » et « Anchor - MPP ». Sur
+>    [claude.ai/customize/connectors](https://claude.ai/customize/connectors) :
+>    Meta Ads → Déconnecter → Connecter, en cochant le compte pub, la page,
+>    le compte Instagram et le jeu de données Chapitre un. Si le compte pub
+>    n'existe pas encore : étape 3 du guide.
+> 3. **Vérifier que Meta reçoit le pixel** (1 min). Le 2 octobre à 16 h, Meta
+>    n'avait encore reçu aucun événement. Gestionnaire d'événements →
+>    « Chapitre un · site » → Tester les événements → `chapitreun.com` →
+>    Ouvrir le site web : un `PageView` doit apparaître.
+> 4. **Créer le lien Stripe live à 49 €** et me l'envoyer (5 min, étape 5 du
+>    guide). C'est ce qui permet de mesurer de vrais achats.
+> 5. **Créer les trois événements clés dans GA4** : `purchase`,
+>    `preorder_start`, `waitlist_signup` (2 min, étape 6 du guide).
+> 6. **Valider la règle de décision** ci-dessous (répondre « ok » ou la
+>    modifier).
+> 7. **Choisir pour les photos des pubs** : banque d'images avec autorisation
+>    de modèle, ou photos de bébés de proches avec accord écrit. En attendant,
+>    les visuels que je produis n'auront pas de visage de bébé.
+> 8. **Confirmer que `bonjour@chapitreun.com` reçoit bien les e-mails.**
+>    Instagram, le portefeuille Meta et Stripe y envoient leurs codes de
+>    confirmation.
+> 9. Facultatif : connecter **Metricool** pour que je publie aussi sur la page
+>    et Instagram.
+
+### ✅ En place et vérifié
+
+- **Page Facebook « Chapitre un »** créée (ID `1295497923654612`), visible
+  dans le connecteur Meta Ads.
+- **Pixel Meta `1107649151757818`** (« Chapitre un · site ») créé, accessible
+  au connecteur, et posé sur toutes les pages du site depuis le 2 octobre :
+  `PageView`, `Lead`, `InitiateCheckout`, `Purchase` (49 €). Testé dans un
+  navigateur.
+- **Google Analytics 4** (`G-ZWDVH9Q1F3`) actif sur le site, événements
+  `purchase`, `preorder_start` et `waitlist_signup` envoyés.
+- **Page Confidentialité** à jour : Google, Meta, cookies `_ga` et `_fbp`.
+- **Photo de profil et couverture** en ligne dans `landing-page/assets/social/`.
+- **Guide pas à pas** avec toutes les valeurs à copier-coller :
+  https://claude.ai/artifact/1STVTdFqyyzqPpNnaPKoyi
+- **Connecteur Meta Ads** branché dans Claude.
+
+### ❔ Fait selon vous, mais je ne peux pas le vérifier
+
+- **Compte Instagram** : aucun compte n'est visible depuis les comptes pub
+  auxquels j'ai accès. Il apparaîtra après l'étape 2 ci-dessus.
+- **Portefeuille business et compte pub « Chapitre un »** : même raison.
+
+### ⏳ Ce que Claude fera dès que les étapes 1, 2 et 4 seront faites
+
+Poser la balise du domaine, brancher le lien Stripe live, produire les visuels
+A à E et la vidéo démo, écrire les textes, puis créer la campagne **en pause**
+dans Meta pour relecture.
+
+---
+
 ## 0. Avant de dépenser le premier euro
 
 Guide pas à pas avec toutes les valeurs à copier-coller (page Facebook,
@@ -37,9 +102,10 @@ connecteur Metricool).
     d'offre**.
   - Critère secondaire : inscriptions « Juste être prévenu » (intérêt sans
     paiement).
-- [ ] **[vous] Marquer les événements clés dans GA4** (Admin → Événements →
-      « Marquer comme événement clé ») : `purchase`, `preorder_start`,
-      `waitlist_signup`. Ils arrivent déjà dans GA4.
+- [ ] **[vous] Créer les événements clés dans GA4** (Administration →
+      Affichage des données → Événements clés → Nouvel événement clé) :
+      `purchase`, `preorder_start`, `waitlist_signup`. Ils arrivent déjà dans
+      GA4.
 - [x] **Pixel Meta** `1107649151757818` (jeu de données « Chapitre un · site »)
       installé le 2 octobre 2026 dans `analytics.js` : `PageView` partout,
       `Lead` à l'inscription, `InitiateCheckout` à la précommande, `Purchase`
@@ -58,9 +124,10 @@ connecteur Metricool).
       payante : banque d'images avec autorisation de modèle (Adobe Stock,
       Getty), ou photos de bébés de proches avec accord écrit des parents.
       S'applique aux pubs **et** à la page vers laquelle elles pointent.
-- [ ] **[vous] Compte publicitaire Meta** au nom d'ANCHOR (même entité que
-      Stripe), moyen de paiement ajouté, page Facebook + compte Instagram
-      « Chapitre un » créés (les pubs Meta en ont besoin).
+- [x] **Page Facebook « Chapitre un »** créée (vérifié le 2 octobre 2026).
+- [ ] **[vous] Compte publicitaire Meta « Chapitre un »** au nom d'ANCHOR, avec
+      moyen de paiement, et **compte Instagram** relié : créés selon vous le
+      2 octobre, pas encore visibles par le connecteur (voir « Où on en est »).
 
 ## 1. Les publicités à créer (Meta : Instagram + Facebook)
 
