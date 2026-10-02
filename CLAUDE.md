@@ -12,6 +12,12 @@
   canaux gratuits, suivi, règle de décision). Les tâches marquées **[Claude]**
   peuvent être faites par un agent ; cocher ce qui est fait et remplir le
   journal des décisions.
+- `JOURNAL.md` (racine du dépôt, non publié) : comment ce test a été monté,
+  jour par jour — demandes du fondateur, décisions et leurs raisons, pièges
+  rencontrés (Meta, GA4, Stripe, performance), playbook pour refaire la même
+  chose et façon de travailler avec le fondateur. À lire en premier pour
+  reprendre le projet ou en lancer un similaire ; y ajouter les nouvelles
+  décisions importantes.
 - **Pas besoin d'approbation pour merger sur `main`.** Pour ce projet, merger
   sur `main` est l'étape finale normale de toute fonctionnalité ou correction
   demandée — pousser la branche, ouvrir la PR, la merger, sans attendre de
