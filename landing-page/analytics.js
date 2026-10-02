@@ -9,7 +9,9 @@
    Performance : gtag() et fbq() existent tout de suite et mettent
    les événements en file d'attente ; les deux bibliothèques
    (~300 Ko de JS) ne sont téléchargées qu'à la première interaction
-   ou 3,5 s après le chargement, pour ne pas ralentir l'affichage.
+   (toucher, défilement, clic, clavier) ou 8 s après le chargement,
+   pour ne pas ralentir l'affichage. Conséquence assumée : un visiteur
+   qui repart en moins de 8 s sans rien toucher n'est pas compté.
    Sur merci.html (data-now sur la balise script), tout de suite.
    window.__cuFlush(ms) : promesse résolue quand les bibliothèques
    ont eu le temps d'envoyer la file, à attendre avant de quitter
@@ -66,7 +68,7 @@
     const opts = { once: true, passive: true, capture: true };
     ['pointerdown', 'keydown', 'touchstart'].forEach(t => addEventListener(t, load, opts));
     addEventListener('scroll', load, { once: true, passive: true }); // la page seule, pas les carrousels
-    const later = () => setTimeout(load, 3500);
+    const later = () => setTimeout(load, 8000);
     document.readyState === 'complete' ? later() : addEventListener('load', later, { once: true });
   }
 
