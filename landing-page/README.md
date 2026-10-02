@@ -225,8 +225,11 @@ aucun souvenir de sa première année, le parent en est le seul dépositaire.
     (`object-position` 64 %) : mêmes pixels, 3× plus léger.
   - **GA4 et pixel Meta différés** (`analytics.js`) : `gtag()` et `fbq()`
     mettent en file d'attente dès le départ ; les ~300 Ko de bibliothèques se
-    chargent à la première interaction ou 3,5 s après le chargement, tout de
-    suite sur `merci.html`. Avant la redirection vers Stripe, `script.js`
+    chargent à la première interaction ou 8 s après le chargement, tout de
+    suite sur `merci.html`. Un visiteur qui repart en moins de 8 s sans rien
+    toucher n'est donc compté ni par GA4 ni par Meta : pour la règle de
+    décision, compter les visites avec les « clics sur le lien » de Meta.
+    Avant la redirection vers Stripe, `script.js`
     attend `__cuFlush()` (300 ms à 1,2 s) pour que `InitiateCheckout` parte.
   - `analytics.js` et `script.js` en `defer`.
   - Essayé puis retiré : `content-visibility` sur les sections (aucun gain
