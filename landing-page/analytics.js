@@ -21,7 +21,7 @@
   'use strict';
 
   const GA_MEASUREMENT_ID = 'G-ZWDVH9Q1F3';
-  const META_PIXEL_ID = '1107649151757818';
+  const META_PIXEL_ID = '1461301452516353'; // jeu de données « data de chapitreun », portefeuille Chapitre Un
   const META_EVENTS = { waitlist_signup: 'Lead', preorder_start: 'InitiateCheckout' };
 
   /* ── Files d'attente, disponibles immédiatement ────────── */
