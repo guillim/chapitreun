@@ -3,6 +3,35 @@
 Ce qui reste entre vos mains, maintenant que l'inscription, le paiement test,
 les pages légales, le visuel social et le nom sont branchés.
 
+## Urgent : la page met 20 s à répondre une fois sur quatre (Cloudflare)
+
+Mesuré le 2 octobre 2026 (44 requêtes HTTPS, 36 HTTP) : en HTTPS, 1 requête sur
+4 attend ~19,5 s le premier octet ; GitHub sert la page en 2 ms, c'est la liaison
+Cloudflare → GitHub Pages sur le port 443 qui se bloque. En HTTP (port 80 côté
+origine), tout répond en 0,05–0,2 s. Rien à corriger dans le dépôt, tout se
+passe dans Cloudflare. Tant que ce n'est pas fait, Lighthouse et les visiteurs
+tombent une fois sur quatre sur une page qui met 20 s à s'afficher.
+
+- [ ] **Option rapide (une minute, sans coupure).** Dans Cloudflare →
+      `chapitreun.com` → *SSL/TLS* → *Overview* : passer le mode de **Full** à
+      **Flexible**. Cloudflare parlera à GitHub en HTTP (port 80, le chemin
+      sain) et continuera de servir les visiteurs en HTTPS. Puis *SSL/TLS* →
+      *Edge Certificates* : activer **Always Use HTTPS** (aujourd'hui
+      `http://chapitreun.com` ne redirige pas vers `https://`). Ne **pas**
+      cocher *Enforce HTTPS* côté GitHub Pages dans ce mode (boucle de
+      redirection).
+- [ ] **Option propre (à faire plutôt un soir).** Retirer Cloudflare du
+      chemin : dans *DNS*, passer les enregistrements de `chapitreun.com` en
+      **DNS only** (nuage gris) avec exactement les 4 A `185.199.108.153`,
+      `185.199.109.153`, `185.199.110.153`, `185.199.111.153` (et les 4 AAAA
+      `2606:50c0:8000::153` … `8003::153`), rien d'autre. GitHub (dépôt →
+      *Settings* → *Pages*) émet alors son propre certificat en quelques
+      minutes à une heure — pendant ce laps de temps `https://` affiche une
+      erreur de certificat — puis cocher **Enforce HTTPS**. Les visiteurs
+      parlent directement au CDN de GitHub : premier octet ~0,1 s.
+- [ ] **Vérifier** avec PageSpeed Insights ou Chrome DevTools → Lighthouse :
+      *Time to first byte* doit rester sous 0,5 s sur 5 essais de suite.
+
 ## Prochaine étape : vérifier l'encaissement réel
 
 - [x] **Stripe en mode live.** Lien live à 49 € branché dans `script.js` le

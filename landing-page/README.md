@@ -235,6 +235,12 @@ aucun souvenir de sa première année, le parent en est le seul dépositaire.
   - Essayé puis retiré : `content-visibility` sur les sections (aucun gain
     mesuré, et il modifie la fusion des marges).
 - La photo d'accueil est préchargée, les autres en `loading="lazy"`.
+- Hébergement : GitHub Pages derrière le proxy Cloudflare (nuage orange sur
+  `chapitreun.com`). Mesuré le 2 octobre 2026 : en HTTPS, une requête sur quatre
+  attendait ~19,5 s le premier octet (GitHub sert la page en 2 ms, c'est la
+  liaison Cloudflare → GitHub sur le port 443 qui se bloque) ; en HTTP (port 80
+  côté origine) tout répondait en 0,05–0,2 s. Aucune optimisation de la page ne
+  peut compenser ça : le remède est côté Cloudflare, voir `TODO.md`.
 - `prefers-reduced-motion` coupe toutes les animations ; la démo iPhone se fige
   sur la notification, le titre doré ne scintille plus.
 - Sans JavaScript, tout le contenu reste visible, le formulaire s'affiche et la
