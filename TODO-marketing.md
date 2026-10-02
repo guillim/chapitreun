@@ -21,14 +21,10 @@ Fichier interne, non publié sur chapitreun.com.
 >    `facebook-domain-verification` est en ligne sur chapitreun.com :
 >    [Paramètres du portefeuille](https://business.facebook.com/latest/settings/)
 >    → Sécurité de la marque → Domaines → chapitreun.com → Vérifier.
-> 2. **Compte pub « Chapitre un » : toujours invisible pour Claude.** Le
->    2 octobre à 19 h, le connecteur Meta Ads ne voit encore que « Guillaume
->    L'encre Non », « Blt Paul » et « Anchor - MPP ». À vérifier : le compte
->    existe bien dans le portefeuille Chapitre un, vous en avez le contrôle
->    total, et il est coché quand vous reconnectez Meta Ads sur
->    [claude.ai/customize/connectors](https://claude.ai/customize/connectors).
->    Puis ouvrir une **nouvelle session** : la session en cours peut garder
->    l'ancien accès.
+> 2. **Relier Instagram au compte pub** (1 min) : Paramètres du
+>    portefeuille → Comptes → Comptes Instagram → @chapitre.un.an →
+>    Connecter des éléments → compte pub « Chapitre un ». Le 2 octobre au
+>    soir, le compte pub ne voyait encore aucun compte Instagram.
 > 3. **Tester le lien Stripe live** (5 min) : faire une vraie précommande de
 >    49 € depuis chapitreun.com, vérifier l'arrivée sur `merci.html`, puis se
 >    rembourser dans Stripe. Ça valide d'un coup le montant, la redirection
@@ -48,10 +44,14 @@ Fichier interne, non publié sur chapitreun.com.
 
 - **Page Facebook « Chapitre un »** créée (ID `1295497923654612`), visible
   dans le connecteur Meta Ads.
-- **Pixel Meta `1107649151757818`** (« Chapitre un · site ») créé, accessible
-  au connecteur, et posé sur toutes les pages du site depuis le 2 octobre :
-  `PageView`, `Lead`, `InitiateCheckout`, `Purchase` (49 €). Testé dans un
-  navigateur.
+- **Pixel Meta `1461301452516353`** (« data de chapitreun », portefeuille
+  Chapitre Un, relié au compte pub `1428097829271108`) sur le site depuis le
+  2 octobre au soir, sur toutes les pages : `PageView`, `Lead`,
+  `InitiateCheckout`, `Purchase` (49 €). L'ancien pixel `1107649151757818`,
+  resté hors du portefeuille, n'a servi qu'aux premiers tests.
+- **Compte pub « Chapitre un »** `1428097829271108` (portefeuille Chapitre Un
+  `1081391137835959`) : actif, EUR, moyen de paiement ajouté, visible par le
+  connecteur Meta Ads.
 - **Google Analytics 4** (`G-ZWDVH9Q1F3`) actif sur le site, événements
   `purchase`, `preorder_start` et `waitlist_signup` envoyés.
 - **Page Confidentialité** à jour : Google, Meta, cookies `_ga` et `_fbp`.
@@ -69,11 +69,10 @@ Fichier interne, non publié sur chapitreun.com.
 
 ### ❔ Fait selon vous, mais je ne peux pas le vérifier
 
-- **Compte Instagram** : aucun compte n'est visible depuis les comptes pub
-  auxquels j'ai accès. Il apparaîtra après l'étape 2 ci-dessus.
-- **Portefeuille business et compte pub « Chapitre un »** : même raison.
+- **Compte Instagram @chapitre.un.an** : présent dans le portefeuille, mais
+  pas encore relié au compte pub (étape 2 ci-dessus).
 
-### ⏳ Ce que Claude fera dès que les étapes 1, 2 et 4 seront faites
+### ⏳ Ce que Claude fera dès que les étapes 2 et 3 seront faites
 
 Poser la balise du domaine, brancher le lien Stripe live, produire les visuels
 A à E et la vidéo démo, écrire les textes, puis créer la campagne **en pause**
@@ -108,7 +107,8 @@ connecteur Metricool).
 - [x] **Événements clés GA4** créés le 2 octobre 2026 : `purchase`,
       `preorder_start`, `waitlist_signup` (« Create with code », sans valeur
       par défaut).
-- [x] **Pixel Meta** `1107649151757818` (jeu de données « Chapitre un · site »)
+- [x] **Pixel Meta** `1461301452516353` (« data de chapitreun », remplace le
+      premier pixel `1107649151757818` resté hors du portefeuille)
       installé le 2 octobre 2026 dans `analytics.js` : `PageView` partout,
       `Lead` à l'inscription, `InitiateCheckout` à la précommande, `Purchase`
       sur `merci.html` (49 EUR). Pas de bandeau de consentement, même choix que
