@@ -31,10 +31,10 @@ quatre blocs repris de la structure des pages concurrentes.
 | --- | --- | --- | --- |
 | 1 | Accueil | `#top` | Photo plein écran, promesse, deux boutons |
 | — | Bandeau de garanties | — | Cinq réassurances sur fond sombre |
-| 2 | Le problème | `#le-probleme` | 4 000 / 0 / 3 mois, pellicule, bascule éditoriale |
+| 2 | Le problème | `#le-probleme` | 4 000 / 0, pellicule, bascule éditoriale |
 | 3 | Comment ça marche | `#comment` | Trois étapes + iPhone animé |
 | 4 | À quoi ressemble le livre | `#le-livre` | Carrousel de cinq doubles pages |
-| 5 | Ce qui change | `#ce-qui-change` | Les cinq arguments, chacun avec sa démo |
+| 5 | Ce qui change | `#ce-qui-change` | Les quatre arguments, chacun avec sa démo |
 | 6 | Les finitions | `#finitions` | L'objet : couverture, papier, format |
 | 7 | Le prix | `#prix` | Deux offres, tout compris, « tout ce que vous obtenez » |
 | 8 | Comparaison | `#comparaison` | Sept lignes, sans nommer personne |
