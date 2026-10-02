@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="analytics.js?v=3"></script>
+<script src="analytics.js?v=4"></script>
 <title>Merci — Chapitre un</title>
 <meta name="description" content="Votre réservation Chapitre un est confirmée.">
 <meta name="robots" content="noindex">
@@ -72,8 +72,9 @@
 </footer>
 
 <script>
-  // conversion mesurée dans GA4 (retour de Stripe après paiement réussi)
+  // conversion mesurée dans GA4 et Meta (retour de Stripe après paiement réussi)
   gtag('event', 'purchase', { value: 49, currency: 'EUR', items: [{ item_name: 'Réservation livre fondateur' }] });
+  fbq('track', 'Purchase', { value: 49, currency: 'EUR', content_name: 'Réservation livre fondateur' });
 </script>
 </body>
 </html>
