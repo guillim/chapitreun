@@ -184,6 +184,13 @@ Les citations sont les demandes du fondateur, raccourcies.
   supprimée chez Meta, visuels retirés, mention « Analyse sur votre iPhone.
   Aucune photo envoyée » enlevée de la vidéo B. **Ne pas promettre en pub
   une fonction que le produit pourrait ne pas avoir.**
+- Pub D (« 22 h, la maison dort. Et vous triez encore ses photos ») : « un
+  petit peu blâmante et pessimiste… plutôt humoristique, avec la grimace
+  d'une femme qui a l'air de dire : waouh, je fais trop de trucs ». → D
+  refaite : maman qui lève les yeux au ciel, « Couches, biberons, lessives,
+  siestes à négocier… et son album photo, on en parle ? Respirez : son livre
+  se fait tout seul. » **Ton : jamais culpabiliser le parent ; l'humour
+  complice plutôt que le reproche.**
 
 ## 4. Décisions et leurs raisons
 

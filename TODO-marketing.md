@@ -21,7 +21,7 @@ Fichier interne, non publié sur chapitreun.com.
 > (`120249512384540314`), en pause, 20 €/jour, optimisée sur
 > `InitiateCheckout`. Un ensemble « France · 25-40 · iPhone · large »
 > (`120249512388300314`) avec 3 pubs : A (son livre photo, sans rien
-> faire), C (la date), D (le soir), en 4:5. La pub E (vie privée) a été
+> faire), C (la date), D (trop de choses à faire, en humour), en 4:5. La pub E (vie privée) a été
 > supprimée le 3 octobre.
 > Visuels, vidéo et textes : `pubs/tour-1/` ; canevas modifiable :
 > https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26
@@ -159,7 +159,8 @@ Tester **4 à 6 pubs** au premier tour, une idée par pub :
       ffmpeg, disponible dans l'environnement).
 - [x] **C. La date** — « Ses 1 an arrivent en mars. Son livre sera prêt fin
       février. » La promesse que personne ne fait (livraison datée).
-- [x] **D. Les 40 minutes du soir** — le registre culpabilité → soulagement
+- [x] **D. « Trop de choses à faire », en humour** (version 2 du 3 octobre : la
+      version « le soir » était culpabilisante) — ancienne idée : **Les 40 minutes du soir** — le registre culpabilité → soulagement
       (le meilleur levier relevé chez Popsa). Texte long, une photo douce.
 - [x] ~~**E. Vie privée**~~ — **supprimée le 3 octobre** : le fondateur
       n'est pas sûr de garder la fonction (analyse sur l'iPhone). Plus aucun
@@ -264,3 +265,6 @@ _(à remplir : date, chiffres, décision)_
   livre photo, sans rien faire », le livre d'abord) ; **pub E (vie privée)
   supprimée** et mention « aucune photo envoyée » retirée de la vidéo B, car
   la fonction n'est pas sûre d'être gardée. Restent A, C, D (+ B à ajouter).
+- **3 octobre 2026 (soir)** — pub D refaite en humour (maman qui lève les yeux
+  au ciel, « Couches, biberons, lessives… et son album photo, on en parle ? »)
+  : la version « 22 h, vous triez encore ses photos » était culpabilisante.

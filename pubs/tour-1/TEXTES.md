@@ -1,6 +1,6 @@
 # Pubs Meta — tour 1 (octobre 2026)
 
-Visuels : `A-livre-*.jpg`, `C-date-*.jpg`, `D-soir-*.jpg` (4:5 pour le fil, 9:16 pour Stories et Reels),
+Visuels : `A-livre-*.jpg`, `C-date-*.jpg`, `D-humour-*.jpg` (4:5 pour le fil, 9:16 pour Stories et Reels),
 `B-demo-9x16.mp4`. Source modifiable : canevas Claude Design
 https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26. Photos : voir
 `landing-page/assets/photos/CREDITS.md` (section « Pubs »).
@@ -15,7 +15,7 @@ supprimée et la mention retirée de la vidéo B.
 
 Lien de chaque pub :
 `https://chapitreun.com/?utm_source=meta&utm_medium=paid&utm_campaign=test1&utm_content=<nom>`
-avec `<nom>` = `a-livre`, `b-demo`, `c-date`, `d-soir`.
+avec `<nom>` = `a-livre`, `b-demo`, `c-date`, `d-humour`.
 Bouton : « Précommander » n'existe pas chez Meta → **« Commander »
 (ORDER_NOW)**.
 
@@ -101,26 +101,32 @@ Précommande · 49 €
 **Titres** : Prêt 3 semaines avant ses 1 an · Le livre de sa première année ·
 Tarif fondateur : 49 €
 
-## D · Le soir
+## D · « Trop de choses à faire » (humour)
+
+Version 2 (3 octobre, après relecture du fondateur) : la première version
+(« 22 h, la maison dort. Et vous triez encore ses photos. ») était
+culpabilisante et pessimiste. Ton retenu : **l'humour**, une maman qui lève
+les yeux au ciel (« pfff, je fais trop de choses »), puis la solution.
 
 **Textes principaux**
 
-1. 22 h. Il dort enfin. Et vous voilà encore à faire défiler ses photos en vous
-   disant qu'il faudrait vraiment faire cet album.
+1. Couches, biberons, lessives, siestes à négocier… et quelque part dans
+   votre iPhone, des milliers de photos qui attendent leur album.
 
-   On s'en occupe. Chapitre un retrouve ses photos dans votre iPhone et compose
-   le livre de sa première année. Vous relisez, vous dites oui.
+   Bonne nouvelle : son livre de la première année se fait tout seul.
+   Chapitre un retrouve ses photos dans votre iPhone et compose le livre, un
+   chapitre par mois. Vous n'avez rien à faire, à part dire oui.
 
-   App en préparation · précommande 49 €, remboursable.
+   App en préparation · précommande 49 €, remboursable à tout moment.
 
-2. Ses premiers mois méritent mieux que des milliers de photos perdues dans un
-   téléphone. Et vous méritez vos soirées.
+2. Vous avez déjà mille choses à faire. Son album n'en fera pas partie : le
+   livre de sa première année se compose tout seul, à partir des photos de
+   votre iPhone.
 
-   Le livre de sa première année se fait tout seul. Précommande 49 € · app
-   iPhone en préparation.
+   Précommande 49 € · app iPhone en préparation.
 
-3. Pas besoin de trois soirées pour trier ses photos. Une minute suffit.
-   Précommande ouverte · app iPhone en préparation.
+3. Une chose de moins sur la liste : son livre des 1 an se fait tout seul.
+   Précommande ouverte, 49 €.
 
-**Titres** : Gardez vos soirées · Son livre, sans trier ses photos ·
+**Titres** : Son album ? Il se fait tout seul · Une chose de moins à faire ·
 Précommande · 49 €
