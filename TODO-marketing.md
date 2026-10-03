@@ -13,7 +13,7 @@ Fichier interne, non publié sur chapitreun.com.
 
 ---
 
-## Où on en est (3 octobre 2026, 11 h)
+## Où on en est (3 octobre 2026, soir)
 
 > ### 🟡 Les pubs sont prêtes, en pause : à relire puis activer [vous]
 >
@@ -22,7 +22,10 @@ Fichier interne, non publié sur chapitreun.com.
 > `InitiateCheckout`. Un ensemble « France · 25-40 · iPhone · large »
 > (`120249512388300314`) avec 3 pubs : A (son livre photo, sans rien
 > faire), C (la date), D (trop de choses à faire, en humour), en 4:5. La pub E (vie privée) a été
-> supprimée le 3 octobre.
+> supprimée le 3 octobre. Visuels **refaits le 3 octobre au soir** d'après
+> les bonnes pratiques 2026 (une idée par visuel, grand titre, visage ou
+> livre tenu en mains, zones sûres 9:16) ; les pubs Meta ont été recréées
+> avec ces visuels, mêmes textes et mêmes liens.
 > Visuels, vidéo et textes : `pubs/tour-1/` ; canevas modifiable :
 > https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26
 >
@@ -147,8 +150,9 @@ on ne vend pas un produit fini (obligation légale, et cohérent avec la page).
 
 Tester **4 à 6 pubs** au premier tour, une idée par pub :
 
-- [x] **A. « Son livre photo, sans rien faire »** (version 2 du 3 octobre :
-      le livre ouvert en grand ; la version 1 ci-dessous partait des photos
+- [x] **A. « Son livre photo, sans rien faire »** (version 3 du 3 octobre au
+      soir : un vrai livre tenu en mains, notre double page projetée dedans ;
+      version 2 : le livre ouvert en grand, à plat ; la version 1 ci-dessous partait des photos
       et a été remplacée après relecture) —
       ancienne idée : **« 4 000 photos. 0 album. »** — image fixe, le constat en grand,
       puis « Le livre de sa première année se fait tout seul. » **[Claude]**
@@ -158,9 +162,11 @@ Tester **4 à 6 pubs** au premier tour, une idée par pub :
       l'enregistrer depuis l'animation de la page (capture image par image +
       ffmpeg, disponible dans l'environnement).
 - [x] **C. La date** — « Ses 1 an arrivent en mars. Son livre sera prêt fin
-      février. » La promesse que personne ne fait (livraison datée).
-- [x] **D. « Trop de choses à faire », en humour** (version 2 du 3 octobre : la
-      version « le soir » était culpabilisante) — ancienne idée : **Les 40 minutes du soir** — le registre culpabilité → soulagement
+      février. » La promesse que personne ne fait (livraison datée). Version 3
+      du 3 octobre au soir : titre en trois lignes courtes, carte du livre.
+- [x] **D. « Trop de choses à faire », en humour** (version 3 du 3 octobre au
+      soir : photo resserrée sur la grimace, titre raccourci ; version 2 du
+      3 octobre : la version « le soir » était culpabilisante) — ancienne idée : **Les 40 minutes du soir** — le registre culpabilité → soulagement
       (le meilleur levier relevé chez Popsa). Texte long, une photo douce.
 - [x] ~~**E. Vie privée**~~ — **supprimée le 3 octobre** : le fondateur
       n'est pas sûr de garder la fonction (analyse sur l'iPhone). Plus aucun
@@ -270,3 +276,8 @@ _(à remplir : date, chiffres, décision)_
   : la version « 22 h, vous triez encore ses photos » était culpabilisante.
 - **3 octobre 2026 (soir)** — mentions vie privée retirées aussi de la landing
   page et de la page Confidentialité (même raison).
+- **3 octobre 2026 (soir)** — visuels A, C, D refaits d'après une recherche
+  sur les pubs statiques qui marchent en 2026 (une idée par visuel, titre de
+  8 mots au plus, visage ou livre en mains, moins de 20 % de texte, zones
+  sûres 9:16) ; détail dans `JOURNAL.md`. Pubs Meta recréées avec les
+  nouveaux visuels (Meta fige l'image à la création), mêmes textes et liens.

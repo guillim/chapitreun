@@ -62,14 +62,18 @@ présentable, elle ne casse pas.
 Photos des visuels de `pubs/tour-1/`, prises sur **Unsplash** (licence
 Unsplash : usage commercial gratuit, attribution non exigée). Comme pour CC0,
 la licence ne garantit pas l'accord des personnes photographiées : risque
-assumé par le fondateur le 3 octobre 2026. La pub A (version 2) montre le livre
-ouvert de la page, avec ses photos CC0 (`det-6`, `det-2`, `det-1`,
-`mois-06`). La pellicule de la version 1 (retirée) mêlait les photos
+assumé par le fondateur le 3 octobre 2026. La pub A (version 3) montre un
+vrai livre tenu en mains (photo Unsplash de John, ci-dessous, pages blanches)
+dans lequel la double page de la page web est projetée, avec ses photos CC0
+(`det-6`, `det-2`, `det-1`, `mois-06`) ; la version 2 montrait cette double
+page seule. Les photos de C et D ont été reprises en plus haute définition le
+3 octobre au soir (mêmes photos). La pellicule de la version 1 (retirée) mêlait les photos
 marquées « A (pellicule) » ci-dessous et des photos CC0 de la page. Pexels n'a
 pas servi pour ce tour.
 
 | Pub | Description | Auteur | Source |
 | --- | --- | --- | --- |
+| A (v3) | Une jeune femme tient un livre ouvert aux pages blanches sur ses genoux, vu de dessus | John | [unsplash](https://unsplash.com/photos/bNCKsUyQYmM) |
 | C | Bébé au chapeau de fête « 1 » | Selenay Balkan | [unsplash](https://unsplash.com/photos/Bt4XZy_MccE) |
 | D | Une mère lève les yeux au ciel, son bébé sur les genoux | Ruhbi Sutisna | [unsplash](https://unsplash.com/photos/jPyFThCAvd4) |
 | D (v1, retirée) | Le soir, une mère et son bébé dans un fauteuil | Paul Johnston | [unsplash](https://unsplash.com/photos/UhvvbFDSzL8) |
