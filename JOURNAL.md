@@ -154,6 +154,25 @@ Les citations sont les demandes du fondateur, raccourcies.
 - Todo vivante publiée en artifact (« done » résumés, « todo » avec étapes),
   mise à jour à chaque étape validée.
 
+### 3 octobre — achat test, puis les pubs
+- Achat test réel validé de bout en bout (Stripe, merci.html, Formspree, GA4,
+  Meta) ; il a révélé le bug du double clic (section 5).
+- Buffer branché pour publier sur Instagram et Facebook (comparatif des 6
+  outils les plus notés de l'App Store).
+- « Peut-être qu'il y a des skills, des connecteurs ou Claude Design qui
+  pourraient t'aider ? Recherche ce que les gens plébiscitent » → recherche
+  sur les 6 derniers mois : sur Meta, les images fixes restent le format le
+  moins cher à produire et l'algorithme récompense la variété des angles ; la
+  vidéo du fondateur face caméra est l'un des formats qui marchent le mieux
+  en trafic froid ; outils cités : Canva (connecteur Claude), AdCreative.ai,
+  Creatify/Arcads (acteurs IA), Advantage+ Creative de Meta. Retenu :
+  **Claude Design** (type d'artifact « Design », déjà disponible, sans
+  compte à créer), aux couleurs de la page.
+- Visuels A, C, D, E en 4:5 et 9:16, vidéo démo B (l'animation de la page
+  rejouée image par image, 14,5 s), textes, puis campagne créée **en pause**
+  avec 4 pubs. Le connecteur ne sait pas encore téléverser une vidéo sur ce
+  compte : B est à ajouter à la main.
+
 ## 4. Décisions et leurs raisons
 
 | Décision | Pourquoi | Conséquence à surveiller |
@@ -172,6 +191,11 @@ Les citations sont les demandes du fondateur, raccourcies.
 | Événements clés GA4 sans valeur par défaut | Sinon GA4 compte 1 $ par précommande ; seul `purchase` porte un montant (49 €) | Devise de la propriété GA4 à mettre en euros |
 | Pixel du **portefeuille** (`1461301452516353`) plutôt que le premier créé | Le compte pub ne peut optimiser que sur un pixel qui lui est relié | — |
 | **Règle de décision** fixée avant de dépenser | Ne pas interpréter les chiffres après coup | Voir ci-dessous |
+| Visuels des pubs dans **Claude Design** (3 oct.) | Déjà disponible, canevas modifiable par le fondateur, rendu exportable en PNG | Canva (connecteur) reste possible si le fondateur veut retoucher lui-même |
+| Campagne « Ventes » optimisée sur **`InitiateCheckout`**, pas `Purchase` | Pixel neuf, aucun achat réel : Meta ne peut pas apprendre sur `Purchase` à 20 €/jour | Passer sur `Purchase` si les achats dépassent ~10 par semaine |
+| **20 €/jour** au niveau campagne, une seule audience large | Haut de la fourchette du plan (15–20 €/jour, 300–500 € au total) ; 4 à 5 pubs dans un seul ensemble pour que Meta répartisse | 280 € sur 14 jours |
+| Audience Advantage+ : France, iPhone (iOS), 25 ans min., 25–40 ans en **suggestion** | Meta refuse un âge maximum ferme sous 65 ans avec Advantage+ | Vérifier la répartition par âge au bilan |
+| Bouton **« Commander »** (`ORDER_NOW`) | « Précommander » n'existe pas chez Meta | — |
 
 **Règle de décision** (adoptée le 2 octobre) : après 500 visites venues des
 pubs ou 14 jours, au premier des deux termes.
@@ -221,6 +245,22 @@ confirmer avec un devis d'imprimeur.
   `ads_get_dataset_stats`.
 - L'onglet « Actions » du pixel pousse l'API Conversions et la messagerie :
   inutile pour un test de 14 jours.
+
+**Côté connecteur Meta Ads (3 octobre)**
+- `ads_creative_upload_media` « en cours de déploiement » sur le compte :
+  aucun téléversement d'image ni de vidéo. Contournement pour les images :
+  `image_url` directement dans `ads_create_creative` (fichiers publiés dans
+  `pubs/` sur `main`, lus via raw.githubusercontent.com). Pas de contournement
+  pour la vidéo : à ajouter à la main dans le Gestionnaire de publicités.
+- Une image par placement (4:5 fil, 9:16 Stories) : refusée, « pas encore
+  activé pour ce compte ». Les pubs partent en 4:5 seul ; le 9:16 s'ajoute à
+  la main (« Personnaliser le visuel par placement »).
+- Création de l'ensemble refusée avec un message vague (« request a review »,
+  sous-code 3858196) dès qu'on ajoute âge maximum ou système d'exploitation :
+  créer l'ensemble avec le pays seul, puis le modifier. Âge maximum ferme
+  < 65 interdit avec Advantage+ : passer `age_range` en suggestion.
+- La description n'apparaît ni dans le fil Facebook ni sur Instagram pour une
+  image seule : ne rien y mettre d'important.
 
 **Côté Google et Stripe**
 - Dans GA4, « Create an event / Create without code » fabrique un **nouvel**
@@ -291,15 +331,16 @@ confirmer avec un devis d'imprimeur.
 - Il travaille en parallèle avec d'autres sessions : toujours repartir de
   `origin/main` à jour.
 
-## 8. État au 3 octobre 2026 au matin
+## 8. État au 3 octobre 2026, fin de matinée
 
 Fait : page en ligne et rapide, paiement live, GA4 et pixel vérifiés,
 portefeuille, compte pub, page, Instagram et domaine Meta en place, règle de
-décision fixée, photos de pub tranchées (Pexels et Unsplash), Buffer connecté
-(page Facebook et Instagram), **achat test validé de bout en bout** (Stripe,
-merci.html, Formspree, GA4, Meta).
+décision fixée, Buffer connecté, achat test validé de bout en bout,
+**pubs prêtes** : visuels A, C, D, E (4:5 et 9:16), vidéo démo B, textes
+(`pubs/tour-1/`), campagne « Test 1 » créée **en pause** avec les pubs A, C,
+D, E (canevas : https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26).
 
-Reste au fondateur : rien avant les pubs.
-
-Reste à l'agent ensuite : visuels A à E et vidéo démo, textes des pubs,
-campagne créée en pause dans Meta. Détail : `TODO-marketing.md`.
+Reste au fondateur : relire les pubs, ajouter la vidéo B (et si possible les
+versions 9:16) dans le Gestionnaire de publicités, activer la campagne ; puis
+vidéo face caméra (pub F), message aux parents de l'entourage. Détail :
+`TODO-marketing.md`.
