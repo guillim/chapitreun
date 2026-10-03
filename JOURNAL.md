@@ -110,7 +110,8 @@ Les citations sont les demandes du fondateur, raccourcies.
 - « Is there an MCP for Facebook ads? » → oui, le connecteur officiel Meta Ads
   (crée campagnes et pubs **en pause**, lit les stats ; ne crée ni compte pub,
   ni pixel, ni page, et ne publie pas sur Instagram). Pour publier en
-  organique : Metricool.
+  organique : Metricool, remplacé le 3 octobre par Buffer (MCP
+  `https://mcp.buffer.com/mcp`, gratuit, app la mieux notée).
 - Le fondateur veut aller vite : « si je peux faire que des copier-coller dans
   tous les champs, c'est le mieux » → **guide artifact pas à pas avec un bouton
   « Copier » par champ** (page Facebook, Instagram, portefeuille, compte pub,
@@ -289,7 +290,7 @@ Fait : page en ligne et rapide, paiement live, GA4 et pixel vérifiés,
 portefeuille, compte pub, page, Instagram et domaine Meta en place, règle de
 décision fixée.
 
-Reste au fondateur : l'achat test de 49 € (puis remboursement), Metricool en
+Reste au fondateur : l'achat test de 49 € (puis remboursement), Buffer en
 option. Photos de pub : Pexels et Unsplash (tranché le 3 octobre).
 
 Reste à l'agent ensuite : visuels A à E et vidéo démo, textes des pubs,

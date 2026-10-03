@@ -21,7 +21,7 @@ Fichier interne, non publié sur chapitreun.com.
 >    49 € depuis chapitreun.com, vérifier l'arrivée sur `merci.html`, puis se
 >    rembourser dans Stripe. Ça valide d'un coup le montant, la redirection
 >    *After payment* du lien live et l'événement `Purchase` chez Meta et GA4.
-> 2. Facultatif : connecter **Metricool** pour que je publie aussi sur la page
+> 2. Facultatif : connecter **Buffer** (MCP `https://mcp.buffer.com/mcp`) pour que je publie aussi sur la page
 >    et Instagram.
 
 ### ✅ En place et vérifié
@@ -72,7 +72,7 @@ Connecteur **Meta Ads** (officiel, `https://mcp.facebook.com/ads`) branché le
 1er octobre 2026 : un agent peut créer campagnes, ensembles et pubs (créés en
 pause), téléverser les visuels, lire les statistiques. Il ne peut ni créer de
 compte pub ou de pixel, ni gérer la page ou publier sur Instagram (pour ça :
-connecteur Metricool).
+connecteur Buffer).
 
 - [x] **Lien Stripe live à 49 €** branché dans `script.js` le 2 octobre 2026.
 - [ ] **[vous] Tester le lien live** : vraie précommande puis remboursement
@@ -220,3 +220,9 @@ _(à remplir : date, chiffres, décision)_
 - **3 octobre 2026** — photos des pubs : Pexels et Unsplash (gratuites,
   usage commercial), risque « pas d'accord des personnes photographiées »
   assumé. Pas de banque payante utilisée sans licence.
+- **3 octobre 2026** — outil de publication organique : **Buffer** plutôt
+  que Metricool. Buffer est le mieux noté de l'App Store parmi les outils
+  dont le MCP officiel publie sur Instagram (4,7/5, environ 34 000 avis aux
+  États-Unis, contre 2,7/5 et 111 avis pour Metricool), et son MCP est inclus
+  dans le plan gratuit. Comparatif : Buffer, Hootsuite, Publer, Metricool,
+  Vista Social, SocialPilot.
