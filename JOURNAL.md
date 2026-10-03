@@ -164,6 +164,7 @@ Les citations sont les demandes du fondateur, raccourcies.
 | Remboursable sans condition jusqu'à l'expédition | Lever le frein « l'app n'existe pas » | Promesse à tenir |
 | Compteur fondateur simulé (+1/jour) | Vitesse ; pas de source fiable | À brancher sur les vraies ventes |
 | Photos CC0 sur la page | Rien d'autre au départ | Pas d'accord des personnes photographiées : risqué en pub payante |
+| Photos des pubs : Pexels et Unsplash (3 oct.) | Gratuit et le plus simple ; le fondateur voulait payer les droits « après les premiers achats » | Une banque payante sans licence = contrefaçon dès la diffusion, payer après ne régularise pas : refusé. Pas d'accord des personnes photographiées garanti : risque assumé. Alternative légale gratuite : essai Adobe Stock |
 | GA4 et Meta chargés **à la première interaction ou après 8 s** | +30 points PageSpeed mobile | Un visiteur qui repart en < 8 s sans rien toucher n'est pas compté → compter les visites avec les « clics sur le lien » de Meta |
 | Polices auto-hébergées (fichiers Google réduits aux caractères latins, mêmes métriques) | Supprimer la requête bloquante vers Google Fonts | Si un nouveau caractère apparaît (autre langue), régénérer le sous-ensemble |
 | `content-visibility` essayé puis retiré | Aucun gain mesuré, et il change la fusion des marges | — |
@@ -288,8 +289,8 @@ Fait : page en ligne et rapide, paiement live, GA4 et pixel vérifiés,
 portefeuille, compte pub, page, Instagram et domaine Meta en place, règle de
 décision fixée.
 
-Reste au fondateur : l'achat test de 49 € (puis remboursement), le choix de
-la source des photos de pub, Metricool en option.
+Reste au fondateur : l'achat test de 49 € (puis remboursement), Metricool en
+option. Photos de pub : Pexels et Unsplash (tranché le 3 octobre).
 
 Reste à l'agent ensuite : visuels A à E et vidéo démo, textes des pubs,
 campagne créée en pause dans Meta. Détail : `TODO-marketing.md`.
