@@ -104,7 +104,6 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
     <div class="wrap strip__in">
       <p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7 10 18l-6-5.4"/></svg> Aucune photo à trier</p>
       <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9.5V13l2.5 1.5"/><path d="M9 2.5h6"/></svg> Prêt 3 semaines avant ses 1 an</p>
-      <p><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="9.5" rx="2.2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg> Analyse sur votre iPhone</p>
       <p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h13v10H3z"/><path d="M16 10h3.2l1.8 2.5V17h-5"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17.5" cy="17.5" r="1.8"/></svg> Livraison offerte</p>
       <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8 12h8"/></svg> Sans abonnement</p>
     </div>
@@ -192,10 +191,6 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
                     <span class="ph" data-pick><img src="assets/photos/face-1.webp" alt="" loading="lazy"><i class="tick" aria-hidden="true"></i></span>
                     <span class="ph"><img src="assets/photos/face-4.webp" alt="" loading="lazy"></span>
                   </div>
-                  <p class="scr__note">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v6c0 4.2 2.9 7.6 7 9 4.1-1.4 7-4.8 7-9V6l-7-3Z"/></svg>
-                    Analyse sur votre iPhone. Aucune photo envoyée.
-                  </p>
                 </div>
 
                 <div class="scr scr--lock" data-scr="3">
@@ -228,7 +223,7 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
           <li class="step" data-reveal data-step="2" style="--d:.08s">
             <span class="step__n">2</span>
             <h3 class="step__t">Une photo de son visage.</h3>
-            <p class="step__p">L'app retrouve automatiquement les photos où votre bébé apparaît, parmi vos milliers de photos. La détection se fait directement sur votre iPhone.</p>
+            <p class="step__p">L'app retrouve automatiquement les photos où votre bébé apparaît, parmi vos milliers de photos.</p>
           </li>
           <li class="step" data-reveal data-step="3" style="--d:.16s">
             <span class="step__n">3</span>
@@ -620,11 +615,6 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
           <p class="cmp__b" data-label="Chapitre un">3 semaines avant ses 1 an</p>
         </div>
         <div class="cmp__row">
-          <p class="cmp__crit">Où vont vos photos</p>
-          <p class="cmp__a" data-label="Les autres apps">Sur leurs serveurs, toutes</p>
-          <p class="cmp__b" data-label="Chapitre un">Sur votre iPhone. Seules les 200 du livre partent.</p>
-        </div>
-        <div class="cmp__row">
           <p class="cmp__crit">Abonnement</p>
           <p class="cmp__a" data-label="Les autres apps">Souvent mensuel</p>
           <p class="cmp__b" data-label="Chapitre un">Aucun. Un livre, un prix.</p>
@@ -752,7 +742,7 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
         <ul class="trust">
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="9.5" rx="2.2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg>Paiement Stripe</li>
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7 10 18l-6-5.4"/></svg>Remboursable à tout moment</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v6c0 4.2 2.9 7.6 7 9 4.1-1.4 7-4.8 7-9V6l-7-3Z"/></svg>Tout se passe sur votre iPhone</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8 12h8"/></svg>Sans abonnement</li>
         </ul>
 
         <div class="done" data-done hidden>
@@ -772,10 +762,6 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
     <div class="wrap wrap--narrow">
       <h2 class="h2 h2--c" data-reveal>Ce que les parents nous demandent</h2>
       <div class="faq" data-reveal style="--d:.08s">
-        <details>
-          <summary>Est-ce que vous voyez mes photos ?</summary>
-          <p>Non. L'app retrouve les photos où votre bébé apparaît directement sur votre iPhone, sans rien envoyer. Seules les photos retenues pour le livre partent à l'impression, et seulement après votre validation.</p>
-        </details>
         <details>
           <summary>Et si je ne fais rien du tout ?</summary>
           <p>Le livre se fait quand même. Le prénom, la date de naissance et une photo de son visage suffisent : trois semaines avant ses 1 an, une notification vous prévient qu'il est prêt. Il ne vous reste qu'à dire oui.</p>
@@ -835,9 +821,7 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
     </p>
     <p class="foot__p foot__p--small">
       Réservation de 49 € encaissée via Stripe, soit le prix total du livre, remboursable
-      sans condition et sans justification. Reconnaissance faciale exécutée sur votre
-      appareil : aucune photothèque n'est transmise, aucun gabarit de visage n'est
-      conservé sur nos serveurs. Votre e-mail sert uniquement à vous informer de ce
+      sans condition et sans justification. Votre e-mail sert uniquement à vous informer de ce
       projet, conformément au RGPD. Photos d'illustration sous licence libre.
     </p>
     <nav class="foot__links">

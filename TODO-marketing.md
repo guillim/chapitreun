@@ -268,3 +268,5 @@ _(à remplir : date, chiffres, décision)_
 - **3 octobre 2026 (soir)** — pub D refaite en humour (maman qui lève les yeux
   au ciel, « Couches, biberons, lessives… et son album photo, on en parle ? »)
   : la version « 22 h, vous triez encore ses photos » était culpabilisante.
+- **3 octobre 2026 (soir)** — mentions vie privée retirées aussi de la landing
+  page et de la page Confidentialité (même raison).
