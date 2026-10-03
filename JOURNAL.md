@@ -189,6 +189,13 @@ confirmer avec un devis d'imprimeur.
 
 ## 5. Pièges rencontrés (à éviter la prochaine fois)
 
+**Côté mesure**
+- **Faire un vrai achat test et regarder les compteurs.** Celui du 3 octobre a
+  montré 3 `preorder_start` pour 1 achat : la page attend ~1 s avant Stripe
+  (envoi Formspree + GA4/Meta) et chaque clic pendant l'attente relançait
+  tout. Verrou anti double clic ajouté (PR #33). Meta affiche les événements
+  avec ~1 h de retard (agrégats horaires) : ne pas conclure trop tôt.
+
 **Côté Meta**
 - **Code du pixel ≠ balise du domaine.** La balise est une seule ligne
   `<meta name="facebook-domain-verification" content="…">`, trouvée dans
@@ -284,15 +291,15 @@ confirmer avec un devis d'imprimeur.
 - Il travaille en parallèle avec d'autres sessions : toujours repartir de
   `origin/main` à jour.
 
-## 8. État au 2 octobre 2026 au soir
+## 8. État au 3 octobre 2026 au matin
 
 Fait : page en ligne et rapide, paiement live, GA4 et pixel vérifiés,
 portefeuille, compte pub, page, Instagram et domaine Meta en place, règle de
-décision fixée.
+décision fixée, photos de pub tranchées (Pexels et Unsplash), Buffer connecté
+(page Facebook et Instagram), **achat test validé de bout en bout** (Stripe,
+merci.html, Formspree, GA4, Meta).
 
-Reste au fondateur : l'achat test de 49 € (puis remboursement). Le 3 octobre :
-photos de pub tranchées (Pexels et Unsplash), Buffer connecté (page Facebook
-et Instagram, publication possible par l'agent).
+Reste au fondateur : rien avant les pubs.
 
 Reste à l'agent ensuite : visuels A à E et vidéo démo, textes des pubs,
 campagne créée en pause dans Meta. Détail : `TODO-marketing.md`.
