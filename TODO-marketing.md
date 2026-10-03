@@ -21,10 +21,7 @@ Fichier interne, non publié sur chapitreun.com.
 >    49 € depuis chapitreun.com, vérifier l'arrivée sur `merci.html`, puis se
 >    rembourser dans Stripe. Ça valide d'un coup le montant, la redirection
 >    *After payment* du lien live et l'événement `Purchase` chez Meta et GA4.
-> 2. **Choisir pour les photos des pubs** : banque d'images avec autorisation
->    de modèle, ou photos de bébés de proches avec accord écrit. En attendant,
->    les visuels que je produis n'auront pas de visage de bébé.
-> 3. Facultatif : connecter **Metricool** pour que je publie aussi sur la page
+> 2. Facultatif : connecter **Metricool** pour que je publie aussi sur la page
 >    et Instagram.
 
 ### ✅ En place et vérifié
@@ -112,12 +109,13 @@ connecteur Metricool).
       la page (`source`, `campaign`) :
       `?utm_source=meta&utm_medium=paid&utm_campaign=test1&utm_content=<nom-de-la-pub>`.
       Groupes Facebook : `utm_source=facebook-groupe&utm_medium=organic`.
-- [ ] **[vous] Droits à l'image des photos.** Les photos actuelles sont CC0 :
-      droit d'auteur libre, **mais pas d'accord des personnes photographiées**
-      (voir `landing-page/assets/photos/CREDITS.md`). Pour de la publicité
-      payante : banque d'images avec autorisation de modèle (Adobe Stock,
-      Getty), ou photos de bébés de proches avec accord écrit des parents.
-      S'applique aux pubs **et** à la page vers laquelle elles pointent.
+- [x] **Droits à l'image des photos — tranché le 3 octobre 2026** : photos de
+      pub prises sur **Pexels et Unsplash** (gratuites, usage commercial
+      autorisé, rien à payer). Risque assumé par le fondateur : ces banques
+      ne garantissent pas l'accord des personnes photographiées. Écartés :
+      banque payante sans licence (contrefaçon, retrait par Meta), essai
+      Adobe Stock (jugé moins simple). Noter chaque photo utilisée (URL,
+      auteur) dans `landing-page/assets/photos/CREDITS.md`.
 - [x] **Page Facebook « Chapitre un »** créée (vérifié le 2 octobre 2026).
 - [x] **Compte publicitaire Meta « Chapitre un »** (`1428097829271108`), moyen de
       paiement ajouté, Instagram @chapitre.un.an relié (2 octobre 2026).
@@ -219,3 +217,6 @@ _(à remplir : date, chiffres, décision)_
   ≤ 25 €/achat → on construit ; 0,5–2 % ou 25–60 € → un tour de plus ;
   < 0,5 % et < 5 % de liste d'attente → on arrête. Décision après 500 visites
   ou 14 jours.
+- **3 octobre 2026** — photos des pubs : Pexels et Unsplash (gratuites,
+  usage commercial), risque « pas d'accord des personnes photographiées »
+  assumé. Pas de banque payante utilisée sans licence.
