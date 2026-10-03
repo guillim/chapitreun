@@ -56,3 +56,26 @@ Déposer un fichier du même nom dans ce dossier : les noms sont figés dans
 `index.html` et le recadrage est automatique (`object-fit: cover`). Si un
 fichier manque, la tuile retombe sur son dégradé d'origine — la page reste
 présentable, elle ne casse pas.
+
+## Pubs Meta (tour 1, octobre 2026)
+
+Photos des visuels de `pubs/tour-1/`, prises sur **Unsplash** (licence
+Unsplash : usage commercial gratuit, attribution non exigée). Comme pour CC0,
+la licence ne garantit pas l'accord des personnes photographiées : risque
+assumé par le fondateur le 3 octobre 2026. La pellicule de la pub A mêle ces
+photos et des photos CC0 de la page (`face-1`, `face-2`, `face-6`, `mois-01`,
+`mois-06`, `mois-12`, `det-1`, `det-3`). Pexels n'a pas servi pour ce tour.
+
+| Pub | Description | Auteur | Source |
+| --- | --- | --- | --- |
+| C | Bébé au chapeau de fête « 1 » | Selenay Balkan | [unsplash](https://unsplash.com/photos/Bt4XZy_MccE) |
+| D | Le soir, une mère et son bébé dans un fauteuil | Paul Johnston | [unsplash](https://unsplash.com/photos/UhvvbFDSzL8) |
+| E | Nouveau-né souriant sur un lit | Filip Mroz | [unsplash](https://unsplash.com/photos/oko_4WnoM98) |
+| A (pellicule) | Bébé souriant les yeux fermés | Wesley Tingey | [unsplash](https://unsplash.com/photos/beF1iDFiZkA) |
+| A (pellicule) | Bébé souriant sur un lit | Daniil Silantev | [unsplash](https://unsplash.com/photos/vJH_a_prTA4) |
+| A (pellicule) | Bébé en barboteuse grise | Christian Bowen | [unsplash](https://unsplash.com/photos/OJOE587CWuE) |
+| A (pellicule) | Bébé en haut rose | Daniel Thomas | [unsplash](https://unsplash.com/photos/_tYNzEqehMk) |
+| A (pellicule) | Bébé souriant | Carlos Martinez | [unsplash](https://unsplash.com/photos/RemPPN_hEng) |
+| A (pellicule) | Bébé assis sur un lit | Vikram Chouhan | [unsplash](https://unsplash.com/photos/mmrWRl-tFPw) |
+| A (pellicule) | Bébé devant des ballons | Selenay Balkan | [unsplash](https://unsplash.com/photos/L2RtGqIlv_0) |
+| A (pellicule) | Bébé en combinaison bleue | Gema Saputera | [unsplash](https://unsplash.com/photos/tMaxJsbRidQ) |
