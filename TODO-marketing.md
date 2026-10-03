@@ -21,11 +21,14 @@ Fichier interne, non publié sur chapitreun.com.
 >    49 € depuis chapitreun.com, vérifier l'arrivée sur `merci.html`, puis se
 >    rembourser dans Stripe. Ça valide d'un coup le montant, la redirection
 >    *After payment* du lien live et l'événement `Purchase` chez Meta et GA4.
-> 2. Facultatif : connecter **Buffer** (MCP `https://mcp.buffer.com/mcp`) pour que je publie aussi sur la page
->    et Instagram.
 
 ### ✅ En place et vérifié
 
+- **Buffer** (plan gratuit, compte guigloo@msn.com, organisation « My
+  organization » `6ac091ec8a70c328f489b3cf`) relié à Claude par le connecteur
+  MCP : canaux page Facebook « Chapitre un » (`6ac09441ea19ca0bde5ffd72`) et
+  Instagram @chapitre.un.an (`6ac092d5ea19ca0bde5ff547`). Limite gratuite :
+  10 posts programmés à la fois.
 - **Page Facebook « Chapitre un »** créée (ID `1295497923654612`), visible
   dans le connecteur Meta Ads.
 - **Pixel Meta `1461301452516353`** (« data de chapitreun », portefeuille
@@ -72,7 +75,7 @@ Connecteur **Meta Ads** (officiel, `https://mcp.facebook.com/ads`) branché le
 1er octobre 2026 : un agent peut créer campagnes, ensembles et pubs (créés en
 pause), téléverser les visuels, lire les statistiques. Il ne peut ni créer de
 compte pub ou de pixel, ni gérer la page ou publier sur Instagram (pour ça :
-connecteur Buffer).
+connecteur Buffer, en place depuis le 3 octobre 2026).
 
 - [x] **Lien Stripe live à 49 €** branché dans `script.js` le 2 octobre 2026.
 - [ ] **[vous] Tester le lien live** : vraie précommande puis remboursement

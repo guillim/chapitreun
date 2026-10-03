@@ -290,8 +290,9 @@ Fait : page en ligne et rapide, paiement live, GA4 et pixel vérifiés,
 portefeuille, compte pub, page, Instagram et domaine Meta en place, règle de
 décision fixée.
 
-Reste au fondateur : l'achat test de 49 € (puis remboursement), Buffer en
-option. Photos de pub : Pexels et Unsplash (tranché le 3 octobre).
+Reste au fondateur : l'achat test de 49 € (puis remboursement). Le 3 octobre :
+photos de pub tranchées (Pexels et Unsplash), Buffer connecté (page Facebook
+et Instagram, publication possible par l'agent).
 
 Reste à l'agent ensuite : visuels A à E et vidéo démo, textes des pubs,
 campagne créée en pause dans Meta. Détail : `TODO-marketing.md`.
