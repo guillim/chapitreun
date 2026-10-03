@@ -191,6 +191,13 @@ Les citations sont les demandes du fondateur, raccourcies.
   siestes à négocier… et son album photo, on en parle ? Respirez : son livre
   se fait tout seul. » **Ton : jamais culpabiliser le parent ; l'humour
   complice plutôt que le reproche.**
+- « Oui, je veux bien que tu retires aussi ces mentions » (vie privée sur la
+  page) → retirées de la landing page : bandeau « Analyse sur votre iPhone »,
+  note de la démo, phrase de l'étape 2, ligne « Où vont vos photos » du
+  comparatif, « Tout se passe sur votre iPhone » sous le formulaire (remplacé
+  par « Sans abonnement »), question FAQ « Est-ce que vous voyez mes
+  photos ? », phrase du pied de page ; et phrase de Confidentialité.
+  `competitor.md` marque l'argument comme retiré.
 
 ## 4. Décisions et leurs raisons
 

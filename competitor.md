@@ -109,8 +109,11 @@ pour un livre rigide chez un acteur grand public (relevé septembre 2026).
 
 1. **Zéro tri** : aucun concurrent bébé ne le promet (Chatbooks fait choisir
    30–60 photos par mois, Journi jusqu'à 1 200, Once Upon tout).
-2. **Photos qui restent sur l'iPhone** : Popsa fait sa reconnaissance faciale
+2. ~~**Photos qui restent sur l'iPhone**~~ : Popsa fait sa reconnaissance faciale
    dans le cloud ; aucune page ne dit « vos photos ne quittent pas le téléphone ».
+   **Argument retiré le 3 octobre 2026** (page et pubs) : le fondateur n'est pas
+   sûr de garder l'analyse sur l'iPhone dans le produit. Ne plus l'utiliser
+   tant que ce n'est pas tranché.
 3. **Textes écrits** : les autres génèrent des légendes ou demandent au parent
    d'écrire ; personne ne promet douze chapitres rédigés.
 4. **Livraison datée sur l'anniversaire** (« prêt 3 semaines avant ses 1 an ») :
