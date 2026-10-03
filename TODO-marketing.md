@@ -13,14 +13,27 @@ Fichier interne, non publié sur chapitreun.com.
 
 ---
 
-## Où on en est (3 octobre 2026, 9 h 20)
+## Où on en est (3 octobre 2026, 11 h)
 
-> ### ✅ Tous les prérequis sont faits
+> ### 🟡 Les pubs sont prêtes, en pause : à relire puis activer [vous]
 >
-> Achat test réel le 3 octobre (06:30 UTC) : paiement 49 € live puis
-> remboursement, redirection vers `merci.html`, inscription Formspree reçue,
-> `purchase` (49 €) dans GA4 Temps réel, `Purchase` + `InitiateCheckout` chez
-> Meta. Prochaine étape côté agent : visuels, textes, campagne en pause.
+> Campagne **« Test 1 · Précommande livre 1 an · oct. 2026 »**
+> (`120249512384540314`), en pause, 20 €/jour, optimisée sur
+> `InitiateCheckout`. Un ensemble « France · 25-40 · iPhone · large »
+> (`120249512388300314`) avec 4 pubs : A (4 000 photos), C (la date),
+> D (le soir), E (vie privée), en 4:5.
+> Visuels, vidéo et textes : `pubs/tour-1/` ; canevas modifiable :
+> https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26
+>
+> À faire de votre côté, dans le Gestionnaire de publicités :
+> 1. **Ajouter la pub B (vidéo démo)** : le connecteur ne peut pas encore
+>    téléverser de vidéo sur ce compte. Fichier `pubs/tour-1/B-demo-9x16.mp4`,
+>    texte et lien dans `pubs/tour-1/TEXTES.md`.
+> 2. Facultatif : sur chaque pub, « Personnaliser le visuel par placement »
+>    → version 9:16 pour Stories et Reels (fichiers `*-9x16.jpg`).
+> 3. Facultatif : ajouter les textes 2 et 3 de chaque pub (« Ajouter des
+>    options de texte »).
+> 4. Relire, puis **activer la campagne**.
 
 ### ✅ En place et vérifié
 
@@ -56,11 +69,11 @@ Fichier interne, non publié sur chapitreun.com.
 - **Lien Stripe live** `https://buy.stripe.com/eVqfZi5So9Nx8yrd3F77O03`
   branché dans `script.js` le 2 octobre (reste à le tester, point 1).
 
-### ⏳ Ce que Claude fera dès que l'achat test sera fait
+### ⏳ Ce que Claude fera une fois la campagne active
 
-Vérifier l'achat chez Meta, produire les visuels A à E et la vidéo démo,
-écrire les textes, puis créer la campagne **en pause** dans Meta pour
-relecture.
+Relevé des chiffres chaque semaine (section 5), coupe des pubs à moins de
+0,8 % de clics après ~1 000 impressions, bilan à J+14 avec la règle de
+décision.
 
 ---
 
@@ -110,7 +123,7 @@ connecteur Buffer, en place depuis le 3 octobre 2026).
       pour GA4 ; la page Confidentialité le mentionne.
 - [x] **Balise de vérification du domaine** posée dans `index.html`.
 - [x] **Domaine vérifié** dans Meta (2 octobre 2026).
-- [ ] **[ensemble] Convention d'UTM** pour chaque lien de pub, déjà lue par
+- [x] **[ensemble] Convention d'UTM** (appliquée aux pubs du tour 1) pour chaque lien de pub, déjà lue par
       la page (`source`, `campaign`) :
       `?utm_source=meta&utm_medium=paid&utm_campaign=test1&utm_content=<nom-de-la-pub>`.
       Groupes Facebook : `utm_source=facebook-groupe&utm_medium=organic`.
@@ -133,24 +146,24 @@ on ne vend pas un produit fini (obligation légale, et cohérent avec la page).
 
 Tester **4 à 6 pubs** au premier tour, une idée par pub :
 
-- [ ] **A. « 4 000 photos. 0 album. »** — image fixe, le constat en grand,
+- [x] **A. « 4 000 photos. 0 album. »** — image fixe, le constat en grand,
       puis « Le livre de sa première année se fait tout seul. » **[Claude]**
       peut produire l'image (même méthode que `og.jpg`).
-- [ ] **B. Démo iPhone (vidéo 10–15 s)** — prénom tapé, photo du visage
+- [x] **B. Démo iPhone (vidéo 10–15 s)** — faite (14,5 s, 9:16) ; **à ajouter à la main** dans Meta (voir en tête) — prénom tapé, photo du visage
       choisie, notification « Le livre de Léa est prêt ». **[Claude]** peut
       l'enregistrer depuis l'animation de la page (capture image par image +
       ffmpeg, disponible dans l'environnement).
-- [ ] **C. La date** — « Ses 1 an arrivent en mars. Son livre sera prêt fin
+- [x] **C. La date** — « Ses 1 an arrivent en mars. Son livre sera prêt fin
       février. » La promesse que personne ne fait (livraison datée).
-- [ ] **D. Les 40 minutes du soir** — le registre culpabilité → soulagement
+- [x] **D. Les 40 minutes du soir** — le registre culpabilité → soulagement
       (le meilleur levier relevé chez Popsa). Texte long, une photo douce.
-- [ ] **E. Vie privée** — « Vos photos ne quittent pas votre iPhone. » Pour
+- [x] **E. Vie privée** — « Vos photos ne quittent pas votre iPhone. » Pour
       les parents méfiants envers le cloud.
 - [ ] **F. [vous] Vidéo fondateur (20–30 s, face caméra, au téléphone)** —
       « L'app n'existe pas encore. Si 500 parents la veulent, je la construis.
       Sinon, je vous rembourse. » L'honnêteté est notre seul atout face aux
       avis que les concurrents ont et que nous n'avons pas.
-- [ ] **[Claude] Textes** : pour chaque pub, 3 textes principaux, 3 titres,
+- [x] **[Claude] Textes** (`pubs/tour-1/TEXTES.md`) : pour chaque pub, 3 textes principaux, 3 titres,
       1 description, en français, au ton de la page. Relus et validés par
       **[vous]**.
 - [ ] **[vous] Relecture finale de chaque pub** : aucune affirmation de la
@@ -159,9 +172,9 @@ Tester **4 à 6 pubs** au premier tour, une idée par pub :
 
 ## 2. Ciblage et budget (premier tour)
 
-- [ ] **[vous] Campagne « Ventes »** (objectif conversion `Purchase` si le
+- [x] **Campagne « Ventes »** créée en pause le 3 octobre, optimisée sur `InitiateCheckout` (aucun achat réel encore) (objectif conversion `Purchase` si le
       pixel remonte assez d'achats, sinon `InitiateCheckout`).
-- [ ] **Ciblage** : France, 25–40 ans, **appareils iOS uniquement** (l'app sera
+- [x] **Ciblage** (Advantage+ : France, iOS, 25 ans min., 25–40 en suggestion) : France, 25–40 ans, **appareils iOS uniquement** (l'app sera
       iPhone uniquement), ciblage large + centres d'intérêt parentalité ; laisser
       les créations faire le tri plutôt que d'empiler les critères.
 - [ ] **Budget** : semaine 1, ≈ 15–20 €/jour répartis sur les 4–6 pubs ;
@@ -235,3 +248,10 @@ _(à remplir : date, chiffres, décision)_
   Formspree, GA4, Meta). 1 achat, 3 `InitiateCheckout` et 1 inscription
   Formspree de test à **déduire au bilan**. Pour compter les achats, Stripe
   fait foi.
+- **3 octobre 2026** — pubs du tour 1 faites dans **Claude Design** (après
+  recherche des outils plébiscités : Canva, AdCreative.ai, Creatify/Arcads,
+  Advantage+ Creative ; Claude Design retenu car déjà disponible). Campagne
+  créée en pause : 20 €/jour au niveau campagne, optimisation
+  `InitiateCheckout`, une audience large, pubs A, C, D, E. Vidéo B et
+  versions 9:16 à ajouter à la main (outils du connecteur pas encore ouverts
+  sur ce compte).
