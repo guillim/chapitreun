@@ -72,7 +72,7 @@ pas servi pour ce tour.
 | --- | --- | --- | --- |
 | C | Bébé au chapeau de fête « 1 » | Selenay Balkan | [unsplash](https://unsplash.com/photos/Bt4XZy_MccE) |
 | D | Le soir, une mère et son bébé dans un fauteuil | Paul Johnston | [unsplash](https://unsplash.com/photos/UhvvbFDSzL8) |
-| E | Nouveau-né souriant sur un lit | Filip Mroz | [unsplash](https://unsplash.com/photos/oko_4WnoM98) |
+| E (retirée) | Nouveau-né souriant sur un lit | Filip Mroz | [unsplash](https://unsplash.com/photos/oko_4WnoM98) |
 | A (pellicule) | Bébé souriant les yeux fermés | Wesley Tingey | [unsplash](https://unsplash.com/photos/beF1iDFiZkA) |
 | A (pellicule) | Bébé souriant sur un lit | Daniil Silantev | [unsplash](https://unsplash.com/photos/vJH_a_prTA4) |
 | A (pellicule) | Bébé en barboteuse grise | Christian Bowen | [unsplash](https://unsplash.com/photos/OJOE587CWuE) |

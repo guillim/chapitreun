@@ -179,6 +179,11 @@ Les citations sont les demandes du fondateur, raccourcies.
   sans rien faire », avec le livre ouvert de la page en grand. Règle pour
   toutes les pubs : **montrer le livre et dire qu'il n'y a rien à faire avant
   de parler du problème**.
+- « Il faut supprimer la publicité E sur la vie privée, car je ne suis même
+  pas sûr de conserver cette fonctionnalité dans le produit. » → pub E
+  supprimée chez Meta, visuels retirés, mention « Analyse sur votre iPhone.
+  Aucune photo envoyée » enlevée de la vidéo B. **Ne pas promettre en pub
+  une fonction que le produit pourrait ne pas avoir.**
 
 ## 4. Décisions et leurs raisons
 
@@ -343,9 +348,9 @@ confirmer avec un devis d'imprimeur.
 Fait : page en ligne et rapide, paiement live, GA4 et pixel vérifiés,
 portefeuille, compte pub, page, Instagram et domaine Meta en place, règle de
 décision fixée, Buffer connecté, achat test validé de bout en bout,
-**pubs prêtes** : visuels A, C, D, E (4:5 et 9:16), vidéo démo B, textes
+**pubs prêtes** : visuels A, C, D (4:5 et 9:16), vidéo démo B, textes
 (`pubs/tour-1/`), campagne « Test 1 » créée **en pause** avec les pubs A, C,
-D, E (canevas : https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26).
+D (E, vie privée, supprimée à la relecture) (canevas : https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26).
 
 Reste au fondateur : relire les pubs, ajouter la vidéo B (et si possible les
 versions 9:16) dans le Gestionnaire de publicités, activer la campagne ; puis

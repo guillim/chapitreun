@@ -1,7 +1,6 @@
 # Pubs Meta — tour 1 (octobre 2026)
 
-Visuels : `A-livre-*.jpg`, `C-date-*.jpg`, `D-soir-*.jpg`,
-`E-vie-privee-*.jpg` (4:5 pour le fil, 9:16 pour Stories et Reels),
+Visuels : `A-livre-*.jpg`, `C-date-*.jpg`, `D-soir-*.jpg` (4:5 pour le fil, 9:16 pour Stories et Reels),
 `B-demo-9x16.mp4`. Source modifiable : canevas Claude Design
 https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26. Photos : voir
 `landing-page/assets/photos/CREDITS.md` (section « Pubs »).
@@ -9,13 +8,14 @@ https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26. Photos : voir
 Règles suivies : chaque pub dit « précommande » et « app en préparation » ;
 rien de la liste « Ce qu'on ne peut pas (encore) affirmer » de
 `competitor.md` (pas d'avis, pas de volumes, pas de prix barré : 69 € est
-présenté comme le prix prévu à la sortie, comme sur la page). La vie privée
-est dite comme sur la page : l'analyse se fait sur l'iPhone, seules les
-photos du livre partent à l'impression, après accord.
+présenté comme le prix prévu à la sortie, comme sur la page). **Pas d'argument
+sur la vie privée** (analyse sur l'iPhone, aucune photo envoyée) : le
+fondateur n'est pas sûr de garder cette fonction (3 octobre), la pub E a été
+supprimée et la mention retirée de la vidéo B.
 
 Lien de chaque pub :
 `https://chapitreun.com/?utm_source=meta&utm_medium=paid&utm_campaign=test1&utm_content=<nom>`
-avec `<nom>` = `a-livre`, `b-demo`, `c-date`, `d-soir`, `e-vie-privee`.
+avec `<nom>` = `a-livre`, `b-demo`, `c-date`, `d-soir`.
 Bouton : « Précommander » n'existe pas chez Meta → **« Commander »
 (ORDER_NOW)**.
 
@@ -61,8 +61,8 @@ pour vous · Tarif fondateur : 49 €
 1. Son prénom. Sa date de naissance. Une photo de son visage. C'est tout ce
    qu'on vous demande.
 
-   L'app retrouve les photos où votre bébé apparaît, directement sur votre
-   iPhone, et compose le livre de sa première année. Trois semaines avant ses
+   L'app retrouve les photos où votre bébé apparaît dans votre iPhone et
+   compose le livre de sa première année. Trois semaines avant ses
    1 an, il est prêt.
 
    App en préparation. Précommande 49 €, remboursable à tout moment.
@@ -123,26 +123,4 @@ Tarif fondateur : 49 €
    Précommande ouverte · app iPhone en préparation.
 
 **Titres** : Gardez vos soirées · Son livre, sans trier ses photos ·
-Précommande · 49 €
-
-## E · Vie privée
-
-**Textes principaux**
-
-1. Vous ne voulez pas envoyer des milliers de photos de votre bébé sur un
-   serveur ? Nous non plus.
-
-   Chapitre un cherche votre bébé dans vos photos directement sur votre iPhone.
-   Seules les photos retenues pour le livre partent à l'impression, et
-   seulement après votre accord.
-
-   App en préparation. Précommande 49 €, remboursable à tout moment.
-
-2. Le livre de sa première année, sans confier toute votre pellicule à une
-   app. L'analyse se fait sur votre iPhone. Précommande ouverte, 49 €.
-
-3. Ses photos restent sur votre iPhone. Seules celles du livre partent à
-   l'impression, après votre accord. Précommande 49 € · app en préparation.
-
-**Titres** : Analysé sur votre iPhone · Aucune photo envoyée pour trier ·
 Précommande · 49 €

@@ -20,8 +20,9 @@ Fichier interne, non publié sur chapitreun.com.
 > Campagne **« Test 1 · Précommande livre 1 an · oct. 2026 »**
 > (`120249512384540314`), en pause, 20 €/jour, optimisée sur
 > `InitiateCheckout`. Un ensemble « France · 25-40 · iPhone · large »
-> (`120249512388300314`) avec 4 pubs : A (4 000 photos), C (la date),
-> D (le soir), E (vie privée), en 4:5.
+> (`120249512388300314`) avec 3 pubs : A (son livre photo, sans rien
+> faire), C (la date), D (le soir), en 4:5. La pub E (vie privée) a été
+> supprimée le 3 octobre.
 > Visuels, vidéo et textes : `pubs/tour-1/` ; canevas modifiable :
 > https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26
 >
@@ -160,8 +161,9 @@ Tester **4 à 6 pubs** au premier tour, une idée par pub :
       février. » La promesse que personne ne fait (livraison datée).
 - [x] **D. Les 40 minutes du soir** — le registre culpabilité → soulagement
       (le meilleur levier relevé chez Popsa). Texte long, une photo douce.
-- [x] **E. Vie privée** — « Vos photos ne quittent pas votre iPhone. » Pour
-      les parents méfiants envers le cloud.
+- [x] ~~**E. Vie privée**~~ — **supprimée le 3 octobre** : le fondateur
+      n'est pas sûr de garder la fonction (analyse sur l'iPhone). Plus aucun
+      argument vie privée dans les pubs (mention retirée de la vidéo B).
 - [ ] **F. [vous] Vidéo fondateur (20–30 s, face caméra, au téléphone)** —
       « L'app n'existe pas encore. Si 500 parents la veulent, je la construis.
       Sinon, je vous rembourse. » L'honnêteté est notre seul atout face aux
@@ -258,3 +260,7 @@ _(à remplir : date, chiffres, décision)_
   `InitiateCheckout`, une audience large, pubs A, C, D, E. Vidéo B et
   versions 9:16 à ajouter à la main (outils du connecteur pas encore ouverts
   sur ce compte).
+- **3 octobre 2026 (soir)** — relecture du fondateur : pub A refaite (« Son
+  livre photo, sans rien faire », le livre d'abord) ; **pub E (vie privée)
+  supprimée** et mention « aucune photo envoyée » retirée de la vidéo B, car
+  la fonction n'est pas sûre d'être gardée. Restent A, C, D (+ B à ajouter).
