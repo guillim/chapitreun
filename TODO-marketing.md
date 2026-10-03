@@ -13,14 +13,14 @@ Fichier interne, non publié sur chapitreun.com.
 
 ---
 
-## Où on en est (2 octobre 2026, 23 h 30)
+## Où on en est (3 octobre 2026, 9 h 20)
 
-> ### 👉 À vous de faire maintenant, dans cet ordre
+> ### ✅ Tous les prérequis sont faits
 >
-> 1. **Tester le lien Stripe live** (5 min) : faire une vraie précommande de
->    49 € depuis chapitreun.com, vérifier l'arrivée sur `merci.html`, puis se
->    rembourser dans Stripe. Ça valide d'un coup le montant, la redirection
->    *After payment* du lien live et l'événement `Purchase` chez Meta et GA4.
+> Achat test réel le 3 octobre (06:30 UTC) : paiement 49 € live puis
+> remboursement, redirection vers `merci.html`, inscription Formspree reçue,
+> `purchase` (49 €) dans GA4 Temps réel, `Purchase` + `InitiateCheckout` chez
+> Meta. Prochaine étape côté agent : visuels, textes, campagne en pause.
 
 ### ✅ En place et vérifié
 
@@ -78,8 +78,10 @@ compte pub ou de pixel, ni gérer la page ou publier sur Instagram (pour ça :
 connecteur Buffer, en place depuis le 3 octobre 2026).
 
 - [x] **Lien Stripe live à 49 €** branché dans `script.js` le 2 octobre 2026.
-- [ ] **[vous] Tester le lien live** : vraie précommande puis remboursement
-      (montant, redirection vers `merci.html`, `Purchase` chez Meta et GA4).
+- [x] **Lien live testé le 3 octobre 2026** : vraie précommande puis
+      remboursement ; redirection vers `merci.html`, `Purchase` chez Meta et
+      `purchase` 49 € dans GA4 vérifiés. Le test a révélé qu'un double clic
+      comptait plusieurs `preorder_start` : corrigé (PR #33).
 - [x] **Règle de décision fixée le 2 octobre 2026** (avant toute dépense).
       On décide après **500 visites venues des pubs ou 14 jours**, au premier
       des deux termes :
@@ -229,3 +231,7 @@ _(à remplir : date, chiffres, décision)_
   États-Unis, contre 2,7/5 et 111 avis pour Metricool), et son MCP est inclus
   dans le plan gratuit. Comparatif : Buffer, Hootsuite, Publer, Metricool,
   Vista Social, SocialPilot.
+- **3 octobre 2026** — achat test validé de bout en bout (Stripe, merci.html,
+  Formspree, GA4, Meta). 1 achat, 3 `InitiateCheckout` et 1 inscription
+  Formspree de test à **déduire au bilan**. Pour compter les achats, Stripe
+  fait foi.
