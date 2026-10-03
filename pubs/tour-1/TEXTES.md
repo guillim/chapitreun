@@ -13,6 +13,17 @@ sur la vie privée** (analyse sur l'iPhone, aucune photo envoyée) : le
 fondateur n'est pas sûr de garder cette fonction (3 octobre), la pub E a été
 supprimée et la mention retirée de la vidéo B.
 
+**Visuels, version 3 (3 octobre au soir).** Après une recherche sur les pubs
+statiques qui marchent en 2026 (détail dans `JOURNAL.md`, 3 octobre), les
+trois visuels ont été refaits selon ces règles : **une idée par visuel**, un
+titre de 8 mots au plus, assez grand pour se lire en vignette ; **un sujet
+visuel net** (un visage, ou le livre tenu en mains) ; **le livre visible sur
+chaque pub** ; moins de 20 % de la surface en texte, pas de paragraphe (le
+détail est dans le texte principal, au-dessus de l'image) ; l'offre
+(« Précommande · 49 € ») et la mention « app en préparation · remboursable »
+sur l'image ; en 9:16, rien d'important dans les 270 px du haut ni les 670 px
+du bas (zones couvertes par l'interface de Stories et Reels).
+
 Lien de chaque pub :
 `https://chapitreun.com/?utm_source=meta&utm_medium=paid&utm_campaign=test1&utm_content=<nom>`
 avec `<nom>` = `a-livre`, `b-demo`, `c-date`, `d-humour`.
@@ -28,6 +39,13 @@ Description (commune, quand Meta l'affiche) : **Remboursable à tout moment**
 Version 2 (3 octobre, après relecture du fondateur) : la première version
 (« 4 000 photos. 0 album. ») parlait des photos qui s'entassent avant de
 parler du livre. Règle retenue : **le livre d'abord, puis « rien à faire »**.
+
+Visuel v3 : titre « Son livre photo, *sans rien faire.* », sous-titre « Fait à
+partir des photos de votre iPhone. App en préparation · remboursable à tout
+moment. », puis la photo d'une jeune femme qui tient le livre ouvert sur ses
+genoux (vue de dessus) ; notre double page « Chapitre 6 · Six mois » y est
+projetée dans les pages. La v2 montrait la double page seule, à plat, sur
+fond crème : trop « maquette », sans élément humain.
 
 **Textes principaux**
 
@@ -80,6 +98,11 @@ Précommande · 49 €
 
 ## C · La date
 
+Visuel v3 : photo du bébé au chapeau « 1 » (plus grande, en haute
+définition), carte du livre posée sur le bord de la photo, titre en trois
+lignes courtes : « Ses 1 an arrivent. *Son livre sera prêt 3 semaines
+avant.* ». La ligne « depuis votre iPhone » a été retirée du visuel.
+
 **Textes principaux**
 
 1. Ses 1 an arrivent plus vite que prévu. Son livre, lui, sera prêt trois
@@ -107,6 +130,11 @@ Version 2 (3 octobre, après relecture du fondateur) : la première version
 (« 22 h, la maison dort. Et vous triez encore ses photos. ») était
 culpabilisante et pessimiste. Ton retenu : **l'humour**, une maman qui lève
 les yeux au ciel (« pfff, je fais trop de choses »), puis la solution.
+
+Visuel v3 : même photo, en haute définition et resserrée sur la grimace de la
+maman et le visage du bébé ; titre raccourci « Couches, biberons, lessives…
+*et son album photo, on en parle ?* » puis une seule ligne de réponse :
+« Respirez : il se fait tout seul. »
 
 **Textes principaux**
 

@@ -198,6 +198,37 @@ Les citations sont les demandes du fondateur, raccourcies.
   par « Sans abonnement »), question FAQ « Est-ce que vous voyez mes
   photos ? », phrase du pied de page ; et phrase de Confidentialité.
   `competitor.md` marque l'argument comme retiré.
+- « J'aime bien les pubs, mais il y a probablement des améliorations à
+  apporter. Revois les visuels avec tout ce que tu sais des pubs qui
+  fonctionnent sur Instagram ; commence par des recherches sur les sites
+  spécialisés. » → recherche sur les six derniers mois (benchmarks Motion
+  2026 sur 550 000 pubs Meta ; étude Curtis Howland de 67 852 pubs de 106
+  marques DTC ; guides des zones sûres 2026 ; playbooks statiques de
+  Superscale, Admetrics, Brandmov, Stirling) et Bibliothèque publicitaire
+  Meta (Cheerz, Popsa, Nos Petites Aventures, Souvence). Ce qui en ressort,
+  et qu'on a appliqué :
+  - **une idée par visuel**, titre de 8 mots au plus, assez grand pour se
+    lire en vignette (le fil affiche l'image à environ 36 % de sa taille) ;
+  - **un sujet visuel net en moins d'une demi-seconde** : un visage, ou le
+    produit tenu en mains ; les maquettes à plat et les photos de banque trop
+    léchées font « pub » et convertissent moins ;
+  - **le produit et l'offre visibles** sur l'image, moins de 20 % de la
+    surface en texte, pas de paragraphe (le texte principal au-dessus porte
+    le détail) ;
+  - **zones sûres 9:16** unifiées par Meta en mars 2026 : 270 px en haut,
+    670 px en bas, 65 px sur les côtés ;
+  - les pubs simples (texte seul, produit + texte) sont parmi celles qui
+    gagnent le plus souvent ; environ 5 % des pubs deviennent de vrais
+    gagnants, d'où l'intérêt de tester plusieurs angles.
+  Côté concurrents, toutes les pubs vendent la vitesse et la remise (Popsa
+  « Livres photo en 5 minutes - 50 % », Cheerz « -20 % », « Créez votre
+  album ») : « sans rien faire » reste un cran au-dessus de « 5 minutes ».
+  Résultat (version 3 des visuels) : **A** = une vraie photo d'un livre
+  ouvert tenu en mains, dans lequel notre double page est projetée (quatre
+  coins → `matrix3d`, fondu `multiply` pour garder la lumière des pages et
+  les pouces) ; **C** = photo plus grande, titre en trois lignes courtes,
+  carte du livre ; **D** = photo resserrée sur la grimace, titre raccourci,
+  une ligne de réponse. Les créations Meta sont recréées (voir pièges).
 
 ## 4. Décisions et leurs raisons
 
@@ -222,6 +253,7 @@ Les citations sont les demandes du fondateur, raccourcies.
 | **20 €/jour** au niveau campagne, une seule audience large | Haut de la fourchette du plan (15–20 €/jour, 300–500 € au total) ; 4 à 5 pubs dans un seul ensemble pour que Meta répartisse | 280 € sur 14 jours |
 | Audience Advantage+ : France, iPhone (iOS), 25 ans min., 25–40 ans en **suggestion** | Meta refuse un âge maximum ferme sous 65 ans avec Advantage+ | Vérifier la répartition par âge au bilan |
 | Bouton **« Commander »** (`ORDER_NOW`) | « Précommander » n'existe pas chez Meta | — |
+| Visuels **v3** refaits d'après les benchmarks 2026 (3 oct. soir) | Une idée par visuel, titre court et grand, visage ou livre en mains, texte < 20 %, zones sûres 9:16 | Comparer au bilan le CTR des trois ; si tout est < 0,8 %, c'est le message, pas la mise en page |
 
 **Règle de décision** (adoptée le 2 octobre) : après 500 visites venues des
 pubs ou 14 jours, au premier des deux termes.
@@ -287,6 +319,25 @@ confirmer avec un devis d'imprimeur.
   < 65 interdit avec Advantage+ : passer `age_range` en suggestion.
 - La description n'apparaît ni dans le fil Facebook ni sur Instagram pour une
   image seule : ne rien y mettre d'important.
+- Meta **télécharge l'image au moment où la création publicitaire est
+  créée** : remplacer le fichier à la même URL ne change pas la pub en
+  ligne, il faut recréer la création et la pub (et supprimer l'ancienne). De
+  plus, raw.githubusercontent.com garde l'ancien fichier en cache quelques
+  minutes après un merge : vérifier le `sha256` du fichier servi avant de
+  créer la création.
+
+**Côté visuels (3 octobre, soir)**
+- Projeter notre double page dans la photo d'un vrai livre : relever les
+  quatre coins de chaque page sur la photo (zooms quadrillés), calculer
+  l'homographie page → coins (système 8×8 résolu à la main, pas de numpy
+  dans l'environnement : `homog.py`), l'appliquer en CSS `matrix3d`, et
+  poser la page en `mix-blend-mode: multiply` pour garder l'ombre du papier
+  et les doigts qui tiennent le livre. Rendu une fois en JPG, puis utilisé
+  comme simple image dans le canevas.
+- Unsplash : la recherche passe par `unsplash.com/napi/search/photos`
+  (bloquée pour curl par le contrôle anti-robot, accessible via WebFetch) ;
+  les images se téléchargent librement sur `images.unsplash.com`. Reprendre
+  les photos en 2 000 px et plus dès qu'on recadre serré.
 
 **Côté Google et Stripe**
 - Dans GA4, « Create an event / Create without code » fabrique un **nouvel**
@@ -357,14 +408,15 @@ confirmer avec un devis d'imprimeur.
 - Il travaille en parallèle avec d'autres sessions : toujours repartir de
   `origin/main` à jour.
 
-## 8. État au 3 octobre 2026, fin de matinée
+## 8. État au 3 octobre 2026, soir
 
 Fait : page en ligne et rapide, paiement live, GA4 et pixel vérifiés,
 portefeuille, compte pub, page, Instagram et domaine Meta en place, règle de
 décision fixée, Buffer connecté, achat test validé de bout en bout,
-**pubs prêtes** : visuels A, C, D (4:5 et 9:16), vidéo démo B, textes
-(`pubs/tour-1/`), campagne « Test 1 » créée **en pause** avec les pubs A, C,
-D (E, vie privée, supprimée à la relecture) (canevas : https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26).
+**pubs prêtes** : visuels A, C, D (4:5 et 9:16, refaits le soir d'après les
+bonnes pratiques 2026), vidéo démo B, textes (`pubs/tour-1/`), campagne
+« Test 1 » créée **en pause** avec les pubs A, C, D (E, vie privée,
+supprimée à la relecture) (canevas : https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26).
 
 Reste au fondateur : relire les pubs, ajouter la vidéo B (et si possible les
 versions 9:16) dans le Gestionnaire de publicités, activer la campagne ; puis
