@@ -411,8 +411,15 @@
       done.scrollIntoView({ block: 'center', behavior: reduce ? 'auto' : 'smooth' });
     };
 
+    // un seul envoi à la fois : un double clic pendant l'attente avant Stripe
+    // compterait plusieurs preorder_start ; libéré au retour arrière depuis Stripe
+    let busy = false;
+    addEventListener('pageshow', () => { busy = false; });
+
     const submit = async intent => {
+      if (busy) return;
       if (!validate()) { track('form_error', { intent }); return; }
+      busy = true;
       const data = {
         email: email.value.trim(),
         birth_month: month.value,
@@ -438,6 +445,7 @@
         location.assign(u.toString());
         return;
       }
+      busy = false;
       finish(intent);
     };
 
