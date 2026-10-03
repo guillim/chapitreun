@@ -146,7 +146,10 @@ on ne vend pas un produit fini (obligation légale, et cohérent avec la page).
 
 Tester **4 à 6 pubs** au premier tour, une idée par pub :
 
-- [x] **A. « 4 000 photos. 0 album. »** — image fixe, le constat en grand,
+- [x] **A. « Son livre photo, sans rien faire »** (version 2 du 3 octobre :
+      le livre ouvert en grand ; la version 1 ci-dessous partait des photos
+      et a été remplacée après relecture) —
+      ancienne idée : **« 4 000 photos. 0 album. »** — image fixe, le constat en grand,
       puis « Le livre de sa première année se fait tout seul. » **[Claude]**
       peut produire l'image (même méthode que `og.jpg`).
 - [x] **B. Démo iPhone (vidéo 10–15 s)** — faite (14,5 s, 9:16) ; **à ajouter à la main** dans Meta (voir en tête) — prénom tapé, photo du visage

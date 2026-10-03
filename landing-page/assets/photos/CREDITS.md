@@ -62,9 +62,11 @@ présentable, elle ne casse pas.
 Photos des visuels de `pubs/tour-1/`, prises sur **Unsplash** (licence
 Unsplash : usage commercial gratuit, attribution non exigée). Comme pour CC0,
 la licence ne garantit pas l'accord des personnes photographiées : risque
-assumé par le fondateur le 3 octobre 2026. La pellicule de la pub A mêle ces
-photos et des photos CC0 de la page (`face-1`, `face-2`, `face-6`, `mois-01`,
-`mois-06`, `mois-12`, `det-1`, `det-3`). Pexels n'a pas servi pour ce tour.
+assumé par le fondateur le 3 octobre 2026. La pub A (version 2) montre le livre
+ouvert de la page, avec ses photos CC0 (`det-6`, `det-2`, `det-1`,
+`mois-06`). La pellicule de la version 1 (retirée) mêlait les photos
+marquées « A (pellicule) » ci-dessous et des photos CC0 de la page. Pexels n'a
+pas servi pour ce tour.
 
 | Pub | Description | Auteur | Source |
 | --- | --- | --- | --- |

@@ -172,6 +172,13 @@ Les citations sont les demandes du fondateur, raccourcies.
   rejouée image par image, 14,5 s), textes, puis campagne créée **en pause**
   avec 4 pubs. Le connecteur ne sait pas encore téléverser une vidéo sur ce
   compte : B est à ajouter à la main.
+- Relecture du fondateur, pub A (« 4 000 photos. 0 album. ») : « la première
+  chose qui devrait être présentée, c'est que nous allons lui faire un livre
+  photo sans qu'il n'y ait rien à faire. Là, on a l'impression de traiter
+  uniquement des photos qui servent à rien. » → A refaite : « Son livre photo,
+  sans rien faire », avec le livre ouvert de la page en grand. Règle pour
+  toutes les pubs : **montrer le livre et dire qu'il n'y a rien à faire avant
+  de parler du problème**.
 
 ## 4. Décisions et leurs raisons
 

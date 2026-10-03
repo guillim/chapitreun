@@ -1,7 +1,7 @@
 # Pubs Meta — tour 1 (octobre 2026)
 
-Visuels : `A-photos-*.png`, `C-date-*.png`, `D-soir-*.png`,
-`E-vie-privee-*.png` (4:5 pour le fil, 9:16 pour Stories et Reels),
+Visuels : `A-livre-*.jpg`, `C-date-*.jpg`, `D-soir-*.jpg`,
+`E-vie-privee-*.jpg` (4:5 pour le fil, 9:16 pour Stories et Reels),
 `B-demo-9x16.mp4`. Source modifiable : canevas Claude Design
 https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26. Photos : voir
 `landing-page/assets/photos/CREDITS.md` (section « Pubs »).
@@ -15,7 +15,7 @@ photos du livre partent à l'impression, après accord.
 
 Lien de chaque pub :
 `https://chapitreun.com/?utm_source=meta&utm_medium=paid&utm_campaign=test1&utm_content=<nom>`
-avec `<nom>` = `a-photos`, `b-demo`, `c-date`, `d-soir`, `e-vie-privee`.
+avec `<nom>` = `a-livre`, `b-demo`, `c-date`, `d-soir`, `e-vie-privee`.
 Bouton : « Précommander » n'existe pas chez Meta → **« Commander »
 (ORDER_NOW)**.
 
@@ -23,34 +23,36 @@ Description (commune, quand Meta l'affiche) : **Remboursable à tout moment**
 
 ---
 
-## A · « 4 000 photos. 0 album. »
+## A · « Son livre photo, sans rien faire »
+
+Version 2 (3 octobre, après relecture du fondateur) : la première version
+(« 4 000 photos. 0 album. ») parlait des photos qui s'entassent avant de
+parler du livre. Règle retenue : **le livre d'abord, puis « rien à faire »**.
 
 **Textes principaux**
 
-1. 4 000 photos de votre bébé dans votre iPhone. Et toujours pas d'album.
+1. Le livre photo de sa première année, sans rien avoir à faire.
 
-   Chapitre un retrouve ses photos pour vous et compose le livre de sa
-   première année : un chapitre par mois, déjà écrit. Vous relisez, vous dites
-   oui, il arrive imprimé.
+   Donnez son prénom, sa date de naissance et une photo de son visage :
+   Chapitre un retrouve ses photos dans votre iPhone et compose le livre, un
+   chapitre par mois, déjà écrit. Vous relisez, vous dites oui, il arrive
+   imprimé chez vous.
 
    L'app iPhone est en préparation. Réservez votre livre au tarif fondateur :
    49 €, remboursable à tout moment.
 
-2. Vous vous étiez promis de faire son album. Les photos, elles, continuent de
-   s'empiler.
-
-   Avec Chapitre un, vous donnez son prénom, sa date de naissance et une photo
-   de son visage. L'app retrouve le reste dans votre iPhone et compose le livre
-   de sa première année.
+2. Un vrai livre de sa première année, et vous n'avez pas une seule photo à
+   trier. On s'occupe de tout : retrouver ses photos, choisir les plus belles,
+   mettre en page.
 
    Précommande ouverte : 49 € pour les 500 premiers (69 € prévu à la sortie),
    remboursable sans question.
 
-3. Le livre de sa première année se fait tout seul. Vous n'avez pas une seule
-   photo à trier. Précommande 49 € · app iPhone en préparation.
+3. Son livre photo des 1 an se fait tout seul. Vous n'avez rien à faire.
+   Précommande 49 € · app iPhone en préparation.
 
-**Titres** : Le livre de ses 1 an, sans trier · 4 000 photos, enfin un livre ·
-Tarif fondateur : 49 €
+**Titres** : Son livre photo, sans rien faire · Le livre de ses 1 an, fait
+pour vous · Tarif fondateur : 49 €
 
 ## B · Démo iPhone (vidéo 14 s)
 
