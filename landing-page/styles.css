@@ -515,36 +515,13 @@ img,svg{ max-width:100%; }
 
 /* ── 6. Finitions ────────────────────────────────────────── */
 .fin{ display:grid; gap:44px; }
-.fin__cover{ display:grid; place-items:center; }
-.scene--flat{ perspective:1500px; }
-.book--closed{ justify-content:center; transform:rotateX(4deg); }
-.book__cover{
-  width:min(292px,76vw); aspect-ratio:1/1.045; position:relative;
-  background:linear-gradient(150deg,#EFE4D2,#E0CFB6 55%,#D4BFA2);
-  border-radius:3px 7px 7px 3px;
-  box-shadow:var(--shadow-l), inset 0 0 0 1px rgba(255,255,255,.45);
-  padding:38px 30px; display:flex; flex-direction:column; align-items:center;
-  text-align:center; transform:rotateY(-13deg); transform-origin:left center;
-}
-.book__cover::after{ content:""; position:absolute; inset:14px;
-  border:1px solid rgba(120,92,64,.22); border-radius:2px; }
-.cover__pre{ font-size:.62rem; letter-spacing:.24em; text-transform:uppercase;
-  color:rgba(90,66,44,.75); margin:14px 0 0; }
-.cover__name{ font-family:var(--serif); font-style:italic;
-  font-size:clamp(2.4rem,11vw,3.3rem); margin:auto 0; line-height:1;
-  font-variation-settings:"SOFT" 80; }
-.foil{
-  background:linear-gradient(100deg,#8A6A45 0%,#C9A46A 26%,#F3E3BE 42%,#C9A46A 58%,#8A6A45 100%);
-  background-size:260% 100%; -webkit-background-clip:text; background-clip:text;
-  color:transparent; -webkit-text-fill-color:transparent;
-}
-.is-in .foil{ animation:foil 4.5s var(--ease) 1.1s infinite; }
-@keyframes foil{ 0%{ background-position:120% 0 } 45%,100%{ background-position:-40% 0 } }
-.cover__rule{ width:34px; height:1px; background:rgba(90,66,44,.4); }
-.cover__date{ font-size:.66rem; letter-spacing:.14em; color:rgba(90,66,44,.7); margin:14px 0 8px; }
-.book__edge{ width:13px; margin:14px 0 18px; border-radius:0 4px 4px 0;
-  background:repeating-linear-gradient(180deg,#FFFDF8 0 2px,#E6D8C4 2px 3px);
-  transform:rotateY(-13deg); transform-origin:left center; box-shadow:var(--shadow-l); }
+/* le vrai objet, en quatre photos : la couverture en grand, le dos et une
+   double page côte à côte, une autre double page en grand */
+.fin__shots{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.shot{ margin:0; aspect-ratio:4/3; border-radius:var(--r-l); overflow:hidden;
+  background:var(--paper-2); box-shadow:var(--shadow-m); }
+.shot--wide{ grid-column:1 / -1; aspect-ratio:16/9; }
+.shot img{ width:100%; height:100%; object-fit:cover; display:block; }
 
 .fin__list{ list-style:none; margin:0; padding:0; display:grid; gap:2px; }
 .fin__list li{ padding:20px 0; border-top:1px solid var(--line-2); }
@@ -928,7 +905,6 @@ img,svg{ max-width:100%; }
   .marq__track{ animation:none; }
   .scene--float{ animation:none; }
   .auto,.crop__frame{ opacity:1; transform:none; }
-  .foil{ -webkit-text-fill-color:#8A6A45; color:#8A6A45; }
 }
 
 /* ── Impression ──────────────────────────────────────────── */

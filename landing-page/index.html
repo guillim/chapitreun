@@ -499,18 +499,20 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
       </header>
 
       <div class="fin">
-        <div class="fin__cover" data-reveal data-tilt>
-          <div class="scene scene--flat">
-            <div class="book book--closed">
-              <div class="book__cover">
-                <p class="cover__pre">Sa première année</p>
-                <p class="cover__name"><span class="foil">Léa</span></p>
-                <div class="cover__rule" aria-hidden="true"></div>
-                <p class="cover__date">mars 2025 — mars 2026</p>
-              </div>
-              <div class="book__edge" aria-hidden="true"></div>
-            </div>
-          </div>
+        <!-- le vrai objet, en quatre photos : la couverture, le dos, deux doubles pages -->
+        <div class="fin__shots">
+          <figure class="shot shot--wide" data-reveal>
+            <img src="assets/photos/livre-couverture.webp" srcset="assets/photos/livre-couverture-400.webp 400w, assets/photos/livre-couverture.webp 702w" sizes="(min-width: 900px) 508px, 92vw" width="702" height="382" alt="Le livre fermé : couverture en toile crème, « Chapitre Un · 1 an » marqué à l'or." loading="lazy" decoding="async">
+          </figure>
+          <figure class="shot" data-reveal style="--d:.07s">
+            <img src="assets/photos/livre-dos.webp" srcset="assets/photos/livre-dos-400.webp 400w, assets/photos/livre-dos.webp 702w" sizes="(min-width: 900px) 250px, 45vw" width="702" height="382" alt="Le dos du livre, « 1 an » marqué à l'or sur la toile." loading="lazy" decoding="async">
+          </figure>
+          <figure class="shot" data-reveal style="--d:.14s">
+            <img src="assets/photos/livre-ouvert-1.webp" srcset="assets/photos/livre-ouvert-1-400.webp 400w, assets/photos/livre-ouvert-1.webp 702w" sizes="(min-width: 900px) 250px, 45vw" width="702" height="382" alt="Le livre ouvert à plat : un portrait souriant à gauche, une petite main à droite." loading="lazy" decoding="async">
+          </figure>
+          <figure class="shot shot--wide" data-reveal style="--d:.21s">
+            <img src="assets/photos/livre-ouvert-2.webp" srcset="assets/photos/livre-ouvert-2-400.webp 400w, assets/photos/livre-ouvert-2.webp 702w" sizes="(min-width: 900px) 508px, 92vw" width="702" height="382" alt="Le livre ouvert sur les derniers chapitres : les premiers pas et le gâteau du premier anniversaire." loading="lazy" decoding="async">
+          </figure>
         </div>
 
         <ul class="fin__list">

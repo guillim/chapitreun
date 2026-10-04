@@ -242,6 +242,22 @@ Les citations sont les demandes du fondateur, raccourcies.
   réelle : l'app n'existe pas), 4:5 et 9:16, dans le même canevas.
 - « Pas besoin de cocher "contenu généré par IA" » : décision du fondateur,
   aucune déclaration sur les créations.
+- Retouches de texte sur la page, à la demande du fondateur et d'un relecteur :
+  citation sur les souvenirs retirée, chiffre « 3 mois » retiré, titre
+  « Une seule minute. », promesse « vie privée » supprimée (quatre promesses
+  suffisent), et « reconnaissance du visage » remplacé partout par le
+  bénéfice d'abord (« l'app retrouve les photos où votre bébé apparaît »)
+  puis la réassurance (« la détection se fait sur votre iPhone »).
+- Le fondateur fournit une **planche de quatre visuels du livre** (couverture
+  toile crème « Chapitre Un · 1 an » à l'or, dos, deux doubles pages) : « fais
+  ce que tu veux pour les inclure ». Choix : les mettre en mosaïque dans la
+  section « finitions », à la place de la couverture dessinée en CSS (prénom
+  « Léa » doré). C'est la section qui parle de l'objet, et c'est la seule
+  place où une vraie photo du produit vaut plus qu'une maquette. Pas dans
+  l'accueil : la planche ne fait que 702 px par vue, trop peu pour un plein
+  écran, et la maquette CSS de l'accueil montre les textes de chapitre, qu'on
+  ne voit pas sur les visuels. Point à trancher : la couverture photographiée
+  porte la marque, alors que le texte promet le prénom de l'enfant.
 
 ## 4. Décisions et leurs raisons
 

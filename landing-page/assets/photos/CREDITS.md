@@ -28,6 +28,12 @@ créditées ici par honnêteté et pour que chaque fichier reste vérifiable.
 | `mois-09.jpg` | Father Baby | Direct Media | CC0 | [source](https://stocksnap.io/photo/father-baby-6WRNAIQGJZ) |
 | `mois-12.jpg` | Baby eating a muffin | freestocks.org | CC0 | [source](https://www.flickr.com/photos/135396164@N05/34801565602) |
 
+Les quatre photos du livre lui-même (`livre-couverture`, `livre-dos`,
+`livre-ouvert-1`, `livre-ouvert-2`) sont des **visuels produit fournis par le
+fondateur** le 4 octobre 2026 (rendu du livre, pas une photo d'un exemplaire
+imprimé), recadrés depuis une planche de quatre vues de 1408 × 768 px. Ils ne
+sont pas sous licence libre : ils appartiennent au projet.
+
 ## Avant une vraie mise en ligne
 
 CC0 couvre le droit d'auteur, **pas le droit à l'image** : ces licences ne
@@ -46,6 +52,7 @@ des parents, comme le prévoit le brief.
 | `mois-01/03/06/09/12.jpg` | Doubles pages de la galerie | Paysage et portrait mêlés |
 | `det-1` à `det-6.jpg` | Détails dans les doubles pages et la pellicule | Gros plans |
 | `face-1` à `face-6.jpg` | Grille de visages de l'iPhone, pellicule, recadrage | Carré, visage centré |
+| `livre-couverture`, `livre-dos`, `livre-ouvert-1`, `livre-ouvert-2.jpg` | Mosaïque de la section « finitions » | Paysage ~16:9, 702 px de large (une version plus définie serait bienvenue) |
 
 `face-1.jpg` sert aussi à la démonstration « jamais une tête coupée » : garder
 un visage nettement visible si vous la remplacez.
