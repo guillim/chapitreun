@@ -280,6 +280,9 @@ _(à remplir : date, chiffres, décision)_
   10 jours (100 € au total)** : 280 € jugé trop cher pour un premier test.
   Conséquence : environ 150 à 250 visites attendues au lieu de 500, donc un
   signal plus faible ; la règle de décision reste la même, appliquée à J+10.
+- **4 octobre 2026** — emplacements : **Instagram uniquement** (fil, Stories,
+  Reels, Explorer, profil, recherche), **mobile uniquement**, iOS. Facebook,
+  Audience Network, Threads et ordinateur retirés.
 - **3 octobre 2026 (soir)** — relecture du fondateur : pub A refaite (« Son
   livre photo, sans rien faire », le livre d'abord) ; **pub E (vie privée)
   supprimée** et mention « aucune photo envoyée » retirée de la vidéo B, car
