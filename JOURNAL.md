@@ -264,12 +264,14 @@ Les citations sont les demandes du fondateur, raccourcies.
 | Visuels des pubs dans **Claude Design** (3 oct.) | Déjà disponible, canevas modifiable par le fondateur, rendu exportable en PNG | Canva (connecteur) reste possible si le fondateur veut retoucher lui-même |
 | Campagne « Ventes » optimisée sur **`InitiateCheckout`**, pas `Purchase` | Pixel neuf, aucun achat réel : Meta ne peut pas apprendre sur `Purchase` à 20 €/jour | Passer sur `Purchase` si les achats dépassent ~10 par semaine |
 | **20 €/jour** au niveau campagne, une seule audience large | Haut de la fourchette du plan (15–20 €/jour, 300–500 € au total) ; 4 à 5 pubs dans un seul ensemble pour que Meta répartisse | 280 € sur 14 jours |
+| Budget ramené à **10 €/jour pendant 10 jours** (4 oct., avant lancement) | 280 € jugé trop cher par le fondateur pour un premier test | 100 € au total ; ~150–250 visites attendues, signal plus faible : si le résultat tombe dans la zone grise, prolonger plutôt que conclure |
 | Audience Advantage+ : France, iPhone (iOS), 25 ans min., 25–40 ans en **suggestion** | Meta refuse un âge maximum ferme sous 65 ans avec Advantage+ | Vérifier la répartition par âge au bilan |
 | Bouton **« Commander »** (`ORDER_NOW`) | « Précommander » n'existe pas chez Meta | — |
 | Visuels **v3** refaits d'après les benchmarks 2026 (3 oct. soir) | Une idée par visuel, titre court et grand, visage ou livre en mains, texte < 20 %, zones sûres 9:16 | Comparer au bilan le CTR des trois ; si tout est < 0,8 %, c'est le message, pas la mise en page |
 
 **Règle de décision** (adoptée le 2 octobre) : après 500 visites venues des
-pubs ou 14 jours, au premier des deux termes.
+pubs ou 14 jours, au premier des deux termes (ramené à 10 jours le
+4 octobre, avec le budget).
 
 | Résultat | Décision |
 |---|---|

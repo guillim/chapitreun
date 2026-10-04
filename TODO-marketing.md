@@ -18,7 +18,7 @@ Fichier interne, non publié sur chapitreun.com.
 > ### 🟡 Les pubs sont prêtes, en pause : à relire puis activer [vous]
 >
 > Campagne **« Test 1 · Précommande livre 1 an · oct. 2026 »**
-> (`120249512384540314`), en pause, 20 €/jour, optimisée sur
+> (`120249512384540314`), en pause, 10 €/jour pendant 10 jours, optimisée sur
 > `InitiateCheckout`. Un ensemble « France · 25-40 · iPhone · large »
 > (`120249512388300314`) avec 4 pubs : A (son livre photo, sans rien
 > faire), C (la date), D (trop de choses à faire, en humour), G (notification
@@ -101,7 +101,8 @@ connecteur Buffer, en place depuis le 3 octobre 2026).
       `purchase` 49 € dans GA4 vérifiés. Le test a révélé qu'un double clic
       comptait plusieurs `preorder_start` : corrigé (PR #33).
 - [x] **Règle de décision fixée le 2 octobre 2026** (avant toute dépense).
-      On décide après **500 visites venues des pubs ou 14 jours**, au premier
+      On décide après **500 visites venues des pubs ou 10 jours** (14 à
+      l'origine, ramené à 10 le 4 octobre), au premier
       des deux termes :
 
       | Résultat | Décision |
@@ -195,10 +196,11 @@ Tester **4 à 6 pubs** au premier tour, une idée par pub :
 - [x] **Ciblage** (Advantage+ : France, iOS, 25 ans min., 25–40 en suggestion) : France, 25–40 ans, **appareils iOS uniquement** (l'app sera
       iPhone uniquement), ciblage large + centres d'intérêt parentalité ; laisser
       les créations faire le tri plutôt que d'empiler les critères.
-- [ ] **Budget** : semaine 1, ≈ 15–20 €/jour répartis sur les 4–6 pubs ;
-      semaine 2, couper tout ce qui a un taux de clic < 0,8 % après ~1 000
+- [ ] **Budget** : **10 €/jour** (ramené de 20 € le 4 octobre, 100 € au
+      total) répartis sur les 5 pubs ;
+      à J+4–5, couper tout ce qui a un taux de clic < 0,8 % après ~1 000
       impressions et mettre le budget sur les 2 meilleures.
-- [ ] **Durée** : 14 jours maximum, puis application de la règle de décision
+- [ ] **Durée** : 10 jours maximum, puis application de la règle de décision
       (section 0).
 - [ ] **Titre de la page** : le test A/B existe déjà (`?t=a` « se fait tout
       seul » / `?t=b` « en 5 minutes »). Laisser tourner, comparer dans GA4 par
@@ -241,7 +243,7 @@ Tester **4 à 6 pubs** au premier tour, une idée par pub :
       achat, inscriptions liste d'attente.
 - [ ] **[Claude] Compteur fondateur réel** dès les premiers achats (remplacer
       le compteur simulé de `script.js`).
-- [ ] **[ensemble] Décision à J+14**, notée ici avec les chiffres.
+- [ ] **[ensemble] Décision à J+10**, notée ici avec les chiffres.
 
 ---
 
@@ -273,6 +275,11 @@ _(à remplir : date, chiffres, décision)_
   `InitiateCheckout`, une audience large, pubs A, C, D, E. Vidéo B et
   versions 9:16 à ajouter à la main (outils du connecteur pas encore ouverts
   sur ce compte).
+- **4 octobre 2026** — vidéo B et versions 9:16 de A, C, D, G ajoutées à la
+  main par le fondateur (5 pubs). **Budget ramené à 10 €/jour pendant
+  10 jours (100 € au total)** : 280 € jugé trop cher pour un premier test.
+  Conséquence : environ 150 à 250 visites attendues au lieu de 500, donc un
+  signal plus faible ; la règle de décision reste la même, appliquée à J+10.
 - **3 octobre 2026 (soir)** — relecture du fondateur : pub A refaite (« Son
   livre photo, sans rien faire », le livre d'abord) ; **pub E (vie privée)
   supprimée** et mention « aucune photo envoyée » retirée de la vidéo B, car
