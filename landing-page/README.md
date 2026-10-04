@@ -77,7 +77,8 @@ registre — **aucun texte ni aucune image n'en a été repris**.
 - **Chaque argument porte une démonstration visuelle**, pas une icône : la
   pellicule qui se coche seule, le calendrier, la comparaison de recadrage, le
   sommaire, le trajet des photos.
-- **Section « finitions »** consacrée à l'objet physique.
+- **Section « finitions »** consacrée à l'objet physique, avec quatre photos
+  du vrai livre (couverture, dos, deux doubles pages).
 - **Galerie des pages du livre**, l'équivalent de leur mur de produits.
 - **Bouton de réservation répété** à l'identique du haut en bas de la page.
 - **Sous-titre systématique** sous chaque titre de section.
@@ -242,7 +243,7 @@ aucun souvenir de sa première année, le parent en est le seul dépositaire.
   côté origine) tout répondait en 0,05–0,2 s. Aucune optimisation de la page ne
   peut compenser ça : le remède est côté Cloudflare, voir `TODO.md`.
 - `prefers-reduced-motion` coupe toutes les animations ; la démo iPhone se fige
-  sur la notification, le titre doré ne scintille plus.
+  sur la notification.
 - Sans JavaScript, tout le contenu reste visible, le formulaire s'affiche et la
   barre de navigation reste lisible (elle n'est transparente que si le JS tourne).
 - Un filet de sécurité dans le `<head>` révèle toute la page si `script.js` ne se
