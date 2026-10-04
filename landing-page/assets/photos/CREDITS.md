@@ -67,7 +67,8 @@ vrai livre tenu en mains (photo Unsplash de John, ci-dessous, pages blanches)
 dans lequel la double page de la page web est projetée, avec ses photos CC0
 (`det-6`, `det-2`, `det-1`, `mois-06`) ; la version 2 montrait cette double
 page seule. Les photos de C et D ont été reprises en plus haute définition le
-3 octobre au soir (mêmes photos). La pellicule de la version 1 (retirée) mêlait les photos
+3 octobre au soir (mêmes photos). La pub G (4 octobre, écran verrouillé
+d'iPhone) utilise comme fond d'écran la photo `hero.jpg` de la page (CC0). La pellicule de la version 1 (retirée) mêlait les photos
 marquées « A (pellicule) » ci-dessous et des photos CC0 de la page. Pexels n'a
 pas servi pour ce tour.
 

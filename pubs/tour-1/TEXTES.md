@@ -1,6 +1,6 @@
 # Pubs Meta — tour 1 (octobre 2026)
 
-Visuels : `A-livre-*.jpg`, `C-date-*.jpg`, `D-humour-*.jpg` (4:5 pour le fil, 9:16 pour Stories et Reels),
+Visuels : `A-livre-*.jpg`, `C-date-*.jpg`, `D-humour-*.jpg`, `G-notif-*.jpg` (4:5 pour le fil, 9:16 pour Stories et Reels),
 `B-demo-9x16.mp4`. Source modifiable : canevas Claude Design
 https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26. Photos : voir
 `landing-page/assets/photos/CREDITS.md` (section « Pubs »).
@@ -26,7 +26,7 @@ du bas (zones couvertes par l'interface de Stories et Reels).
 
 Lien de chaque pub :
 `https://chapitreun.com/?utm_source=meta&utm_medium=paid&utm_campaign=test1&utm_content=<nom>`
-avec `<nom>` = `a-livre`, `b-demo`, `c-date`, `d-humour`.
+avec `<nom>` = `a-livre`, `b-demo`, `c-date`, `d-humour`, `g-notif`.
 Bouton : « Précommander » n'existe pas chez Meta → **« Commander »
 (ORDER_NOW)**.
 
@@ -157,4 +157,39 @@ maman et le visage du bébé ; titre raccourci « Couches, biberons, lessives…
    Précommande ouverte, 49 €.
 
 **Titres** : Son album ? Il se fait tout seul · Une chose de moins à faire ·
+Précommande · 49 €
+
+## G · Notification (format « natif », 4 octobre)
+
+Visuel qui ressemble à une capture de l'écran verrouillé d'un iPhone : fond
+d'écran = une photo de bébé (la photo `hero.jpg` de la page, CC0), heure
+« 07:42 », notification « **Chapitre un** — Le livre de Léa est prêt · 12
+chapitres, 96 photos choisies parmi 4 312. Relisez-le, dites oui : il arrive
+imprimé chez vous. », et un autocollant façon story : « Ce qui arrivera
+3 semaines avant ses 1 an ↑ · App iPhone en préparation · précommande 49 €,
+remboursable ». Pourquoi : d'après la recherche du 3 octobre, les visuels qui
+ne ressemblent pas à une pub (captures d'écran, notifications, contenu
+d'utilisateur) sont parmi ceux qui marchent le mieux en trafic froid. Le texte
+principal reste sobre, comme un post, pas comme une annonce.
+
+**Textes principaux**
+
+1. Un matin, trois semaines avant ses 1 an, cette notification.
+
+   Le livre est déjà fait : 12 chapitres, ses plus belles photos, retrouvées
+   dans votre iPhone. Vous relisez, vous dites oui, il arrive imprimé chez
+   vous.
+
+   L'app iPhone est en préparation. Précommande 49 €, remboursable à tout
+   moment.
+
+2. Vous n'aurez rien fait. Son livre de la première année sera quand même
+   prêt, trois semaines avant son anniversaire.
+
+   Précommande 49 € · app iPhone en préparation.
+
+3. La seule notification qu'on a envie de recevoir. Précommande ouverte :
+   49 €, remboursable.
+
+**Titres** : Son livre, prêt sans rien faire · Prêt 3 semaines avant ses 1 an ·
 Précommande · 49 €

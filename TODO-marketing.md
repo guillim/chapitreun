@@ -13,15 +13,16 @@ Fichier interne, non publié sur chapitreun.com.
 
 ---
 
-## Où on en est (3 octobre 2026, soir)
+## Où on en est (4 octobre 2026)
 
 > ### 🟡 Les pubs sont prêtes, en pause : à relire puis activer [vous]
 >
 > Campagne **« Test 1 · Précommande livre 1 an · oct. 2026 »**
 > (`120249512384540314`), en pause, 20 €/jour, optimisée sur
 > `InitiateCheckout`. Un ensemble « France · 25-40 · iPhone · large »
-> (`120249512388300314`) avec 3 pubs : A (son livre photo, sans rien
-> faire), C (la date), D (trop de choses à faire, en humour), en 4:5. La pub E (vie privée) a été
+> (`120249512388300314`) avec 4 pubs : A (son livre photo, sans rien
+> faire), C (la date), D (trop de choses à faire, en humour), G (notification
+> iPhone, format « natif », ajoutée le 4 octobre), en 4:5. La pub E (vie privée) a été
 > supprimée le 3 octobre. Visuels **refaits le 3 octobre au soir** d'après
 > les bonnes pratiques 2026 (une idée par visuel, grand titre, visage ou
 > livre tenu en mains, zones sûres 9:16) ; les pubs Meta ont été recréées
@@ -171,6 +172,11 @@ Tester **4 à 6 pubs** au premier tour, une idée par pub :
 - [x] ~~**E. Vie privée**~~ — **supprimée le 3 octobre** : le fondateur
       n'est pas sûr de garder la fonction (analyse sur l'iPhone). Plus aucun
       argument vie privée dans les pubs (mention retirée de la vidéo B).
+- [x] **G. Notification iPhone (format « natif »)** — 4 octobre : une fausse
+      capture d'écran verrouillé, « Le livre de Léa est prêt », avec un
+      autocollant « Ce qui arrivera 3 semaines avant ses 1 an ». Format
+      « qui ne ressemble pas à une pub », parmi les plus performants en
+      trafic froid d'après la recherche du 3 octobre. **[Claude]**, fait.
 - [ ] **F. [vous] Vidéo fondateur (20–30 s, face caméra, au téléphone)** —
       « L'app n'existe pas encore. Si 500 parents la veulent, je la construis.
       Sinon, je vous rembourse. » L'honnêteté est notre seul atout face aux
@@ -281,3 +287,7 @@ _(à remplir : date, chiffres, décision)_
   8 mots au plus, visage ou livre en mains, moins de 20 % de texte, zones
   sûres 9:16) ; détail dans `JOURNAL.md`. Pubs Meta recréées avec les
   nouveaux visuels (Meta fige l'image à la création), mêmes textes et liens.
+- **4 octobre 2026** — 4ᵉ pub ajoutée, **G « Notification »** (capture
+  d'écran verrouillé d'iPhone, format natif) : le fondateur a retenu la
+  suggestion issue de la recherche. Pas de déclaration « contenu généré par
+  IA » sur les pubs (décision du fondateur : rien à déclarer).
