@@ -258,6 +258,14 @@ Les citations sont les demandes du fondateur, raccourcies.
   écran, et la maquette CSS de l'accueil montre les textes de chapitre, qu'on
   ne voit pas sur les visuels. Point à trancher : la couverture photographiée
   porte la marque, alors que le texte promet le prénom de l'enfant.
+- « Ce tableau de comparaison est moche sur ordinateur. » Cause : les règles
+  « tableau » étaient dans le bloc `@media (min-width:900px)`, mais les
+  règles « cartes téléphone » venaient **après** dans le fichier et, à
+  spécificité égale, les écrasaient : plus d'en-têtes de colonnes, critères
+  en petites capitales, cartes séparées. Les règles de la comparaison sont
+  désormais regroupées en un seul bloc, téléphone d'abord puis ordinateur,
+  avec un vrai tableau : en-têtes, critères en Fraunces, colonne
+  « Chapitre un » teintée avec une coche, tiret gris chez les autres.
 
 ## 4. Décisions et leurs raisons
 

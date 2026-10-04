@@ -853,31 +853,18 @@ img,svg{ max-width:100%; }
   .spread{ flex-basis:min(74vw,860px); }
   .gal__track{ padding-inline:max(22px, calc((100vw - 1180px) / 2)); }
 
-  .cmp{ gap:0; background:var(--card); border:1px solid var(--line-2);
-    border-radius:var(--r-l); overflow:hidden; box-shadow:var(--shadow-s); }
-  .cmp__head{ display:grid; grid-template-columns:1.1fr 1fr 1.15fr;
-    background:var(--paper-2); border-bottom:1px solid var(--line-2); }
-  .cmp__head span{ padding:14px 20px; font-size:.7rem; letter-spacing:.13em;
-    text-transform:uppercase; color:var(--ink-3); }
-  .cmp__head .is-us{ color:var(--accent-d); background:var(--accent-w); }
-  .cmp__row{ display:grid; grid-template-columns:1.1fr 1fr 1.15fr; align-items:center;
-    border:none; border-bottom:1px solid var(--line-2); border-radius:0; padding:0;
-    box-shadow:none; background:transparent; }
-  .cmp__row:last-child{ border-bottom:none; }
-  .cmp__crit{ margin:0; padding:20px; text-transform:none; letter-spacing:0;
-    font-size:.98rem; color:var(--ink); }
-  .cmp__a,.cmp__b{ padding:20px; border:none; display:block; }
-  .cmp__b{ background:#FAEEE6; background:color-mix(in srgb, var(--accent-w) 45%, transparent);
-    height:100%; display:flex; align-items:center; }
-  .cmp__a::before,.cmp__b::before{ display:none; }
-  .sec--cmp .wrap--narrow{ max-width:880px; }
 
   .sticky{ left:auto; right:24px; bottom:max(24px, env(safe-area-inset-bottom)); }
 }
 
 @media (min-width:1100px){ .phone{ width:264px; } }
 
-/* ── Comparaison : cartes sur mobile ─────────────────────── */
+/* ── Comparaison ─────────────────────────────────────────
+   Téléphone : une carte par critère, les deux réponses l'une sous l'autre
+   avec leur étiquette. Ordinateur : un vrai tableau, en-têtes de colonnes,
+   colonne « Chapitre un » teintée et cochée. Toutes les règles sont ici,
+   dans cet ordre, pour que celles d'ordinateur gagnent sur celles de
+   téléphone (même spécificité : c'est la dernière écrite qui compte). */
 .cmp{ margin-top:38px; display:grid; gap:12px; }
 .cmp__head{ display:none; }
 .cmp__row{ background:var(--card); border:1px solid var(--line-2); border-radius:var(--r);
@@ -890,6 +877,35 @@ img,svg{ max-width:100%; }
 .cmp__a::before,.cmp__b::before{ content:attr(data-label); font-size:.64rem; letter-spacing:.11em;
   text-transform:uppercase; color:var(--ink-3); font-weight:400; }
 .cmp__b::before{ color:var(--accent-d); }
+
+@media (min-width:900px){
+  .sec--cmp .wrap--narrow{ max-width:920px; }
+  .cmp{ gap:0; margin-top:44px; background:var(--card); border:1px solid var(--line-2);
+    border-radius:var(--r-l); overflow:hidden; box-shadow:var(--shadow-m); }
+  .cmp__head,.cmp__row{ display:grid; grid-template-columns:1fr 1.05fr 1.25fr; }
+  .cmp__head{ border-bottom:1px solid var(--line); }
+  .cmp__head span{ padding:18px 26px; font-size:.7rem; font-weight:500; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); }
+  .cmp__head .is-us{ color:var(--accent-d); font-weight:600; background:var(--accent-w); }
+  .cmp__row{ align-items:stretch; border:none; border-bottom:1px solid var(--line-2);
+    border-radius:0; padding:0; box-shadow:none; background:transparent; }
+  .cmp__row:last-child{ border-bottom:none; }
+  .cmp__crit{ margin:0; padding:22px 26px; text-transform:none; letter-spacing:0;
+    font-family:var(--serif); font-size:1.12rem; color:var(--ink); display:flex; align-items:center;
+    font-variation-settings:"SOFT" 60; }
+  .cmp__a,.cmp__b{ margin:0; padding:22px 26px; border:none; display:flex; align-items:center;
+    gap:12px; font-size:.98rem; line-height:1.4; }
+  .cmp__a{ color:var(--ink-2); }
+  .cmp__b{ color:var(--ink); font-weight:500;
+    background:#FAF1EB; background:color-mix(in srgb, var(--accent-w) 45%, var(--card)); }
+  /* pastilles : un tiret gris chez les autres, une coche cuivre chez nous */
+  .cmp__a::before,.cmp__b::before{ content:""; flex:none; width:20px; height:20px; border-radius:50%;
+    background-position:center; background-repeat:no-repeat; }
+  .cmp__a::before{ border:1px solid var(--line); background-color:transparent;
+    background-image:linear-gradient(var(--ink-3),var(--ink-3)); background-size:8px 1.5px; }
+  .cmp__b::before{ background-color:var(--accent); background-size:11px 11px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FFFDF9' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 7 10 18l-6-5.4'/%3E%3C/svg%3E"); }
+}
 
 /* ── Mouvement réduit ────────────────────────────────────── */
 @media (prefers-reduced-motion:reduce){
