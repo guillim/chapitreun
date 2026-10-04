@@ -299,6 +299,7 @@ Les citations sont les demandes du fondateur, raccourcies.
 | Budget ramené à **10 €/jour pendant 10 jours** (4 oct., avant lancement) | 280 € jugé trop cher par le fondateur pour un premier test | 100 € au total ; ~150–250 visites attendues, signal plus faible : si le résultat tombe dans la zone grise, prolonger plutôt que conclure |
 | **Instagram uniquement, mobile uniquement** (4 oct., avant lancement) | Le filtre iOS ne s'applique qu'aux mobiles : sans ça, des internautes sur ordinateur voyaient la pub. Audience Network et Threads faussent le taux de clic (clics accidentels). Facebook retiré aussi, par choix du fondateur | Remettre Facebook si le coût par clic Instagram est trop élevé |
 | Audience Advantage+ : France, iPhone (iOS), 25 ans min., 25–40 ans en **suggestion** | Meta refuse un âge maximum ferme sous 65 ans avec Advantage+ | Vérifier la répartition par âge au bilan |
+| **30–45 ans ferme**, Advantage+ audience désactivée (4 oct., avant lancement) | Choix du fondateur : âge des parents d'un premier bébé avec un iPhone ; seul moyen d'avoir un âge maximum ferme | Audience plus petite, coût par clic possiblement plus élevé : réactiver Advantage+ si la diffusion peine |
 | Bouton **« Commander »** (`ORDER_NOW`) | « Précommander » n'existe pas chez Meta | — |
 | Visuels **v3** refaits d'après les benchmarks 2026 (3 oct. soir) | Une idée par visuel, titre court et grand, visage ou livre en mains, texte < 20 %, zones sûres 9:16 | Comparer au bilan le CTR des trois ; si tout est < 0,8 %, c'est le message, pas la mise en page |
 
