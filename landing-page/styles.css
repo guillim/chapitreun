@@ -859,10 +859,9 @@ img,svg{ max-width:100%; }
   .hero__copy{ flex:1 1 560px; min-width:0; max-width:640px; }
   .hero .lede{ font-size:1.2rem; }
   /* le livre apparaît en bas à droite, comme une vignette du résultat */
-  .hero__book{ display:block; width:min(340px,32vw); flex:none; }
-  .hero__book .book__page{ padding:13px 12px; gap:7px; }
-  .hero__book .chap__title{ font-size:1.35rem; }
-  .hero__book .chap__text{ font-size:.63rem; }
+  .hero__book{ display:block; width:min(460px,38vw); flex:none; margin-right:-24px; }
+  .hero__book-img{ display:block; width:100%; height:auto;
+    filter:drop-shadow(0 24px 30px rgba(20,12,6,.45)) drop-shadow(0 4px 8px rgba(20,12,6,.3)); }
 
   .how{ grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
   .how__sticky{ position:sticky; top:96px; }

@@ -75,25 +75,13 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
       </div>
 
       <!-- le livre posé dans la scène, comme preuve du résultat -->
-      <div class="hero__book" data-reveal style="--d:.3s" data-tilt>
-        <div class="scene scene--float">
-          <div class="book">
-            <div class="book__page book__page--l">
-              <div class="ph ph--tall"><img src="assets/photos/det-6.webp" srcset="assets/photos/det-6-400.webp 400w, assets/photos/det-6.webp 750w" sizes="(min-width: 900px) 243px, 243px" alt="" loading="lazy" decoding="async"></div>
-              <div class="book__row">
-                <div class="ph"><img src="assets/photos/det-2.webp" srcset="assets/photos/det-2-400.webp 400w, assets/photos/det-2.webp 500w" sizes="(min-width: 900px) 69px, 69px" alt="" loading="lazy" decoding="async"></div>
-                <div class="ph"><img src="assets/photos/det-1.webp" srcset="assets/photos/det-1-400.webp 400w, assets/photos/det-1.webp 750w" sizes="(min-width: 900px) 78px, 78px" alt="" loading="lazy" decoding="async"></div>
-              </div>
-            </div>
-            <div class="book__spine" aria-hidden="true"></div>
-            <div class="book__page book__page--r">
-              <p class="chap">Chapitre&nbsp;6</p>
-              <p class="chap__title">Six mois</p>
-              <div class="ph ph--wide"><img src="assets/photos/mois-06.webp" srcset="assets/photos/mois-06-400.webp 400w, assets/photos/mois-06.webp 950w" sizes="(min-width: 900px) 145px, 145px" alt="" loading="lazy" decoding="async"></div>
-              <p class="chap__text">Elle tient assise, presque. Le matin, elle attend que la maison se réveille en parlant toute seule.</p>
-              <p class="chap__folio">· 34 ·</p>
-            </div>
-          </div>
+      <div class="hero__book" data-reveal style="--d:.3s">
+        <div class="scene--float">
+          <img class="hero__book-img" src="assets/photos/livre-ouvert.webp"
+               srcset="assets/photos/livre-ouvert-520.webp 520w, assets/photos/livre-ouvert.webp 960w"
+               sizes="min(460px, 38vw)" width="960" height="536"
+               alt="Le livre ouvert au chapitre 6, « Six mois » : photos de mains et de pieds de bébé, couverture en toile"
+               loading="lazy" decoding="async">
         </div>
       </div>
     </div>
