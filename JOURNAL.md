@@ -230,6 +230,19 @@ Les citations sont les demandes du fondateur, raccourcies.
   carte du livre ; **D** = photo resserrée sur la grimace, titre raccourci,
   une ligne de réponse. Les créations Meta sont recréées (voir pièges).
 
+### 4 octobre — la quatrième pub, au format « natif »
+- « Je veux bien que tu crées la 4ᵉ pub qui est censée bien marcher à
+  froid. » → pub **G « Notification »** : une fausse capture de l'écran
+  verrouillé d'un iPhone (fond d'écran = photo de bébé, heure, notification
+  « Le livre de Léa est prêt », autocollant façon story « Ce qui arrivera
+  3 semaines avant ses 1 an · app en préparation · précommande 49 € »).
+  C'est le format « qui ne ressemble pas à une pub » que la recherche du
+  3 octobre place parmi les meilleurs en trafic froid ; c'est aussi la
+  scène clé de la vidéo B, en image fixe. Dessinée en HTML (pas de capture
+  réelle : l'app n'existe pas), 4:5 et 9:16, dans le même canevas.
+- « Pas besoin de cocher "contenu généré par IA" » : décision du fondateur,
+  aucune déclaration sur les créations.
+
 ## 4. Décisions et leurs raisons
 
 | Décision | Pourquoi | Conséquence à surveiller |
@@ -408,15 +421,15 @@ confirmer avec un devis d'imprimeur.
 - Il travaille en parallèle avec d'autres sessions : toujours repartir de
   `origin/main` à jour.
 
-## 8. État au 3 octobre 2026, soir
+## 8. État au 4 octobre 2026
 
 Fait : page en ligne et rapide, paiement live, GA4 et pixel vérifiés,
 portefeuille, compte pub, page, Instagram et domaine Meta en place, règle de
 décision fixée, Buffer connecté, achat test validé de bout en bout,
 **pubs prêtes** : visuels A, C, D (4:5 et 9:16, refaits le soir d'après les
 bonnes pratiques 2026), vidéo démo B, textes (`pubs/tour-1/`), campagne
-« Test 1 » créée **en pause** avec les pubs A, C, D (E, vie privée,
-supprimée à la relecture) (canevas : https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26).
+« Test 1 » créée **en pause** avec les pubs A, C, D et G (notification
+iPhone, format natif, 4 octobre ; E, vie privée, supprimée à la relecture) (canevas : https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26).
 
 Reste au fondateur : relire les pubs, ajouter la vidéo B (et si possible les
 versions 9:16) dans le Gestionnaire de publicités, activer la campagne ; puis
