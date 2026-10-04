@@ -19,7 +19,7 @@ Fichier interne, non publié sur chapitreun.com.
 >
 > Campagne **« Test 1 · Précommande livre 1 an · oct. 2026 »**
 > (`120249512384540314`), en pause, 10 €/jour pendant 10 jours, optimisée sur
-> `InitiateCheckout`. Un ensemble « France · 25-40 · iPhone · large »
+> `InitiateCheckout`. Un ensemble « France · Femmes 30-45 · iPhone · Instagram »
 > (`120249512388300314`) avec 4 pubs : A (son livre photo, sans rien
 > faire), C (la date), D (trop de choses à faire, en humour), G (notification
 > iPhone, format « natif », ajoutée le 4 octobre), en 4:5. La pub E (vie privée) a été
@@ -283,6 +283,9 @@ _(à remplir : date, chiffres, décision)_
 - **4 octobre 2026** — emplacements : **Instagram uniquement** (fil, Stories,
   Reels, Explorer, profil, recherche), **mobile uniquement**, iOS. Facebook,
   Audience Network, Threads et ordinateur retirés.
+- **4 octobre 2026** — **femmes, 30–45 ans ferme** (Advantage+ audience
+  désactivée pour pouvoir fixer un âge maximum). Ensemble renommé
+  « France · Femmes 30-45 · iPhone · Instagram ».
 - **3 octobre 2026 (soir)** — relecture du fondateur : pub A refaite (« Son
   livre photo, sans rien faire », le livre d'abord) ; **pub E (vie privée)
   supprimée** et mention « aucune photo envoyée » retirée de la vidéo B, car
