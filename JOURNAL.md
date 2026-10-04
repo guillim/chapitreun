@@ -266,6 +266,14 @@ Les citations sont les demandes du fondateur, raccourcies.
   désormais regroupées en un seul bloc, téléphone d'abord puis ordinateur,
   avec un vrai tableau : en-têtes, critères en Fraunces, colonne
   « Chapitre un » teintée avec une coche, tiret gris chez les autres.
+- « Cette photo doit disparaître de tout notre site » : la photo mois 9
+  (adulte déguisé en bébé) était réapparue dans la galerie. Elle avait été
+  remplacée dans le `.jpg` dès le 28 septembre, mais les `.webp` (générés
+  pendant le chantier performance, depuis l'ancien `.jpg`) l'avaient gardée,
+  et c'est le WebP que la page affiche. WebP refaits depuis le bon `.jpg`
+  (père qui soulève son bébé). Vérifié que l'image n'est nulle part ailleurs
+  (planche de toutes les images du site et des pubs, images de la vidéo B).
+  Piège noté dans `CREDITS.md` : vérifier les WebP, pas seulement les JPG.
 
 ## 4. Décisions et leurs raisons
 

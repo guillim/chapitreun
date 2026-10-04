@@ -26,6 +26,13 @@ créditées ici par honnêteté et pour que chaque fichier reste vérifiable.
 | `mois-03.jpg` | Hand Finger | Matt Bango | CC0 | [source](https://stocksnap.io/photo/hand-finger-I98URJTH2H) |
 | `mois-06.jpg` | Baby Foot | Matt Bango | CC0 | [source](https://stocksnap.io/photo/baby-foot-0LMXQSCJNY) |
 | `mois-09.jpg` | Father Baby | Direct Media | CC0 | [source](https://stocksnap.io/photo/father-baby-6WRNAIQGJZ) |
+
+`mois-09` : la photo d'origine (un adulte déguisé en bébé, retirée le
+28 septembre) avait survécu dans `mois-09.webp` et `mois-09-400.webp`, générés
+avant le remplacement du `.jpg`. Les deux WebP ont été refaits le 4 octobre
+2026 à partir du `.jpg` ci-dessus (recadrage portrait). En cas de doute sur
+une photo, **vérifier les WebP, pas seulement le JPG** : c'est le WebP que la
+page affiche.
 | `mois-12.jpg` | Baby eating a muffin | freestocks.org | CC0 | [source](https://www.flickr.com/photos/135396164@N05/34801565602) |
 
 Les quatre photos du livre lui-même (`livre-couverture`, `livre-dos`,
