@@ -275,6 +275,18 @@ Les citations sont les demandes du fondateur, raccourcies.
   (planche de toutes les images du site et des pubs, images de la vidéo B).
   Piège noté dans `CREDITS.md` : vérifier les WebP, pas seulement les JPG.
 
+### 5 octobre — lancement
+- « est-il possible de cibler des usagers avec un fort pouvoir d'achat ? »
+  → pas de ciblage par revenu en France chez Meta (seulement aux
+  États-Unis). Approximations possibles : modèles d'iPhone récents, codes
+  postaux aisés, centres d'intérêt (peu fiables). Non retenu : le test doit
+  dire si des parents ordinaires achètent à 49 € ; un public aisé gonflerait
+  la conversion. Si besoin plus tard : un second ensemble « iPhone récents »
+  comparé à l'actuel.
+- « go » → campagne, ensemble et 5 pubs activés via le connecteur Meta ;
+  fin de l'ensemble programmée le 14 octobre à 23 h 59 (10 jours,
+  ≈ 100 €). Juste après l'activation, les pubs sont « en cours d'examen ».
+
 ## 4. Décisions et leurs raisons
 
 | Décision | Pourquoi | Conséquence à surveiller |
@@ -458,7 +470,7 @@ confirmer avec un devis d'imprimeur.
 - Il travaille en parallèle avec d'autres sessions : toujours repartir de
   `origin/main` à jour.
 
-## 8. État au 4 octobre 2026
+## 8. État au 5 octobre 2026
 
 Fait : page en ligne et rapide, paiement live, GA4 et pixel vérifiés,
 portefeuille, compte pub, page, Instagram et domaine Meta en place, règle de
@@ -468,7 +480,8 @@ bonnes pratiques 2026), vidéo démo B, textes (`pubs/tour-1/`), campagne
 « Test 1 » créée **en pause** avec les pubs A, C, D et G (notification
 iPhone, format natif, 4 octobre ; E, vie privée, supprimée à la relecture) (canevas : https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26).
 
-Reste au fondateur : relire les pubs, ajouter la vidéo B (et si possible les
-versions 9:16) dans le Gestionnaire de publicités, activer la campagne ; puis
-vidéo face caméra (pub F), message aux parents de l'entourage. Détail :
-`TODO-marketing.md`.
+**Campagne lancée le 5 octobre** (5 pubs A, B, C, D, G ; femmes 30–45,
+iPhone, Instagram ; 10 €/jour ; arrêt automatique le 14 octobre).
+Reste : vérifier la diffusion et le pixel, couper les pubs faibles à
+J+3/J+5, bilan à J+10 ; vidéo face caméra (pub F), message aux parents de
+l'entourage. Détail : `TODO-marketing.md`.

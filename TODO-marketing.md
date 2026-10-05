@@ -13,32 +13,26 @@ Fichier interne, non publié sur chapitreun.com.
 
 ---
 
-## Où on en est (4 octobre 2026)
+## Où on en est (5 octobre 2026)
 
-> ### 🟡 Les pubs sont prêtes, en pause : à relire puis activer [vous]
+> ### 🟢 Campagne lancée le 5 octobre, arrêt automatique le 14 octobre
 >
 > Campagne **« Test 1 · Précommande livre 1 an · oct. 2026 »**
-> (`120249512384540314`), en pause, 10 €/jour pendant 10 jours, optimisée sur
-> `InitiateCheckout`. Un ensemble « France · Femmes 30-45 · iPhone · Instagram »
-> (`120249512388300314`) avec 4 pubs : A (son livre photo, sans rien
-> faire), C (la date), D (trop de choses à faire, en humour), G (notification
-> iPhone, format « natif », ajoutée le 4 octobre), en 4:5. La pub E (vie privée) a été
-> supprimée le 3 octobre. Visuels **refaits le 3 octobre au soir** d'après
-> les bonnes pratiques 2026 (une idée par visuel, grand titre, visage ou
-> livre tenu en mains, zones sûres 9:16) ; les pubs Meta ont été recréées
-> avec ces visuels, mêmes textes et mêmes liens.
+> (`120249512384540314`), **active**, 10 €/jour, optimisée sur
+> `InitiateCheckout`. Ensemble « France · Femmes 30-45 · iPhone · Instagram »
+> (`120249512388300314`) : femmes 30–45 ans, iOS, mobile, Instagram
+> uniquement, **fin programmée le 14 octobre à 23 h 59** (≈ 100 € au total).
+> 5 pubs actives : A (son livre photo, sans rien faire), B (vidéo démo
+> iPhone), C (la date), D (trop de choses à faire, en humour), G
+> (notification iPhone, format « natif »), en 4:5 et 9:16.
 > Visuels, vidéo et textes : `pubs/tour-1/` ; canevas modifiable :
 > https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26
 >
-> À faire de votre côté, dans le Gestionnaire de publicités :
-> 1. **Ajouter la pub B (vidéo démo)** : le connecteur ne peut pas encore
->    téléverser de vidéo sur ce compte. Fichier `pubs/tour-1/B-demo-9x16.mp4`,
->    texte et lien dans `pubs/tour-1/TEXTES.md`.
-> 2. Facultatif : sur chaque pub, « Personnaliser le visuel par placement »
->    → version 9:16 pour Stories et Reels (fichiers `*-9x16.jpg`).
-> 3. Facultatif : ajouter les textes 2 et 3 de chaque pub (« Ajouter des
->    options de texte »).
-> 4. Relire, puis **activer la campagne**.
+> Prochaines étapes :
+> 1. **Le 5 au soir ou le 6** : vérifier que les pubs diffusent (fin de
+>    l'examen Meta) et que le pixel et GA4 reçoivent les visites.
+> 2. **J+3 / J+5** : couper les pubs nettement plus faibles.
+> 3. **J+10 (14 octobre)** : bilan et décision avec la règle ci-dessous.
 
 ### ✅ En place et vérifié
 
@@ -286,6 +280,10 @@ _(à remplir : date, chiffres, décision)_
 - **4 octobre 2026** — **femmes, 30–45 ans ferme** (Advantage+ audience
   désactivée pour pouvoir fixer un âge maximum). Ensemble renommé
   « France · Femmes 30-45 · iPhone · Instagram ».
+- **5 octobre 2026** — **campagne lancée** (campagne, ensemble et 5 pubs
+  activés), fin automatique de l'ensemble le 14 octobre à 23 h 59, heure de
+  Paris. Ciblage par revenu écarté : Meta ne le propose pas en France, et
+  resserrer sur les foyers aisés rendrait le signal trop optimiste.
 - **3 octobre 2026 (soir)** — relecture du fondateur : pub A refaite (« Son
   livre photo, sans rien faire », le livre d'abord) ; **pub E (vie privée)
   supprimée** et mention « aucune photo envoyée » retirée de la vidéo B, car
