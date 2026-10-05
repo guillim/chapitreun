@@ -286,6 +286,19 @@ Les citations sont les demandes du fondateur, raccourcies.
 - « go » → campagne, ensemble et 5 pubs activés via le connecteur Meta ;
   fin de l'ensemble programmée le 14 octobre à 23 h 59 (10 jours,
   ≈ 100 €). Juste après l'activation, les pubs sont « en cours d'examen ».
+- Le fondateur demande une notification Claude aux premiers résultats, avec
+  des suggestions → relevés programmés toutes les 3 h (`send_later`),
+  notification quand ≥ 3 € et ≥ 500 impressions.
+- Relevé de 20 h 30 : chiffres figés depuis 17 h 30. Le journal d'activité
+  Meta montre le compte passé en **« Payment Needed »** à 15 h 23 (premier
+  prélèvement refusé). `ads_get_errors` ne le voit pas (il ne couvre pas
+  les comptes bloqués) : regarder `ads_get_ad_accounts` (`account_status`)
+  et `ads_account_get_activity_logs`. Fondateur notifié, paiement régularisé
+  le soir même ; « Je suis d'accord pour repousser d'un jour » → fin de
+  l'ensemble au **15 octobre 23 h 59**.
+- Piège pour un prochain test : prévoir une carte qui accepte les
+  prélèvements Meta (paiement en ligne, à l'étranger — Meta facture depuis
+  l'Irlande) **avant** le lancement, et vérifier `account_status` le jour J.
 
 ## 4. Décisions et leurs raisons
 
@@ -481,7 +494,8 @@ bonnes pratiques 2026), vidéo démo B, textes (`pubs/tour-1/`), campagne
 iPhone, format natif, 4 octobre ; E, vie privée, supprimée à la relecture) (canevas : https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26).
 
 **Campagne lancée le 5 octobre** (5 pubs A, B, C, D, G ; femmes 30–45,
-iPhone, Instagram ; 10 €/jour ; arrêt automatique le 14 octobre).
+iPhone, Instagram ; 10 €/jour ; arrêt automatique repoussé au 15 octobre
+après un blocage de paiement le 5 au soir, régularisé).
 Reste : vérifier la diffusion et le pixel, couper les pubs faibles à
-J+3/J+5, bilan à J+10 ; vidéo face caméra (pub F), message aux parents de
+J+3/J+5, bilan le 15 octobre ; vidéo face caméra (pub F), message aux parents de
 l'entourage. Détail : `TODO-marketing.md`.

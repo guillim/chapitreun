@@ -15,13 +15,15 @@ Fichier interne, non publié sur chapitreun.com.
 
 ## Où on en est (5 octobre 2026)
 
-> ### 🟢 Campagne lancée le 5 octobre, arrêt automatique le 14 octobre
+> ### 🟢 Campagne lancée le 5 octobre, arrêt automatique le 15 octobre
 >
 > Campagne **« Test 1 · Précommande livre 1 an · oct. 2026 »**
 > (`120249512384540314`), **active**, 10 €/jour, optimisée sur
 > `InitiateCheckout`. Ensemble « France · Femmes 30-45 · iPhone · Instagram »
 > (`120249512388300314`) : femmes 30–45 ans, iOS, mobile, Instagram
-> uniquement, **fin programmée le 14 octobre à 23 h 59** (≈ 100 € au total).
+> uniquement, **fin programmée le 15 octobre à 23 h 59** (≈ 100 € au total ;
+> repoussée d'un jour car la diffusion a été bloquée le 5 octobre de 15 h 23
+> au soir, compte en « paiement requis », régularisé par le fondateur).
 > 5 pubs actives : A (son livre photo, sans rien faire), B (vidéo démo
 > iPhone), C (la date), D (trop de choses à faire, en humour), G
 > (notification iPhone, format « natif »), en 4:5 et 9:16.
@@ -29,10 +31,12 @@ Fichier interne, non publié sur chapitreun.com.
 > https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26
 >
 > Prochaines étapes :
-> 1. **Le 5 au soir ou le 6** : vérifier que les pubs diffusent (fin de
->    l'examen Meta) et que le pixel et GA4 reçoivent les visites.
+> 1. **Le 6** : vérifier que la diffusion a repris après le blocage de
+>    paiement et que le pixel et GA4 reçoivent les visites. Premier
+>    relevé (5 oct., avant blocage) : 2,49 €, 242 impressions, 5 clics ;
+>    D et G pas encore diffusées.
 > 2. **J+3 / J+5** : couper les pubs nettement plus faibles.
-> 3. **J+10 (14 octobre)** : bilan et décision avec la règle ci-dessous.
+> 3. **J+10 (15 octobre)** : bilan et décision avec la règle ci-dessous.
 
 ### ✅ En place et vérifié
 
@@ -280,6 +284,11 @@ _(à remplir : date, chiffres, décision)_
 - **4 octobre 2026** — **femmes, 30–45 ans ferme** (Advantage+ audience
   désactivée pour pouvoir fixer un âge maximum). Ensemble renommé
   « France · Femmes 30-45 · iPhone · Instagram ».
+- **5 octobre 2026 (soir)** — compte pub passé en « paiement requis » à
+  15 h 23 (premier prélèvement refusé) : diffusion stoppée après 2,49 €.
+  Fondateur prévenu par notification, paiement régularisé. **Fin de
+  l'ensemble repoussée au 15 octobre 23 h 59** pour compenser (accord du
+  fondateur).
 - **5 octobre 2026** — **campagne lancée** (campagne, ensemble et 5 pubs
   activés), fin automatique de l'ensemble le 14 octobre à 23 h 59, heure de
   Paris. Ciblage par revenu écarté : Meta ne le propose pas en France, et
