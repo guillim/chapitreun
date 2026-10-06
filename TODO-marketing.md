@@ -64,9 +64,22 @@ Fichier interne, non publié sur chapitreun.com.
 > 4. **J+10 (15 octobre)** : bilan et décision avec la règle ci-dessous.
 >
 > Suggestions du 6 octobre (rien n'est modifié dans Meta sans accord) :
-> - **Écart clics / pages vues** : vérifier GA4 (sessions `utm_source=meta`)
->   pour savoir si le pixel manque des visites ou si les clics n'aboutissent
->   pas ; tester la page en 4G sur iPhone.
+> - ~~**Écart clics / pages vues** : vérifier GA4, tester la page en 4G sur
+>   iPhone~~ — **testé le 6 au soir** (Playwright, iPhone émulé, 4G simulée,
+>   processeur ralenti ×4) : la page n'est pas en cause (premier rendu 1,3 s,
+>   image d'accueil 1,6 s, chargée en 2 s, 500 Ko ; 1,7 / 2,1 / 3,5 s en
+>   4G lente). L'écart vient du chargement **différé** du pixel
+>   (`analytics.js` : première interaction ou 8 s après le chargement) : sans
+>   geste, `PageView` part à 11 s ; un visiteur qui repart avant sans
+>   défiler n'est jamais compté, et en 4G lente même un défilement à 2 s ne
+>   suffit pas si la personne part avant 6 s (fbevents.js fait 113 Ko). GA4
+>   est différé de la même façon et ne peut pas servir de contre-mesure.
+>   Choix documenté dans `JOURNAL.md` (section 4) : les visites se comptent
+>   avec les « clics sur le lien » de Meta ; `Lead` et `InitiateCheckout` ne
+>   sont pas touchés (ils suivent un geste, et la redirection Stripe attend
+>   l'envoi). Option si on veut un vrai compte des visites : charger les
+>   bibliothèques dès l'événement `load` (la page est déjà affichée, aucun
+>   coût sur le rendu) au lieu d'attendre 8 s — à décider par le fondateur.
 > - **D jamais diffusée** : Meta ne la sert pas (format humour jugé moins
 >   prometteur par l'enchère) ; à J+3, la retirer pour que le budget aille
 >   aux pubs qui apprennent, ou la laisser si on veut tester l'angle.
