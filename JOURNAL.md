@@ -316,8 +316,8 @@ Les citations sont les demandes du fondateur, raccourcies.
   pour changer un visuel, recréer le post.
 - Programmation : post 1 tout de suite, post 2 le soir à 19 h 30, post 3 le
   lendemain à 12 h 30 (étaler plutôt que tout publier d'un coup, mais vite,
-  puisque les pubs tournent). Instagram : lien « dans la bio » (à vérifier
-  par le fondateur), hashtags en fin de légende — le premier commentaire
+  puisque les pubs tournent). Instagram : lien « dans la bio » (vérifié par
+  le fondateur le jour même), hashtags en fin de légende — le premier commentaire
   automatique de Buffer est réservé aux plans payants (erreur « First comment
   requires a paid plan ») ; Facebook : lien avec UTM `facebook / organic /
   posts1`. Identifiants des posts dans `pubs/posts-1/TEXTES.md`.
