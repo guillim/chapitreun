@@ -27,12 +27,15 @@ le lien avec `utm_source=facebook&utm_medium=organic&utm_campaign=posts2`.
 
 | # | Quand (Paris) | Format | Visuel | Photo (Unsplash) | Buffer (Instagram / Facebook) |
 | --- | --- | --- | --- | --- | --- |
-| 4 | 8 octobre, 19 h 30 | image | `04-date-bleu` | Jonnelle Yankovich | — |
-| R1 | 9 octobre, 12 h 30 | reel | `r1-date-tulle` | Rodrigo Rodrigues | — |
-| 5 | 10 octobre, 19 h 30 | image | `05-date-gateau` | Nataliia Hordiiuk | — |
-| 6 | 11 octobre, 12 h 30 | image | `06-date-chaise` | Javier González | — |
-| R2 | 12 octobre, 19 h 30 | reel | `r2-date-lit` | Malin Björk | — |
-| 7 | 13 octobre, 12 h 30 | image | `07-date-pois` | tian dayong | — |
+| 4 | 8 octobre, 19 h 30 | image | `04-date-bleu` | Jonnelle Yankovich | `6ac564ed32c36d13db5f4f68` / `6ac564f35a8d2d13237afbe5` |
+| R1 | 9 octobre, 12 h 30 | reel | `r1-date-tulle` | Rodrigo Rodrigues | `6ac564f76a62d106202ec694` / `6ac564fc6a62d106202ec74d` |
+| 5 | 10 octobre, 19 h 30 | image | `05-date-gateau` | Nataliia Hordiiuk | `6ac565016a62d106202ec809` / `6ac565066a62d106202ec87e` |
+| 6 | 11 octobre, 12 h 30 | image | `06-date-chaise` | Javier González | `6ac5650b6e7abe65d13ce9bd` / `6ac565106a62d106202ec9e4` |
+| R2 | 12 octobre, 19 h 30 | reel | `r2-date-lit` | Malin Björk | `6ac565156a62d106202ecb26` / `6ac56519b58774c05c694578` |
+| 7 | 13 octobre, 12 h 30 | image | `07-date-pois` | tian dayong | `6ac5651f5a8d2d13237b02ec` / `6ac565236e7abe65d13cee70` |
+
+Les douze posts ont été créés le 6 octobre à 23 h 15 (statut `scheduled`,
+vignette des reels prise à 4,2 s).
 
 ## 4 · « Ses 1 an arrivent. Son livre sera prêt 3 semaines avant. »
 
