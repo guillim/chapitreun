@@ -110,3 +110,21 @@ Carrousel « comment ça marche » : `hero.jpg`, `face-1.jpg`, `det-3.jpg`,
 `mois-12.jpg` (CC0, table ci-dessus) et `livre-ouvert-1`. Carrousel
 « l'objet » : `livre-couverture`, `livre-ouvert-1`, `livre-ouvert-2` (rendus
 fournis par le fondateur, agrandis ×2 pour l'écran).
+
+## Posts et reels organiques (série 2 « La date », octobre 2026)
+
+Visuels de `pubs/posts-2/` (rendus dans `landing-page/assets/social/posts/`
+et `…/reels/`), sur le design de la pub C. Photos **Unsplash** (licence
+Unsplash, usage commercial gratuit, attribution non exigée ; aucune image
+Unsplash+), reprises en 1 600 px. Même réserve que pour les pubs : la licence
+ne garantit pas l'accord des personnes photographiées. La carte du livre
+(`livre-carte.png`) est le rendu du livre de la pub C.
+
+| Fichier | Description | Auteur | Source |
+| --- | --- | --- | --- |
+| `src-bleu.jpg` (post 4) | Bébé aux yeux bleus, gros plan, langue tirée | Jonnelle Yankovich | [unsplash](https://unsplash.com/photos/DVpVG9h4HgI) |
+| `src-tulle.jpg` (reel 1) | Bébé qui rit, chemise en jean et jupe en tulle | Rodrigo Rodrigues | [unsplash](https://unsplash.com/photos/QgUzj9tmszA) |
+| `src-gateau.jpg` (post 5) | Bébé devant son gâteau, guirlande « Happy Birthday » | Nataliia Hordiiuk | [unsplash](https://unsplash.com/photos/0Wzw9X_1S2M) |
+| `src-chaise.jpg` (post 6) | Bébé en robe rose sur une chaise mauve | Javier González Fotógrafo | [unsplash](https://unsplash.com/photos/Da4zj6d-aIE) |
+| `src-lit.jpg` (reel 2) | Bébé assis sur un lit, qui se retourne en souriant | Malin Björk | [unsplash](https://unsplash.com/photos/Ys96D8zNs48) |
+| `src-pois.jpg` (post 7) | Bébé qui éclate de rire, pyjama à pois rouges | tian dayong | [unsplash](https://unsplash.com/photos/NGv8_t5G7Fs) |
