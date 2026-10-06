@@ -26,7 +26,7 @@ avec `utm_source=facebook&utm_medium=organic&utm_campaign=posts1`.
 | # | Quand (Paris) | Format | Visuels | Buffer (Instagram / Facebook) |
 | --- | --- | --- | --- | --- |
 | 1 | 6 octobre, 7 h 39 (publié) | image | `01-presentation` | `6ac48983b0e0485fb46d7415` / `6ac4898facc08dcd5ea41312` |
-| 2 | 6 octobre, 19 h 30 | carrousel 5 vues | `02a` → `02e` | `6ac4899ab0e0485fb46d7625` / **non créé** (création refusée à l'approbation le 6 octobre ; à recréer si le fondateur le souhaite) |
+| 2 | 6 octobre, 19 h 30 | carrousel 5 vues | `02a` → `02e` | `6ac4899ab0e0485fb46d7625` / `6ac489ef98d02b181e22f64b` |
 | 3 | 7 octobre, 12 h 30 | carrousel 3 vues | `03a` → `03c` | `6ac4899d032d0529987d4175` / `6ac489a0acc08dcd5ea4145b` |
 
 ## 1 · Présentation

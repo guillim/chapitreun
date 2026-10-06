@@ -322,8 +322,10 @@ Les citations sont les demandes du fondateur, raccourcies.
   requires a paid plan ») ; Facebook : lien avec UTM `facebook / organic /
   posts1`. Identifiants des posts dans `pubs/posts-1/TEXTES.md`.
 - Un des six appels Buffer (carrousel « comment ça marche » sur Facebook) a
-  été refusé à l'approbation : non relancé sans l'accord du fondateur. Les
-  cinq autres sont créés (post 1 publié à 7 h 39 sur les deux canaux).
+  été refusé à l'approbation par erreur : non relancé tant que le fondateur
+  ne l'a pas redemandé (« redemande-moi et j'accepterai »), puis créé.
+  Règle : un refus d'approbation n'est jamais relancé tel quel sans accord.
+  Les six posts sont en place (post 1 publié à 7 h 39 sur les deux canaux).
 - Honnêteté : le post sur l'objet précise que les images sont un rendu du
   livre, pas un exemplaire imprimé.
 
