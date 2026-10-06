@@ -328,6 +328,17 @@ Les citations sont les demandes du fondateur, raccourcies.
   Les six posts sont en place (post 1 publié à 7 h 39 sur les deux canaux).
 - Honnêteté : le post sur l'objet précise que les images sont un rendu du
   livre, pas un exemplaire imprimé.
+- **Premier relevé des pubs (9 h, check-in programmé)** : 12,34 €,
+  1 165 impressions, 33 clics ; C « la date » prend 83 % de la dépense
+  (30 clics, CPC 0,24 €), D n'a jamais été diffusée, A/B/G trop peu
+  servies pour juger. Pixel : 12 PageView, 0 Lead, 0 InitiateCheckout.
+  Notification envoyée au fondateur avec cinq suggestions (écart clics /
+  pages vues à vérifier dans GA4, sort de D à J+3, variante de C, le pixel
+  comme seul juge, bio Instagram). Détail dans `TODO-marketing.md`.
+  Leçon : Meta concentre la dépense sur une seule pub dès J+1 ; avec
+  10 €/jour, les autres n'auront jamais assez d'impressions pour être
+  comparées. Pour un prochain test, soit un ensemble par pub, soit accepter
+  que Meta choisisse. Prochain relevé programmé le 8 octobre à 9 h.
 
 ## 4. Décisions et leurs raisons
 

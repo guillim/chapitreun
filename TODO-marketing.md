@@ -13,9 +13,30 @@ Fichier interne, non publié sur chapitreun.com.
 
 ---
 
-## Où on en est (5 octobre 2026)
+## Où on en est (6 octobre 2026)
 
 > ### 🟢 Campagne lancée le 5 octobre, arrêt automatique le 15 octobre
+>
+> **Premier relevé, 6 octobre 9 h** (cumul depuis le 5) : 12,34 €,
+> 1 165 impressions, 1 008 personnes, 33 clics sur lien (CTR 2,8 %, CPC
+> moyen 0,37 €). Pixel : 12 `PageView` depuis le 5, **0 `Lead`,
+> 0 `InitiateCheckout`, 0 `Purchase`** (hors achat test du 3).
+>
+> | Pub | Dépense | Impr. | Clics | CTR | CPC |
+> |---|---|---|---|---|---|
+> | C · La date | 10,21 € | 939 | 30 | 4,47 % | 0,24 € |
+> | A · Son livre photo | 1,44 € | 149 | 2 | 2,01 % | 0,48 € |
+> | B · Démo iPhone | 0,51 € | 45 | 1 | 4,44 % | 0,26 € |
+> | G · Notification | 0,18 € | 32 | 0 | 0 % | — |
+> | D · Humour | 0 € | 0 | 0 | — | — |
+>
+> Lecture : Meta a concentré 83 % de la dépense sur C dès le premier jour
+> (le bébé au chapeau « 1 » et « ses 1 an arrivent » accrochent), A, B et G
+> ont trop peu d'impressions pour être jugées, **D n'a jamais été
+> diffusée**. Deux signaux à surveiller plus que le CTR : seulement 12 pages
+> vues pour 33 clics (clics accidentels, page lente en 4G, ou bloqueurs), et
+> aucun début de paiement — normal à 12 €, mais c'est la seule mesure qui
+> compte.
 >
 > Campagne **« Test 1 · Précommande livre 1 an · oct. 2026 »**
 > (`120249512384540314`), **active**, 10 €/jour, optimisée sur
@@ -31,12 +52,33 @@ Fichier interne, non publié sur chapitreun.com.
 > https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26
 >
 > Prochaines étapes :
-> 1. **Le 6** : vérifier que la diffusion a repris après le blocage de
->    paiement et que le pixel et GA4 reçoivent les visites. Premier
->    relevé (5 oct., avant blocage) : 2,49 €, 242 impressions, 5 clics ;
->    D et G pas encore diffusées.
-> 2. **J+3 / J+5** : couper les pubs nettement plus faibles.
-> 3. **J+10 (15 octobre)** : bilan et décision avec la règle ci-dessous.
+> 1. ~~**Le 6** : vérifier que la diffusion a repris~~ — fait, compte
+>    actif, diffusion reprise dans la nuit du 5 au 6.
+> 2. **J+3 (8 octobre, relevé programmé à 9 h)** : regarder si des `Lead`
+>    ou `InitiateCheckout` apparaissent ; proposer de couper A ou G si
+>    elles restent sous 1 % de CTR avec assez d'impressions ; décider du
+>    sort de D (jamais diffusée : laisser Meta la tester, ou la retirer).
+> 3. **J+5 (10 octobre)** : même relevé ; si C reste seule à dépenser,
+>    envisager une variante de C (même photo, autre titre) pour ne pas
+>    dépendre d'une seule pub.
+> 4. **J+10 (15 octobre)** : bilan et décision avec la règle ci-dessous.
+>
+> Suggestions du 6 octobre (rien n'est modifié dans Meta sans accord) :
+> - **Écart clics / pages vues** : vérifier GA4 (sessions `utm_source=meta`)
+>   pour savoir si le pixel manque des visites ou si les clics n'aboutissent
+>   pas ; tester la page en 4G sur iPhone.
+> - **D jamais diffusée** : Meta ne la sert pas (format humour jugé moins
+>   prometteur par l'enchère) ; à J+3, la retirer pour que le budget aille
+>   aux pubs qui apprennent, ou la laisser si on veut tester l'angle.
+> - **Préparer une C-bis** : la date est l'angle qui marche ; une variante
+>   avec un autre bébé ou le titre « Prêt 3 semaines avant ses 1 an »
+>   permettrait de confirmer que c'est l'angle et pas seulement la photo.
+> - **Le vrai juge est le pixel** : 0 début de paiement sur 33 clics ne dit
+>   rien encore ; à 50–100 clics sans `InitiateCheckout`, c'est la page (ou
+>   le prix) qu'il faut regarder, pas les pubs.
+> - **Posts organiques** publiés le 6 (voir section 3) : vérifier que la
+>   bio Instagram pointe vers chapitreun.com, car C envoie des gens sur le
+>   profil.
 
 ### ✅ En place et vérifié
 
