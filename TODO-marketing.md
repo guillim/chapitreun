@@ -271,6 +271,13 @@ Tester **4 à 6 pubs** au premier tour, une idée par pub :
       6 et 7 octobre. Visuels et légendes : `pubs/posts-1/`. **Bio
       Instagram** avec le lien chapitreun.com : vérifiée par le fondateur
       le 6 octobre.
+- [x] **[Claude] Série 2 « La date »** (demandée par le fondateur le 6 au
+      soir) : 4 posts et 2 reels sur le design de la pub C, six enfants
+      différents (photos Unsplash), programmés via Buffer du 8 au 13 octobre
+      sur les deux canaux. Visuels, légendes, horaires et identifiants Buffer :
+      `pubs/posts-2/TEXTES.md`. Les reels sont sans musique (Buffer ne peut pas
+      en ajouter ; le fondateur peut en poser une dans Instagram après
+      publication).
 - [ ] **[vous] Votre entourage** : message personnel à 20–30 parents de bébés
       de moins d'un an. Premières réservations, premiers retours.
 - [ ] **[vous] Groupes Facebook de parents** (naissance par mois « Bébés de
@@ -354,6 +361,14 @@ _(à remplir : date, chiffres, décision)_
   Fondateur prévenu par notification, paiement régularisé. **Fin de
   l'ensemble repoussée au 15 octobre 23 h 59** pour compenser (accord du
   fondateur).
+- **6 octobre 2026 (soir)** — **série 2 « La date »** : le fondateur veut
+  une série de posts et de reels qui reprennent le design de la pub qui
+  marche (C) en changeant la photo et l'enfant. Quatre posts et deux reels,
+  six enfants, six variations de la promesse datée, du 8 au 13 octobre,
+  un par jour en alternant 12 h 30 et 19 h 30. Les reels sont fabriqués
+  comme la vidéo B (HTML animé capturé image par image, ffmpeg), 7 s, sans
+  musique. Le premier post de la série est aussi la « C-bis » envisagée pour
+  les pubs : même titre que C, autre bébé.
 - **6 octobre 2026** — **posts organiques** : le fondateur propose de
   publier des images du produit sur Instagram et Facebook ; accord, car le
   compte Instagram et la page étaient vides alors que les pubs y envoient du

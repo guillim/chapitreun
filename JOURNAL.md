@@ -365,6 +365,23 @@ Les citations sont les demandes du fondateur, raccourcies.
   Leçon : sur du trafic publicitaire, une mesure différée de 8 s perd la
   moitié des visites ; la coupure doit être « après l'affichage », pas
   « après un délai ». Les `PageView` d'avant le 7 octobre sont sous-comptés.
+- « Programmer une série de posts / reels… en se basant sur le design qui
+  fonctionne sur les pubs ; change quand même la photo et l'enfant » →
+  **série 2 « La date »** (`pubs/posts-2/`) : le design de C (photo en haut,
+  pastille, carte du livre inclinée, titre en trois lignes) reconstruit en
+  HTML, 4 posts et 2 reels, six enfants différents. Photos cherchées sur
+  Unsplash via `unsplash.com/napi/search/photos` (WebFetch), en écartant
+  les résultats `plus.unsplash.com` (Unsplash+, payant) ; planche de
+  16 candidats, 6 retenus (visage net, lumière claire, cadrage portrait).
+  Reels : HTML animé par `window.seek(t)` (zoom lent de la photo, lignes du
+  titre l'une après l'autre, carte qui glisse), 210 images capturées par
+  Playwright, assemblées par ffmpeg (`imageio-ffmpeg` installé par pip :
+  le ffmpeg de Playwright n'a pas libx264) en H.264 avec piste audio
+  silencieuse ; ~1 Mo par reel, servis par le site. Pas de musique : rien à
+  licencier, le fondateur peut en ajouter une dans Instagram. Programmation
+  du 8 au 13 octobre, un visuel par jour, 12 h 30 et 19 h 30 en alternance,
+  Instagram et Facebook. Le post 4 (même titre que C, autre bébé) sert
+  aussi de « C-bis » si on veut une variante en pub.
 
 ## 4. Décisions et leurs raisons
 
