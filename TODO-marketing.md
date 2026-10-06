@@ -77,9 +77,13 @@ Fichier interne, non publié sur chapitreun.com.
 >   Choix documenté dans `JOURNAL.md` (section 4) : les visites se comptent
 >   avec les « clics sur le lien » de Meta ; `Lead` et `InitiateCheckout` ne
 >   sont pas touchés (ils suivent un geste, et la redirection Stripe attend
->   l'envoi). Option si on veut un vrai compte des visites : charger les
+>   l'envoi). **Décision du fondateur le 6 au soir** : charger les
 >   bibliothèques dès l'événement `load` (la page est déjà affichée, aucun
->   coût sur le rendu) au lieu d'attendre 8 s — à décider par le fondateur.
+>   coût sur le rendu) au lieu d'attendre 8 s — fait (`analytics.js` v8) ;
+>   vérifié : `PageView` part 2 à 4 s après l'arrivée, même sans geste.
+>   Conséquence : à partir du 7 octobre, les `PageView` comptent toutes les
+>   visites ; les chiffres d'avant ne sont pas comparables (sous-comptés
+>   d'environ moitié).
 > - **D jamais diffusée** : Meta ne la sert pas (format humour jugé moins
 >   prometteur par l'enchère) ; à J+3, la retirer pour que le budget aille
 >   aux pubs qui apprennent, ou la laisser si on veut tester l'angle.

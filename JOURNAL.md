@@ -358,6 +358,13 @@ Les citations sont les demandes du fondateur, raccourcies.
   pas de contre-mesure possible de ce côté. Option proposée au fondateur :
   charger les bibliothèques dès `load` au lieu de 8 s (aucun coût sur le
   rendu, la page est déjà affichée). Détail dans `TODO-marketing.md`.
+- « Oui chargeons dès que la page est affichée, ce sera plus révélateur et
+  cohérent » → `analytics.js` v8 : chargement dès `load` (ou au premier
+  geste s'il vient avant), même test rejoué sur les fichiers locaux :
+  `PageView` part 2 à 4 s après l'arrivée dans tous les scénarios.
+  Leçon : sur du trafic publicitaire, une mesure différée de 8 s perd la
+  moitié des visites ; la coupure doit être « après l'affichage », pas
+  « après un délai ». Les `PageView` d'avant le 7 octobre sont sous-comptés.
 
 ## 4. Décisions et leurs raisons
 
@@ -371,7 +378,7 @@ Les citations sont les demandes du fondateur, raccourcies.
 | Compteur fondateur simulé (+1/jour) | Vitesse ; pas de source fiable | À brancher sur les vraies ventes |
 | Photos CC0 sur la page | Rien d'autre au départ | Pas d'accord des personnes photographiées : risqué en pub payante |
 | Photos des pubs : Pexels et Unsplash (3 oct.) | Gratuit et le plus simple ; le fondateur voulait payer les droits « après les premiers achats » | Une banque payante sans licence = contrefaçon dès la diffusion, payer après ne régularise pas : refusé. Pas d'accord des personnes photographiées garanti : risque assumé. Alternative légale gratuite : essai Adobe Stock |
-| GA4 et Meta chargés **à la première interaction ou après 8 s** | +30 points PageSpeed mobile | Un visiteur qui repart en < 8 s sans rien toucher n'est pas compté → compter les visites avec les « clics sur le lien » de Meta. Mesuré le 6 octobre : 19 `PageView` pour 42 clics ; charger dès `load` est l'option si on veut un vrai compte |
+| GA4 et Meta chargés **dès que la page est affichée** (`load`, ou premier geste avant) ; jusqu'au 6 octobre : première interaction ou 8 s | +30 points PageSpeed mobile ; le délai de 8 s perdait la moitié des visites venues des pubs (19 `PageView` pour 42 clics), changé le 6 octobre à la demande du fondateur | Les `PageView` d'avant le 7 octobre sont sous-comptés ; vérifier que PageSpeed mobile ne bouge pas |
 | Polices auto-hébergées (fichiers Google réduits aux caractères latins, mêmes métriques) | Supprimer la requête bloquante vers Google Fonts | Si un nouveau caractère apparaît (autre langue), régénérer le sous-ensemble |
 | `content-visibility` essayé puis retiré | Aucun gain mesuré, et il change la fusion des marges | — |
 | Événements clés GA4 sans valeur par défaut | Sinon GA4 compte 1 $ par précommande ; seul `purchase` porte un montant (49 €) | Devise de la propriété GA4 à mettre en euros |
