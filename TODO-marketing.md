@@ -76,9 +76,9 @@ Fichier interne, non publié sur chapitreun.com.
 > - **Le vrai juge est le pixel** : 0 début de paiement sur 33 clics ne dit
 >   rien encore ; à 50–100 clics sans `InitiateCheckout`, c'est la page (ou
 >   le prix) qu'il faut regarder, pas les pubs.
-> - **Posts organiques** publiés le 6 (voir section 3) : vérifier que la
->   bio Instagram pointe vers chapitreun.com, car C envoie des gens sur le
->   profil.
+> - ~~**Posts organiques** publiés le 6 (voir section 3) : vérifier que la
+>   bio Instagram pointe vers chapitreun.com~~ — fait par le fondateur le
+>   6 octobre.
 
 ### ✅ En place et vérifié
 
@@ -251,8 +251,9 @@ Tester **4 à 6 pubs** au premier tour, une idée par pub :
 - [x] **[Claude] Remplir le compte Instagram et la page Facebook** (6 octobre
       2026) : 3 publications qui décrivent le produit (présentation, carrousel
       « comment ça marche », carrousel « l'objet »), programmées via Buffer les
-      6 et 7 octobre. Visuels et légendes : `pubs/posts-1/`. Le fondateur
-      vérifie que la **bio Instagram** contient le lien chapitreun.com.
+      6 et 7 octobre. Visuels et légendes : `pubs/posts-1/`. **Bio
+      Instagram** avec le lien chapitreun.com : vérifiée par le fondateur
+      le 6 octobre.
 - [ ] **[vous] Votre entourage** : message personnel à 20–30 parents de bébés
       de moins d'un an. Premières réservations, premiers retours.
 - [ ] **[vous] Groupes Facebook de parents** (naissance par mois « Bébés de
