@@ -101,3 +101,12 @@ pas servi pour ce tour.
 | A (pellicule) | Bébé assis sur un lit | Vikram Chouhan | [unsplash](https://unsplash.com/photos/mmrWRl-tFPw) |
 | A (pellicule) | Bébé devant des ballons | Selenay Balkan | [unsplash](https://unsplash.com/photos/L2RtGqIlv_0) |
 | A (pellicule) | Bébé en combinaison bleue | Gema Saputera | [unsplash](https://unsplash.com/photos/tMaxJsbRidQ) |
+
+## Posts organiques (série 1, octobre 2026)
+
+Visuels de `pubs/posts-1/` (rendus dans `landing-page/assets/social/posts/`).
+Post 1 : bas du visuel A du tour 1 (photo Unsplash de John, voir ci-dessus).
+Carrousel « comment ça marche » : `hero.jpg`, `face-1.jpg`, `det-3.jpg`,
+`mois-12.jpg` (CC0, table ci-dessus) et `livre-ouvert-1`. Carrousel
+« l'objet » : `livre-couverture`, `livre-ouvert-1`, `livre-ouvert-2` (rendus
+fournis par le fondateur, agrandis ×2 pour l'écran).

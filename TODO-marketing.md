@@ -206,6 +206,11 @@ Tester **4 à 6 pubs** au premier tour, une idée par pub :
 
 ## 3. Canaux gratuits, en parallèle
 
+- [x] **[Claude] Remplir le compte Instagram et la page Facebook** (6 octobre
+      2026) : 3 publications qui décrivent le produit (présentation, carrousel
+      « comment ça marche », carrousel « l'objet »), programmées via Buffer les
+      6 et 7 octobre. Visuels et légendes : `pubs/posts-1/`. Le fondateur
+      vérifie que la **bio Instagram** contient le lien chapitreun.com.
 - [ ] **[vous] Votre entourage** : message personnel à 20–30 parents de bébés
       de moins d'un an. Premières réservations, premiers retours.
 - [ ] **[vous] Groupes Facebook de parents** (naissance par mois « Bébés de
@@ -289,6 +294,12 @@ _(à remplir : date, chiffres, décision)_
   Fondateur prévenu par notification, paiement régularisé. **Fin de
   l'ensemble repoussée au 15 octobre 23 h 59** pour compenser (accord du
   fondateur).
+- **6 octobre 2026** — **posts organiques** : le fondateur propose de
+  publier des images du produit sur Instagram et Facebook ; accord, car le
+  compte Instagram et la page étaient vides alors que les pubs y envoient du
+  monde. Trois posts (présentation, « comment ça marche » en 5 vues,
+  « l'objet » en 3 vues) rendus en HTML → JPG et programmés via Buffer ;
+  le post sur l'objet dit que les images sont un rendu du livre.
 - **5 octobre 2026** — **campagne lancée** (campagne, ensemble et 5 pubs
   activés), fin automatique de l'ensemble le 14 octobre à 23 h 59, heure de
   Paris. Ciblage par revenu écarté : Meta ne le propose pas en France, et

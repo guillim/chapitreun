@@ -300,6 +300,33 @@ Les citations sont les demandes du fondateur, raccourcies.
   prélèvements Meta (paiement en ligne, à l'étranger — Meta facture depuis
   l'Irlande) **avant** le lancement, et vérifier `account_status` le jour J.
 
+### 6 octobre — premiers posts organiques
+- « Il me semble important de publier une ou plusieurs images décrivant notre
+  produit sur insta et fb. Qu'en penses-tu ? » → oui : le compte Instagram
+  n'avait aucune publication et la page Facebook seulement sa photo de
+  profil, alors que les pubs tournent et qu'un parent qui vérifie le compte
+  avant de cliquer ne trouvait rien. Trois posts : présentation, carrousel
+  « comment ça marche » (5 vues), carrousel « l'objet » (3 vues).
+- Fabrication sans Claude Design cette fois : gabarits HTML avec les polices
+  et couleurs du site, rendus en 1080 × 1350 par Playwright (`pubs/posts-1/
+  render.cjs`). Plus rapide à corriger qu'un canevas, et versionné.
+- Buffer ne lit que des URL publiques → les JPG sont servis par le site
+  (`landing-page/assets/social/posts/`), merge sur `main` puis attente du
+  déploiement GitHub Pages avant de créer les posts. Buffer fige l'image :
+  pour changer un visuel, recréer le post.
+- Programmation : post 1 tout de suite, post 2 le soir à 19 h 30, post 3 le
+  lendemain à 12 h 30 (étaler plutôt que tout publier d'un coup, mais vite,
+  puisque les pubs tournent). Instagram : lien « dans la bio » (à vérifier
+  par le fondateur), hashtags en fin de légende — le premier commentaire
+  automatique de Buffer est réservé aux plans payants (erreur « First comment
+  requires a paid plan ») ; Facebook : lien avec UTM `facebook / organic /
+  posts1`. Identifiants des posts dans `pubs/posts-1/TEXTES.md`.
+- Un des six appels Buffer (carrousel « comment ça marche » sur Facebook) a
+  été refusé à l'approbation : non relancé sans l'accord du fondateur. Les
+  cinq autres sont créés (post 1 publié à 7 h 39 sur les deux canaux).
+- Honnêteté : le post sur l'objet précise que les images sont un rendu du
+  livre, pas un exemplaire imprimé.
+
 ## 4. Décisions et leurs raisons
 
 | Décision | Pourquoi | Conséquence à surveiller |
@@ -483,7 +510,7 @@ confirmer avec un devis d'imprimeur.
 - Il travaille en parallèle avec d'autres sessions : toujours repartir de
   `origin/main` à jour.
 
-## 8. État au 5 octobre 2026
+## 8. État au 6 octobre 2026
 
 Fait : page en ligne et rapide, paiement live, GA4 et pixel vérifiés,
 portefeuille, compte pub, page, Instagram et domaine Meta en place, règle de
@@ -496,6 +523,8 @@ iPhone, format natif, 4 octobre ; E, vie privée, supprimée à la relecture) (c
 **Campagne lancée le 5 octobre** (5 pubs A, B, C, D, G ; femmes 30–45,
 iPhone, Instagram ; 10 €/jour ; arrêt automatique repoussé au 15 octobre
 après un blocage de paiement le 5 au soir, régularisé).
+**Premiers posts organiques** le 6 octobre (Instagram et Facebook, via
+Buffer ; visuels et légendes dans `pubs/posts-1/`).
 Reste : vérifier la diffusion et le pixel, couper les pubs faibles à
 J+3/J+5, bilan le 15 octobre ; vidéo face caméra (pub F), message aux parents de
 l'entourage. Détail : `TODO-marketing.md`.
