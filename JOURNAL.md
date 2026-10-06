@@ -339,6 +339,25 @@ Les citations sont les demandes du fondateur, raccourcies.
   10 €/jour, les autres n'auront jamais assez d'impressions pour être
   comparées. Pour un prochain test, soit un ensemble par pub, soit accepter
   que Meta choisisse. Prochain relevé programmé le 8 octobre à 9 h.
+- **Le soir, « je me demande si les premiers chiffres sont bons »** (0 achat
+  pour 1 000 impressions). Réponse : les impressions ne sont pas l'unité,
+  les visites le sont ; à 19 pages vues, zéro achat est le résultat le plus
+  probable même si 2 % des visiteurs paient (≈ 68 % de chances de n'en voir
+  aucun). Le test ne dira rien sur les achats avant ~100 visites. C fait
+  4,2 % de clics à 0,25 € : l'accroche marche. Le point inquiétant était
+  plutôt 42 clics pour 19 pages vues.
+- **Test de l'écart clics / pages vues** (à la demande du fondateur) :
+  Playwright, iPhone émulé, 4G simulée, processeur ralenti ×4, script dans
+  le bloc-notes de session. La page est rapide (rendu 1,3 s, image
+  d'accueil 1,6 s, 500 Ko). L'écart vient du chargement différé de
+  `analytics.js` : sans geste, `PageView` part à 11 s ; qui repart avant
+  sans défiler n'est pas compté, et en 4G lente un défilement à 2 s ne
+  suffit pas si la personne part avant 6 s. C'est la conséquence assumée
+  du tableau de la section 4, et elle est plus forte qu'on ne le croyait
+  sur du trafic Instagram, qui rebondit vite. GA4 est différé pareil, donc
+  pas de contre-mesure possible de ce côté. Option proposée au fondateur :
+  charger les bibliothèques dès `load` au lieu de 8 s (aucun coût sur le
+  rendu, la page est déjà affichée). Détail dans `TODO-marketing.md`.
 
 ## 4. Décisions et leurs raisons
 
@@ -352,7 +371,7 @@ Les citations sont les demandes du fondateur, raccourcies.
 | Compteur fondateur simulé (+1/jour) | Vitesse ; pas de source fiable | À brancher sur les vraies ventes |
 | Photos CC0 sur la page | Rien d'autre au départ | Pas d'accord des personnes photographiées : risqué en pub payante |
 | Photos des pubs : Pexels et Unsplash (3 oct.) | Gratuit et le plus simple ; le fondateur voulait payer les droits « après les premiers achats » | Une banque payante sans licence = contrefaçon dès la diffusion, payer après ne régularise pas : refusé. Pas d'accord des personnes photographiées garanti : risque assumé. Alternative légale gratuite : essai Adobe Stock |
-| GA4 et Meta chargés **à la première interaction ou après 8 s** | +30 points PageSpeed mobile | Un visiteur qui repart en < 8 s sans rien toucher n'est pas compté → compter les visites avec les « clics sur le lien » de Meta |
+| GA4 et Meta chargés **à la première interaction ou après 8 s** | +30 points PageSpeed mobile | Un visiteur qui repart en < 8 s sans rien toucher n'est pas compté → compter les visites avec les « clics sur le lien » de Meta. Mesuré le 6 octobre : 19 `PageView` pour 42 clics ; charger dès `load` est l'option si on veut un vrai compte |
 | Polices auto-hébergées (fichiers Google réduits aux caractères latins, mêmes métriques) | Supprimer la requête bloquante vers Google Fonts | Si un nouveau caractère apparaît (autre langue), régénérer le sous-ensemble |
 | `content-visibility` essayé puis retiré | Aucun gain mesuré, et il change la fusion des marges | — |
 | Événements clés GA4 sans valeur par défaut | Sinon GA4 compte 1 $ par précommande ; seul `purchase` porte un montant (49 €) | Devise de la propriété GA4 à mettre en euros |
