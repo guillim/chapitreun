@@ -31,9 +31,11 @@ reconnaît. On garde notre design (pub C) et on y met ces trois mécaniques.
 
 | # | Quand (Paris) | Format | Visuel | Mécanique reprise | Photo (Unsplash) | Buffer (Instagram / Facebook) |
 | --- | --- | --- | --- | --- | --- | --- |
-| 8 | 7 octobre, 9 h 30 | image | `08-question-telephone` | la question (Artifact Uprising) | Fotógrafo Samuel Cruz | — |
-| R3 | 7 octobre, 17 h 30 | reel 11 s | `r3-souvenir-herbe` | le souvenir qui s'efface (Once Upon) | Alvin Mahmudov | — |
-| R4 | 7 octobre, 20 h 30 | reel 7,5 s | `r4-chiffres-sieste` | l'année en chiffres (Cheerz) | Dakota Corbin | — |
+| 8 | 7 octobre, 9 h 30 | image | `08-question-telephone` | la question (Artifact Uprising) | Fotógrafo Samuel Cruz | `6ac5c84753551104161f0d53` / `6ac5c84c36c2a7788dcd5e16` |
+| R3 | 7 octobre, 17 h 30 | reel 11 s | `r3-souvenir-herbe` | le souvenir qui s'efface (Once Upon) | Alvin Mahmudov | `6ac5c85136c2a7788dcd5e67` / `6ac5c85553551104161f0e46` |
+| R4 | 7 octobre, 20 h 30 | reel 7,5 s | `r4-chiffres-sieste` | l'année en chiffres (Cheerz) | Dakota Corbin | `6ac5c85a36c2a7788dcd5ee0` / `6ac5c85e203d24e39e0bc211` |
+
+Les six posts ont été créés le 7 octobre à 6 h 20 (statut `scheduled`).
 
 Le post 3 de la série 1 (« l'objet ») part le même jour à 12 h 30.
 Fabrication : `python3 build.py && node render.cjs` (mêmes outils que
