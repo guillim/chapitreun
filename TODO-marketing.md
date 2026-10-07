@@ -278,6 +278,16 @@ Tester **4 à 6 pubs** au premier tour, une idée par pub :
       `pubs/posts-2/TEXTES.md`. Les reels sont sans musique (Buffer ne peut pas
       en ajouter ; le fondateur peut en poser une dans Instagram après
       publication).
+- [x] **[Claude] Série 3, inspirée des pages concurrentes** (7 octobre) : les
+      30 derniers posts de 8 concurrents relevés via Apify ; hors concours,
+      ce qui marche est une question ou une phrase de parent en gros sur une
+      photo de vie, et le chiffre de la pellicule. Un post « Combien de photos
+      de lui dans votre iPhone ? » et deux reels (« Vous pensez que vous vous
+      souviendrez de tout », « 4 000 photos. 365 nuits, courtes. »), le
+      7 octobre à 9 h 30, 17 h 30 et 20 h 30. Relevé, légendes et
+      identifiants : `pubs/posts-3/TEXTES.md`. Piste non faite : un post par
+      mois de naissance (« Bébés d'octobre… »), ce qui marche le mieux chez
+      Rosemood hors concours.
 - [ ] **[vous] Votre entourage** : message personnel à 20–30 parents de bébés
       de moins d'un an. Premières réservations, premiers retours.
 - [ ] **[vous] Groupes Facebook de parents** (naissance par mois « Bébés de

@@ -383,6 +383,30 @@ Les citations sont les demandes du fondateur, raccourcies.
   Instagram et Facebook. Le post 4 (même titre que C, autre bébé) sert
   aussi de « C-bis » si on veut une variante en pub.
 
+### 7 octobre — s'inspirer des concurrents
+- « Préparer un nouveau post et de nouveaux reels pour aujourd'hui, en
+  regardant les pages Instagram de la concurrence et leurs posts bébé qui
+  ont eu des likes » → relevé des 30 derniers posts de 8 comptes avec le
+  connecteur Apify (`apify/instagram-scraper`, ≈ 240 résultats, quelques
+  centimes) ; les identifiants Instagram se trouvent dans le pied de page
+  des sites (Rosemood = `atelier_rosemood`, Fizzer = `fizzer_app`, Cheerz
+  France = `cheerzfr`, pas `cheerz`). Lecture : les jeux-concours écrasent
+  tout (1 000 à 5 000 ❤) et ne nous apprennent rien ; les posts produit à
+  plat plafonnent à 20–100 ❤ partout ; ce qui sort du lot, c'est une
+  **question** à laquelle chacun a une réponse (« combien de photos dans
+  votre pellicule ? », 1 766 ❤ chez Artifact Uprising), une **phrase de
+  parent** en gros sur une photo de vie (Once Upon « you think you'll
+  remember it all », Chatbooks « Motherhood doesn't care what's on your
+  calendar »), et **l'année en chiffres** (Cheerz « 42 glaces, 193
+  ploufs »). Chez Rosemood, hors concours, le meilleur est « Top prénoms
+  d'octobre » : du contenu par mois de naissance, à garder en piste.
+- Trois visuels dans le design de C (`pubs/posts-3/`) : un post-question,
+  un reel où les phrases se remplacent (nouvel attribut `data-t1` dans
+  `anim.js`), un reel où les chiffres s'empilent. Programmés le jour même
+  à 9 h 30, 17 h 30 et 20 h 30 (le post « l'objet » de la série 1 part à
+  12 h 30) — quatre publications dans la journée, c'est dense ; à ne pas
+  reproduire tous les jours. Détail : `pubs/posts-3/TEXTES.md`.
+
 ## 4. Décisions et leurs raisons
 
 | Décision | Pourquoi | Conséquence à surveiller |

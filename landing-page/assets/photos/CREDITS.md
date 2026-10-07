@@ -128,3 +128,14 @@ ne garantit pas l'accord des personnes photographiées. La carte du livre
 | `src-chaise.jpg` (post 6) | Bébé en robe rose sur une chaise mauve | Javier González Fotógrafo | [unsplash](https://unsplash.com/photos/Da4zj6d-aIE) |
 | `src-lit.jpg` (reel 2) | Bébé assis sur un lit, qui se retourne en souriant | Malin Björk | [unsplash](https://unsplash.com/photos/Ys96D8zNs48) |
 | `src-pois.jpg` (post 7) | Bébé qui éclate de rire, pyjama à pois rouges | tian dayong | [unsplash](https://unsplash.com/photos/NGv8_t5G7Fs) |
+
+## Série 3, inspirée des pages concurrentes (7 octobre 2026)
+
+Visuels de `pubs/posts-3/`, mêmes règles (Unsplash gratuit, pas d'Unsplash+,
+accord des personnes non garanti).
+
+| Fichier | Description | Auteur | Source |
+| --- | --- | --- | --- |
+| `src-telephone.jpg` (post 8) | Quelqu'un photographie au téléphone une mère et son bébé | Fotógrafo Samuel Cruz | [unsplash](https://unsplash.com/photos/UZCUcNOEI5Y) |
+| `src-herbe.jpg` (reel 3) | Bébé à quatre pattes dans l'herbe, qui rit | Alvin Mahmudov | [unsplash](https://unsplash.com/photos/D3H1opzzq68) |
+| `src-sieste.jpg` (reel 4) | Bébé endormi sur un lit blanc | Dakota Corbin | [unsplash](https://unsplash.com/photos/5yUPFjGFJoI) |
