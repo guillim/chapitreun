@@ -13,30 +13,49 @@ Fichier interne, non publié sur chapitreun.com.
 
 ---
 
-## Où on en est (6 octobre 2026)
+## Où on en est (8 octobre 2026)
 
-> ### 🟢 Campagne lancée le 5 octobre, arrêt automatique le 15 octobre
+> ### 🟡 Campagne lancée le 5 octobre, arrêt automatique le 15 octobre
 >
-> **Premier relevé, 6 octobre 9 h** (cumul depuis le 5) : 12,34 €,
-> 1 165 impressions, 1 008 personnes, 33 clics sur lien (CTR 2,8 %, CPC
-> moyen 0,37 €). Pixel : 12 `PageView` depuis le 5, **0 `Lead`,
-> 0 `InitiateCheckout`, 0 `Purchase`** (hors achat test du 3).
+> **Relevé J+3, 8 octobre 9 h** (cumul depuis le 5) : 26,93 €,
+> 2 428 impressions, 53 clics sur lien (CTR 2,2 %, CPC moyen 0,51 €).
+> Pixel : **0 `Lead`, 0 `InitiateCheckout`, 0 `Purchase`** ; 45 `PageView`
+> dont ≈ 19 sont les tests Playwright du 6 au soir → ≈ 26 visites réelles.
 >
 > | Pub | Dépense | Impr. | Clics | CTR | CPC |
 > |---|---|---|---|---|---|
-> | C · La date | 10,21 € | 939 | 30 | 4,47 % | 0,24 € |
-> | A · Son livre photo | 1,44 € | 149 | 2 | 2,01 % | 0,48 € |
-> | B · Démo iPhone | 0,51 € | 45 | 1 | 4,44 % | 0,26 € |
+> | C · La date | 13,55 € | 1 265 | 39 | 4,19 % | 0,26 € |
+> | A · Son livre photo | 12,61 € | 1 076 | 13 | 1,86 % | 0,63 € |
+> | B · Démo iPhone | 0,59 € | 54 | 1 | 5,6 % | 0,20 € |
 > | G · Notification | 0,18 € | 32 | 0 | 0 % | — |
-> | D · Humour | 0 € | 0 | 0 | — | — |
+> | D · Humour | 0 € | 1 | 0 | — | — |
 >
-> Lecture : Meta a concentré 83 % de la dépense sur C dès le premier jour
-> (le bébé au chapeau « 1 » et « ses 1 an arrivent » accrochent), A, B et G
-> ont trop peu d'impressions pour être jugées, **D n'a jamais été
-> diffusée**. Deux signaux à surveiller plus que le CTR : seulement 12 pages
-> vues pour 33 clics (clics accidentels, page lente en 4G, ou bloqueurs), et
-> aucun début de paiement — normal à 12 €, mais c'est la seule mesure qui
-> compte.
+> | Jour | Dépense | Impr. | Clics | Qui diffuse |
+> |---|---|---|---|---|
+> | 5 oct. | 3,01 € | 311 | 5 | A et C à parts égales |
+> | 6 oct. | 12,68 € | 1 181 | 37 | C (12,21 €, 37 clics) |
+> | 7 oct. | 7,33 € | 606 | 8 | A (7,15 €), C 7 impressions |
+> | 8 oct. (9 h) | 3,91 € | 330 | 3 | A seule |
+>
+> Placements (ensemble, cumul) : stories 13,53 € / 1 184 impr. / 31 clics
+> (3,5 %, 0,33 €), fil Instagram 11,51 € / 999 / 18 (2,9 %, 0,40 €), reels
+> 1,89 € / 244 / 4. Les stories sont le meilleur emplacement.
+>
+> **Ce qui s'est passé le 6 au soir.** À 21 h 51, les cinq pubs ont été
+> réenregistrées depuis l'app Ads Manager iOS (nouvelle création pour
+> chacune, même image et même texte, rattachée au compte Instagram) :
+> re-examen, approbation à 21 h 54, et **remise à zéro de l'apprentissage**.
+> Depuis, Meta sert **A** au lieu de **C** : A coûte 2,4 × plus cher le clic
+> (0,63 € contre 0,26 €) et clique deux fois moins (1,9 % contre 4,2 %).
+> Le fondateur n'a pas voulu modifier les pubs (il publiait des contenus
+> organiques) : manipulation involontaire dans l'app.
+>
+> Lecture : C reste la pub qui marche (4,2 % de clics, 0,26 €, la norme en
+> trafic froid est 1–2 % et 0,50–1 €). Côté achats, toujours rien à
+> 53 clics et ≈ 26 visites réelles : trop peu pour juger la page ou le prix
+> (seuil utile : 100 visites), mais on entre dans la zone où il faudra
+> regarder la page si rien ne vient. Au rythme actuel (A à 0,63 €), les
+> 70 € restants donnent ≈ 110 clics ; avec C, ≈ 270.
 >
 > Campagne **« Test 1 · Précommande livre 1 an · oct. 2026 »**
 > (`120249512384540314`), **active**, 10 €/jour, optimisée sur
@@ -54,14 +73,28 @@ Fichier interne, non publié sur chapitreun.com.
 > Prochaines étapes :
 > 1. ~~**Le 6** : vérifier que la diffusion a repris~~ — fait, compte
 >    actif, diffusion reprise dans la nuit du 5 au 6.
-> 2. **J+3 (8 octobre, relevé programmé à 9 h)** : regarder si des `Lead`
->    ou `InitiateCheckout` apparaissent ; proposer de couper A ou G si
->    elles restent sous 1 % de CTR avec assez d'impressions ; décider du
->    sort de D (jamais diffusée : laisser Meta la tester, ou la retirer).
-> 3. **J+5 (10 octobre)** : même relevé ; si C reste seule à dépenser,
->    envisager une variante de C (même photo, autre titre) pour ne pas
->    dépendre d'une seule pub.
+> 2. ~~**J+3 (8 octobre, relevé programmé à 9 h)**~~ — fait, ci-dessus.
+> 3. **J+5 (10 octobre, relevé programmé à 9 h)** : vérifier que C diffuse
+>    à nouveau ; premiers `Lead` / `InitiateCheckout` ; si toujours 0 à
+>    ≈ 100 clics, regarder la page (premier écran, prix) plutôt que les pubs.
 > 4. **J+10 (15 octobre)** : bilan et décision avec la règle ci-dessous.
+>
+> Propositions du 8 octobre (rien n'est modifié dans Meta sans accord du
+> fondateur) :
+> - **Mettre A, D et G en pause** pour que le budget revienne à C (et B,
+>   qui ne diffuse presque pas). Mettre une pub en pause ne relance pas
+>   l'apprentissage de l'ensemble ; c'est le moyen le plus sûr de retrouver
+>   des clics à 0,26 € plutôt qu'à 0,63 €. Risque : Meta préférait A depuis
+>   la remise à zéro ; si C ne redémarre pas seule après la pause, dupliquer
+>   l'ensemble avec C seule.
+> - **Ne plus ouvrir les pubs dans l'app Ads Manager iOS** d'ici le 15 :
+>   chaque « enregistrer » relance l'examen et l'apprentissage.
+> - **Stories d'abord** : si on refait des visuels, le 9:16 est le format
+>   qui travaille (31 des 53 clics).
+> - **La page, pas les pubs, si 0 début de paiement à 100 clics** : le
+>   formulaire liste d'attente (`Lead`) est aussi à zéro, ce qui dit que
+>   même l'engagement gratuit n'est pas pris ; regarder le premier écran
+>   mobile et la place du prix avant de toucher au prix lui-même.
 >
 > Suggestions du 6 octobre (rien n'est modifié dans Meta sans accord) :
 > - ~~**Écart clics / pages vues** : vérifier GA4, tester la page en 4G sur
