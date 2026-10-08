@@ -81,12 +81,16 @@ Fichier interne, non publié sur chapitreun.com.
 >
 > Propositions du 8 octobre (rien n'est modifié dans Meta sans accord du
 > fondateur) :
-> - **Mettre A, D et G en pause** pour que le budget revienne à C (et B,
->   qui ne diffuse presque pas). Mettre une pub en pause ne relance pas
->   l'apprentissage de l'ensemble ; c'est le moyen le plus sûr de retrouver
->   des clics à 0,26 € plutôt qu'à 0,63 €. Risque : Meta préférait A depuis
->   la remise à zéro ; si C ne redémarre pas seule après la pause, dupliquer
->   l'ensemble avec C seule.
+> - ~~**Mettre A, D et G en pause**~~ — **fait le 8 octobre à 19 h 40**, sur
+>   le « Vas-y » du fondateur : A, D et G en pause, C et B actives. Mettre
+>   une pub en pause ne relance pas l'apprentissage de l'ensemble ; c'est le
+>   moyen le plus sûr de retrouver des clics à 0,26 € plutôt qu'à 0,63 €.
+>   Risque : Meta préférait A depuis la remise à zéro ; si C ne redémarre
+>   pas seule d'ici le relevé du 10, dupliquer l'ensemble avec C seule.
+>   La reco de l'assistant Meta reçue le même soir (test A/B avec un
+>   ensemble de reciblage, réécrire G en déclinaison de B) a été écartée :
+>   personne à recibler, B jugée sur 1 clic, et modifier une création
+>   relancerait l'apprentissage.
 > - **Ne plus ouvrir les pubs dans l'app Ads Manager iOS** d'ici le 15 :
 >   chaque « enregistrer » relance l'examen et l'apprentissage.
 > - **Stories d'abord** : si on refait des visuels, le 9:16 est le format

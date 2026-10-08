@@ -433,6 +433,18 @@ Les citations sont les demandes du fondateur, raccourcies.
   que la gagnante ; il faut regarder la répartition jour par jour
   (`time_increment` 1), pas seulement le cumul. Détail dans
   `TODO-marketing.md`. Prochain relevé le 10 octobre à 9 h.
+- Le soir, le fondateur transmet la reco de l'assistant Meta : « B Démo
+  iPhone est la meilleure pub (5,45 % de clics) », « G à 0 % », « ajouter
+  un ensemble de reciblage via un test A/B », « réécrire G en déclinaison de
+  B ». Lecture : B = 1 clic sur 54 impressions, G = 32 impressions, la reco
+  ne cite ni C (la vraie gagnante) ni la remise à zéro ; le reciblage n'a
+  personne à cibler ; une modification de création relancerait
+  l'apprentissage. **Leçon : les recos automatiques de Meta jugent sur le
+  cumul sans seuil de volume et poussent vers des actions qui relancent
+  l'apprentissage ; toujours vérifier le nombre de clics derrière un
+  pourcentage.** « Vas-y » → A, D et G mises en pause par le connecteur
+  (`ads_update_entity`, `status: PAUSED`), C et B laissées actives, rien
+  d'autre touché. Vérifié juste après.
 
 ## 4. Décisions et leurs raisons
 
