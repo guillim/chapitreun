@@ -406,6 +406,33 @@ Les citations sont les demandes du fondateur, raccourcies.
   à 9 h 30, 17 h 30 et 20 h 30 (le post « l'objet » de la série 1 part à
   12 h 30) — quatre publications dans la journée, c'est dense ; à ne pas
   reproduire tous les jours. Détail : `pubs/posts-3/TEXTES.md`.
+- « Est-ce que tu peux me faire un update des performances publicitaires ? »
+  (19 h 30) → la diffusion s'est presque arrêtée dans la journée (1,78 €
+  à 19 h 30). Cause trouvée dans le journal d'activité du compte : la
+  veille à 21 h 51, les cinq pubs ont été réenregistrées depuis l'app Ads
+  Manager iOS (nouvelle création, même image et même texte, rattachée au
+  compte Instagram), re-examen, approbation à 21 h 54 et remise à zéro de
+  l'apprentissage. Le fondateur : « ce n'était pas la publicité… peut-être
+  une mauvaise manipulation » (il publiait des contenus organiques).
+  **Piège** : ouvrir une pub dans l'app Ads Manager et valider relance
+  l'examen et l'apprentissage, même sans rien changer ; `ads_get_errors`
+  ne le voit pas, `ads_account_get_activity_logs` oui (« Ad updated »,
+  ancien et nouvel identifiant de création). Les `PageView` du 6 au soir
+  (≈ 19 entre 22 h et 23 h) sont mes tests Playwright, à retirer du compte.
+
+### 8 octobre — relevé J+3
+- Relevé programmé à 9 h : 26,93 €, 2 428 impressions, 53 clics, 0 `Lead`,
+  0 `InitiateCheckout`, 0 `Purchase` ; ≈ 26 visites réelles. Depuis la
+  remise à zéro du 6 au soir, Meta sert **A** (7,15 € le 7, 3,91 € le 8 au
+  matin) et plus **C** (7 impressions le 7, 5 le 8) : clics à 0,63 € au
+  lieu de 0,26 €. Les stories sont le meilleur placement (31 clics sur 53).
+  Proposé au fondateur, sans rien modifier : mettre A, D et G en pause pour
+  rendre le budget à C ; ne plus ouvrir les pubs dans l'app ; si 0 début de
+  paiement à 100 clics, regarder le premier écran de la page et la place du
+  prix. Leçon : après une remise à zéro, Meta peut choisir une autre pub
+  que la gagnante ; il faut regarder la répartition jour par jour
+  (`time_increment` 1), pas seulement le cumul. Détail dans
+  `TODO-marketing.md`. Prochain relevé le 10 octobre à 9 h.
 
 ## 4. Décisions et leurs raisons
 
