@@ -101,8 +101,14 @@ Fichier interne, non publié sur chapitreun.com.
 > 2. ~~**J+3 (8 octobre, relevé programmé à 9 h)**~~ — fait, ci-dessus.
 > 3. ~~**J+5 (10 octobre, relevé programmé à 9 h)**~~ — fait, ci-dessus :
 >    C diffuse à nouveau, tunnel vérifié, toujours 0.
-> 4. **Bilan final le 16 octobre à 9 h** (relevé programmé ; l'ensemble
->    s'arrête le 15 à 23 h 59) : décision avec la règle de la section 0.
+> 4. **Arrêt conditionnel le 11 octobre à 9 h** (relevé programmé) —
+>    décision du fondateur le 10 : « le signal est suffisamment clair pour
+>    le moment, il n'y a pas vraiment de besoin produit » → si toujours
+>    aucun achat (et aucun début de paiement) à 9 h, la campagne est mise
+>    en pause et le bilan final est écrit ; s'il y a eu un achat, rien n'est
+>    arrêté et le fondateur est prévenu ; s'il y a eu un début de paiement
+>    sans achat vu par le pixel, on demande au fondateur de vérifier Stripe
+>    avant d'arrêter.
 >
 > Propositions du 10 octobre (page et offre : à décider par le fondateur,
 > rien n'est changé sans son accord ; rien à toucher dans Meta d'ici le 15) :
@@ -453,6 +459,15 @@ _(à remplir : date, chiffres, décision)_
   Fondateur prévenu par notification, paiement régularisé. **Fin de
   l'ensemble repoussée au 15 octobre 23 h 59** pour compenser (accord du
   fondateur).
+- **10 octobre 2026** — **arrêt anticipé décidé par le fondateur** : après
+  le relevé J+5 (≈ 51 visites réelles, 0 inscription, 0 début de paiement,
+  0 achat, tunnel vérifié), « le signal est suffisamment clair pour le
+  moment, il n'y a pas vraiment de besoin produit ». Consigne : arrêter la
+  campagne le 11 octobre à 9 h s'il n'y a toujours pas eu d'acte d'achat.
+  Le test se termine donc à J+6 au lieu de J+10, avec ≈ 60 € dépensés au
+  lieu de 100 ; la règle de décision (section 0) sera appliquée sur
+  l'échantillon obtenu, en disant ce qu'il permet et ne permet pas de
+  conclure.
 - **6 octobre 2026 (soir)** — **série 2 « La date »** : le fondateur veut
   une série de posts et de reels qui reprennent le design de la pub qui
   marche (C) en changeant la photo et l'enfant. Quatre posts et deux reels,
