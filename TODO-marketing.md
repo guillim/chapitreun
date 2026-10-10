@@ -13,29 +13,53 @@ Fichier interne, non publié sur chapitreun.com.
 
 ---
 
-## Où on en est (8 octobre 2026)
+## Où on en est (10 octobre 2026)
 
 > ### 🟡 Campagne lancée le 5 octobre, arrêt automatique le 15 octobre
 >
-> **Relevé J+3, 8 octobre 9 h** (cumul depuis le 5) : 26,93 €,
-> 2 428 impressions, 53 clics sur lien (CTR 2,2 %, CPC moyen 0,51 €).
-> Pixel : **0 `Lead`, 0 `InitiateCheckout`, 0 `Purchase`** ; 45 `PageView`
-> dont ≈ 19 sont les tests Playwright du 6 au soir → ≈ 26 visites réelles.
+> **Relevé J+5, 10 octobre 9 h** (cumul depuis le 5) : 53,33 €,
+> 4 280 impressions, 95 clics sur lien (CTR 2,2 %, CPC moyen 0,56 €).
+> Pixel : **0 `Lead`, 0 `InitiateCheckout`, 0 `Purchase`** ; 70 `PageView`
+> dont ≈ 19 sont les tests du 6 au soir → ≈ 51 visites réelles (depuis le 7,
+> pixel corrigé : 33 pages vues pour 49 clics, deux clics sur trois
+> aboutissent).
 >
-> | Pub | Dépense | Impr. | Clics | CTR | CPC |
-> |---|---|---|---|---|---|
-> | C · La date | 13,55 € | 1 265 | 39 | 4,19 % | 0,26 € |
-> | A · Son livre photo | 12,61 € | 1 076 | 13 | 1,86 % | 0,63 € |
-> | B · Démo iPhone | 0,59 € | 54 | 1 | 5,6 % | 0,20 € |
-> | G · Notification | 0,18 € | 32 | 0 | 0 % | — |
-> | D · Humour | 0 € | 1 | 0 | — | — |
+> | Pub | Statut | Dépense | Impr. | Clics | CTR | CPC |
+> |---|---|---|---|---|---|---|
+> | C · La date | active | 32,26 € | 2 609 | 71 | 3,56 % | 0,35 € |
+> | A · Son livre photo | pause depuis le 8 | 18,62 € | 1 497 | 21 | 2,14 % | 0,58 € |
+> | B · Démo iPhone | active | 2,21 € | 136 | 3 | 3,7 % | 0,44 € |
+> | G · Notification | pause | 0,18 € | 35 | 0 | 0 % | — |
+> | D · Humour | pause | 0,06 € | 3 | 0 | — | — |
 >
 > | Jour | Dépense | Impr. | Clics | Qui diffuse |
 > |---|---|---|---|---|
 > | 5 oct. | 3,01 € | 311 | 5 | A et C à parts égales |
 > | 6 oct. | 12,68 € | 1 181 | 37 | C (12,21 €, 37 clics) |
 > | 7 oct. | 7,33 € | 606 | 8 | A (7,15 €), C 7 impressions |
-> | 8 oct. (9 h) | 3,91 € | 330 | 3 | A seule |
+> | 8 oct. | 10,62 € | 801 | 13 | A (9,92 €) jusqu'à la pause de 19 h 40 |
+> | 9 oct. | 16,41 € | 1 166 | 28 | **C est revenue** (15,42 €, 28 clics, 3,1 %, 0,44 €) |
+> | 10 oct. (9 h) | 3,28 € | 212 | 4 | C |
+>
+> **Le tunnel de la page est vérifié le 10** (test à blanc Playwright sur
+> iPhone émulé, tout ce qui part vers Meta, Google, Formspree et Stripe
+> intercepté et bloqué, rien d'enregistré) : « Précommander pour 49 € »
+> envoie bien le formulaire à Formspree, tente `InitiateCheckout` sur le
+> pixel et redirige vers Stripe avec l'e-mail prérempli ; « Juste être
+> prévenu » envoie le formulaire, tente `Lead` et affiche la confirmation.
+> Aucune erreur JavaScript. Le zéro n'est donc pas un bug.
+>
+> **Lecture au 10 octobre.** La pause de A, D, G a marché : C a repris dès
+> le 9 (28 clics dans la journée). Mais à ≈ 51 visites réelles, toujours
+> aucun début de paiement **et aucune inscription à la liste d'attente**,
+> qui est gratuite. Avec le repère de la règle (5–15 % d'inscrits sur une
+> liste gratuite), on aurait dû en voir 2 à 7 ; en voir 0 sur 51 a environ
+> 7 % de chances si le vrai taux était de 5 %. C'est l'engagement gratuit
+> qui ne se prend pas, avant même la question du prix. Projection : ≈ 55 €
+> restants d'ici le 15 → ≈ 125 clics de plus, ≈ 220 clics et ≈ 140 visites
+> au total ; à 0 sur 140, la règle de décision tombe dans « on arrête ou on
+> change d'offre » (< 0,5 % et < 5 % d'inscrits), et un échantillon de 140
+> ne peut pas dire mieux que « probablement sous 2 % ».
 >
 > Placements (ensemble, cumul) : stories 13,53 € / 1 184 impr. / 31 clics
 > (3,5 %, 0,33 €), fil Instagram 11,51 € / 999 / 18 (2,9 %, 0,40 €), reels
@@ -64,9 +88,10 @@ Fichier interne, non publié sur chapitreun.com.
 > uniquement, **fin programmée le 15 octobre à 23 h 59** (≈ 100 € au total ;
 > repoussée d'un jour car la diffusion a été bloquée le 5 octobre de 15 h 23
 > au soir, compte en « paiement requis », régularisé par le fondateur).
-> 5 pubs actives : A (son livre photo, sans rien faire), B (vidéo démo
-> iPhone), C (la date), D (trop de choses à faire, en humour), G
-> (notification iPhone, format « natif »), en 4:5 et 9:16.
+> 5 pubs, en 4:5 et 9:16 : **C (la date) et B (vidéo démo iPhone)
+> actives** ; A (son livre photo, sans rien faire), D (trop de choses à
+> faire, en humour) et G (notification iPhone, format « natif ») **en pause
+> depuis le 8 octobre** sur accord du fondateur.
 > Visuels, vidéo et textes : `pubs/tour-1/` ; canevas modifiable :
 > https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26
 >
@@ -74,10 +99,30 @@ Fichier interne, non publié sur chapitreun.com.
 > 1. ~~**Le 6** : vérifier que la diffusion a repris~~ — fait, compte
 >    actif, diffusion reprise dans la nuit du 5 au 6.
 > 2. ~~**J+3 (8 octobre, relevé programmé à 9 h)**~~ — fait, ci-dessus.
-> 3. **J+5 (10 octobre, relevé programmé à 9 h)** : vérifier que C diffuse
->    à nouveau ; premiers `Lead` / `InitiateCheckout` ; si toujours 0 à
->    ≈ 100 clics, regarder la page (premier écran, prix) plutôt que les pubs.
-> 4. **J+10 (15 octobre)** : bilan et décision avec la règle ci-dessous.
+> 3. ~~**J+5 (10 octobre, relevé programmé à 9 h)**~~ — fait, ci-dessus :
+>    C diffuse à nouveau, tunnel vérifié, toujours 0.
+> 4. **Bilan final le 16 octobre à 9 h** (relevé programmé ; l'ensemble
+>    s'arrête le 15 à 23 h 59) : décision avec la règle de la section 0.
+>
+> Propositions du 10 octobre (page et offre : à décider par le fondateur,
+> rien n'est changé sans son accord ; rien à toucher dans Meta d'ici le 15) :
+> - **Laisser courir jusqu'au 15** sans rien changer aux pubs : C fait son
+>   travail, le budget restant (≈ 55 €) donnera ≈ 140 visites au total,
+>   assez pour trancher avec la règle.
+> - **Premier écran mobile** (captures du 10, envoyées au fondateur) : le
+>   premier écran montre déjà le titre, « 49 € tout compris · remboursable à
+>   tout moment · sans abonnement » et deux boutons (réserver, voir le
+>   livre). Ce qu'il ne montre pas : l'option gratuite « Juste être
+>   prévenu », reléguée sous le bouton payant tout en bas du formulaire. Sur
+>   un trafic Instagram qui reste 5 à 10 s, personne ne la voit. Piste si on
+>   refait un tour : la proposer dès l'accueil (« ou juste être prévenu,
+>   gratuit »), pour mesurer l'intérêt à coût zéro. À faire après le 15 :
+>   changer la page pendant le test fausse la lecture.
+> - **Le signal à retenir n'est pas le prix mais l'inscription gratuite à
+>   zéro** : avant de baisser le prix, il faudrait savoir si le message
+>   (« le livre se fait tout seul ») est compris et cru. Piste : les 20–30
+>   parents de l'entourage (section 3), leur montrer la page et noter ce
+>   qu'ils comprennent en 10 secondes.
 >
 > Propositions du 8 octobre (rien n'est modifié dans Meta sans accord du
 > fondateur) :
