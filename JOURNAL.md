@@ -469,6 +469,19 @@ Les citations sont les demandes du fondateur, raccourcies.
   « remboursable » et le bouton gratuit dans le premier écran mobile, et
   faire lire la page à 20–30 parents pour savoir si « le livre se fait tout
   seul » est compris et cru. Bilan final reprogrammé le 16 octobre à 9 h.
+- « Je trouve que le signal est suffisamment clair pour le moment. Il n'y
+  a pas vraiment de besoin produit. Donc ce que je veux que tu fasses,
+  c'est arrêter la campagne publicitaire demain à 9 h s'il n'y a toujours
+  pas eu d'acte d'achat d'ici là. » → le relevé programmé est déplacé au
+  11 octobre à 9 h avec la consigne : si `Purchase` = 0 et
+  `InitiateCheckout` = 0, mettre la campagne en pause et écrire le bilan
+  final ; si un achat est passé, ne rien arrêter et prévenir ; si un début
+  de paiement sans achat, faire vérifier Stripe avant d'arrêter (un
+  paiement peut échapper au pixel). C'est le seul changement Meta autorisé.
+  Les posts Buffer des 11, 12 et 13 restent programmés tant que le
+  fondateur ne dit pas de les retirer. Leçon de méthode : le fondateur a
+  tranché à J+5 sur 51 visites, avant le terme prévu ; la règle de
+  décision servira à qualifier l'échantillon, pas à contester le choix.
 
 ## 4. Décisions et leurs raisons
 
