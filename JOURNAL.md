@@ -446,6 +446,30 @@ Les citations sont les demandes du fondateur, raccourcies.
   (`ads_update_entity`, `status: PAUSED`), C et B laissées actives, rien
   d'autre touché. Vérifié juste après.
 
+### 10 octobre — relevé J+5
+- Relevé programmé à 9 h : 53,33 €, 4 280 impressions, 95 clics,
+  ≈ 51 visites réelles, 0 `Lead`, 0 `InitiateCheckout`, 0 `Purchase`. La
+  pause de A, D, G a fait son effet dès le lendemain : C a repris le 9
+  (15,42 €, 28 clics, 3,1 %). B diffuse à peine (2,21 € en cumul).
+- **Avant de conclure sur un zéro, vérifier le tunnel** : test à blanc
+  Playwright sur iPhone émulé (`funnel-test.cjs` dans le bloc-notes de
+  session), toutes les requêtes vers Meta, Google, Formspree et Stripe
+  interceptées et bloquées pour ne rien enregistrer. Résultat :
+  « Précommander » → POST Formspree, `InitiateCheckout` tenté sur le pixel,
+  redirection Stripe avec l'e-mail prérempli ; « Juste être prévenu » →
+  POST Formspree, `Lead` tenté, confirmation affichée ; aucune erreur JS.
+  Le zéro est réel. Méthode à garder : on peut tester un tunnel en
+  production sans polluer les mesures, en bloquant les envois mais en
+  laissant charger les bibliothèques (sinon la file `fbq` n'est jamais
+  vidée et on ne voit pas les événements).
+- Lecture consignée dans `TODO-marketing.md` : le signal le plus parlant
+  est 0 inscription gratuite sur ≈ 51 visites (2 à 7 attendues au repère
+  de la règle), plus encore que 0 paiement. Propositions : laisser courir
+  jusqu'au 15 sans toucher aux pubs, puis, après le test, remonter le prix,
+  « remboursable » et le bouton gratuit dans le premier écran mobile, et
+  faire lire la page à 20–30 parents pour savoir si « le livre se fait tout
+  seul » est compris et cru. Bilan final reprogrammé le 16 octobre à 9 h.
+
 ## 4. Décisions et leurs raisons
 
 | Décision | Pourquoi | Conséquence à surveiller |
