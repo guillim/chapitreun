@@ -13,9 +13,86 @@ Fichier interne, non publié sur chapitreun.com.
 
 ---
 
-## Où on en est (10 octobre 2026)
+## Où on en est (11 octobre 2026)
 
-> ### 🟡 Campagne lancée le 5 octobre, arrêt automatique le 15 octobre
+> ### 🔴 Campagne arrêtée le 11 octobre à 9 h, décision du fondateur
+>
+> Le 10 octobre, après le relevé J+5 : « le signal est suffisamment clair
+> pour le moment, il n'y a pas vraiment de besoin produit ; arrêter la
+> campagne demain à 9 h s'il n'y a toujours pas eu d'acte d'achat ». Le 11
+> à 9 h : 0 achat, 0 début de paiement, 0 inscription → **campagne mise en
+> pause par le connecteur à 9 h 30**, vérifié (campagne `PAUSED`, ensemble
+> `CAMPAIGN_PAUSED`, plus aucune diffusion). Rien d'autre n'a été modifié.
+>
+> **Bilan final** (5 → 11 octobre 9 h 30, 6 jours de diffusion) :
+>
+> | | |
+> |---|---|
+> | Dépense | ≈ 67 € (66,20 € par pub + les dernières minutes du 11) |
+> | Impressions / personnes | 5 204 / ≈ 3 300 |
+> | Clics vers le site | 123 (CTR 2,4 %, CPC 0,54 €) |
+> | Visites réelles (pixel, hors ≈ 19 tests du 6) | ≈ 65 (depuis le 7, pixel corrigé : ≈ 47 pages vues pour 81 clics, 58 %) |
+> | Inscriptions gratuites (`Lead`) | **0** |
+> | Débuts de paiement (`InitiateCheckout`) | **0** |
+> | Achats (`Purchase`) | **0** |
+>
+> | Pub | Statut final | Dépense | Impr. | Clics | CTR | CPC |
+> |---|---|---|---|---|---|---|
+> | C · La date | active jusqu'au bout | 44,94 € | 3 522 | 99 | 3,72 % | 0,34 € |
+> | A · Son livre photo | pause depuis le 8 | 18,62 € | 1 497 | 21 | 2,14 % | 0,58 € |
+> | B · Démo iPhone | active, à peine servie | 2,40 € | 147 | 3 | 3,4 % | 0,48 € |
+> | G · Notification | pause depuis le 8 | 0,18 € | 35 | 0 | 0 % | — |
+> | D · Humour | jamais diffusée | 0,06 € | 3 | 0 | — | — |
+>
+> | Jour | Dépense | Impr. | Clics | Qui diffuse |
+> |---|---|---|---|---|
+> | 5 oct. | 3,01 € | 311 | 5 | A et C à parts égales |
+> | 6 oct. | 12,68 € | 1 181 | 37 | C (12,21 €, 37 clics) |
+> | 7 oct. | 7,33 € | 606 | 8 | A (7,15 €), C 7 impressions (remise à zéro du 6 au soir) |
+> | 8 oct. | 10,62 € | 801 | 13 | A (9,92 €) jusqu'à la pause de 19 h 40 |
+> | 9 oct. | 16,41 € | 1 166 | 28 | C est revenue (15,42 €, 28 clics, 3,1 %) |
+> | 10 oct. | 10,17 € | 696 | 21 | C (3,9 %, 0,37 €) |
+> | 11 oct. (→ 9 h 30) | 6,96 € | 529 | 11 | C, puis arrêt |
+>
+> Placements (cumul) : **stories 32,33 € / 2 606 impr. / 78 clics (3,9 %,
+> 0,32 €)**, fil Instagram 30,28 € / 2 170 / 38 (2,7 %, 0,52 €), reels
+> 3,57 € / 425 / 7 (2,1 %, 0,40 €).
+>
+> **Règle de décision (section 0) appliquée.** 0 achat sur ≈ 65 visites
+> réelles et sur 123 clics ; 0 inscrit sur la liste gratuite. On est dans la
+> ligne « < 0,5 % et moins de 5 % d'inscrits → on arrête ou on change
+> d'offre ». Ce que l'échantillon permet de dire : aucun signal d'achat ni
+> d'intérêt gratuit ; avec 0 sur 65, un vrai taux d'achat au-delà de 4,5 %
+> est exclu à 95 %, au-delà de 2,4 % si on compte les 123 clics ; et 0
+> inscrit sur 65 n'a que ≈ 4 % de chances d'arriver si la liste gratuite
+> convertissait à 5 %, le bas du repère. Ce qu'il ne permet pas de dire :
+> distinguer 0 % d'un vrai 1 à 2 % d'acheteurs, il aurait fallu 300 à 500
+> visites ; ni si c'est le message, la page ou l'offre qui ne prend pas. Le
+> fondateur a tranché à J+6 sur ces chiffres : « pas de besoin produit ».
+>
+> **Ce qui a marché, à garder pour un prochain test** : l'accroche de la
+> date (C : 3,7 % de clics à 0,34 €, la norme en trafic froid est 1–2 % et
+> 0,50–1 €), le format stories, la page (rapide, tunnel vérifié), la mesure
+> (pixel + GA4 + Formspree + Stripe testés de bout en bout). **Ce qui n'a
+> pas marché** : rien derrière le clic ; et deux jours perdus sur six par la
+> remise à zéro du 6 au soir.
+>
+> **Reste ouvert, à décider par le fondateur (rien n'est fait sans accord)** :
+> - **Posts Buffer encore programmés** : 11 oct. 12 h 30 (« Douze mois,
+>   douze chapitres »), 12 oct. 19 h 30 (reel « Son prénom. Sa date. »),
+>   13 oct. 12 h 30 (« Rien à trier ») — les laisser partir ou les retirer ?
+> - **La page reste en ligne** avec la précommande ouverte et le compteur
+>   fondateur simulé (« il reste 367 places sur 500 ») qui continue de
+>   monter d'un par jour : si le test est fini, le compteur devrait être
+>   retiré ou gelé, et la page pourrait passer en « liste d'attente » seule.
+> - **Si on voulait creuser avant d'enterrer** : faire lire la page à 20–30
+>   parents de l'entourage (ce qu'ils comprennent en 10 s), mettre l'option
+>   gratuite dès le premier écran et relancer 30 € sur C en stories, ou
+>   changer d'offre. Aucune de ces options n'est engagée.
+>
+> ---
+>
+> Historique du test, tel qu'il a été vécu :
 >
 > **Relevé J+5, 10 octobre 9 h** (cumul depuis le 5) : 53,33 €,
 > 4 280 impressions, 95 clics sur lien (CTR 2,2 %, CPC moyen 0,56 €).
@@ -23,23 +100,6 @@ Fichier interne, non publié sur chapitreun.com.
 > dont ≈ 19 sont les tests du 6 au soir → ≈ 51 visites réelles (depuis le 7,
 > pixel corrigé : 33 pages vues pour 49 clics, deux clics sur trois
 > aboutissent).
->
-> | Pub | Statut | Dépense | Impr. | Clics | CTR | CPC |
-> |---|---|---|---|---|---|---|
-> | C · La date | active | 32,26 € | 2 609 | 71 | 3,56 % | 0,35 € |
-> | A · Son livre photo | pause depuis le 8 | 18,62 € | 1 497 | 21 | 2,14 % | 0,58 € |
-> | B · Démo iPhone | active | 2,21 € | 136 | 3 | 3,7 % | 0,44 € |
-> | G · Notification | pause | 0,18 € | 35 | 0 | 0 % | — |
-> | D · Humour | pause | 0,06 € | 3 | 0 | — | — |
->
-> | Jour | Dépense | Impr. | Clics | Qui diffuse |
-> |---|---|---|---|---|
-> | 5 oct. | 3,01 € | 311 | 5 | A et C à parts égales |
-> | 6 oct. | 12,68 € | 1 181 | 37 | C (12,21 €, 37 clics) |
-> | 7 oct. | 7,33 € | 606 | 8 | A (7,15 €), C 7 impressions |
-> | 8 oct. | 10,62 € | 801 | 13 | A (9,92 €) jusqu'à la pause de 19 h 40 |
-> | 9 oct. | 16,41 € | 1 166 | 28 | **C est revenue** (15,42 €, 28 clics, 3,1 %, 0,44 €) |
-> | 10 oct. (9 h) | 3,28 € | 212 | 4 | C |
 >
 > **Le tunnel de la page est vérifié le 10** (test à blanc Playwright sur
 > iPhone émulé, tout ce qui part vers Meta, Google, Formspree et Stripe
@@ -82,7 +142,8 @@ Fichier interne, non publié sur chapitreun.com.
 > 70 € restants donnent ≈ 110 clics ; avec C, ≈ 270.
 >
 > Campagne **« Test 1 · Précommande livre 1 an · oct. 2026 »**
-> (`120249512384540314`), **active**, 10 €/jour, optimisée sur
+> (`120249512384540314`), **en pause depuis le 11 octobre 9 h 30**
+> (était active à 10 €/jour), optimisée sur
 > `InitiateCheckout`. Ensemble « France · Femmes 30-45 · iPhone · Instagram »
 > (`120249512388300314`) : femmes 30–45 ans, iOS, mobile, Instagram
 > uniquement, **fin programmée le 15 octobre à 23 h 59** (≈ 100 € au total ;
