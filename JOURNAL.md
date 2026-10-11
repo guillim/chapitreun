@@ -483,6 +483,27 @@ Les citations sont les demandes du fondateur, raccourcies.
   tranché à J+5 sur 51 visites, avant le terme prévu ; la règle de
   décision servira à qualifier l'échantillon, pas à contester le choix.
 
+### 11 octobre — arrêt de la campagne
+- Relevé programmé à 9 h : pixel à 0 `Purchase`, 0 `InitiateCheckout`,
+  0 `Lead` depuis le 5 → campagne mise en pause à 9 h 30 par le connecteur
+  (`ads_update_entity`, niveau campagne, `status: PAUSED`), vérifié :
+  campagne `PAUSED`, ensemble `CAMPAIGN_PAUSED`, plus de diffusion. Rien
+  d'autre touché ; les posts Buffer des 11, 12 et 13 restent programmés en
+  attendant la réponse du fondateur.
+- **Bilan** (6 jours) : ≈ 67 €, 5 204 impressions, 123 clics (2,4 %,
+  0,54 €), ≈ 65 visites réelles, 0 inscription, 0 début de paiement,
+  0 achat. C « la date » a fait 99 des 123 clics (3,7 %, 0,34 €), les
+  stories 78 (3,9 %, 0,32 €). Règle de décision : ligne « on arrête ou on
+  change d'offre » ; l'échantillon exclut un taux d'achat au-delà de
+  4,5 % (65 visites) ou 2,4 % (123 clics) mais ne distingue pas 0 % d'un
+  vrai 1 à 2 % ; le 0 inscrit sur la liste gratuite est le signal le plus
+  solide. Détail dans `TODO-marketing.md`.
+- Points laissés au fondateur : les trois posts Buffer, la page qui reste
+  en ligne avec la précommande et le compteur fondateur simulé (à geler ou
+  retirer si le test est clos), et les pistes si on voulait creuser (lire
+  la page avec 20–30 parents, option gratuite dès l'accueil, 30 € sur C en
+  stories, ou autre offre).
+
 ## 4. Décisions et leurs raisons
 
 | Décision | Pourquoi | Conséquence à surveiller |
@@ -651,6 +672,25 @@ confirmer avec un devis d'imprimeur.
    et événement d'achat de bout en bout.
 10. Ensuite seulement : visuels, textes, campagne créée **en pause**, relue
     par le fondateur, activée par lui.
+11. **Pendant la diffusion** : ne jamais rouvrir une pub dans l'app Ads
+    Manager (chaque enregistrement relance l'examen et l'apprentissage) ;
+    lire la répartition **jour par jour** et pas seulement le cumul ; après
+    une remise à zéro, mettre les pubs faibles en pause (ça ne relance pas
+    l'apprentissage) plutôt que d'en modifier une ; vérifier le nombre de
+    clics derrière tout pourcentage, surtout dans les recos automatiques de
+    Meta ; prévoir une **carte qui accepte les prélèvements Meta** avant le
+    jour J.
+12. **Avant de conclure sur un zéro** : rejouer le tunnel en production avec
+    toutes les requêtes tierces bloquées (rien d'enregistré), bibliothèques
+    chargées pour vider la file d'événements ; retirer ses propres tests des
+    compteurs du pixel ; charger la mesure **dès l'affichage**, pas après un
+    délai, sinon la moitié des visites manquent.
+13. **Dimensionner le test pour la question posée** : pour distinguer 0 %
+    d'un vrai 1–2 % d'acheteurs il faut 300 à 500 visites, soit 150–250 €
+    à 0,35 € le clic avec une bonne pub ; sinon le test ne dira que
+    « probablement sous 2–4 % ». Une **liste d'attente gratuite visible
+    dès le premier écran** donne un signal plus tôt et moins cher que le
+    paiement.
 
 ## 7. Travailler avec ce fondateur
 
@@ -666,21 +706,24 @@ confirmer avec un devis d'imprimeur.
 - Il travaille en parallèle avec d'autres sessions : toujours repartir de
   `origin/main` à jour.
 
-## 8. État au 6 octobre 2026
+## 8. État au 11 octobre 2026
 
-Fait : page en ligne et rapide, paiement live, GA4 et pixel vérifiés,
-portefeuille, compte pub, page, Instagram et domaine Meta en place, règle de
-décision fixée, Buffer connecté, achat test validé de bout en bout,
-**pubs prêtes** : visuels A, C, D (4:5 et 9:16, refaits le soir d'après les
-bonnes pratiques 2026), vidéo démo B, textes (`pubs/tour-1/`), campagne
-« Test 1 » créée **en pause** avec les pubs A, C, D et G (notification
-iPhone, format natif, 4 octobre ; E, vie privée, supprimée à la relecture) (canevas : https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26).
+**Le test de demande est terminé.** Campagne lancée le 5 octobre (5 pubs
+A, B, C, D, G ; femmes 30–45, iPhone, Instagram ; 10 €/jour), **arrêtée le
+11 octobre à 9 h 30** sur décision du fondateur (« pas de besoin produit »),
+quatre jours avant le terme prévu. Résultat : ≈ 67 € dépensés,
+5 204 impressions, 123 clics (2,4 %, 0,54 €), ≈ 65 visites réelles,
+**0 inscription, 0 début de paiement, 0 achat**. La règle de décision
+tombe dans « on arrête ou on change d'offre ». Détail, limites de
+l'échantillon et pistes dans `TODO-marketing.md`.
 
-**Campagne lancée le 5 octobre** (5 pubs A, B, C, D, G ; femmes 30–45,
-iPhone, Instagram ; 10 €/jour ; arrêt automatique repoussé au 15 octobre
-après un blocage de paiement le 5 au soir, régularisé).
-**Premiers posts organiques** le 6 octobre (Instagram et Facebook, via
-Buffer ; visuels et légendes dans `pubs/posts-1/`).
-Reste : vérifier la diffusion et le pixel, couper les pubs faibles à
-J+3/J+5, bilan le 15 octobre ; vidéo face caméra (pub F), message aux parents de
-l'entourage. Détail : `TODO-marketing.md`.
+En place et réutilisable : page rapide avec tunnel vérifié de bout en bout
+(Formspree, Stripe live, pixel Meta, GA4), portefeuille Meta complet,
+Buffer relié, trois séries de visuels (`pubs/tour-1/`, `pubs/posts-1/`,
+`pubs/posts-2/`, `pubs/posts-3/`) avec leurs outils de rendu (HTML →
+Playwright → JPG et MP4), un canevas Claude Design modifiable
+(https://claude.ai/artifact/Ku993NrFX88eBuqkq9ww26), et ce journal.
+
+Reste au fondateur : les trois posts Buffer programmés (11, 12, 13 octobre),
+la page encore en ligne avec la précommande et le compteur fondateur simulé
+(à geler ou retirer), et la suite à donner, s'il y en a une.
