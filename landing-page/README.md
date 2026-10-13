@@ -6,6 +6,81 @@ photos, aucune dépendance, aucun build : `index.html`, `styles.css`,
 
 Nom retenu et tranché : **Chapitre un** (le brief le notait `[Nom]`).
 
+## Résultat du test de demande (bilan du 11 octobre 2026)
+
+Le test est terminé. La campagne Meta (cinq pubs, femmes de 30 à 45 ans sur
+iPhone, Instagram, 10 €/jour) a tourné du 5 au 11 octobre 2026 et a été
+arrêtée le 11 à 9 h 30 sur décision du fondateur, quatre jours avant le terme
+prévu. Le détail chiffré est dans [`TODO-marketing.md`](../TODO-marketing.md)
+(« Où on en est »), l'histoire jour par jour dans [`JOURNAL.md`](../JOURNAL.md).
+
+**En une phrase** : le test prouve qu'un clic Instagram froid ne se transforme
+pas en précommande à 49 € pour une marque inconnue, et il ne dit rien de plus.
+La question « est-ce qu'il y a un besoin ? » reste ouverte, parce que le test
+a posé d'abord la question la plus dure.
+
+### Les faits
+
+| | |
+|---|---|
+| Dépense, durée | ≈ 67 €, 6 jours (prévu 100 €, 10 jours) |
+| Impressions | 5 204 (≈ 3 300 personnes) |
+| Clics vers le site | 123 (2,4 %, 0,54 €), dont 99 sur l'accroche « la date » (3,7 %, 0,34 €, excellent) |
+| Visites réelles | ≈ 65 |
+| Inscription gratuite, début de paiement, achat | 0 / 0 / 0 |
+| Tunnel de la page | vérifié de bout en bout le 10 octobre (test à blanc) : le zéro n'est pas un bug |
+
+### Ce que le test prouve
+
+Un vrai taux d'achat au-delà de 4,5 % est exclu. L'accroche marche, le format
+stories marche, la page tient. Avec 65 visites, on ne distingue pas 0 % d'un
+vrai 1 à 2 % : il aurait fallu 300 à 500 visites. Le signal le plus solide est
+le zéro sur la liste d'attente gratuite.
+
+### Ce qui fragilise la conclusion « pas de besoin »
+
+Par ordre d'importance :
+
+- **Le bouton gratuit était caché.** « Juste être prévenu » n'apparaît qu'en
+  bas du formulaire, sous le bouton payant. On ne sait pas combien des 65
+  visiteurs l'ont seulement vu : le zéro gratuit mesure en partie l'ergonomie
+  de la page, pas seulement l'intérêt.
+- **La demande était maximale dès le premier contact.** Payer 49 € à une
+  marque sans client, pour une app qui n'existe pas, dix secondes après une
+  story. Les concurrents vendent un objet qu'on peut commander aujourd'hui.
+  On a testé la confiance autant que le besoin.
+- **L'audience était large.** 3,5 millions de femmes de 30 à 45 ans sur
+  iPhone, dont une petite fraction a un bébé de moins d'un an. L'accroche
+  filtrait, mais des clics à 0,34 € incluent de la curiosité.
+
+À l'inverse, deux choses soutiennent la lecture du fondateur : les 65 visites
+venaient d'une pub qui parle explicitement du livre des 1 an, donc de parents
+concernés ; et dans les précommandes payantes, 0,5 à 2 % est courant, on
+aurait donc dû voir un ou deux inscrits gratuits même avec une page imparfaite.
+
+### Les options
+
+| Option | Coût | Durée | Ce qu'on apprend |
+|---|---|---|---|
+| 1. S'arrêter là | 0 € | 0 | Rien de plus ; on garde page, pixel, visuels, journal |
+| 2. Parler à 15–20 parents | 0 € | 1 semaine | Si la douleur « trier 4 000 photos » existe, si « se fait tout seul » est compris et cru, ce qu'ils feraient à notre place |
+| 3. Retester l'intérêt gratuit | 50–80 € | 10 jours | Page en liste d'attente seule, bouton gratuit au premier écran, pub C en stories, ciblage resserré sur les parents de bébés ; succès si 5 % d'inscrits sur 150 visites |
+| 4. Changer d'offre | à définir | — | Autre produit ou autre canal, hors de portée de ce test |
+
+**Recommandation** : ne pas conclure « pas de besoin » sur ce test seul, mais
+ne pas remettre d'argent non plus. L'option 2 coûte zéro et répond à la
+question que la pub ne pouvait pas poser. Si une majorité de parents décrit
+la douleur sans qu'on la suggère et comprend la promesse en dix secondes,
+l'option 3 vaut 60 € et une journée de travail, tout est prêt. Si les
+conversations sont tièdes, l'option 1 est la bonne, et 67 € auront suffi pour
+le savoir. Le pire choix serait l'option 3 sans l'option 2 : on retesterait
+une page sans savoir ce qui bloque.
+
+**Quoi qu'on décide** : retirer ou geler le compteur fondateur simulé
+(« il reste 367 places sur 500 »), qui affiche des précommandes qui n'existent
+pas ; et décider du sort des trois posts Buffer programmés les 11, 12 et
+13 octobre.
+
 ## Lancer en local
 
 ```bash
@@ -102,16 +177,15 @@ Tout est regroupé dans `CONFIG`, en haut de `script.js` :
 | Constante | Rôle | État |
 | --- | --- | --- |
 | `ENDPOINT` | POST JSON de l'inscription | **branché sur Formspree** |
-| `STRIPE_CHECKOUT_URL` | Lien Stripe Checkout des 49 € (prix total) | **branché, mode test** |
+| `STRIPE_CHECKOUT_URL` | Lien Stripe Checkout des 49 € (prix total) | **branché, mode live** |
 | `HEADLINE_B` | Titre de la variante B | prêt |
 | `FOUNDER_START_DATE` / `FOUNDER_START_COUNT` | Compteur fondateur | **simulé** |
 
 `ENDPOINT` pointe vers un formulaire Formspree : chaque inscription part en POST
 JSON et déclenche un e-mail de notification. `STRIPE_CHECKOUT_URL` pointe vers
-un lien de paiement Stripe **en mode test** (`buy.stripe.com/test_...`) : aucun
-argent réel ne circule tant qu'il n'est pas remplacé par l'équivalent en mode
-live. À basculer en mode live une fois les pages légales publiées (obligatoire
-avant d'encaisser réellement).
+un lien de paiement Stripe **en mode live** depuis le 2 octobre 2026 : un
+paiement y encaisse réellement 49 €. Le lien de test (`buy.stripe.com/test_...`)
+a servi jusqu'à la publication des pages légales.
 
 Le compteur fondateur (`[data-founder]`) est simulé : il part de
 `FOUNDER_START_COUNT` places prises le `FOUNDER_START_DATE` et augmente d'une
@@ -129,9 +203,9 @@ tarif fondateur, une fois une source de données réelle disponible.
 
 Les trois pages légales existent désormais : `mentions-legales.html`,
 `cgv-prevente.html`, `confidentialite.html`, liées depuis le pied de page.
-Éditeur : ANCHOR (SASU), RCS Nanterre 852 423 318. Avant de basculer Stripe en
-mode live, compléter l'article 7 des CGV avec les coordonnées d'un médiateur de
-la consommation (obligatoire pour un vendeur B2C en France).
+Éditeur : ANCHOR (SASU), RCS Nanterre 852 423 318. L'article 7 des CGV attend
+toujours les coordonnées d'un médiateur de la consommation (obligatoire pour
+un vendeur B2C en France) : à compléter avant toute vente réelle.
 
 ## Animations
 
@@ -224,13 +298,13 @@ aucun souvenir de sa première année, le parent en est le seul dépositaire.
     aperçus de liens). Sur téléphone en portrait, l'accueil charge
     `hero-portrait.webp`, le recadrage exact de la zone visible
     (`object-position` 64 %) : mêmes pixels, 3× plus léger.
-  - **GA4 et pixel Meta différés** (`analytics.js`) : `gtag()` et `fbq()`
-    mettent en file d'attente dès le départ ; les ~300 Ko de bibliothèques se
-    chargent à la première interaction ou 8 s après le chargement, tout de
-    suite sur `merci.html`. Un visiteur qui repart en moins de 8 s sans rien
-    toucher n'est donc compté ni par GA4 ni par Meta : pour la règle de
-    décision, compter les visites avec les « clics sur le lien » de Meta.
-    Avant la redirection vers Stripe, `script.js`
+  - **GA4 et pixel Meta chargés après l'affichage** (`analytics.js`) :
+    `gtag()` et `fbq()` mettent en file d'attente dès le départ ; les ~300 Ko
+    de bibliothèques se chargent à l'événement `load` (ou à la première
+    interaction si elle vient avant), tout de suite sur `merci.html`.
+    Jusqu'au 6 octobre 2026 on attendait 8 s de plus, et le pixel ratait la
+    moitié des visites venues des pubs : les relevés d'avant le 7 octobre
+    sous-comptent les visites. Avant la redirection vers Stripe, `script.js`
     attend `__cuFlush()` (300 ms à 1,2 s) pour que `InitiateCheckout` parte.
   - `analytics.js` et `script.js` en `defer`.
   - Essayé puis retiré : `content-visibility` sur les sections (aucun gain
