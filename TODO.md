@@ -105,6 +105,8 @@ Cocher au fur et à mesure.
   le tabacologue. Ne jamais employer « soigner » ni « guérir », ni donner de
   taux de réussite (voir `etude-marche.md`, section 4).
 - Réservation uniquement par l'agenda en ligne, sans téléphone.
+- Pratique présentée comme **hypnose ericksonienne** uniquement (pas « humaniste ») ;
+  « Humaniste » ne reste que dans le nom officiel de l'école (IFHE).
 
 ## Limites de la recherche sur les mentions légales
 
