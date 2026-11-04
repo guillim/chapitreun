@@ -1,0 +1,114 @@
+# À faire : site hypnose, arrêt du tabac
+
+Page en ligne prévue sur https://chapitreun.com/. Les textes entre
+`[crochets]` dans `landing-page/mentions-legales.html` et
+`landing-page/confidentialite.html` attendent les informations ci-dessous.
+Cocher au fur et à mesure.
+
+## Avant la mise en ligne (bloquant)
+
+- [ ] **Réactiver GitHub Pages.** Il est désactivé depuis le 4 novembre :
+      le déploiement échoue avec « Get Pages site failed ». Dans le dépôt :
+      *Settings* → *Pages* → *Source* : **GitHub Actions** ; *Custom domain* :
+      `chapitreun.com` ; cocher *Enforce HTTPS*. Puis *Actions* →
+      « Déployer la landing page » → *Run workflow*.
+- [ ] **Choisir un statut et s'immatriculer.** Pratique courante relevée :
+      - les praticiens qui démarrent sont en **entrepreneur individuel, régime
+        micro-entreprise (BNC)**, recommandé par Legalstart et copeps.fr ;
+      - code APE le plus cité **86.90F** (« activités de santé humaine non
+        classées ailleurs »), à confirmer à l'immatriculation ;
+      - les sources divergent sur la caisse de retraite (URSSAF ou CIPAV) :
+        vérifier sur autoentrepreneur.urssaf.fr ou avec un expert-comptable.
+
+      Puis remplir **Statut** et **SIRET** dans les mentions légales.
+- [ ] **TVA.** En micro-entreprise sous le seuil de franchise, ajouter la
+      mention « TVA non applicable, art. 293 B du CGI ». L'exonération des
+      soins médicaux ne s'applique pas à l'hypnose. Vérifier le seuil en
+      vigueur sur impots.gouv.fr.
+- [ ] **Médiateur de la consommation**, obligatoire dès qu'on vend à des
+      particuliers (art. L.612-1 du Code de la consommation). Des praticiens
+      voisins utilisent : CNPM Médiation de la consommation (Paris 9e),
+      Médiation-en-Seine (Neuilly), MED CONSO DEV (Paris 20e). Adhésion
+      annuelle payante. Reporter nom, adresse et site dans les mentions
+      légales.
+- [ ] **Assurance RC professionnelle.** Pas obligatoire pour l'hypnose,
+      mais recommandée et rassurante. Reporter assureur et numéro.
+- [ ] **Adresse e-mail de contact.** Obligatoire dans les mentions légales
+      (loi pour la confiance dans l'économie numérique). Elle sert aussi pour
+      les droits RGPD.
+- [ ] **Numéro de rue** du cabinet, rue Pilaudo (mentions, confidentialité,
+      et données structurées de `index.html` pour Google).
+- [ ] **Photo portrait.** LinkedIn bloque la récupération automatique.
+      Envoyer le fichier : il ira dans `landing-page/assets/guillaume.jpg`,
+      au format 4:5, à la place des initiales « GL » (voir le commentaire
+      dans `index.html`, section « Qui je suis »).
+
+## Preuves et réassurance (dès que possible)
+
+- [ ] **Compter les personnes accompagnées** pour le tabac : date, première
+      ou deuxième séance, nouvelles à 1 mois si elles en donnent. Afficher
+      « Plus de N personnes accompagnées » seulement quand le chiffre est
+      vrai.
+- [ ] **Avis Google.** Créer la fiche Google Business Profile :
+      - catégorie principale « Hypnothérapeute » si l'interface la propose ;
+      - adresse, lien de réservation, photos du cabinet ;
+      - demander un avis après chaque deuxième séance.
+
+      À partir de 5 avis, ajouter sur la page la note, le nombre d'avis et 3
+      avis cités avec l'accord des personnes.
+- [ ] **Parcours personnel** dans « Qui je suis » : pourquoi l'hypnose,
+      pourquoi le tabac, en deux ou trois phrases vraies.
+- [ ] Photo des **diplômes IFHE** (Technicien 1, Praticien 1, 2026) si vous
+      souhaitez les montrer.
+
+## Réservation et règles pratiques
+
+- [ ] Vérifier la page d'agenda Google
+      (https://calendar.app.google/i79gkohfd7R7XetLA) :
+      - créneaux d'1 h ;
+      - adresse du cabinet ;
+      - lien Google Meet automatique pour la visio ;
+      - question « cabinet ou visio ? » ;
+      - rappel par e-mail la veille.
+- [ ] Décider et afficher les **moyens de paiement** (CB, virement,
+      espèces) et la **règle d'annulation** (la pratique courante est 48 h
+      avant). Les ajouter à la FAQ, voire à des CGV courtes : un seul site
+      voisin en a, avec 10 articles.
+
+## Mesure et publicité (plus tard)
+
+- [ ] Si Google Analytics ou le pixel Meta sont branchés (`analytics.js`),
+      mettre à jour `confidentialite.html`, qui dit aujourd'hui « aucun
+      cookie », et ajouter un **bandeau de consentement** (CNIL). Événement
+      clé : `booking_click` (Meta « Schedule »).
+- [ ] Image de partage 1200 × 630 (`og:image`) pour les liens envoyés par
+      message ou sur les réseaux.
+
+## Choix faits avec le fondateur (4 novembre 2026)
+
+- Pas de séance de renfort offerte, pas de garantie de résultat.
+- 90 € la séance, 2 séances d'1 h espacées de 2 semaines, cabinet ou visio.
+- Formulation retenue : « L'hypnose a déjà accompagné des milliers de
+  fumeurs vers l'arrêt ». Elle parle de l'hypnose en général, pas d'un
+  résultat personnel.
+- Présenter l'hypnose comme un accompagnement compatible avec le médecin et
+  le tabacologue. Ne jamais employer « soigner » ni « guérir », ni donner de
+  taux de réussite (voir `etude-marche.md`, section 4).
+- Réservation uniquement par l'agenda en ligne, sans téléphone.
+
+## Limites de la recherche sur les mentions légales
+
+Recherche sur une vingtaine de praticiens à Paris et dans les
+Hauts-de-Seine. La plupart n'ont qu'une fiche d'annuaire. Seuls quatre
+sites propres ont des mentions lisibles :
+
+- Agnès Humbert, Paris 9e : EI, SIRET, médiateur CNPM, RC pro ;
+- hypnose-paris-20.com, Paris 20e : EI, médiateur MED CONSO DEV ;
+- phehypnose.fr, Neuilly : SASU, RCS Nanterre, médiateur
+  Médiation-en-Seine, CGV en 10 articles ;
+- christinedimnet.fr, Paris 5e : infirmière libérale, autre cadre.
+
+Constat : les mentions sont souvent incomplètes chez les concurrents, et
+aucun n'affiche la mention TVA. Notre page suit les obligations générales
+(identité, adresse, contact, hébergeur, médiateur) plutôt que leur
+pratique.

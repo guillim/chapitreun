@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://[domaine]/sitemap.xml
+Sitemap: https://chapitreun.com/sitemap.xml

@@ -85,6 +85,20 @@
   const nav = $('.nav');
   if (nav) addEventListener('scroll', () => nav.classList.toggle('is-stuck', scrollY > 24), { passive: true });
 
+  /* ── Réservation : clics vers l'agenda (attribut data-book) ── */
+  $$('[data-book]').forEach(el =>
+    el.addEventListener('click', () => track('booking_click', { id: el.dataset.book })));
+
+  /* ── Barre collante : visible après l'accueil, cachée sur la réservation ── */
+  (function sticky() {
+    const bar = $('[data-sticky]'), hero = $('.hero'), book = $('#reserver');
+    if (!bar || !hero || !book || !('IntersectionObserver' in window)) return;
+    let heroOut = false, bookIn = false;
+    const sync = () => bar.classList.toggle('is-on', heroOut && !bookIn);
+    new IntersectionObserver(e => { heroOut = !e[0].isIntersecting; sync(); }, { threshold: 0.05 }).observe(hero);
+    new IntersectionObserver(e => { bookIn = e[0].isIntersecting; sync(); }, { threshold: 0.1 }).observe(book);
+  })();
+
   /* ── Clics suivis (attribut data-track) ────────────────── */
   $$('[data-track]').forEach(el =>
     el.addEventListener('click', () => track('cta_click', { id: el.dataset.track })));
