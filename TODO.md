@@ -38,10 +38,20 @@ Cocher au fur et à mesure.
       envoyer un e-mail de test pour vérifier qu'il arrive). Obligatoire dans les mentions légales
       (loi pour la confiance dans l'économie numérique) et pour les droits RGPD.
 - [x] **Adresse du cabinet** : 8 rue Pilaudo, 92600 Asnières-sur-Seine.
-- [ ] **Photo portrait.** LinkedIn bloque la récupération automatique.
-      Envoyer le fichier : il ira dans `landing-page/assets/guillaume.jpg`,
-      au format 4:5, à la place des initiales « GL » (voir le commentaire
-      dans `index.html`, section « Qui je suis »).
+- [ ] **Photos** (voir le book photos envoyé le 4 novembre, non versé au
+      dépôt car les photos appartiennent à d'autres praticiens) :
+      1. **portrait principal**, indispensable : vertical 4:5, de la taille à
+         la tête, regard caméra, sourire léger, lumière du jour latérale, fond
+         clair uni ou cabinet flou, chemise ou pull uni sans logo, au moins
+         1 600 px de haut. Il va dans `landing-page/assets/guillaume.jpg` à la
+         place des initiales « GL » (voir le commentaire dans `index.html`) ;
+      2. **assis dans le fauteuil de séance**, horizontal 3:2, mi-corps ;
+      3. **le cabinet vide**, horizontal, lumière du jour (seuls 2 sites sur
+         12 le montrent : c'est différenciant).
+
+      La photo LinkedIn peut dépanner si elle est nette et fait au moins
+      1 200 px. À éviter : selfie, recadrage serré, noir et blanc, fond noir,
+      logo à la place du visage, image de cigarette.
 
 ## Preuves et réassurance (dès que possible)
 
