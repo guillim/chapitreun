@@ -1,324 +1,60 @@
-# Landing page — Le livre des 1 an
+# Landing page — base réutilisable
 
-Page unique, mobile d'abord, en français. Trois fichiers plus un dossier de
-photos, aucune dépendance, aucun build : `index.html`, `styles.css`,
-`script.js`, `assets/photos/`.
+Page unique, mobile d'abord, en français, sans dépendance ni build. Publiée
+telle quelle par GitHub Pages (`.github/workflows/pages.yml` publie ce dossier
+à la racine du site à chaque push sur `main`).
 
-Nom retenu et tranché : **Chapitre un** (le brief le notait `[Nom]`).
-
-## Résultat du test de demande (bilan du 11 octobre 2026)
-
-Le test est terminé. La campagne Meta (cinq pubs, femmes de 30 à 45 ans sur
-iPhone, Instagram, 10 €/jour) a tourné du 5 au 11 octobre 2026 et a été
-arrêtée le 11 à 9 h 30 sur décision du fondateur, quatre jours avant le terme
-prévu. Le détail chiffré est dans [`TODO-marketing.md`](../TODO-marketing.md)
-(« Où on en est »), l'histoire jour par jour dans [`JOURNAL.md`](../JOURNAL.md).
-
-**En une phrase** : le test prouve qu'un clic Instagram froid ne se transforme
-pas en précommande à 49 € pour une marque inconnue, et il ne dit rien de plus.
-La question « est-ce qu'il y a un besoin ? » reste ouverte, parce que le test
-a posé d'abord la question la plus dure.
-
-### Les faits
-
-| | |
+| Fichier | Rôle |
 |---|---|
-| Dépense, durée | ≈ 67 €, 6 jours (prévu 100 €, 10 jours) |
-| Impressions | 5 204 (≈ 3 300 personnes) |
-| Clics vers le site | 123 (2,4 %, 0,54 €), dont 99 sur l'accroche « la date » (3,7 %, 0,34 €, excellent) |
-| Visites réelles | ≈ 65 |
-| Inscription gratuite, début de paiement, achat | 0 / 0 / 0 |
-| Tunnel de la page | vérifié de bout en bout le 10 octobre (test à blanc) : le zéro n'est pas un bug |
+| `index.html` | La page : accueil, pour qui, déroulé, tarif, contact, FAQ. Tous les textes à remplacer sont entre `[crochets]`. |
+| `styles.css` | Styles. Couleurs et polices dans les variables de `:root`. |
+| `script.js` | Formulaire (Formspree puis Stripe), apparitions au défilement, test A/B du titre, événements de mesure. Réglages dans `CONFIG`. |
+| `analytics.js` | GA4 et pixel Meta, chargés en différé. Identifiants en tête de fichier. |
+| `merci.html` | Retour de Stripe après paiement : envoie l'événement `purchase`. |
+| `mentions-legales.html`, `confidentialite.html` | Pages légales à compléter. |
+| `robots.txt`, `sitemap.xml` | Remplacer `[domaine]`. |
+| `assets/fonts/` | Fraunces (titres) et Inter (texte), auto-hébergées. |
 
-### Ce que le test prouve
+## Brancher les services
 
-Un vrai taux d'achat au-delà de 4,5 % est exclu. L'accroche marche, le format
-stories marche, la page tient. Avec 65 visites, on ne distingue pas 0 % d'un
-vrai 1 à 2 % : il aurait fallu 300 à 500 visites. Le signal le plus solide est
-le zéro sur la liste d'attente gratuite.
+Tout est désactivé tant que les identifiants sont vides : la page fonctionne
+en démonstration (le formulaire affiche « C'est noté » sans rien envoyer).
 
-### Ce qui fragilise la conclusion « pas de besoin »
+1. **Formulaire** : créer un formulaire sur formspree.io, coller l'URL dans
+   `CONFIG.ENDPOINT` (`script.js`).
+2. **Paiement** : créer un Payment Link Stripe, coller l'URL dans
+   `CONFIG.STRIPE_CHECKOUT_URL` et le montant dans `CONFIG.PRICE`. Le bouton
+   « Réserver et payer en ligne » apparaît alors. Dans Stripe, régler
+   *After payment* → redirection vers `https://[domaine]/merci.html` (à
+   refaire sur chaque lien, test puis live), et mettre le même montant dans
+   `PRICE` de `merci.html`.
+3. **Mesure** : `GA_MEASUREMENT_ID` et `META_PIXEL_ID` dans `analytics.js`.
+   Dans GA4, marquer `lead`, `checkout_start` et `purchase` comme événements
+   clés (« Create with code », sans valeur par défaut).
+4. **Domaine** : dépôt → *Settings* → *Pages* → *Custom domain*.
 
-Par ordre d'importance :
+## Événements
 
-- **Le bouton gratuit était caché.** « Juste être prévenu » n'apparaît qu'en
-  bas du formulaire, sous le bouton payant. On ne sait pas combien des 65
-  visiteurs l'ont seulement vu : le zéro gratuit mesure en partie l'ergonomie
-  de la page, pas seulement l'intérêt.
-- **La demande était maximale dès le premier contact.** Payer 49 € à une
-  marque sans client, pour une app qui n'existe pas, dix secondes après une
-  story. Les concurrents vendent un objet qu'on peut commander aujourd'hui.
-  On a testé la confiance autant que le besoin.
-- **L'audience était large.** 3,5 millions de femmes de 30 à 45 ans sur
-  iPhone, dont une petite fraction a un bébé de moins d'un an. L'accroche
-  filtrait, mais des clics à 0,34 € incluent de la curiosité.
+`track(nom, données)` dans `script.js` pousse dans `dataLayer` ; `analytics.js`
+relaie vers GA4 (tous sauf `page_view`) et Meta :
 
-À l'inverse, deux choses soutiennent la lecture du fondateur : les 65 visites
-venaient d'une pub qui parle explicitement du livre des 1 an, donc de parents
-concernés ; et dans les précommandes payantes, 0,5 à 2 % est courant, on
-aurait donc dû voir un ou deux inscrits gratuits même avec une page imparfaite.
+| Événement | Quand | Meta |
+|---|---|---|
+| `page_view` | chargement (avec `utm_source`, `utm_campaign`) | `PageView` |
+| `section_view` | une section avec `id` devient visible | — |
+| `cta_click` | clic sur un élément `data-track="…"` | — |
+| `lead` | formulaire envoyé | `Lead` |
+| `checkout_start` | départ vers Stripe | `InitiateCheckout` |
+| `purchase` | `merci.html` | `Purchase` |
+| `form_error`, `form_network_error` | erreurs du formulaire | — |
 
-### Les options
+`?debug` dans l'URL affiche les événements dans la console. `?t=a` ou `?t=b`
+force la variante du titre quand `CONFIG.HEADLINE_B` est rempli.
 
-| Option | Coût | Durée | Ce qu'on apprend |
-|---|---|---|---|
-| 1. S'arrêter là | 0 € | 0 | Rien de plus ; on garde page, pixel, visuels, journal |
-| 2. Parler à 15–20 parents | 0 € | 1 semaine | Si la douleur « trier 4 000 photos » existe, si « se fait tout seul » est compris et cru, ce qu'ils feraient à notre place |
-| 3. Retester l'intérêt gratuit | 50–80 € | 10 jours | Page en liste d'attente seule, bouton gratuit au premier écran, pub C en stories, ciblage resserré sur les parents de bébés ; succès si 5 % d'inscrits sur 150 visites |
-| 4. Changer d'offre | à définir | — | Autre produit ou autre canal, hors de portée de ce test |
+## Vérifier en local
 
-**Recommandation** : ne pas conclure « pas de besoin » sur ce test seul, mais
-ne pas remettre d'argent non plus. L'option 2 coûte zéro et répond à la
-question que la pub ne pouvait pas poser. Si une majorité de parents décrit
-la douleur sans qu'on la suggère et comprend la promesse en dix secondes,
-l'option 3 vaut 60 € et une journée de travail, tout est prêt. Si les
-conversations sont tièdes, l'option 1 est la bonne, et 67 € auront suffi pour
-le savoir. Le pire choix serait l'option 3 sans l'option 2 : on retesterait
-une page sans savoir ce qui bloque.
+    python3 -m http.server -d landing-page 8000
 
-**Quoi qu'on décide** : retirer ou geler le compteur fondateur simulé
-(« il reste 367 places sur 500 »), qui affiche des précommandes qui n'existent
-pas ; et décider du sort des trois posts Buffer programmés les 11, 12 et
-13 octobre.
-
-## Lancer en local
-
-```bash
-python3 -m http.server 4173 --directory landing-page
-# puis http://localhost:4173
-```
-
-Les polices (Fraunces, Inter) viennent de Google Fonts : il faut du réseau.
-Sans réseau, les replis serif/sans-serif système prennent le relais.
-
-| URL | Effet |
-| --- | --- |
-| `?t=a` | titre « se fait tout seul » |
-| `?t=b` | titre « en 5 minutes » |
-| `?debug` | chaque événement de mesure dans la console |
-
-## Structure
-
-Onze sections. Les sept du brief sont toutes là, dans l'ordre, complétées par
-quatre blocs repris de la structure des pages concurrentes.
-
-| # | Section | Ancre | Rôle |
-| --- | --- | --- | --- |
-| 1 | Accueil | `#top` | Photo plein écran, promesse, deux boutons |
-| — | Bandeau de garanties | — | Cinq réassurances sur fond sombre |
-| 2 | Le problème | `#le-probleme` | 4 000 / 0, pellicule, bascule éditoriale |
-| 3 | Comment ça marche | `#comment` | Trois étapes + iPhone animé |
-| 4 | À quoi ressemble le livre | `#le-livre` | Carrousel de cinq doubles pages |
-| 5 | Ce qui change | `#ce-qui-change` | Les quatre arguments, chacun avec sa démo |
-| 6 | Les finitions | `#finitions` | L'objet : couverture, papier, format |
-| 7 | Le prix | `#prix` | Deux offres, tout compris, « tout ce que vous obtenez » |
-| 8 | Comparaison | `#comparaison` | Sept lignes, sans nommer personne |
-| 9 | Où en est le projet | `#projet` | Feuille de route datée + mot signé, **avant** le formulaire |
-| 10 | Réservation | `#reserver` | Formulaire ; le mois choisi affiche la date du livre |
-| 11 | Questions | — | Neuf questions, dont les deux freins du brief |
-
-## Ce qui vient de l'étude des concurrents (septembre 2026)
-
-Trois relevés : les acteurs français (Cheerz, Photoweb, Rosemood, Fizzer,
-Lalalab, Popsa, CEWE), les apps « automatiques » (Chatbooks, Once Upon, Journi,
-Popsa, FamilyAlbum, Tinybeans, Mixtiles, PastBook) et les marques premium
-(Artifact Uprising, MILK, Blurb, Saal, Social Print Studio). Ce que la page en
-retient :
-
-- **Prix + garantie collés au bouton du héros** (« 49 € tout compris ·
-  remboursable · sans abonnement ») — la question « combien ? » est réglée avant
-  de défiler. Personne ne le fait en France.
-- **« Sans abonnement » dit explicitement** : Chatbooks, Tinybeans, FamilyAlbum
-  facturent au mois et leurs avis s'en plaignent. Un livre, un prix.
-- **Trois promesses que personne ne fait** poussées dans le tableau : les textes
-  sont écrits, les photos restent sur l'iPhone, pas d'abonnement. Toutes les
-  apps « IA » demandent encore de choisir les photos soi-même.
-- **Feuille de route datée et mot signé avant le formulaire** : les études sur
-  le financement participatif montrent qu'annoncer les risques augmente la
-  confiance plus qu'elle ne la coûte, à condition d'être précis.
-- **Date de livraison, pas délai** : le formulaire calcule, à partir du mois de
-  naissance, quand le livre sera prêt — ou dit franchement que ses 1 an
-  arriveront avant l'app (`APP_READY` dans `script.js`).
-- **Ce qu'on ne copie pas** : compteurs d'avis, « 4 millions de livres »,
-  promos à durée limitée, prix barré sans prix futur réel.
-
-## Ce qui vient de l'analyse de la page concurrente
-
-La page de référence a été analysée pour sa structure, son rythme et son
-registre — **aucun texte ni aucune image n'en a été repris**.
-
-- **Accueil en photo plein écran**, titre par-dessus, plutôt qu'une mise en page
-  en deux colonnes. C'est le parti pris le plus visible de leur page.
-- **Chaque argument porte une démonstration visuelle**, pas une icône : la
-  pellicule qui se coche seule, le calendrier, la comparaison de recadrage, le
-  sommaire, le trajet des photos.
-- **Section « finitions »** consacrée à l'objet physique, avec quatre photos
-  du vrai livre (couverture, dos, deux doubles pages).
-- **Galerie des pages du livre**, l'équivalent de leur mur de produits.
-- **Bouton de réservation répété** à l'identique du haut en bas de la page.
-- **Sous-titre systématique** sous chaque titre de section.
-- **Pas de faux avis.** Leur page s'appuie sur 75 000 avis vérifiés ; nous n'avons
-  livré aucun livre. La section « Où en est le projet » dit exactement cela, et
-  le dit mieux qu'un témoignage inventé.
-
-### Prix
-
-Relevé sur leur page produit en septembre 2026 : **à partir de 38 €** pour un
-livre à couverture rigide de 20 pages, format 8″ × 6″, papier mat 200 g, hors
-livraison. Notre page affiche 49 € (tarif fondateur, payé en une fois, au lieu de 69 €) pour 60 à 80 pages en
-21 × 21 cm, livraison offerte, et le rappelle en note sous les offres et dans le
-tableau de comparaison. **À revérifier avant la mise en ligne** : c'est une
-affirmation comparative, elle doit rester exacte et vérifiable.
-
-## Ce qui est branché, ce qui ne l'est pas
-
-Tout est regroupé dans `CONFIG`, en haut de `script.js` :
-
-| Constante | Rôle | État |
-| --- | --- | --- |
-| `ENDPOINT` | POST JSON de l'inscription | **branché sur Formspree** |
-| `STRIPE_CHECKOUT_URL` | Lien Stripe Checkout des 49 € (prix total) | **branché, mode live** |
-| `HEADLINE_B` | Titre de la variante B | prêt |
-| `FOUNDER_START_DATE` / `FOUNDER_START_COUNT` | Compteur fondateur | **simulé** |
-
-`ENDPOINT` pointe vers un formulaire Formspree : chaque inscription part en POST
-JSON et déclenche un e-mail de notification. `STRIPE_CHECKOUT_URL` pointe vers
-un lien de paiement Stripe **en mode live** depuis le 2 octobre 2026 : un
-paiement y encaisse réellement 49 €. Le lien de test (`buy.stripe.com/test_...`)
-a servi jusqu'à la publication des pages légales.
-
-Le compteur fondateur (`[data-founder]`) est simulé : il part de
-`FOUNDER_START_COUNT` places prises le `FOUNDER_START_DATE` et augmente d'une
-place par jour, calculé côté client à chaque chargement de page. Ce n'est pas
-le vrai nombre de précommandes — à remplacer par un compteur réel (Stripe ou
-base d'inscrits) dès qu'il existe.
-
-`assets/photos/og.jpg` (1200 × 630) est un recadrage de `hero.jpg` généré pour
-le partage social — à remplacer par un visuel dédié si besoin, mais fonctionnel
-tel quel (`og:image`, `og:image:width/height`, `twitter:card` renseignés).
-
-Reste à faire : les photos définitives (voir
-[`assets/photos/CREDITS.md`](assets/photos/CREDITS.md)) et le vrai compteur du
-tarif fondateur, une fois une source de données réelle disponible.
-
-Les trois pages légales existent désormais : `mentions-legales.html`,
-`cgv-prevente.html`, `confidentialite.html`, liées depuis le pied de page.
-Éditeur : ANCHOR (SASU), RCS Nanterre 852 423 318. L'article 7 des CGV attend
-toujours les coordonnées d'un médiateur de la consommation (obligatoire pour
-un vendeur B2C en France) : à compléter avant toute vente réelle.
-
-## Animations
-
-Toutes en CSS (sauf le halo du formulaire), sans bibliothèque, et **coupées
-pour les visiteurs qui ont demandé moins d'animations** (`prefers-reduced-motion`).
-
-- **Au chargement** : la photo du héros se pose lentement (léger zoom arrière),
-  le texte sort d'un flou, et la chute en italique du titre arrive en second.
-- **Liées au défilement** (`animation-timeline`, Chrome / Edge / Safari récents ;
-  ailleurs la page reste simplement immobile) : fil de lecture sous la nav,
-  parallaxe de la photo du héros, photos de la pellicule qui tombent en place,
-  double page du centre mise au point dans la galerie, maquettes qui montent,
-  fil de la feuille de route qui se colore.
-- **En continu, discrètes** : bandeau des douze chapitres (pause au survol),
-  lueur qui fait le tour de l'offre fondateur, point « Vous êtes ici » qui pulse.
-- **Au survol** : reflet sur les boutons principaux, halo chaud qui suit la
-  souris sur le formulaire.
-- **Cascades** : lignes du tableau comparatif, du prix, de la feuille de route et
-  de la FAQ qui arrivent l'une après l'autre.
-
-## Mesure
-
-`analytics.js` charge Google Analytics 4 sur les quatre pages du site — identifiant
-`GA_MEASUREMENT_ID` = `G-ZWDVH9Q1F3`. **Aucun bandeau de consentement
-n'est posé avant le dépôt des cookies GA** : choix assumé du projet, à
-reconsidérer si une mise en conformité RGPD/CNIL devient nécessaire.
-
-`script.js` pousse chaque événement dans `window.dataLayer` **et** émet un
-`CustomEvent('track')` ; `analytics.js` relaie chacun de ces événements (sauf
-`page_view`, déjà compté par GA4) vers `gtag('event', …)`.
-
-| Événement | Quand |
-| --- | --- |
-| `page_view` | chargement (`variant`, `source`, `campaign`) |
-| `section_view` | 40 % d'une section visible (`section`) |
-| `cta_click` | clic sur un bouton suivi (`id`) |
-| `gallery_nav` | navigation dans le carrousel (`dir`) |
-| `preorder_start` | soumission « Précommander » (`birth_month`) |
-| `waitlist_signup` | clic « Juste être prévenu » (`birth_month`) |
-| `form_error` | validation refusée (`intent`) |
-
-Le test A/B répartit 50/50, mémorise dans `localStorage`, et la variante voyage
-avec chaque événement.
-
-## Sources du cadrage éditorial
-
-Le texte de la section « Le problème » ne culpabilise pas : il nomme la charge
-mentale, puis déplace l'enjeu sur l'amnésie infantile — l'enfant ne gardera
-aucun souvenir de sa première année, le parent en est le seul dépositaire.
-
-- Amnésie infantile : les premiers souvenirs n'apparaissent qu'entre 3 et 5 ans,
-  moyenne vers 3 ans et demi
-  ([The Conversation](https://theconversation.com/ou-sen-vont-nos-souvenirs-denfance-156442),
-  [Québec Science](https://www.quebecscience.qc.ca/sciences/mystere-amnesie-nourrissons/)).
-  C'est la seule affirmation factuelle de la section.
-- Charge mentale : 8 femmes sur 10 la déclarent
-  ([Ipsos](https://www.ipsos.com/fr-fr/charge-mentale-8-femmes-sur-10-seraient-concernees)) ;
-  près de 40 % des parents d'enfants de moins de 12 ans manquent de temps pour
-  eux chaque semaine (DREES, 2024) ; les mères ont ~3 h 10 de temps libre
-  hebdomadaire de moins que les pères
-  ([INSEE](https://www.insee.fr/fr/statistiques/fichier/1303226/ES478E.pdf)).
-  Ces chiffres ont servi à écrire la page, **ils n'y sont pas affichés** : une
-  landing page qui cite une étude se met à parler comme un rapport. À garder
-  pour les créas Meta.
-
-## Vérifications faites
-
-- **320 / 375 / 390 / 430 / 768 / 1024 / 1440 px** : aucun débordement
-  horizontal, 43 images, aucune cassée.
-- **Champs du formulaire à 16,32 px** : pas de zoom automatique iOS.
-- **Cibles tactiles ≥ 44 px** (repère Apple) ; la case à cocher fait 22 px mais
-  son libellé cliquable en fait 44.
-- **Barre collante** : `bottom: max(12px, env(safe-area-inset-bottom))`.
-- **Ancres** : `scroll-margin-top` de 74 px.
-- **Formulaire** : vide → 3 erreurs ; e-mail invalide → 1 erreur ; valide →
-  confirmation + `preorder_start` avec le mois de naissance.
-- **Carrousel** : les cibles de défilement tombent exactement sur les points
-  d'aimantation (centre de carte), la dernière se cale sur la fin de piste.
-
-## Accessibilité et performance
-
-- PageSpeed mobile (Lighthouse) : 59–61 → 90 en octobre 2026, ordinateur
-  96 → 100, rendu identique (captures comparées pixel à pixel avant/après).
-  Ce qui a été fait :
-  - **Polices servies par le site** (`assets/fonts/`) : les fichiers Google
-    d'origine, réduits aux caractères latins, mêmes axes et métriques. Plus de
-    feuille Google Fonts bloquante ; Fraunces et Inter sont préchargées.
-  - **Photos en WebP** (−55 % de poids), avec des variantes `-400` en `srcset`
-    pour les vignettes. Les `.jpg` restent comme sources (et `og.jpg` pour les
-    aperçus de liens). Sur téléphone en portrait, l'accueil charge
-    `hero-portrait.webp`, le recadrage exact de la zone visible
-    (`object-position` 64 %) : mêmes pixels, 3× plus léger.
-  - **GA4 et pixel Meta chargés après l'affichage** (`analytics.js`) :
-    `gtag()` et `fbq()` mettent en file d'attente dès le départ ; les ~300 Ko
-    de bibliothèques se chargent à l'événement `load` (ou à la première
-    interaction si elle vient avant), tout de suite sur `merci.html`.
-    Jusqu'au 6 octobre 2026 on attendait 8 s de plus, et le pixel ratait la
-    moitié des visites venues des pubs : les relevés d'avant le 7 octobre
-    sous-comptent les visites. Avant la redirection vers Stripe, `script.js`
-    attend `__cuFlush()` (300 ms à 1,2 s) pour que `InitiateCheckout` parte.
-  - `analytics.js` et `script.js` en `defer`.
-  - Essayé puis retiré : `content-visibility` sur les sections (aucun gain
-    mesuré, et il modifie la fusion des marges).
-- La photo d'accueil est préchargée, les autres en `loading="lazy"`.
-- Hébergement : GitHub Pages derrière le proxy Cloudflare (nuage orange sur
-  `chapitreun.com`). Mesuré le 2 octobre 2026 : en HTTPS, une requête sur quatre
-  attendait ~19,5 s le premier octet (GitHub sert la page en 2 ms, c'est la
-  liaison Cloudflare → GitHub sur le port 443 qui se bloque) ; en HTTP (port 80
-  côté origine) tout répondait en 0,05–0,2 s. Aucune optimisation de la page ne
-  peut compenser ça : le remède est côté Cloudflare, voir `TODO.md`.
-- `prefers-reduced-motion` coupe toutes les animations ; la démo iPhone se fige
-  sur la notification.
-- Sans JavaScript, tout le contenu reste visible, le formulaire s'affiche et la
-  barre de navigation reste lisible (elle n'est transparente que si le JS tourne).
-- Un filet de sécurité dans le `<head>` révèle toute la page si `script.js` ne se
-  charge pas, et un second si `IntersectionObserver` reste inerte.
+Avant de payer du trafic : faire un vrai achat test puis le rembourser, et
+vérifier que `lead`, `checkout_start` et `purchase` arrivent dans GA4 et Meta
+(voir `PLAYBOOK.md` à la racine).
