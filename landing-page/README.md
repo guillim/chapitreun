@@ -1,19 +1,24 @@
-# Landing page — base réutilisable
+# Site — hypnose pour arrêter de fumer
 
-Page unique, mobile d'abord, en français, sans dépendance ni build. Publiée
+Page unique (Guillaume Lancrenon, 2 séances, Asnières-sur-Seine ou visio),
+mobile d'abord, en français, sans dépendance ni build. Réservation par
+l'agenda Google (liens `data-book`, événement `booking_click`). Design :
+pétrole profond, air minéral, accent couleur d'aube ; Instrument Serif et
+Figtree auto-hébergées ; une seule animation (la volute de fumée de
+l'accueil). Publiée
 telle quelle par GitHub Pages (`.github/workflows/pages.yml` publie ce dossier
 à la racine du site à chaque push sur `main`).
 
 | Fichier | Rôle |
 |---|---|
-| `index.html` | La page : accueil, pour qui, déroulé, tarif, contact, FAQ. Tous les textes à remplacer sont entre `[crochets]`. |
+| `index.html` | La page : accueil, « vous n'êtes pas seul », déroulé en 2 séances, réponses aux craintes, qui je suis, médecin, tarif, FAQ, réservation. |
 | `styles.css` | Styles. Couleurs et polices dans les variables de `:root`. |
 | `script.js` | Formulaire (Formspree puis Stripe), apparitions au défilement, test A/B du titre, événements de mesure. Réglages dans `CONFIG`. |
 | `analytics.js` | GA4 et pixel Meta, chargés en différé. Identifiants en tête de fichier. |
 | `merci.html` | Retour de Stripe après paiement : envoie l'événement `purchase`. |
-| `mentions-legales.html`, `confidentialite.html` | Pages légales à compléter. |
-| `robots.txt`, `sitemap.xml` | Remplacer `[domaine]`. |
-| `assets/fonts/` | Fraunces (titres) et Inter (texte), auto-hébergées. |
+| `mentions-legales.html`, `confidentialite.html` | Pages légales ; les `[crochets]` attendent les infos listées dans `TODO.md`. |
+| `robots.txt`, `sitemap.xml` | Domaine chapitreun.com. |
+| `assets/fonts/` | Instrument Serif (titres) et Figtree (texte), auto-hébergées. |
 
 ## Brancher les services
 
@@ -43,7 +48,8 @@ relaie vers GA4 (tous sauf `page_view`) et Meta :
 | `page_view` | chargement (avec `utm_source`, `utm_campaign`) | `PageView` |
 | `section_view` | une section avec `id` devient visible | — |
 | `cta_click` | clic sur un élément `data-track="…"` | — |
-| `lead` | formulaire envoyé | `Lead` |
+| `booking_click` | clic vers l'agenda de réservation (`data-book`) | `Schedule` |
+| `lead` | formulaire envoyé (aucun formulaire sur la page actuelle) | `Lead` |
 | `checkout_start` | départ vers Stripe | `InitiateCheckout` |
 | `purchase` | `merci.html` | `Purchase` |
 | `form_error`, `form_network_error` | erreurs du formulaire | — |

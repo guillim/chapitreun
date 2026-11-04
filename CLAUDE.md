@@ -7,8 +7,13 @@
 - `landing-page/` : site statique publié par GitHub Pages à chaque push sur
   `main` (`.github/workflows/pages.yml`). Voir `landing-page/README.md` :
   fichiers, branchement de Formspree, Stripe, GA4 et pixel Meta (tous vides
-  pour l'instant), événements mesurés. Les textes à écrire sont entre
-  `[crochets]`.
+  pour l'instant), événements mesurés. La page présente l'accompagnement
+  à l'arrêt du tabac en 2 séances (Asnières-sur-Seine ou visio) ; les
+  informations manquantes sont entre `[crochets]` dans les pages légales.
+- `TODO.md` (non publié) : ce qui reste à faire avant et après la mise en
+  ligne (statut, SIRET, médiateur, e-mail, photo, avis, GitHub Pages à
+  réactiver) et les choix déjà faits avec le fondateur. Cocher ce qui est
+  fait.
 - `etude-marche.md` (non publié) : étude de marché « hypnose arrêt tabac »
   (concurrents, prix, IFHE, cadre légal et formulations à éviter,
   vocabulaire, peurs des fumeurs, SEO, brief de design). À lire avant

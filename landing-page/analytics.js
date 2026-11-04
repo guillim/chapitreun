@@ -2,6 +2,7 @@
    Google Analytics 4 + pixel Meta
    Chargé sur toutes les pages. Relaie les événements de script.js
    (voir track()) vers gtag() et fbq() :
+     booking_click  → GA4 « booking_click »,   Meta « Schedule » (clic vers l'agenda)
      lead           → GA4 « lead »,           Meta « Lead »
      checkout_start → GA4 « checkout_start »,  Meta « InitiateCheckout »
      purchase       → envoyé par merci.html (retour de Stripe)
@@ -23,7 +24,7 @@
 
   const GA_MEASUREMENT_ID = ''; // 'G-XXXXXXXXXX' (GA4 → Admin → Flux de données)
   const META_PIXEL_ID = '';     // pixel du portefeuille Meta relié au compte pub
-  const META_EVENTS = { lead: 'Lead', checkout_start: 'InitiateCheckout' };
+  const META_EVENTS = { booking_click: 'Schedule', lead: 'Lead', checkout_start: 'InitiateCheckout' };
 
   /* ── Files d'attente, disponibles immédiatement (même désactivées) ── */
   window.dataLayer = window.dataLayer || [];
