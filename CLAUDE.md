@@ -9,6 +9,11 @@
   fichiers, branchement de Formspree, Stripe, GA4 et pixel Meta (tous vides
   pour l'instant), événements mesurés. Les textes à écrire sont entre
   `[crochets]`.
+- `etude-marche.md` (non publié) : étude de marché « hypnose arrêt tabac »
+  (concurrents, prix, IFHE, cadre légal et formulations à éviter,
+  vocabulaire, peurs des fumeurs, SEO, brief de design). À lire avant
+  d'écrire les textes de la page ; respecter le tableau « Formulations
+  sûres / à éviter ».
 - `PLAYBOOK.md` : étapes, règle de décision, pièges rencontrés (Meta, GA4,
   Stripe, performance) et façon de travailler avec le fondateur. À lire avant
   de brancher la mesure, le paiement ou de lancer des pubs ; y ajouter les
