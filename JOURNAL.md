@@ -727,3 +727,13 @@ Playwright → JPG et MP4), un canevas Claude Design modifiable
 Reste au fondateur : les trois posts Buffer programmés (11, 12, 13 octobre),
 la page encore en ligne avec la précommande et le compteur fondateur simulé
 (à geler ou retirer), et la suite à donner, s'il y en a une.
+
+## 9. Retrait du projet (4 novembre 2026)
+
+Le fondateur retire Chapitre un. Pour garder une trace, la landing page est
+figée en un seul fichier HTML autonome, `archive/chapitreun.html` (tout
+intégré, aucune requête externe), à héberger sur guillim.github.io. Tous les
+services sont coupés (GA4, pixel Meta, Formspree, Stripe, test A/B) ; le
+formulaire, les pages secondaires (mentions, CGV, confidentialité) et les
+liens e-mail ouvrent une fenêtre « Pas disponible pour le moment,
+contactez-nous ». Voir `archive/README.md`.
