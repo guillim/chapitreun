@@ -1,24 +1,20 @@
-# Chapitre un — instructions pour Claude
+# Instructions pour Claude
 
-- Ce dépôt est une landing page statique (GitHub Pages), voir
-  `landing-page/README.md` et `landing-page/TODO.md` pour l'état du projet.
-- `competitor.md` (racine du dépôt, non publié) : synthèse de l'étude des
-  concurrents (acteurs français, apps automatiques, marques premium, pages de
-  précommande), ce qui nous différencie, ce qu'on ne peut pas encore affirmer.
-  À lire avant toute modification du positionnement, du prix ou des textes de
-  la page, et à mettre à jour après toute nouvelle veille concurrentielle.
-- `TODO-marketing.md` (racine du dépôt, non publié) : plan marketing et
-  publicités du test de demande (prérequis, pubs à créer, ciblage, budget,
-  canaux gratuits, suivi, règle de décision). Les tâches marquées **[Claude]**
-  peuvent être faites par un agent ; cocher ce qui est fait et remplir le
-  journal des décisions.
-- `JOURNAL.md` (racine du dépôt, non publié) : comment ce test a été monté,
-  jour par jour — demandes du fondateur, décisions et leurs raisons, pièges
-  rencontrés (Meta, GA4, Stripe, performance), playbook pour refaire la même
-  chose et façon de travailler avec le fondateur. À lire en premier pour
-  reprendre le projet ou en lancer un similaire ; y ajouter les nouvelles
-  décisions importantes.
+- Ce dépôt sert de base au **site personnel d'hypnothérapie du fondateur**.
+  Il a d'abord hébergé Chapitre un (livre photo des 1 an, projet arrêté en
+  octobre 2026, archivé sur https://guillim.github.io/baby-photobook/) ; tout
+  ce qui lui était propre a été retiré, il reste dans l'historique git.
+- `landing-page/` : site statique publié par GitHub Pages à chaque push sur
+  `main` (`.github/workflows/pages.yml`). Voir `landing-page/README.md` :
+  fichiers, branchement de Formspree, Stripe, GA4 et pixel Meta (tous vides
+  pour l'instant), événements mesurés. Les textes à écrire sont entre
+  `[crochets]`.
+- `PLAYBOOK.md` : étapes, règle de décision, pièges rencontrés (Meta, GA4,
+  Stripe, performance) et façon de travailler avec le fondateur. À lire avant
+  de brancher la mesure, le paiement ou de lancer des pubs ; y ajouter les
+  nouveaux pièges.
 - **Pas besoin d'approbation pour merger sur `main`.** Pour ce projet, merger
   sur `main` est l'étape finale normale de toute fonctionnalité ou correction
   demandée — pousser la branche, ouvrir la PR, la merger, sans attendre de
-  confirmation supplémentaire à cette étape précise.
+  confirmation supplémentaire à cette étape précise. Le site se déploie au
+  merge : vérifier en ligne ensuite.

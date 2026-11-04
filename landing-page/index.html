@@ -3,800 +3,155 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="analytics.js?v=8" defer></script>
-<title>Chapitre un — Le livre de sa première année se fait tout seul</title>
-<meta name="description" content="Prénom, date de naissance, une photo. On retrouve toutes les photos de votre bébé dans votre iPhone et on fabrique le livre de ses 1 an. Prêt 3 semaines avant l'anniversaire.">
+<script src="analytics.js" defer></script>
+<title>[Nom] — [Promesse en une ligne]</title>
+<meta name="description" content="[Description de 150 caractères pour Google et les partages.]">
 <meta name="theme-color" content="#FBF6EE">
-<meta name="facebook-domain-verification" content="jo7u3qomqolyn0cwfm64iu0hzhd19w" />
-
+<!-- partage sur les réseaux : ajouter une image 1200 × 630 dans assets/ puis décommenter
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:url" content="https://chapitreun.com/">
-<meta property="og:title" content="Le livre de sa première année se fait tout seul.">
-<meta property="og:description" content="Vous n'avez qu'à dire oui. Prénom, date de naissance, une photo — on retrouve tout le reste dans votre iPhone.">
-<meta property="og:image" content="https://chapitreun.com/assets/photos/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Un bébé d'environ dix mois regarde l'objectif, sa mère l'embrasse sur la joue.">
+<meta property="og:url" content="https://[domaine]/">
+<meta property="og:title" content="[Titre]">
+<meta property="og:description" content="[Description]">
+<meta property="og:image" content="https://[domaine]/assets/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://chapitreun.com/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FBF6EE'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%232B2420'%3EC1%3C/text%3E%3C/svg%3E">
-
+<link rel="canonical" href="https://[domaine]/">
+-->
 <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="assets/photos/hero-portrait.webp" type="image/webp" fetchpriority="high" media="(max-aspect-ratio: 7/10)">
-<link rel="preload" as="image" href="assets/photos/hero.webp" type="image/webp" fetchpriority="high" media="(min-aspect-ratio: 701/1000)">
-<link rel="stylesheet" href="styles.css?v=5">
+<link rel="stylesheet" href="styles.css">
 <script>
 document.documentElement.classList.add('js');
-setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.remove('js'); }, 3500);
+// filet de sécurité : si script.js ne répond pas, tout reste visible
+setTimeout(function(){ if(!window.__ready) document.documentElement.classList.remove('js'); }, 3500);
 </script>
 </head>
 <body>
 
-<a class="skip" href="#reserver">Aller au formulaire</a>
+<a class="skip" href="#contact">Aller au formulaire</a>
 
 <header class="nav">
   <div class="wrap nav__in">
-    <a class="mark" href="#top" aria-label="Chapitre un, accueil">
-      <svg class="mark__glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.2c2.9-1.1 5.3-1.1 7.7.4v13c-2.4-1.5-4.8-1.5-7.7-.4V5.2Z"/><path d="M20 5.2c-2.9-1.1-5.3-1.1-7.7.4v13c2.4-1.5 4.8-1.5 7.7-.4V5.2Z"/></svg>
-      <span>Chapitre&nbsp;un</span>
-    </a>
-    <a class="nav__cta" href="#reserver" data-track="cta_nav">Réserver mon livre</a>
+    <a class="mark" href="#top"><span class="mark__dot" aria-hidden="true"></span><span>[Nom]</span></a>
+    <a class="nav__cta" href="#contact" data-track="cta_nav">Prendre rendez-vous</a>
   </div>
 </header>
 
 <main id="top">
 
-  <!-- ══════════ 1. Accueil ══════════ -->
+  <!-- ── Accueil ── -->
   <section class="hero">
-    <div class="hero__bg">
-      <picture>
-        <!-- téléphones en portrait : le recadrage exact de la zone visible (object-position 64 %), même netteté, 3× plus léger -->
-        <source media="(max-aspect-ratio: 7/10)" srcset="assets/photos/hero-portrait.webp" type="image/webp" width="950" height="1266">
-        <img src="assets/photos/hero.webp" width="1900" height="1266" alt="Un bébé d'environ dix mois regarde l'objectif, sa mère l'embrasse sur la joue." fetchpriority="high">
-      </picture>
-    </div>
-
-    <div class="wrap hero__in">
-      <div class="hero__copy">
-        <p class="eyebrow" data-reveal>Le livre des 1 an · iPhone</p>
-        <h1 class="h1" data-reveal style="--d:.06s">
-          <span data-headline>Le livre de sa première année<br><em>se fait tout seul.</em></span>
-        </h1>
-        <p class="lede" data-reveal style="--d:.12s">
-          Des premiers câlins aux premiers pas, sa première année passe en un souffle.
-          On en fait un vrai livre — et vous n'avez pas une seule photo à trier.
-        </p>
-        <div class="cta-row" data-reveal style="--d:.18s">
-          <a class="btn btn--primary" href="#reserver" data-track="cta_hero">Réserver mon livre</a>
-          <a class="btn btn--clear" href="#le-livre" data-track="cta_hero_book">Voir le livre</a>
-        </div>
-        <p class="hero__micro" data-reveal style="--d:.24s">
-          <strong>49 €</strong> tout compris · remboursable à tout moment · sans abonnement
-        </p>
-      </div>
-
-      <!-- le livre posé dans la scène, comme preuve du résultat -->
-      <div class="hero__book" data-reveal style="--d:.3s">
-        <div class="scene--float">
-          <img class="hero__book-img" src="assets/photos/livre-ouvert.webp"
-               srcset="assets/photos/livre-ouvert-520.webp 520w, assets/photos/livre-ouvert.webp 960w"
-               sizes="min(460px, 38vw)" width="960" height="536"
-               alt="Le livre ouvert au chapitre 6, « Six mois » : photos de mains et de pieds de bébé, couverture en toile"
-               loading="lazy" decoding="async">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- bandeau de réassurance, comme une barre de garanties -->
-  <div class="strip">
-    <div class="wrap strip__in">
-      <p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7 10 18l-6-5.4"/></svg> Aucune photo à trier</p>
-      <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9.5V13l2.5 1.5"/><path d="M9 2.5h6"/></svg> Prêt 3 semaines avant ses 1 an</p>
-      <p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h13v10H3z"/><path d="M16 10h3.2l1.8 2.5V17h-5"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17.5" cy="17.5" r="1.8"/></svg> Livraison offerte</p>
-      <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8 12h8"/></svg> Sans abonnement</p>
-    </div>
-  </div>
-
-  <!-- ══════════ 2. Le problème ══════════ -->
-  <section class="sec sec--problem" id="le-probleme">
     <div class="wrap">
-      <div class="stats">
-        <div class="stat" data-reveal>
-          <p class="stat__n"><span data-count="4000">4 000</span></p>
-          <p class="stat__l">photos de bébé</p>
-        </div>
-        <div class="stat stat--zero" data-reveal style="--d:.14s">
-          <p class="stat__n">0</p>
-          <p class="stat__l">album</p>
-        </div>
-      </div>
-
-      <div class="roll" aria-hidden="true" data-reveal style="--d:.36s">
-        <span class="ph"><img src="assets/photos/face-2.webp" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/det-3.webp" srcset="assets/photos/det-3-400.webp 400w, assets/photos/det-3.webp 750w" sizes="(min-width: 900px) 207px, 24vw" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/mois-01.webp" srcset="assets/photos/mois-01-400.webp 400w, assets/photos/mois-01.webp 633w" sizes="(min-width: 900px) 184px, 21vw" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/face-4.webp" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/det-5.webp" srcset="assets/photos/det-5-400.webp 400w, assets/photos/det-5.webp 750w" sizes="(min-width: 900px) 207px, 24vw" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/mois-09.webp" srcset="assets/photos/mois-09-400.webp 400w, assets/photos/mois-09.webp 576w" sizes="(min-width: 900px) 184px, 21vw" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/face-1.webp" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/det-4.webp" srcset="assets/photos/det-4-400.webp 400w, assets/photos/det-4.webp 750w" sizes="(min-width: 900px) 370px, 42vw" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/face-3.webp" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"><img src="assets/photos/mois-03.webp" srcset="assets/photos/mois-03-400.webp 400w, assets/photos/mois-03.webp 950w" sizes="(min-width: 900px) 207px, 24vw" alt="" loading="lazy" decoding="async"></span>
-        <span class="ph"></span><span class="ph"></span>
-      </div>
-
-      <div class="turn">
-        <h2 class="h2 h2--c" data-reveal>
-          Ce n'est pas que vous n'avez pas le temps.<br><em>C'est qu'il n'en reste pas.</em>
-        </h2>
-        <p class="prose prose--center" data-reveal style="--d:.06s">
-          Le soir, quand elle dort enfin, il vous reste quarante minutes. Il y a la vaisselle,
-          le message à votre mère, et vous. Faire défiler mille photos pour en choisir cent
-          n'entrera jamais dans ces quarante minutes — et <strong>ce n'est pas un problème
-          d'organisation</strong>.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ 3. Comment ça marche ══════════ -->
-  <section class="sec sec--how" id="comment">
-    <div class="wrap">
-      <header class="shead">
-        <p class="eyebrow eyebrow--c" data-reveal>Comment ça marche</p>
-        <h2 class="h2 h2--c" data-reveal style="--d:.06s">Une seule minute.</h2>
-        <p class="sub" data-reveal style="--d:.12s">
-          Car 3 soirées c'est trop pour trier les photos.
-        </p>
-      </header>
-
-      <div class="how">
-        <!-- le téléphone reste collé pendant qu'on défile les trois étapes -->
-        <div class="how__sticky">
-          <div class="phone" id="demo" role="img"
-               aria-label="Animation : le prénom Léa est saisi, une photo du visage est choisie, puis une notification annonce que le livre de Léa est prêt.">
-            <div class="phone__frame">
-              <div class="phone__notch" aria-hidden="true"></div>
-              <div class="phone__screen">
-
-                <div class="scr" data-scr="1">
-                  <p class="scr__nav">Son livre</p>
-                  <label class="scr__lab">Son prénom</label>
-                  <div class="field"><span data-typed></span><i class="caret"></i></div>
-                  <label class="scr__lab">Sa date de naissance</label>
-                  <div class="field field--filled">14 mars 2025</div>
-                  <div class="scr__btn">Continuer</div>
-                </div>
-
-                <div class="scr" data-scr="2">
-                  <p class="scr__nav">Son visage</p>
-                  <p class="scr__sub">Choisissez une photo où on la voit bien.</p>
-                  <div class="faces">
-                    <span class="ph"><img src="assets/photos/face-2.webp" alt="" loading="lazy"></span>
-                    <span class="ph"><img src="assets/photos/face-5.webp" alt="" loading="lazy"></span>
-                    <span class="ph"><img src="assets/photos/face-3.webp" alt="" loading="lazy"></span>
-                    <span class="ph"><img src="assets/photos/face-6.webp" alt="" loading="lazy"></span>
-                    <span class="ph" data-pick><img src="assets/photos/face-1.webp" alt="" loading="lazy"><i class="tick" aria-hidden="true"></i></span>
-                    <span class="ph"><img src="assets/photos/face-4.webp" alt="" loading="lazy"></span>
-                  </div>
-                </div>
-
-                <div class="scr scr--lock" data-scr="3">
-                  <p class="lock__time">9:41</p>
-                  <p class="lock__date">mardi 3 mars</p>
-                  <div class="notif">
-                    <div class="notif__icon" aria-hidden="true">
-                      <svg viewBox="0 0 24 24"><path d="M4 5.2c2.9-1.1 5.3-1.1 7.7.4v13c-2.4-1.5-4.8-1.5-7.7-.4V5.2Z"/><path d="M20 5.2c-2.9-1.1-5.3-1.1-7.7.4v13c2.4-1.5 4.8-1.5 7.7-.4V5.2Z"/></svg>
-                    </div>
-                    <div>
-                      <p class="notif__app">Chapitre un</p>
-                      <p class="notif__t">Le livre de Léa est prêt.</p>
-                      <p class="notif__p">12 chapitres, 214 photos retenues. Un coup d'œil ?</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="phone__dots" aria-hidden="true"><i></i><i></i><i></i></div>
-          </div>
-        </div>
-
-        <ol class="steps">
-          <li class="step" data-reveal data-step="1">
-            <span class="step__n">1</span>
-            <h3 class="step__t">Son prénom et sa date de naissance.</h3>
-            <p class="step__p">Deux champs. Vingt secondes. C'est la seule chose qu'on vous demande d'écrire.</p>
-          </li>
-          <li class="step" data-reveal data-step="2" style="--d:.08s">
-            <span class="step__n">2</span>
-            <h3 class="step__t">Une photo de son visage.</h3>
-            <p class="step__p">L'app retrouve automatiquement les photos où votre bébé apparaît, parmi vos milliers de photos.</p>
-          </li>
-          <li class="step" data-reveal data-step="3" style="--d:.16s">
-            <span class="step__n">3</span>
-            <h3 class="step__t">Trois semaines avant ses 1 an, son livre est prêt.</h3>
-            <p class="step__p">Vous le relisez, vous changez une photo si vous voulez, vous dites oui. Il arrive imprimé.</p>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ 4. À quoi ressemble le livre ══════════ -->
-  <section class="sec sec--gallery" id="le-livre">
-    <div class="wrap">
-      <header class="shead">
-        <p class="eyebrow eyebrow--c" data-reveal>Le livre</p>
-        <h2 class="h2 h2--c" data-reveal style="--d:.06s">Douze mois, douze chapitres.</h2>
-        <p class="sub" data-reveal style="--d:.12s">
-          Pas des pages libres à remplir : un livre déjà écrit, où chaque mois a sa place et son texte.
-          Voici à quoi ressemblent les pages.
-        </p>
-      </header>
-    </div>
-
-    <div class="gal" data-gal data-reveal>
-      <div class="gal__track" data-gal-track>
-
-        <article class="spread">
-          <div class="spread__book">
-            <div class="book__page book__page--l">
-              <p class="chap">Chapitre&nbsp;1</p>
-              <p class="chap__title">Les premiers jours</p>
-              <p class="chap__text">Elle dort dix-huit heures par jour et vous n'arrivez pas à la quitter des yeux. La maison sent le linge propre et la nuit n'a plus d'horaire.</p>
-              <p class="chap__folio">· 6 ·</p>
-            </div>
-            <div class="book__spine" aria-hidden="true"></div>
-            <div class="book__page book__page--r">
-              <div class="ph ph--full"><img src="assets/photos/mois-01.webp" srcset="assets/photos/mois-01-400.webp 400w, assets/photos/mois-01.webp 633w" sizes="(min-width: 900px) 399px, 54vw" alt="Un nouveau-né endormi dans son berceau." loading="lazy" decoding="async"></div>
-            </div>
-          </div>
-          <p class="spread__cap">Mois 1 — une pleine page, sans rien autour</p>
-        </article>
-
-        <article class="spread">
-          <div class="spread__book">
-            <div class="book__page book__page--l">
-              <div class="ph ph--tall"><img src="assets/photos/det-3.webp" srcset="assets/photos/det-3-400.webp 400w, assets/photos/det-3.webp 750w" sizes="(min-width: 900px) 611px, 83vw" alt="" loading="lazy" decoding="async"></div>
-            </div>
-            <div class="book__spine" aria-hidden="true"></div>
-            <div class="book__page book__page--r">
-              <p class="chap">Chapitre&nbsp;3</p>
-              <p class="chap__title">Les mains découvertes</p>
-              <div class="ph ph--wide"><img src="assets/photos/mois-03.webp" srcset="assets/photos/mois-03-400.webp 400w, assets/photos/mois-03.webp 950w" sizes="(min-width: 900px) 399px, 54vw" alt="" loading="lazy" decoding="async"></div>
-              <p class="chap__text">Ce mois-ci, elle a trouvé ses mains. Elle les regarde longtemps, comme si quelqu'un les avait posées là pour elle.</p>
-              <p class="chap__folio">· 18 ·</p>
-            </div>
-          </div>
-          <p class="spread__cap">Mois 3 — une photo par page, un texte court</p>
-        </article>
-
-        <article class="spread">
-          <div class="spread__book">
-            <div class="book__page book__page--l">
-              <div class="ph ph--tall"><img src="assets/photos/det-6.webp" srcset="assets/photos/det-6-400.webp 400w, assets/photos/det-6.webp 750w" sizes="(min-width: 900px) 399px, 54vw" alt="" loading="lazy" decoding="async"></div>
-              <div class="book__row">
-                <div class="ph"><img src="assets/photos/det-2.webp" srcset="assets/photos/det-2-400.webp 400w, assets/photos/det-2.webp 500w" sizes="(min-width: 900px) 196px, 26vw" alt="" loading="lazy" decoding="async"></div>
-                <div class="ph"><img src="assets/photos/det-1.webp" srcset="assets/photos/det-1-400.webp 400w, assets/photos/det-1.webp 750w" sizes="(min-width: 900px) 221px, 26vw" alt="" loading="lazy" decoding="async"></div>
-              </div>
-            </div>
-            <div class="book__spine" aria-hidden="true"></div>
-            <div class="book__page book__page--r">
-              <p class="chap">Chapitre&nbsp;6</p>
-              <p class="chap__title">Six mois</p>
-              <div class="ph ph--wide"><img src="assets/photos/mois-06.webp" srcset="assets/photos/mois-06-400.webp 400w, assets/photos/mois-06.webp 950w" sizes="(min-width: 900px) 399px, 54vw" alt="" loading="lazy" decoding="async"></div>
-              <p class="chap__text">Elle tient assise, presque. Le matin, elle attend que la maison se réveille en parlant toute seule.</p>
-              <p class="chap__folio">· 34 ·</p>
-            </div>
-          </div>
-          <p class="spread__cap">Mois 6 — trois photos qui se répondent</p>
-        </article>
-
-        <article class="spread">
-          <div class="spread__book">
-            <div class="book__page book__page--l">
-              <div class="ph ph--full"><img src="assets/photos/mois-09.webp" srcset="assets/photos/mois-09-400.webp 400w, assets/photos/mois-09.webp 576w" sizes="(min-width: 900px) 399px, 54vw" alt="" loading="lazy" decoding="async"></div>
-            </div>
-            <div class="book__spine" aria-hidden="true"></div>
-            <div class="book__page book__page--r">
-              <p class="chap">Chapitre&nbsp;9</p>
-              <p class="chap__title">Dehors, enfin</p>
-              <div class="ph ph--wide"><img src="assets/photos/face-5.webp" alt="" loading="lazy" decoding="async"></div>
-              <p class="chap__text">Le chapeau tient trois minutes. L'herbe se goûte. On rentre avec des genoux verts et une sieste en retard.</p>
-              <p class="chap__folio">· 52 ·</p>
-            </div>
-          </div>
-          <p class="spread__cap">Mois 9 — une page qui déborde sur l'autre</p>
-        </article>
-
-        <article class="spread">
-          <div class="spread__book">
-            <div class="book__page book__page--l">
-              <div class="ph ph--full"><img src="assets/photos/mois-12.webp" srcset="assets/photos/mois-12-400.webp 400w, assets/photos/mois-12.webp 950w" sizes="(min-width: 900px) 399px, 54vw" alt="" loading="lazy" decoding="async"></div>
-            </div>
-            <div class="book__spine" aria-hidden="true"></div>
-            <div class="book__page book__page--r book__page--last">
-              <p class="chap">Chapitre&nbsp;12</p>
-              <p class="chap__title chap__title--big">Un an</p>
-              <p class="chap__text chap__text--big">Un gâteau, deux mains dedans, et douze mois qui tiennent maintenant dans un livre.</p>
-              <p class="chap__folio">· 68 ·</p>
-            </div>
-          </div>
-          <p class="spread__cap">Mois 12 — la dernière page</p>
-        </article>
-
-      </div>
-
-      <div class="wrap gal__ui">
-        <div class="gal__dots" data-gal-dots aria-hidden="true"></div>
-        <div class="gal__btns">
-          <button class="gal__btn" data-gal-prev aria-label="Page précédente">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
-          </button>
-          <button class="gal__btn" data-gal-next aria-label="Page suivante">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="wrap">
-      <p class="note note--c" data-reveal>
-        Textes d'exemple. Ceux de votre livre sont écrits à partir des mois de votre bébé.
+      <p class="eyebrow" data-reveal>[Accroche courte]</p>
+      <h1 class="h1" data-reveal style="--d:.06s">
+        <span data-headline>[Titre principal]<br><em>[chute en italique]</em></span>
+      </h1>
+      <p class="lede" data-reveal style="--d:.12s">
+        [Deux phrases : pour qui, quel résultat, en combien de temps.]
       </p>
+      <div class="cta-row" data-reveal style="--d:.18s">
+        <a class="btn btn--primary" href="#contact" data-track="cta_hero">Prendre rendez-vous</a>
+        <a class="btn btn--ghost" href="#comment">Comment ça se passe</a>
+      </div>
+      <p class="hero__micro" data-reveal style="--d:.24s">[Prix · durée · lieu ou visio]</p>
     </div>
+  </section>
 
-    <!-- les douze chapitres défilent en continu (décoratif, contenu doublé pour la boucle) -->
-    <div class="marq" aria-hidden="true">
-      <div class="marq__track">
-        <span><b>1</b>Les premiers jours</span><span><b>2</b>Le premier sourire</span><span><b>3</b>Les mains découvertes</span><span><b>4</b>Le premier éclat de rire</span><span><b>5</b>Sur le ventre, enfin</span><span><b>6</b>Six mois</span><span><b>7</b>La première purée</span><span><b>8</b>À quatre pattes</span><span><b>9</b>Dehors, enfin</span><span><b>10</b>Debout, en se tenant</span><span><b>11</b>Les premiers pas</span><span><b>12</b>Un an</span>
-        <span><b>1</b>Les premiers jours</span><span><b>2</b>Le premier sourire</span><span><b>3</b>Les mains découvertes</span><span><b>4</b>Le premier éclat de rire</span><span><b>5</b>Sur le ventre, enfin</span><span><b>6</b>Six mois</span><span><b>7</b>La première purée</span><span><b>8</b>À quatre pattes</span><span><b>9</b>Dehors, enfin</span><span><b>10</b>Debout, en se tenant</span><span><b>11</b>Les premiers pas</span><span><b>12</b>Un an</span>
+  <!-- ── Pour qui / ce que je propose ── -->
+  <section class="sec sec--alt" id="pour-qui">
+    <div class="wrap">
+      <header class="shead">
+        <p class="eyebrow eyebrow--c" data-reveal>[Pour qui]</p>
+        <h2 class="h2 h2--c" data-reveal>[Titre de section]</h2>
+      </header>
+      <div class="cards">
+        <div class="card" data-reveal><h3 class="h3">[Besoin 1]</h3><p>[Une ou deux phrases.]</p></div>
+        <div class="card" data-reveal style="--d:.08s"><h3 class="h3">[Besoin 2]</h3><p>[Une ou deux phrases.]</p></div>
+        <div class="card" data-reveal style="--d:.16s"><h3 class="h3">[Besoin 3]</h3><p>[Une ou deux phrases.]</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ══════════ 5. Ce qui change ══════════ -->
-  <section class="sec sec--why" id="ce-qui-change">
+  <!-- ── Comment ça se passe ── -->
+  <section class="sec" id="comment">
     <div class="wrap">
       <header class="shead">
-        <p class="eyebrow eyebrow--c" data-reveal>Ce qui change</p>
-        <h2 class="h2 h2--c" data-reveal style="--d:.06s">Quatre promesses, tenues par l'app.</h2>
-        <p class="sub" data-reveal style="--d:.12s">
-          Les autres apps vous aident à faire un album plus vite. Celle-ci le fait à votre place.
-        </p>
+        <p class="eyebrow eyebrow--c" data-reveal>Comment ça se passe</p>
+        <h2 class="h2 h2--c" data-reveal>[Titre de section]</h2>
       </header>
-
-      <div class="feats">
-
-        <div class="feat" data-reveal>
-          <div class="feat__txt">
-            <p class="feat__n">01</p>
-            <h3 class="feat__t">Aucune photo à trier.</h3>
-            <p class="feat__p">
-              Ailleurs, c'est vous qui choisissez, une photo après l'autre, jusqu'à ce que la soirée y passe.
-              Ici, personne ne choisit : l'app retrouve toutes les photos de votre bébé et garde les meilleures.
-            </p>
-          </div>
-          <div class="feat__vis">
-            <div class="mock mock--roll">
-              <span class="ph"><img src="assets/photos/face-2.webp" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/det-3.webp" srcset="assets/photos/det-3-400.webp 400w, assets/photos/det-3.webp 750w" sizes="(min-width: 900px) 252px, 38vw" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/mois-01.webp" srcset="assets/photos/mois-01-400.webp 400w, assets/photos/mois-01.webp 633w" sizes="(min-width: 900px) 168px, 25vw" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/face-4.webp" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/det-5.webp" srcset="assets/photos/det-5-400.webp 400w, assets/photos/det-5.webp 750w" sizes="(min-width: 900px) 252px, 38vw" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/mois-09.webp" srcset="assets/photos/mois-09-400.webp 400w, assets/photos/mois-09.webp 576w" sizes="(min-width: 900px) 168px, 25vw" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/face-1.webp" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/det-4.webp" srcset="assets/photos/det-4-400.webp 400w, assets/photos/det-4.webp 750w" sizes="(min-width: 900px) 254px, 38vw" alt="" loading="lazy"><i class="auto"></i></span>
-              <span class="ph"><img src="assets/photos/face-3.webp" alt="" loading="lazy"><i class="auto"></i></span>
-            </div>
-            <p class="mock__cap">214 photos retenues sur 4 000</p>
-          </div>
-        </div>
-
-        <div class="feat feat--rev" data-reveal>
-          <div class="feat__txt">
-            <p class="feat__n">02</p>
-            <h3 class="feat__t">Prêt avant que vous y pensiez.</h3>
-            <p class="feat__p">
-              Une notification arrive trois semaines avant l'anniversaire. Le temps de le relire,
-              de l'offrir, d'y glisser un mot — pas de le fabriquer en catastrophe la veille.
-            </p>
-          </div>
-          <div class="feat__vis">
-            <div class="mock mock--cal">
-              <div class="cal">
-                <p class="cal__m">Mars</p>
-                <div class="cal__g">
-                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                  <span></span><span></span><span class="is-ready">3</span><span></span><span></span><span></span><span></span>
-                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                  <span></span><span></span><span></span><span class="is-bday">14</span><span></span><span></span><span></span>
-                </div>
-                <p class="cal__k"><i class="k k--ready"></i> Livre prêt <i class="k k--bday"></i> Ses 1 an</p>
-              </div>
-            </div>
-            <p class="mock__cap">Trois semaines d'avance, toujours</p>
-          </div>
-        </div>
-
-        <div class="feat" data-reveal>
-          <div class="feat__txt">
-            <p class="feat__n">03</p>
-            <h3 class="feat__t">Jamais une tête coupée.</h3>
-            <p class="feat__p">
-              Son visage reste entier et bien placé dans la page. Jamais un front coupé,
-              jamais une tête à moitié sortie du cadre.
-            </p>
-          </div>
-          <div class="feat__vis">
-            <div class="mock mock--crop">
-              <figure class="crop crop--bad">
-                <span class="crop__box"><img src="assets/photos/face-1.webp" alt="Le haut du crâne sort du cadre." loading="lazy"></span>
-                <figcaption>Ailleurs</figcaption>
-              </figure>
-              <figure class="crop crop--good">
-                <span class="crop__box">
-                  <img src="assets/photos/face-1.webp" alt="Le visage entier, centré dans la page." loading="lazy">
-                  <span class="crop__frame" aria-hidden="true"></span>
-                </span>
-                <figcaption>Chez nous</figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="feat feat--rev" data-reveal>
-          <div class="feat__txt">
-            <p class="feat__n">04</p>
-            <h3 class="feat__t">Un livre de naissance, pas un album.</h3>
-            <p class="feat__p">
-              Douze chapitres, un par mois, et des textes écrits pour être lus à voix haute.
-              Pas des légendes qui décrivent ce qu'on voit déjà sur la photo.
-            </p>
-          </div>
-          <div class="feat__vis">
-            <div class="mock mock--toc">
-              <p class="toc__h">Sommaire</p>
-              <ol class="toc">
-                <li><span>1</span>Les premiers jours<i>6</i></li>
-                <li><span>2</span>Le premier sourire<i>12</i></li>
-                <li><span>3</span>Les mains découvertes<i>18</i></li>
-                <li><span>4</span>Le premier éclat de rire<i>24</i></li>
-                <li><span>5</span>Sur le ventre, enfin<i>28</i></li>
-                <li><span>6</span>Six mois<i>34</i></li>
-                <li class="is-more"><span>…</span>et six autres<i>68</i></li>
-              </ol>
-            </div>
-          </div>
-        </div>
-
-      </div>
+      <ol class="steps">
+        <li class="step" data-reveal><span class="step__n">1</span><h3 class="h3">[Étape 1]</h3><p>[Détail.]</p></li>
+        <li class="step" data-reveal><span class="step__n">2</span><h3 class="h3">[Étape 2]</h3><p>[Détail.]</p></li>
+        <li class="step" data-reveal><span class="step__n">3</span><h3 class="h3">[Étape 3]</h3><p>[Détail.]</p></li>
+      </ol>
     </div>
   </section>
 
-  <!-- ══════════ 6. Les finitions ══════════ -->
-  <section class="sec sec--finish" id="finitions">
+  <!-- ── Prix ── -->
+  <section class="sec sec--alt" id="prix">
     <div class="wrap">
       <header class="shead">
-        <p class="eyebrow eyebrow--c" data-reveal>L'objet</p>
-        <h2 class="h2 h2--c" data-reveal style="--d:.06s">Fait pour rester sur l'étagère.</h2>
-        <p class="sub" data-reveal style="--d:.12s">
-          Un seul format, une seule qualité, pas d'options à comparer. Celle qu'on aurait choisie pour nous.
-        </p>
+        <p class="eyebrow eyebrow--c" data-reveal>Tarif</p>
+        <h2 class="h2 h2--c" data-reveal>[Titre de section]</h2>
       </header>
-
-      <div class="fin">
-        <!-- le vrai objet, en quatre photos : la couverture, le dos, deux doubles pages -->
-        <div class="fin__shots">
-          <figure class="shot shot--wide" data-reveal>
-            <img src="assets/photos/livre-couverture.webp" srcset="assets/photos/livre-couverture-400.webp 400w, assets/photos/livre-couverture.webp 702w" sizes="(min-width: 900px) 508px, 92vw" width="702" height="382" alt="Le livre fermé : couverture en toile crème, « Chapitre Un · 1 an » marqué à l'or." loading="lazy" decoding="async">
-          </figure>
-          <figure class="shot" data-reveal style="--d:.07s">
-            <img src="assets/photos/livre-dos.webp" srcset="assets/photos/livre-dos-400.webp 400w, assets/photos/livre-dos.webp 702w" sizes="(min-width: 900px) 250px, 45vw" width="702" height="382" alt="Le dos du livre, « 1 an » marqué à l'or sur la toile." loading="lazy" decoding="async">
-          </figure>
-          <figure class="shot" data-reveal style="--d:.14s">
-            <img src="assets/photos/livre-ouvert-1.webp" srcset="assets/photos/livre-ouvert-1-400.webp 400w, assets/photos/livre-ouvert-1.webp 702w" sizes="(min-width: 900px) 250px, 45vw" width="702" height="382" alt="Le livre ouvert à plat : un portrait souriant à gauche, une petite main à droite." loading="lazy" decoding="async">
-          </figure>
-          <figure class="shot shot--wide" data-reveal style="--d:.21s">
-            <img src="assets/photos/livre-ouvert-2.webp" srcset="assets/photos/livre-ouvert-2-400.webp 400w, assets/photos/livre-ouvert-2.webp 702w" sizes="(min-width: 900px) 508px, 92vw" width="702" height="382" alt="Le livre ouvert sur les derniers chapitres : les premiers pas et le gâteau du premier anniversaire." loading="lazy" decoding="async">
-          </figure>
-        </div>
-
-        <ul class="fin__list">
-          <li data-reveal>
-            <h3>Couverture rigide, toile crème</h3>
-            <p>Son prénom et l'année marqués sur le plat et sur le dos, pour le retrouver dans une bibliothèque.</p>
-          </li>
-          <li data-reveal style="--d:.07s">
-            <h3>Pages qui s'ouvrent à plat</h3>
-            <p>Une photo peut traverser les deux pages sans disparaître dans la pliure. Le livre reste ouvert tout seul.</p>
-          </li>
-          <li data-reveal style="--d:.14s">
-            <h3>Papier mat 200 g</h3>
-            <p>Épais, sans reflet, agréable à tourner d'une main quand l'autre tient un bébé.</p>
-          </li>
-          <li data-reveal style="--d:.21s">
-            <h3>21 × 21 cm, 60 à 80 pages</h3>
-            <p>Assez grand pour qu'un visage fasse une page entière, assez petit pour se lire sur les genoux.</p>
-          </li>
+      <div class="plan" data-reveal>
+        <p class="plan__n">[00 €]</p>
+        <p class="plan__l">[Ce qui est inclus, en une ligne]</p>
+        <ul class="plan__ul">
+          <li>[Point 1]</li>
+          <li>[Point 2]</li>
+          <li>[Point 3]</li>
         </ul>
+        <a class="btn btn--primary btn--big" href="#contact" data-track="cta_price">Prendre rendez-vous</a>
       </div>
     </div>
   </section>
 
-  <!-- ══════════ 7. Le prix ══════════ -->
-  <section class="sec sec--price" id="prix">
+  <!-- ── Contact / réservation ──
+       Envoi vers Formspree (CONFIG.ENDPOINT), puis paiement Stripe si
+       CONFIG.STRIPE_CHECKOUT_URL est rempli (bouton data-intent="checkout"). -->
+  <section class="sec sec--dark" id="contact">
     <div class="wrap wrap--narrow">
-      <header class="shead">
-        <p class="eyebrow eyebrow--c" data-reveal>Le prix</p>
-        <h2 class="h2 h2--c" data-reveal style="--d:.06s">Un prix, tout compris.</h2>
-        <p class="sub" data-reveal style="--d:.12s">
-          Pas de pages en supplément, pas d'options à cocher, pas de frais de port ajoutés à la fin.
-        </p>
-      </header>
+      <p class="eyebrow eyebrow--c">Contact</p>
+      <h2 class="h2 h2--c">[Titre de l'appel à l'action]</h2>
+      <p class="prose prose--center">[Une phrase qui rassure : réponse sous 24 h, sans engagement…]</p>
 
-      <div class="plans">
-        <div class="plan plan--main" data-reveal>
-          <p class="plan__tag">Tarif fondateur · 500 premiers</p>
-          <p class="plan__n"><s>69 €</s><strong>49 €</strong></p>
-          <p class="plan__l">Le livre des 1 an — tout ce que vous obtenez</p>
-          <ul class="plan__ul">
-            <li>L'app iPhone qui retrouve et choisit ses photos</li>
-            <li>Douze chapitres écrits, un par mois</li>
-            <li>Livre 21 × 21 cm, 60 à 80 pages, couverture rigide, papier mat 200 g</li>
-            <li>Prêt trois semaines avant ses 1 an, livraison offerte</li>
-            <li>Payé une fois, sans abonnement, rien à régler à l'expédition</li>
-            <li>Remboursable sans condition jusqu'à l'expédition</li>
-          </ul>
-          <a class="btn btn--primary btn--big" href="#reserver" data-track="cta_price">Réserver mon livre</a>
-          <p class="plan__note">69 € : prix public prévu à la sortie de l'app. Le tarif fondateur vous reste acquis.</p>
+      <form class="form" id="form" novalidate>
+        <div class="f">
+          <label for="email">Votre e-mail</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="prenom@email.com" required>
+          <p class="f__err" data-err="email">Indiquez une adresse e-mail valide.</p>
         </div>
+        <div class="f">
+          <label for="message">Votre message (facultatif)</label>
+          <textarea id="message" name="message" rows="3" placeholder="[Ce qui vous amène]"></textarea>
+        </div>
+        <label class="check">
+          <input type="checkbox" id="consent" name="consent" required>
+          <span>J'accepte d'être recontacté(e) par e-mail.</span>
+        </label>
+        <p class="f__err" data-err="consent">Votre accord est nécessaire pour vous répondre.</p>
 
-        <div class="plan" data-reveal style="--d:.1s">
-          <p class="plan__tag">À ajouter plus tard</p>
-          <p class="plan__n"><strong>29 €</strong></p>
-          <p class="plan__l">Exemplaire grands-parents</p>
-          <ul class="plan__ul">
-            <li>Le même livre, à l'identique</li>
-            <li>Commandé en un geste depuis l'app</li>
-            <li>Livré chez eux</li>
-            <li>Ils n'ont pas les photos. Vous, si.</li>
-          </ul>
-        </div>
+        <button class="btn btn--primary btn--big" type="submit" data-intent="lead">Être recontacté(e)</button>
+        <button class="btn btn--link" type="submit" data-intent="checkout" hidden>Réserver et payer en ligne</button>
+      </form>
+
+      <div class="done" data-done hidden>
+        <h3 class="h3">C'est noté.</h3>
+        <p class="prose prose--center" data-done-msg></p>
       </div>
-
-      <p class="note note--c" data-reveal>
-        À titre de repère : ailleurs, un livre photo à couverture rigide démarre autour de 38 €
-        pour 20 pages, hors livraison.
-      </p>
     </div>
   </section>
 
-  <!-- ══════════ 8. Comparaison ══════════ -->
-  <section class="sec sec--cmp" id="comparaison">
+  <!-- ── Questions ── -->
+  <section class="sec">
     <div class="wrap wrap--narrow">
-      <h2 class="h2 h2--c" data-reveal>
-        Les autres apps vous aident à faire un album.<br><em>Nous le faisons pour vous.</em>
-      </h2>
-
-      <div class="cmp" data-reveal style="--d:.1s">
-        <div class="cmp__head" aria-hidden="true">
-          <span></span><span>Les autres apps</span><span class="is-us">Chapitre&nbsp;un</span>
-        </div>
-        <div class="cmp__row">
-          <p class="cmp__crit">Qui choisit les photos</p>
-          <p class="cmp__a" data-label="Les autres apps">Vous, une par une</p>
-          <p class="cmp__b" data-label="Chapitre un">Personne. L'app les trouve toutes.</p>
-        </div>
-        <div class="cmp__row">
-          <p class="cmp__crit">Qui écrit les textes</p>
-          <p class="cmp__a" data-label="Les autres apps">Vous, ou des légendes automatiques</p>
-          <p class="cmp__b" data-label="Chapitre un">Douze chapitres déjà écrits</p>
-        </div>
-        <div class="cmp__row">
-          <p class="cmp__crit">Temps passé</p>
-          <p class="cmp__a" data-label="Les autres apps">Une soirée, parfois plus</p>
-          <p class="cmp__b" data-label="Chapitre un">5 minutes de relecture</p>
-        </div>
-        <div class="cmp__row">
-          <p class="cmp__crit">Quand le livre arrive</p>
-          <p class="cmp__a" data-label="Les autres apps">Quand vous y pensez</p>
-          <p class="cmp__b" data-label="Chapitre un">3 semaines avant ses 1 an</p>
-        </div>
-        <div class="cmp__row">
-          <p class="cmp__crit">Abonnement</p>
-          <p class="cmp__a" data-label="Les autres apps">Souvent mensuel</p>
-          <p class="cmp__b" data-label="Chapitre un">Aucun. Un livre, un prix.</p>
-        </div>
-        <div class="cmp__row">
-          <p class="cmp__crit">Ce que vous payez</p>
-          <p class="cmp__a" data-label="Les autres apps">Dès 38 € les 20 pages, port en sus</p>
-          <p class="cmp__b" data-label="Chapitre un">49 € les 60 pages, port offert</p>
-        </div>
+      <h2 class="h2 h2--c" data-reveal>Questions fréquentes</h2>
+      <div class="faq" data-reveal>
+        <details><summary>[Question 1]</summary><p>[Réponse.]</p></details>
+        <details><summary>[Question 2]</summary><p>[Réponse.]</p></details>
+        <details><summary>[Question 3]</summary><p>[Réponse.]</p></details>
       </div>
-      <p class="note note--c" data-reveal>
-        Comparaison portant sur les apps de livres photo grand public, sur les points ci-dessus,
-        au tarif public constaté en septembre 2026.
-      </p>
-    </div>
-  </section>
-
-  <!-- ══════════ 9. Où en est le projet ══════════
-       Placée avant le formulaire : on dit ce qui existe et ce qui
-       n'existe pas encore *avant* de demander 49 €.              -->
-  <section class="sec sec--state" id="projet">
-    <div class="wrap">
-      <div class="state">
-        <figure class="state__img" data-reveal>
-          <img src="assets/photos/life-parents.webp" srcset="assets/photos/life-parents-400.webp 400w, assets/photos/life-parents.webp 800w" sizes="(min-width: 900px) 508px, 89vw" alt="Deux parents et leur bébé." loading="lazy" decoding="async">
-        </figure>
-        <div class="state__txt" data-reveal style="--d:.08s">
-          <p class="eyebrow">Où en est le projet</p>
-          <h2 class="h2">On préfère vous le dire franchement.</h2>
-          <p class="prose">
-            L'app n'existe pas encore. Cette page sert à savoir si des parents veulent un livre
-            fait sans eux — et s'ils sont prêts à le payer. C'est tout.
-          </p>
-
-          <ol class="road" data-reveal>
-            <li class="road__step is-now">
-              <p class="road__when">Automne 2026 <span class="road__now">Vous êtes ici</span></p>
-              <h3 class="road__t">Réservations fondateurs</h3>
-              <p class="road__p">500 places au tarif fondateur. Remboursables à tout moment, sans question.</p>
-            </li>
-            <li class="road__step">
-              <p class="road__when">Hiver 2026 – 2027</p>
-              <h3 class="road__t">Développement</h3>
-              <p class="road__p">Retrouver les photos de votre bébé sur l'iPhone, mise en page automatique, textes des douze chapitres.</p>
-            </li>
-            <li class="road__step">
-              <p class="road__when">Printemps 2027 <span class="road__est">objectif</span></p>
-              <h3 class="road__t">L'app sort sur iPhone</h3>
-              <p class="road__p">Les fondateurs sont prévenus en premier et fabriquent les premiers livres.</p>
-            </li>
-            <li class="road__step">
-              <p class="road__when">Ensuite</p>
-              <h3 class="road__t">Chaque livre, trois semaines avant chaque anniversaire</h3>
-              <p class="road__p">Si nous n'y arrivons pas : remboursement intégral, et on vous le dit.</p>
-            </li>
-          </ol>
-
-          <p class="prose">
-            Aucun avis client sur cette page : nous n'avons pas encore livré un seul livre.
-            Le jour où ce sera le cas, ce sont les vôtres qui seront ici.
-          </p>
-
-          <div class="sign">
-            <p class="sign__q">
-              Une question, un doute ? Écrivez-moi directement, je réponds moi-même.
-            </p>
-            <p class="sign__who">
-              <span class="sign__name">Guillaume Lancrenon</span>
-              <span class="sign__role">fondateur · <a href="mailto:bonjour@chapitreun.com">bonjour@chapitreun.com</a></span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ 10. Inscription ══════════ -->
-  <section class="sec sec--signup" id="reserver">
-    <div class="wrap wrap--narrow">
-      <div class="signup" data-reveal>
-        <p class="eyebrow eyebrow--c">Réservation</p>
-        <h2 class="h2 h2--c">Réservez le livre de sa première année.</h2>
-        <p class="prose prose--center">
-          L'app est en préparation. Vous réservez aujourd'hui votre livre pour 49 €,
-          tout compris et <strong>remboursables sans condition</strong>,
-          y compris si l'app ne sort pas.
-        </p>
-
-        <div class="founder" data-founder data-total="500">
-          <div class="founder__bar"><i></i></div>
-          <p class="founder__t">Tarif fondateur −29 % · il reste <span data-left>500</span> places sur 500</p>
-        </div>
-
-        <form class="form" id="form" novalidate>
-          <div class="f">
-            <label for="email">Votre e-mail</label>
-            <input id="email" name="email" type="email" inputmode="email" autocomplete="email"
-                   placeholder="prenom@email.com" required>
-            <p class="f__err" data-err="email">Indiquez une adresse e-mail valide.</p>
-          </div>
-
-          <div class="f">
-            <label for="month">Mois de naissance de votre bébé</label>
-            <select id="month" name="month" required>
-              <option value="" selected disabled>Choisir un mois</option>
-            </select>
-            <p class="f__hint" data-when>Pour savoir quand son livre doit être prêt.</p>
-            <p class="f__err" data-err="month">Choisissez le mois de naissance.</p>
-          </div>
-
-          <label class="check">
-            <input type="checkbox" id="consent" name="consent" required>
-            <span>J'accepte de recevoir des nouvelles du projet par e-mail. Désinscription en un clic.</span>
-          </label>
-          <p class="f__err" data-err="consent">Votre accord est nécessaire pour vous écrire.</p>
-
-          <button class="btn btn--primary btn--big" type="submit" data-track="preorder_submit">
-            Précommander pour 49 €
-          </button>
-          <button class="btn btn--link" type="button" data-waitlist data-track="waitlist_submit">
-            Juste être prévenu
-          </button>
-        </form>
-
-        <ul class="trust">
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="9.5" rx="2.2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg>Paiement Stripe</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7 10 18l-6-5.4"/></svg>Remboursable à tout moment</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8 12h8"/></svg>Sans abonnement</li>
-        </ul>
-
-        <div class="done" data-done hidden>
-          <div class="done__seal" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M20 7 10 18l-6-5.4"/></svg>
-          </div>
-          <h3 class="h3">C'est noté.</h3>
-          <p class="prose prose--center" data-done-msg></p>
-          <p class="note note--c">Vous pouvez vous désinscrire en un clic depuis n'importe lequel de nos e-mails.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ 11. Questions ══════════ -->
-  <section class="sec sec--faq">
-    <div class="wrap wrap--narrow">
-      <h2 class="h2 h2--c" data-reveal>Ce que les parents nous demandent</h2>
-      <div class="faq" data-reveal style="--d:.08s">
-        <details>
-          <summary>Et si je ne fais rien du tout ?</summary>
-          <p>Le livre se fait quand même. Le prénom, la date de naissance et une photo de son visage suffisent : trois semaines avant ses 1 an, une notification vous prévient qu'il est prêt. Il ne vous reste qu'à dire oui.</p>
-        </details>
-        <details>
-          <summary>C'est un abonnement ?</summary>
-          <p>Non. Un livre, un prix, payé une fois. Rien ne se renouvelle, rien n'est prélevé plus tard. Si vous voulez un deuxième exemplaire pour les grands-parents, vous le commandez quand vous voulez.</p>
-        </details>
-        <details>
-          <summary>Et si le livre ne me plaît pas ?</summary>
-          <p>Vous le relisez avant impression : vous pouvez retirer une photo, en changer, corriger un texte. Rien ne part sans votre oui. Et les 49 € de votre réservation vous sont remboursés sur simple demande.</p>
-        </details>
-        <details>
-          <summary>Mon bébé a déjà 11 mois, c'est trop tard ?</summary>
-          <p>Non. Le livre se construit à partir des photos déjà prises. Dites-nous son mois de naissance : on vous prévient dès que l'app peut fabriquer son livre.</p>
-        </details>
-        <details>
-          <summary>Et si je n'ai pas 4 000 photos ?</summary>
-          <p>Le livre s'adapte. Avec moins de photos, il fait moins de pages et on écrit un peu plus. Il n'y a pas de minimum à atteindre.</p>
-        </details>
-        <details>
-          <summary>Je suis sur Android.</summary>
-          <p>Pour l'instant l'app n'existe que sur iPhone, parce que l'analyse tourne sur l'appareil. Inscrivez-vous quand même : vous serez les premiers prévenus.</p>
-        </details>
-        <details>
-          <summary>Quand arrive le livre ?</summary>
-          <p>Notre objectif : l'app disponible au printemps 2027, et chaque livre prêt trois semaines avant l'anniversaire de l'enfant. Délai indicatif — si nous glissons, vous êtes remboursé.</p>
-        </details>
-        <details>
-          <summary>Et s'il arrive abîmé ?</summary>
-          <p>On le réimprime et on vous le renvoie, sans discussion. Un livre qui doit rester sur une étagère trente ans ne part pas avec un coin plié.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ Dernier appel ══════════ -->
-  <section class="last">
-    <div class="wrap last__in">
-      <h2 class="h2" data-reveal>Son premier anniversaire arrive.<br><em>Le livre peut être prêt avant.</em></h2>
-      <a class="btn btn--primary btn--big" href="#reserver" data-reveal style="--d:.08s" data-track="cta_last">Réserver mon livre</a>
-      <p class="note" data-reveal style="--d:.14s">49 € au lieu de 69 € · remboursable sans condition</p>
     </div>
   </section>
 
@@ -804,33 +159,16 @@ setTimeout(function(){ if(!window.__cuReady) document.documentElement.classList.
 
 <footer class="foot">
   <div class="wrap wrap--narrow foot__in">
-    <p class="mark mark--foot">
-      <svg class="mark__glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.2c2.9-1.1 5.3-1.1 7.7.4v13c-2.4-1.5-4.8-1.5-7.7-.4V5.2Z"/><path d="M20 5.2c-2.9-1.1-5.3-1.1-7.7.4v13c2.4-1.5 4.8-1.5 7.7-.4V5.2Z"/></svg>
-      <span>Chapitre&nbsp;un</span>
-    </p>
-    <p class="foot__p">
-      Le livre des 1 an qui se fait tout seul. Application en préparation, iPhone uniquement.
-      Les prix affichés sont ceux du tarif de lancement.
-    </p>
-    <p class="foot__p foot__p--small">
-      Réservation de 49 € encaissée via Stripe, soit le prix total du livre, remboursable
-      sans condition et sans justification. Votre e-mail sert uniquement à vous informer de ce
-      projet, conformément au RGPD. Photos d'illustration sous licence libre.
-    </p>
+    <p class="mark"><span class="mark__dot" aria-hidden="true"></span><span>[Nom]</span></p>
+    <p class="foot__p">[Une phrase de présentation.]</p>
     <nav class="foot__links">
       <a href="mentions-legales.html">Mentions légales</a>
-      <a href="cgv-prevente.html">CGV de prévente</a>
-      <a href="confidentialite.html">Confidentialité &amp; RGPD</a>
-      <a href="mailto:bonjour@chapitreun.com">Nous écrire</a>
+      <a href="confidentialite.html">Confidentialité</a>
+      <a href="mailto:[contact@domaine]">Nous écrire</a>
     </nav>
   </div>
 </footer>
 
-<div class="sticky" data-sticky aria-hidden="true">
-  <p class="sticky__p"><strong>49 €</strong> tarif fondateur</p>
-  <a class="btn btn--primary" href="#reserver" data-track="cta_sticky">Réserver</a>
-</div>
-
-<script src="script.js?v=8" defer></script>
+<script src="script.js" defer></script>
 </body>
 </html>
