@@ -7,7 +7,7 @@ Cocher au fur et à mesure.
 
 ## Avant la mise en ligne (bloquant)
 
-- [ ] **Réactiver GitHub Pages.** Il est désactivé depuis le 4 novembre :
+- [ ] **Réactiver GitHub Pages** (le fondateur s'en charge le 4 novembre). Il est désactivé depuis le 4 novembre :
       le déploiement échoue avec « Get Pages site failed ». Dans le dépôt :
       *Settings* → *Pages* → *Source* : **GitHub Actions** ; *Custom domain* :
       `chapitreun.com` ; cocher *Enforce HTTPS*. Puis *Actions* →
@@ -33,11 +33,11 @@ Cocher au fur et à mesure.
       légales.
 - [ ] **Assurance RC professionnelle.** Pas obligatoire pour l'hypnose,
       mais recommandée et rassurante. Reporter assureur et numéro.
-- [ ] **Adresse e-mail de contact.** Obligatoire dans les mentions légales
-      (loi pour la confiance dans l'économie numérique). Elle sert aussi pour
-      les droits RGPD.
-- [ ] **Numéro de rue** du cabinet, rue Pilaudo (mentions, confidentialité,
-      et données structurées de `index.html` pour Google).
+- [x] **Adresse e-mail de contact** : `bonjour@chapitreun.com` (reprise de
+      Chapitre un ; le routage e-mail Cloudflare du domaine est toujours actif,
+      envoyer un e-mail de test pour vérifier qu'il arrive). Obligatoire dans les mentions légales
+      (loi pour la confiance dans l'économie numérique) et pour les droits RGPD.
+- [x] **Adresse du cabinet** : 8 rue Pilaudo, 92600 Asnières-sur-Seine.
 - [ ] **Photo portrait.** LinkedIn bloque la récupération automatique.
       Envoyer le fichier : il ira dans `landing-page/assets/guillaume.jpg`,
       au format 4:5, à la place des initiales « GL » (voir le commentaire
