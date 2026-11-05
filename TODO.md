@@ -98,9 +98,9 @@ Cocher au fur et à mesure.
 
 - Pas de séance de renfort offerte, pas de garantie de résultat.
 - 90 € la séance, 2 séances d'1 h espacées de 2 semaines, cabinet ou visio.
-- Formulation retenue : « L'hypnose a déjà accompagné des milliers de
-  fumeurs vers l'arrêt ». Elle parle de l'hypnose en général, pas d'un
-  résultat personnel.
+- Formulation retenue (5 novembre) : « L'hypnose a déjà aidé des milliers de
+  fumeurs à arrêter ». Elle parle de l'hypnose en général, pas d'un résultat
+  personnel.
 - Présenter l'hypnose comme un accompagnement compatible avec le médecin et
   le tabacologue. Ne jamais employer « soigner » ni « guérir », ni donner de
   taux de réussite (voir `etude-marche.md`, section 4).
