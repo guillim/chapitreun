@@ -49,6 +49,7 @@ relaie vers GA4 (tous sauf `page_view`) et Meta :
 | `section_view` | une section avec `id` devient visible | — |
 | `cta_click` | clic sur un élément `data-track="…"` | — |
 | `booking_click` | clic vers l'agenda de réservation (`data-book`) | `Schedule` |
+| `calc_use` | première utilisation du calculateur « Ce que vous coûte la cigarette » | — |
 | `lead` | formulaire envoyé (aucun formulaire sur la page actuelle) | `Lead` |
 | `checkout_start` | départ vers Stripe | `InitiateCheckout` |
 | `purchase` | `merci.html` | `Purchase` |
