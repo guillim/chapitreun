@@ -143,11 +143,42 @@ a{ color:inherit; }
 .step .h3{ margin-top:4px; }
 .step p:last-child{ margin:8px 0 0; color:var(--ardoise); max-width:52ch; }
 
+/* L'état d'hypnose : une phrase en grand, l'explication à côté */
+.trance{ display:grid; gap:18px; margin-top:36px; }
+.trance__lead{ margin:0; font-family:var(--serif); font-size:clamp(1.7rem, 4.6vw, 2.3rem); line-height:1.1;
+  color:var(--ardoise); max-width:16ch; text-wrap:balance; }
+.trance .text{ margin-top:0; }
+.trance .text + .text{ margin-top:14px; }
+
 /* Ce que vous allez vivre : réponses aux craintes */
 .qa{ display:grid; gap:0; margin-top:44px; border-top:1px solid var(--trait); }
 .qa__item{ padding:26px 0; border-bottom:1px solid var(--trait); display:grid; gap:6px; }
 .qa__q{ margin:0; font-family:var(--serif); font-size:1.55rem; line-height:1.15; }
 .qa__a{ margin:0; color:var(--ardoise); max-width:58ch; }
+
+/* Ce que vous gagnez : une liste à filets, pas des cartes */
+.gains{ list-style:none; margin:44px 0 0; padding:0; display:grid; gap:0; border-top:1px solid var(--trait); }
+.gains li{ padding:22px 0; border-bottom:1px solid var(--trait); }
+.gains h3{ margin:0; font-family:var(--serif); font-weight:400; font-size:1.45rem; line-height:1.15; }
+.gains p{ margin:6px 0 0; color:var(--ardoise); max-width:40ch; }
+.gains a{ color:var(--encre); text-decoration-color:var(--aube-d); text-underline-offset:3px; }
+
+/* Calculateur : coût de la cigarette */
+.calc{ margin-top:56px; padding:28px 24px 26px; border-radius:22px; background:var(--nuit); color:var(--air); }
+.calc .h3{ color:var(--air); }
+.calc__in{ display:grid; gap:22px; margin-top:22px; }
+.calc__f{ display:grid; gap:10px; }
+.calc__f label{ font-size:.95rem; color:#C6D8D4; }
+.calc__f output{ font-weight:600; color:var(--air); font-variant-numeric:tabular-nums; }
+.calc input[type=range]{ width:100%; accent-color:var(--aube); min-height:32px; }
+.calc__eur{ display:inline-flex; align-items:center; gap:8px; font-size:1.05rem; }
+.calc input[type=number]{ width:6.5em; font:600 1.05rem var(--sans); color:var(--encre); background:var(--blanc);
+  border:1px solid transparent; border-radius:10px; padding:10px 12px; font-variant-numeric:tabular-nums; }
+.calc__out{ margin:28px 0 0; font-family:var(--serif); font-size:clamp(3rem, 11vw, 4.6rem); line-height:1; }
+.calc__out span{ color:var(--aube); font-variant-numeric:tabular-nums; }
+.calc__note{ margin:12px 0 0; color:#C6D8D4; max-width:46ch; }
+.calc__note strong{ color:var(--air); font-weight:600; }
+.calc .small{ color:var(--brume); margin:14px 0 0; }
 
 /* Qui je suis */
 .me{ display:grid; gap:36px; align-items:start; }
@@ -234,8 +265,12 @@ a{ color:inherit; }
   .fact:last-child{ border-right:none; }
   .alone{ grid-template-columns:1.1fr 1fr; align-items:end; gap:60px; }
   .qa{ grid-template-columns:1fr 1fr; column-gap:56px; }
+  .trance{ grid-template-columns:1fr 1.3fr; gap:56px; align-items:start; }
   .me{ grid-template-columns:minmax(260px,380px) 1fr; gap:64px; }
   .price{ grid-template-columns:auto 1fr; gap:64px; }
+  .gains{ grid-template-columns:repeat(3,1fr); column-gap:40px; }
+  .calc{ padding:40px 44px 36px; }
+  .calc__in{ grid-template-columns:1.4fr 1fr; gap:40px; align-items:end; }
   .book__grid{ grid-template-columns:1fr 1fr; align-items:start; }
   .sticky{ left:auto; right:24px; }
   .foot{ padding-bottom:48px; }
@@ -244,7 +279,7 @@ a{ color:inherit; }
   .hero{ padding-top:120px; }
   .smoke{ right:4%; width:520px; }
   /* le parcours à l'horizontale : on voit les deux semaines entre les séances */
-  .path{ grid-template-columns:1fr .7fr 1fr 1fr; gap:28px; }
+  .path{ grid-template-columns:repeat(4,1fr); gap:28px; }
   .step{ padding:44px 0 0; }
   .step::before{ left:28px; right:-28px; top:11px; bottom:auto; width:auto; height:1px; }
   .step--gap::before{ background:repeating-linear-gradient(to right, var(--ardoise) 0 4px, transparent 4px 9px); }
