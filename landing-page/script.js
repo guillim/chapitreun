@@ -89,6 +89,28 @@
   $$('[data-book]').forEach(el =>
     el.addEventListener('click', () => track('booking_click', { id: el.dataset.book })));
 
+  /* ── Calculateur : coût de la cigarette ─────────────────── */
+  (function calc() {
+    const cig = $('#cig'), pack = $('#pack'), out = $('#cig-out'), year = $('#year'), days = $('#days');
+    if (!cig || !pack) return;
+    const SESSIONS = 180;                       // deux séances à 90 €
+    const eur = n => Math.round(n).toLocaleString('fr-FR') + '\u00a0€';
+    let used = false;
+    const update = () => {
+      const n = +cig.value, price = Math.max(0, parseFloat(String(pack.value).replace(',', '.')) || 0);
+      const perDay = n / 20 * price;
+      out.textContent = n;
+      year.textContent = eur(perDay * 365);
+      const d = perDay ? Math.round(SESSIONS / perDay) : 0;
+      days.textContent = d >= 2 ? d + ' jours' : d + ' jour';
+    };
+    [cig, pack].forEach(el => el.addEventListener('input', () => {
+      update();
+      if (!used) { used = true; track('calc_use'); }
+    }));
+    update();
+  })();
+
   /* ── Barre collante : visible après l'accueil, cachée sur la réservation ── */
   (function sticky() {
     const bar = $('[data-sticky]'), hero = $('.hero'), book = $('#reserver');
