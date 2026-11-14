@@ -156,6 +156,14 @@ a{ color:inherit; }
 .qa__q{ margin:0; font-family:var(--serif); font-size:1.55rem; line-height:1.15; }
 .qa__a{ margin:0; color:var(--ardoise); max-width:58ch; }
 
+/* Vous vous reconnaissez ? : deux listes côte à côte */
+.recog{ display:grid; gap:36px; margin-top:40px; }
+.recog__list{ list-style:none; margin:16px 0 0; padding:0; border-top:1px solid var(--trait); }
+.recog__list li{ padding:14px 0 14px 26px; border-bottom:1px solid var(--trait); position:relative; color:var(--ardoise); }
+.recog__list li::before{ content:""; position:absolute; left:2px; top:1.35em; width:12px; height:2px; background:var(--aube-d); }
+.recog__end{ margin-top:32px; color:var(--encre); font-weight:500; }
+.me__eng-t{ margin-top:36px; }
+
 /* Ce que vous gagnez : une liste à filets, pas des cartes */
 .gains{ list-style:none; margin:44px 0 0; padding:0; display:grid; gap:0; border-top:1px solid var(--trait); }
 .gains li{ padding:22px 0; border-bottom:1px solid var(--trait); }
@@ -269,6 +277,7 @@ a{ color:inherit; }
   .me{ grid-template-columns:minmax(260px,380px) 1fr; gap:64px; }
   .price{ grid-template-columns:auto 1fr; gap:64px; }
   .gains{ grid-template-columns:repeat(3,1fr); column-gap:40px; }
+  .recog{ grid-template-columns:1fr 1fr; gap:56px; }
   .calc{ padding:40px 44px 36px; }
   .calc__in{ grid-template-columns:1.4fr 1fr; gap:40px; align-items:end; }
   .book__grid{ grid-template-columns:1fr 1fr; align-items:start; }

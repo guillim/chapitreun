@@ -71,6 +71,17 @@ Cocher au fur et à mesure.
 - [ ] Photo des **diplômes IFHE** (Technicien 1, Praticien 1, 2026) si vous
       souhaitez les montrer.
 
+## Page « Venir au cabinet » (acces.html)
+
+- [ ] Préciser le cabinet : étage, code ou interphone, accessibilité aux
+      personnes à mobilité réduite, salle d'attente, stationnement proche.
+      La page ne dit aujourd'hui que l'adresse, le quartier Flachat et les
+      gares.
+- [ ] Vérifier les temps de trajet indiqués. Ils sont calculés à partir des
+      distances (gares de Bécon-les-Bruyères et d'Asnières à environ 600 m,
+      Bois-Colombes à environ 800 m, métro 3 Pont de Levallois – Bécon à
+      1,2 km, métro 13 Gabriel Péri à 1,7 km à vol d'oiseau).
+
 ## Réservation et règles pratiques
 
 - [ ] Vérifier la page d'agenda Google
