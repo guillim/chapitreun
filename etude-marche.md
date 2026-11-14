@@ -387,3 +387,51 @@ Day 2026), Dhun Wellness ; refonte du site Quit (Australie, arrêt du tabac).
 6. **Prise de rendez-vous** : quel outil, numéro de téléphone.
 7. **Nom du cabinet ou du site, et nom de domaine.**
 8. **Statut juridique et SIRET**, pour les mentions légales.
+
+---
+
+## 10. Concurrent local : Maxime Oriol (maxime-hypnose.fr), relevé du 14 novembre 2026
+
+Repéré par le fondateur dans *Asnières Infos* (avril 2026, portrait d'une
+demi-page). Site lu en entier : 16 pages (accueil, 11 thématiques dont
+l'arrêt du tabac, infos pratiques, contact, charte éthique, mentions
+légales).
+
+**Profil** : responsable produit dans l'informatique, formé à l'hypnose
+ericksonienne et à l'« hypnose rapide » (charte de l'ARCHE). Séances à
+domicile en Île-de-France et à Paris, le soir et le week-end, ponctuellement
+en cabinet ou à distance. Fait aussi de l'hypno-coaching, des séances
+d'initiation et des spectacles d'hypnose. Micro-entreprise, SIRET affiché.
+
+**Offre** : 1 h à 1 h 30, « à partir de 80 € ». Le nombre de séances n'est
+pas annoncé (« dépend de ton objectif »). Appel découverte gratuit,
+réservation en ligne (Yukivo), téléphone et formulaire de contact.
+
+**Site** : Astro, bleu nuit et or, titres en Cinzel, tutoiement, portrait
+professionnel en accueil, cartes à icônes. Pas d'avis, pas de photo de
+cabinet.
+
+**Ce qui est bien fait**
+- Page tabac « Exemples de situations travaillées » : le matin, les pauses,
+  le stress, le social.
+- Liste « Quand consulter » : on allume sans l'avoir décidé, on a déjà
+  arrêté puis repris, on a peur de l'irritabilité et du manque, on ne compte
+  plus ses cigarettes.
+- Bloc « Ce que je m'engage à faire » et charte éthique : honnêteté sur ce
+  que l'hypnose peut ou ne peut pas faire, confidentialité, supervision.
+- Appel découverte gratuit, mis en avant partout.
+- Mentions prudentes et répétées (« ne remplace pas un suivi médical »).
+- Présence dans le magazine municipal : un canal local gratuit.
+
+**Ses faiblesses, qui sont nos atouts**
+- 11 sujets traités : rien ne le distingue sur le tabac.
+- Tarif flou : « à partir de 80 € » à l'accueil, mais « demande le tarif »
+  dans les infos pratiques.
+- Nombre de séances inconnu.
+- Pas de cabinet fixe.
+- Quelques promesses risquées sur d'autres pages (« résultats rapides et
+  durables » pour la perte de poids).
+
+**Point d'attention** : son site est bleu nuit avec des boutons dorés,
+comme l'en-tête du nôtre (pétrole et aube). Dans la même ville, un
+visiteur qui compare pourrait confondre les deux.
